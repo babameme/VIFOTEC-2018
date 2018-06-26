@@ -1,0 +1,5 @@
+Phần 1: Video chủ yếu giải thích cơ chế hoạt động của Git: 
+https://www.youtube.com/watch?v=S2uSd9lOoC0
+Phần 2: Video giới thiệu các lệnh nâng cao hơn, đặc biệt có bài tập hướng dẫn cách tạo commit:
+https://www.youtube.com/watch?v=CsZN1e0Dfcc
+Link của repo git_test nhắc đến trong bài tập: https://github.com/masspvn/git_test

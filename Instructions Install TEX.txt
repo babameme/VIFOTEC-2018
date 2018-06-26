@@ -1,0 +1,5 @@
+Hướng dẫn cài đặt LaTeX trên Window
+Bước 1: Tải file texlive.iso trên trang http://distrib-coffee.ipsl.jussieu.fr/pub/mirrors/ctan/systems/texlive/Images/
+Bước 2: Vào file iso sau đó chạy file install-tl.bat hoặc install-tl-advanced bằng quyền Admin rồi next, next and next :D chờ cho xong (để mặc định nhé!)
+Bước 3: Tải và cài đặt texstudio trên trang chủ
+Done! Ezzzz
