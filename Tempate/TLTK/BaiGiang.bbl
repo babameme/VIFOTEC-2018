@@ -1,0 +1,38 @@
+\providecommand\noopsort[1]{}
+\begin{thebibliography}{1}
+
+\bibitem{MA-BAA-BAJ-05}
+M. {Aza{\"\i}ez} and A. {Ben Abda} and J. {Ben Abdallah}, (2005).
+\newblock ``{Revisiting the Dirichlet-Neumann Solver for the Cauchy system},''
+  {\em Intern. J. of Appl. Math. and Mech.\/}, {\em 1\/}:106--121.
+
+\bibitem{MA-FBB-DDT-FJ-11}
+Mejdi {Aza{\"\i}ez} and Faker {Ben Belgacem} and Duc Thang Du and Faten
+  Jelassi, (2011).
+\newblock ``{A Finite Element Model for the Data Completion Problem: Analysis
+  and Assessment},'' {\em Inverse Problems in Science and Engineering\/}, {\em
+  (accepted)\/}.
+
+\bibitem{BernardiC-89}
+Bernardi Christine, (1989).
+\newblock ``{Optimal Finite-Element Interpolation on Curved Domains},'' {\em
+  SIAM J. Numer. Anal.\/}, {\em 26\/}(5):1212--1240.
+
+\bibitem{BernardiC-MadayY-RapettiF-04}
+Bernardi C. and Maday Y. and Rapetti F., (2004).
+\newblock {\em Discr\'etisations variationnelles de probl\`emes aux limites
+  elliptiques\/}, {\em 45\/}. Math\'ematiques et Applications.
+\newblock Springer Verlag - SMAI.
+
+\bibitem{Thang-14}
+{Dư Đức Thắng} and {Lê Đức Nhiên}, (2014).
+\newblock {\em Bài giảng Phương trình đạo hàm riêng\/}.
+\newblock Nhà xuất bản Đại học Quốc gia Hà Nội.
+
+\bibitem{Ngoc-Tan-11}
+{Ngo Duc Ngọc} and {Phan Van Tan}, (2011).
+\newblock ``{Về vấn đề biến đổi khí hậu ở Việt Nam giai
+  đoạn 2015-2050},'' {\em Tạp chí Khí tượng thủy văn\/}, {\em
+  27\/}:045005 (27pp.).
+
+\end{thebibliography}

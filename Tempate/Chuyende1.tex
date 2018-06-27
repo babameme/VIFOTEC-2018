@@ -1,0 +1,49 @@
+\include{MyTemplate}
+%===============
+\setcounter{section}{0}
+
+\graphicspath{ {fig/} }
+%============================
+\makeindex%Sinh các chỉ mục
+\begin{document}
+%\rm
+%\thispagestyle{empty}%
+
+%\listoffigures
+\tableofcontents
+
+\markboth{Mục lục}{}
+%\pagestyle{fancy}
+\frontmatter%Định dạng của các trang đầu, ở đây đánh số thứ tự kiểu la mã nhỏ: i,ii...
+{
+%\let\oldnumberline\numberline% Cho phép xuất hiện các chữ Hình, Bảng trong danh mục
+%\renewcommand{\numberline}{\figurename~\oldnumberline}%
+%\listoffigures
+}
+%{
+%\let\oldnumberline\numberline%
+%\renewcommand{\numberline}{\tablename~\oldnumberline}%
+%\listoftables
+%}
+%\include{modau/modau}
+%
+%====================================
+\mainmatter %Định dạng các trang chính, số thứ tự được đánh kiểu ả rập: 1,2,3...
+%====================================
+%
+\include{Chapter/Chapter1/Chapter1}
+
+\include{Chapter/Chapter2/Chapter2}
+
+\include{Chapter/Chapter3/Chapter3}
+
+\include{TLTK/TLTK}
+
+\backmatter %Định dạng các trang cuối, số thứ tự được đánh kiểu ả rập: 1,2,3...
+
+%\begin{multicols}{2}
+\printindex
+%\end{multicols}
+
+%Các tùy biến của định dạng trang được tìm và định nghĩa lại ở mybook.cls, chú ý tìm từ khóa.
+\end{document}

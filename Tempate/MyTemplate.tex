@@ -1,0 +1,278 @@
+\documentclass[14pt,oneside,titlepage,reqno,a4paper]{book}%{book}%%{these_gi}%twosidedraft,
+\usepackage{xkeyval}
+\usepackage{titlesec}
+\usepackage{times} 
+\usepackage{amsmath} 
+% Định nghĩa thuật toán
+%Tạo Index
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{multirow}
+\usepackage{makeidx}
+%Thụt vào đầu dòng mỗi đoạn
+\usepackage{indentfirst}
+\setlength{\parindent}{1cm} 
+%\input setbmp
+%Để chế độ thụt vào đầu dòng trong chế độ liệt kê số (enumerate)
+ \usepackage{enumitem} 
+% \usepackage{lipsum} 
+ \setlist[enumerate]{itemindent=\dimexpr\labelwidth+\labelsep\relax,leftmargin=1em} 
+% \setlist[itemize][label =-]{itemindent=\dimexpr\labelwidth+\labelsep\relax,leftmargin=1em} 
+\setlist[itemize,1]{label=-}%thay vì dấu chấm thì là dấu gạch đầu dòng
+ %
+ %Thụt vào đầu dòng đối với tiêu đề của section
+
+
+\setcounter{secnumdepth}{5} %Đặt chiều sâu của các section. Với số 5, ta có đến paragraph
+\renewcommand\thesection{\bfseries \arabic{section}.}
+%\renewcommand\thesection{\Roman{section}.} %Đặt số thứ tự của Section là I, II, III
+% Cài đặt độ sâu cho tiêu đề: Ở đây là chương rồi đến mục
+\renewcommand\thesubsection{\arabic{section}.\arabic{subsection}.} %Đặt số thứ tự của subseciton là 1., 2., 
+\renewcommand\thesubsubsection{\alph{subsubsection})} %Số thứ tự của subsubsection là a), b)
+%
+%\titleformat{\section}[runin]{\bfseries}{\thesection}{1em}{} %Cho phép chữ đi ngay sau tiêu đề. Cái này không dùng ở đây.
+\titleformat{\section}[block]{\normalfont}{\thesection}{.5em}{ \bfseries }
+% Đặt cỡ chữ cho tiêu đề : \large: cớ lớn; \bfseries: là đậm
+%\titleformat{\section}[block]{\normalfont}{\thesection}{.5em}{\MakeUppercase}% Cài đặt form của section\bfseries. Makeuppercase là để chữ in hoa cho section
+\titlespacing{\section}{2em}{.5em}{.5em}%Khoảng cách section đến đầu dòng: thụt vào 2em = 1cm
+\titleformat{\subsection}[block]{\bfseries}{\thesubsection}{.5em}{}%Tương tự section\itshape
+\titlespacing{\subsection}{2em}{.5em}{.5em}
+%==============Hằng thêm vào
+\titleformat{\subsubsection}[block]{\bfseries}{\thesubsection}{.5em}{}%Tương tự section\itshape
+\titlespacing{\subsubsection}{2em}{.5em}{.5em}
+%=====================
+%Chú ý: \bfseries là chữ đậm, \itshape là chữ nghiêng.
+\titleformat{\subsubsection}[block]{\bfseries\itshape}{\thesubsubsection}{.5em}{}
+\titlespacing{\subsection}{2em}{.5em}{.5em}
+%
+
+%\usepackage[absolute]{textpos} 
+%\usepackage{cases}
+\usepackage{hyperref}		%Tạo liên kết từ mục lục tới các phần tương ứng
+\usepackage[mathscr]{eucal}%
+\usepackage[nottoc]{tocbibind}
+
+%\RequirePackage{refcount}[2006/02/12]
+%\usepackage{pstricks}
+
+\usepackage[utf8]{vietnam}
+%\documentclass[a4paper, 14pt]{report}
+%\usepackage[utf8]{vntex}
+%\input{macros}
+\usepackage{scalefnt}
+\usepackage[left=3.0 cm, right=2 cm, top=2.5 cm, bottom=2.5 cm]{geometry}%tạo lề của trangleft=3.5 cm, right=2.5 cm, top=2.5 cm, bottom=2.5 cm]
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{amsmath,amsthm,array}%
+\usepackage{slashbox}
+%==================
+% Fancy style
+%======================
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+%\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{}%\markright{\Roman{section}.\ #1}}
+
+\renewcommand{\headrulewidth}{0.4pt}%Tạo bề dày của các đường thẳng chia header, footer
+%\renewcommand{\footrulewidth}{0pt}
+\fancyhead{}
+\fancyfoot{}
+\fancyhead[RO,LE]{\normalsize\itshape{{\nouppercase{\rightmark}}}}
+\fancyhead[LO,RE]{\normalsize\itshape{{\nouppercase{\leftmark}}}}
+\fancyfoot[C]{{\normalsize{\thepage}}}
+%\fancyfoot[LO,LE]{\textbf{{\normalsize{Lý thuyết thông tin - Phạm Văn Cảnh, Phạm Thị Hằng, Lê Huy Dũng}}}}
+%=======Các Định lý, Định nghĩa, Bổ đề, Hệ quả =======
+
+ 
+%\newtheorem{vd}{Ví dụ}[section]
+\newtheorem{theo}{Định lý}[chapter]
+\newtheorem{lem}{Bổ đề}[chapter]%[section]
+\newtheorem{coro}{Hệ quả}[chapter]%[section]
+\theoremstyle{definition}
+\newtheorem{dn}{Định nghĩa}[chapter]%[section]
+\newtheorem{define}{Định nghĩa}[chapter]
+\floatstyle{ruled}
+\newfloat{algorithm}{htbp}{loa}
+\floatname{algorithm}{Thuật toán}
+
+\renewcommand{\thedn}{\arabic{chapter}.\arabic{dn}}%
+%\newenvironment{proof}[1][Chứng minh.]{\begin{trivlist}
+%\item[\hskip \labelsep {\bfseries#1}]}{\end{trivlist}}
+\newenvironment{vd}[1][Ví dụ.]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries#1}]}{\end{trivlist}}
+
+\newtheorem{example}{Ví dụ}[chapter]
+\newenvironment{remark}[1][Chú ý.]{\begin{trivlist}
+		\item[\hskip \labelsep {\bfseries#1}]}{\end{trivlist}}
+
+%Khoảng cách giữa các đoạn, cách dòng, giãn dòng
+\setlength{\baselineskip}{5truept} 
+%\renewcommand{\baselinestretch}{1.3}%Cách dòng 1.2
+\linespread{1.3}
+%\abovedisplayskip =6pt plus 6pt minus 9pt
+%\abovedisplayshortskip =0pt plus 6pt minus 9pt
+\belowdisplayskip =\abovedisplayskip
+\belowdisplayshortskip =\abovedisplayshortskip
+
+
+%\scalefont{1.4}
+%\fontsize{13pt}{20pt}\selectfont
+%\fontsize{13pt}{22pt}{\selectfont}
+%\parindent=0pt
+%=================Đánh số cho Chương, Mục, Định lí, Định nghĩa...==========
+%
+\renewcommand{\thetheo}{\arabic{chapter}.\arabic{theo}}%
+\renewcommand{\thecoro}{\arabic{chapter}.\arabic{coro}}%
+%\renewcommand{\thelemma}{\arabic{chapter}.\arabic{section}.\arabic{lemma}}%\arabic{section}.
+%\renewcommand{\theremark}{\arabic{chapter}.\arabic{section}.\arabic{remark}}%\arabic{section}.
+%\renewcommand{\theproposition}{\arabic{chapter}.\arabic{section}.\arabic{proposition}}%
+\renewcommand{\theequation}{\arabic{chapter}.\arabic{equation}}%.\arabic{section}.
+%\renewcommand{\thecorollary}{\arabic{chapter}.\arabic{section}.\arabic{corollary}}%
+%\renewcommand{\thenote}{\arabic{chapter}.\arabic{section}.\arabic{note}}%
+%\renewcommand{\theexample}{\arabic{chapter}.\arabic{section}.\arabic{example}}%
+%\renewcommand{\thedefine}{\arabic{chapter}.\arabic{section}.\arabic{define}}%
+%\renewcommand{\theproperty}{\arabic{chapter}.\arabic{section}.\arabic{property}}%
+%\renewcommand{\thehypothesis}{\arabic{chapter}.\arabic{section}.\arabic{hypothesis}}%
+%\renewcommand{\thefootnote}{\ensuremath{(\arabic{footnote})}}%
+%\renewcommand{\theproblem}{\arabic{problem}}%
+%\renewcommand{\thesubsubsection}{\alph{subsubsection}}%
+
+% .........Annotation.......
+% Math Screen Lettre
+\def\A{{\mathscr A}}
+\def\B{{\mathscr B}}
+\def\C{{\mathscr C}}
+\def\D{{\mathscr D}}
+\def\E{{\mathscr E}}
+\def\F{{\mathscr F}}
+\def\G{{\mathscr G}}
+\def\H{{\mathscr H}}
+\def\K{{\mathscr K}}
+\def\L{{\mathscr L}}
+\def\M{{\mathscr M}}
+\def\N{{\mathscr N}}
+\def\O{{\mathscr O}}
+\def\P{{\mathscr P}}
+\def\Q{{\mathscr Q}}
+\def\R{{\mathscr R}}
+\def\SS{{\mathscr S}}
+\def\T{{\mathscr T}}
+\def\U{{\mathscr U}}
+
+%Caligraph
+
+\def\cA{{\mathcal A}}
+\def\cB{{\mathcal B}}
+\def\cC{{\mathcal C}}
+\def\cD{{\mathcal D}}
+\def\cE{{\mathcal E}}
+\def\cF{{\mathcal F}}
+\def\cG{{\mathcal G}}
+\def\cH{{\mathcal H}}
+\def\cK{{\mathcal K}}
+\def\cL{{\mathcal L}}
+\def\cM{{\mathcal M}}
+\def\cN{{\mathcal N}}
+\def\cO{{\mathcal O}}
+\def\cP{{\mathcal P}}
+\def\cQ{{\mathcal Q}}
+\def\cR{{\mathcal R}}
+\def\cS{{\mathcal S}}
+\def\cT{{\mathcal T}}
+\def\cU{{\mathcal U}}
+\def\cX{{\mathcal X}}
+\def\cY{{\mathcal Y}}
+\def\cZ{{\mathcal Z}}
+% Bold type
+\def\one{{\mathbf 1}}
+\def\bA{{\mathbf A}}
+\def\bB{{\mathbf B}}
+\def\bC{{\mathbf C}}
+\def\bD{{\mathbf D}}
+\def\bE{{\mathbf E}}
+\def\bF{{\mathbf F}}
+\def\bG{{\mathbf G}}
+\def\bH{{\mathbf H}}
+\def\bI{{\mathbf I}}
+\def\bJ{{\mathbf J}}
+\def\bK{{\mathbf K}}
+\def\bL{{\mathbf L}}
+\def\bM{{\mathbf M}}
+\def\bN{{\mathbf N}}
+\def\bO{{\mathbf O}}
+\def\bP{{\mathbf P}}
+\def\bQ{{\mathbf Q}}
+\def\bR{{\mathbf R}}
+\def\bS{{\mathbf S}}
+\def\bT{{\mathbf T}}
+\def\bU{{\mathbf U}}
+\def\bV{{\mathbf V}}
+\def\bX{{\mathbf X}}
+\def\bY{{\mathbf Y}}
+\def\bZ{{\mathbf Z}}
+
+\def\ba{{\mathbf a}}
+\def\bb{{\mathbf b}}
+\def\bc{{\mathbf c}}
+\def\bbd{{\mathbf d}}
+\def\bbe{{\mathbf e}}
+\def\bbf{{\mathbf f}}
+\def\bbg{{\mathbf g}}
+\def\bbh{{\mathbf h}}
+\def\bbi{{\mathbf i}}
+\def\bbj{{\mathbf j}}
+\def\bbk{{\mathbf k}}
+\def\bbl{{\mathbf l}}
+\def\bbm{{\mathbf m}}
+\def\bbn{{\mathbf n}}
+\def\bbo{{\mathbf o}}
+\def\bbp{{\mathbf p}}
+\def\bbq{{\mathbf q}}
+\def\bbr{{\mathbf r}}
+\def\bbs{{\mathbf s}}
+\def\bbt{{\mathbf t}}
+\def\bbu{{\mathbf u}}
+\def\bbv{{\mathbf v}}
+\def\bbx{{\mathbf x}}
+\def\bby{{\mathbf y}}
+\def\bbw{{\mathbf w}}
+\def\bbz{{\mathbf z}}
+
+%=========Blackboard bold math alphabets========= 
+%=========[used for set notation]=========
+%
+\def\AA{{\mathbb A}}
+\def\BB{{\mathbb B}}
+\def\CC{{\mathbb C}}
+\def\EE{{\mathbb E}}
+\def\II{{\mathbb I}}
+\def\NN{{\mathbb N}}
+\def\OO{{\mathbb O}}
+\def\PP{{\mathbb P}}
+\def\QQ{{\mathbb Q}}
+\def\RR{{\mathbb R}}
+\def\WW{{\mathbb W}}
+\def\XX{{\mathbb X}}
+\def\YY{{\mathbb Y}}
+\def\ZZ{{\mathbb Z}}
+\def\sS{{\mathbb S}}
+
+%================DeclareMathOperator=========
+%=============================================
+%  Bỏ trang trắng ở trang chẵn
+%=============================================
+\makeatletter
+\def\cleardoublepage{\clearpage\if@twoside%
+    \ifodd\c@page\else
+    \vspace*{0cm}
+    \hfill
+    \begin{center}
+        \emph{Trang này được để trắng} 
+    \end{center}
+    \vspace{\fill}
+    \thispagestyle{empty}
+    \newpage
+    \if@twocolumn\hbox{}\newpage\fi\fi\fi
+}
+\makeatother
