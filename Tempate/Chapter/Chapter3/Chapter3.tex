@@ -244,13 +244,189 @@ Nhằm giải quyết vấn đề trên, nhóm tác giả đề xuất một hư
  		
  		Giả sử J$_{SC}$ có tập phủ đinh S' kích cỡ t, ta chọn tập A = ${{u_{i} | S_{i} \in S}}$. Qua bước phân tích, mọi đỉnh C đều là các đỉnh không bị lây nhiễm. Điều này dẫn tới mọi đỉnh trong X đều là các đỉnh không bị lây nhiễm. Bởi bước xây dựng này, ta có: | f$_{d}(I, \emptyset)$ | = N + M + N$^{q}$, | f$_{d}(I, A)$ | = N - k, do đó: 
  		\begin{center}
- 			h$_{d}$(A) = | f$_{d}(I, \emptyset)$ | - | f$_{d}(I, A)$ | = M + N$^{q}$ + k
+ 			h(A) = | f$_{d}(I, \emptyset)$ | - | f$_{d}(I, A)$ | = M + N$^{q}$ + k
  		\end{center}
  		
+ 		Trong trường hợp J$_{SC}$ không có tập phủ đỉnh kích thước t, nó có ít nhất một đỉnh v$_{j}$ bị lây nhiễm. Điều này dẫn tới việc mọi trong X đều bị lây nhiễm. Do đó, | f$_{d}$(I, A) | > N - k + N$_{q}$ dẫn tới h(A) = M  + k < 2N.
  		
- 		 
+ 		Lúc này giá trị của thuật toán có thể xấp xỉ bài toán LSE trong tỉ lệ n$^{1 - \varepsilon}$, ta chứng minh được rằng lời giải của bài toán SC có thể được tìm trong thời gian đa thức. Với bất kì biểu diễn J$_{SC}$ nào, ta xây dựng một biểu diễn J$_{LSE}$ theo cách xây dựng trên trong thời gian đa thức của m và n. 
  		
+ 		Trong trường hợp J$_{SC}$ có tập đỉnh phủ kích cỡ t, theo cách xây dựng của chúng tôi, lời giải tối ưu A$_{opt}$ của J$_{LSE}$ có h(A$_{opt}$) = k + M + N$_{q}$. Thuật toán xấp xỉ lời giải tối ưu với tỉ lệ n$^{1 - \varepsilon}$ (n = 2N + M + N$_{q}$ là số đỉnh của đồ thị đầu vào) do đó có thể tìm kiếm lời giải. 
  		
+ 			h(A(J$_{LSE}$)) $\geq$ $\dfrac{1}{n_{1 - \varepsilon}} h(A_{opt}) > \dfrac{1}{n^{1 - \varepsilon}}(M + N_{q} +k) = \dfrac{n^{\varepsilon}}{n}(M + N^{q} +k) > \dfrac{(M + N^{q} + k)^{\varepsilon}}{M + N^{q} + k}N^{q}$ 
+ 			\begin{center}
+ 				$> \dfrac{N^{q.\varepsilon}}{4N^{q}}N^{q} = \dfrac{1}{4}N^{q.\varepsilon}$. 
+ 			\end{center}
+ 		
+ 		Cho q đủ lớn để q > $\dfrac{ln(8N)}{\varepsilon.ln(N)}$, ta được: 
+ 		\begin{center}
+			$h(A(J_{LSE})) > 2N$.
+ 		\end{center}
+ 	
+ 		Nếu $J_{LSE}$ không có tập phủ đỉnh kích cỡ t, thì tập tối ưu $A_{opt}$ của $J_{LSE}$ có 
+ 		\begin{center}
+ 			$h(A(J_{LSE})) < 2N$.
+ 		\end{center}
+ 	
+ 		Điều này cho thấy $J_{LSE}$ có một tập phủ đỉnh kích cỡ t khi và chỉ khi $h(A(J_{LSE})) < 2N$. Do đó ta có thể dùng A để giải quyết bài toán SC trong thời gian đa thức, hay P = NP. Điều này mâu thuẫn với giả thiết P $\neq$ NP.
+ 		
+ 		\subsubsection{Thuật toán nhanh và hiệu quả để giới hạn sự lây nhiễm thông tin (Fast And Effective Limiting Epidemics – FLE).}
+ 		Trong phần này, chúng tôi thiết kế một thuật toán heuristics có độ phức tạp thấp và kết quả rất khả quan. Trước khi bắt đầu, chúng tôi có định nghĩa một vài kí hiệu sẽ được sử dụng trong quá trình đề xuất thuật toán:
+ 		
+ 		- t(u): vòng nhỏ nhất sao cho đỉnh u chuyển từ đỉnh không bị lây nhiễm sang đỉnh bị lây nhiễm.
+ 		
+ 		- $a_{in}(u) = \sum_{I_{t(u) - 1} \bigcap N_{in}(u)} w(u,v):$ tổng trọng số các cạnh vào từ các đỉnh vào hàng xóm đã bị lây nhiễm trước vòng t(u).
+ 		
+ 		- $\propto(u) = \sum_{v \in U^{d}_{i=t(u)+1}} I_{i} \bigcap N(u)$ w(u,v), i = t(u) + 1, ... , d: tổng trọng số các cạnh ra từ u tới các đỉnh bị lây nhiễm b tại vòng i.
+ 		
+		- $\beta(u): $ : số lượng các đỉnh ra, sao cho chúng chuyển từ bị lây nhiễm thành không bị lây nhiễm sau khi loại bỏ đỉnh u ra khỏi đồ thị.
+		
+		Một cách trực quan, số lượng gia tăng các đỉnh được cứu $\delta(A, u)$ có thể xấp xỉ theo $\beta(u)$. Bên cạnh đó, để tăng cường tính hiệu quả của thuật toán đề xuất, chúng tôi kết hợp $\propto(u) và \beta(u)$ để tính toán khả năng lan truyền tin sai lệch của đỉnh u. Ý tưởng chính của thuật toán là chọn ra các đỉnh một cách lần lượt theo đánh giá của hai hàm $\propto và \beta$. Ban đầu, chúng tôi khởi tạo tập đỉnh được chọn A=$\emptyset$ và đặt tập các đỉnh được xét chọn U bằng với $V_{d}$. Trong mỗi bước, chúng tôi chọn ra đỉnh có trị số $\beta(u)$ lớn nhất trong đồ thị còn lại. Trường hợp tất cả các đỉnh đều có giá trị $\beta(u)$ là 0, chúng tôi chọn đỉnh có giá trị $\propto(u)$ cực đại. Thuật toán được mô tả ở hình \ref{refthuattoan1} sau.
+		\begin{center}
+			\begin{figure}[htp]
+				\begin{center}
+					\includegraphics [scale=.65]{picture/thuattoan1}
+				\end{center}
+				\caption{Thuật toán nhanh và hiệu quả để giới hạn sự lây nhiễm thông tin}
+				\label{refthuattoan1}
+			\end{figure}
+		\end{center}
+	
+		Khó khăn trong thuật toán chủ yếu đến từ bước tính toán các hàm $\propto và \beta$. Để giải quyết việc này, chúng tôi bắt đầu với ý tưởng tìm kiếm theo chiều rộng (Breath First Search - BFS) để tính toán $f_{d}(I)$ và dần dần cập nhật hàm $\propto_{in}()$. Sau đó, chúng tôi sử dụng nó để tính toán các hàm  $\propto và \beta$ theo định nghĩa của chúng. Thuật toán chi tiết được thể hiện trong hình \ref{refthuattoan2}
+		\begin{center}
+			\begin{figure}[htp]
+				\begin{center}
+					\includegraphics [scale=.5]{picture/thuattoan2}
+				\end{center}
+				\caption{Thuật toán tính $\propto() và \beta()$ có độ phức tạp $O(k(m_{d} + n_{d}))$}.
+				\label{refthuattoan2}
+			\end{figure}
+		\end{center}
+	
+		{\itshape Chứng minh}: Để đánh giá độ phức tạp của thuật toán này, chúng ta cần đánh giá trước độ phức tạp của thuật toán. Ta dễ thấy rằng việc tính  toán $f_{d}(I)$ (dòng 5 - 19) có cách thức hoạt đông giống BFS. Do đó, độ phức tạp của nó là O($m_{d} và n_{d}$). Với bước tính toán $\propto(u) và \beta(u)$ (dòng 21 - 31), ta cần thăm tất cả các đỉnh trong $f_{d}(I)$ và tập các cạnh ra liền kề, do đó độ phức tạp của nó là O($m_{d} và n_{d}$). Do đó, độ phức tạp chung của thuật toán là O($m_{d} và n_{d}$). 
+	\subsection{Giải pháp hạn chế Targeted Misinformation Blocking (Xác định và ngăn chặn thông tin sai lệch trên mạng xã hội)}
+	Với cách tiếp cận như cách Twitter đã làm năm 2016 là loại bỏ 125.000 tài khoản được nghi ngờ có liên quan đến các hoạt động khủng bố, hay như Facebook đã xóa 30.000 tài khoản giả mạo lan truyền các tin đồn trước cuộc bầu cử tổng thống Pháp năm 2017, giải pháp hạn chế Targeted Misinformation Blocking được đưa ra nhằm mục đích tìm những tài khoản cần loại bỏ khỏi mạng để làm hạn chế phát tán thông tin sai lệch.
+	
+		\subsubsection{Định nghĩa bài toán}
+		Kí hiệu G=(V,E,w) là một đồ thị có hướng biểu diễn cho một mạng xã hội trên mô hình LT với V biểu diễn tập người dùng, E biểu diễn mối quan hệ giữa các cặp người người dùng, w là tập trọng số của các cạnh biểu diễn tần số tương tác giữa các người dùng. Gọi $N_{out}(v) và N_{in}(v)$ lần lượt là tập đỉnh đi ra từ v và đi vào v. Mỗi cạnh có hướng (u,v) $\in$ E được gán một trọng số w(u,v) $\in$ [0,1] đảm bảo $\sum_{u \in N_{out}(v)} \leq 1$.
+		
+		Đưa ra một tập nguồn S = {$s_{1}, s_{2}, ... , s_{n}$}, $s_{i} \in V$ là tập tiềm năng phát tán thông tin sai lệch (tương tự như tập hạt giống trong bài IM \cite{kempe21}).
+		
+		Trong mô hình LT, mỗi đỉnh v $\in$ V, có hai trạng thái active và inactive. Quá trình lan truyền trên mô hình LT được diễn tả như sau: Đầu tiên, mỗi đỉnh v được gán một trọng số ngẫu nhiên $\theta_{v} \in [0,1]$ thể hiện giá trị active của đỉnh kề u phải đạt được để có thể active v. Tiếp đến quá trình lan truyền diễn ra trong các vòng t = 1,2,3… như sau: 		
+		
+		- Ở vòng 1, tất cả các đỉnh $s_{i} \in S$ ở trạng thái active và các đỉnh còn lại ở trạng thái inactive.
+		
+		- Ở vòng t $\geq$ 1, một đỉnh v ở trạng thái inactive được active nếu thỏa mãn điều kiện $\sum_{u \in N_{in}(v), v là active} w(u,v) \geq \theta_{v}$.
+		
+		- Khi một đỉnh ở trạng thái active thì sẽ luôn duy trì trạng thái đó trong suốt quá trình lan truyền thông tin. Quá trình lan truyền kết thúc khi không có đỉnh nào được active thêm.	
+		
+		Kí hiệu $\sigma_{S}(G)$ là ảnh hưởng lan truyền của tập S trên đồ thị G dưới mô hình LT hay là số lượng đỉnh được active bởi nguồn S. Theo nghiên cứu của Kempe và các cộng sự đã chỉ ra rằng mô hình LT là tương đương với khả năng tiếp cận trong một đồ thị ngẫu nhiên g hay còn gọi là đồ thị live-edge (đồ thị mẫu). Đồ thị live-edge được xây dựng như sau:
+		
+		- Với mỗi v $\in$ V, chọn tối đa một cạnh đi vào nó một cách ngẫu nhiên, xác suất (u, v) được chọn là w(u, v).
+		
+		- Xác suất không có cạnh nào được chọn là 1 - $\sum_{u \in N_{in}(v)} w(u,v)$.
+		
+		Cạnh được chọn gọi là cạnh sống (live-edge) và tất cả các cạnh khác gọi là cạnh bị chặn (blocked-edge). Chúng ta có :
+		\begin{center}
+			 $\sigma_{S}(G) = \sum_{g \in G*} Pr[g]R(g, S)$			
+		\end{center} 
+	
+		Trong đó G* là tập tất cả các đồ thị sinh ra bởi G theo mô hình live-edge với xác suất Pr[g] và R(g, S) là tập có thể đi đến từ S trong g.
+		
+		Ảnh hưởng lan truyền của nguồn S khi xóa bỏ các đỉnh trong tâp A trên đồ thị G[V$\backslash$A] kí hiệu là $\sigma_{S}(G \backslash A)$.
+		
+		Phát biểu bài toán (Bài toán TMB): Gọi G(V,E,w) là một đồ thị có hướng biểu diễn một mạng xã hội. Đưa ra một tập nguồn S = {$s_{1}, s_{2}, ... , s_{k}$}, S $\in$ V là tập tiềm năng phát tán thông tin sai lệch và một số nguyên $\gamma \leq | V |$ thể hiện cho số lượng người dùng chúng ta muốn đảm bảo thông tin sai lệch không lan truyền đến được họ.
+		
+		Yêu cầu : Tìm tập đỉnh A $\in V \backslash S$ có ít đỉnh nhất sao cho khi xóa các đỉnh trong tập A khỏi đồ thị G thì đảm bảo hàm mục tiêu h(A) = $\sigma_{S}(G) - \sigma_{S}(G \backslash A) \geq \gamma$, tức là đảm bảo ít nhất $\gamma$ người không tiếp xúc thông tin sai lệch.
+		
+		\subsubsection{Thuật toán đề xuât}
+		{\itshape Thuật toán tham lam (Greedy algorithm)}
+		Trong phần này chúng tôi giới thiệu một thuật toán xấp xỉ đảm bảo tỉ lệ 1 + ln($\gamma / \varepsilon$) dựa vào tính chất submodular và tính đơn điệu của hàm h(A).
+		\begin{center}
+			\includegraphics[scale=.85]{picture/thamlam}
+			
+			Thuật toán tham lam Greedy.
+		\end{center}
+ 		
+		{\itshape Thuật toán TMB (TMB algorithm)}
+		Thuật toán tham lam đưa ra một lời giải tốt xong lại không đảm bảo yêu cầu về thời gian với dữ liệu lớn do đó trong phần này chúng tôi đưa ra một giải pháp đảm bảo yêu cầu cả về độ tốt cũng như thời gian tính toán. Dưới đây là các bước chính trong thuật toán chúng tôi đề xuất:
+		
+		- Đầu tiên sáp nhập các đỉnh trong tập nguồn S thành một nút I bằng cách áp dụng thuật toán 2 được đề xuất bởi Zhang \cite{zhang39}. Chúng ta thu được một đồ thị mới và nguồn phát tán thông tin sai lệch bây giờ chỉ là một đỉnh I duy nhất.
+		\begin{center}
+			\includegraphics[scale=.5]{picture/HopNhat}
+			
+			Thuật toán hợp nhất nguồn
+		\end{center}
+		
+		- Tiếp đến chúng tôi tạo ra $\mu(\mu \in N*)$ đô thị mẫu g từ G bằng cách: mỗi đỉnh v $\in$ V chọn nhiều nhất một đỉnh kề đi đến nó môt cách ngẫu nhiên sao cho xác suất chọn cạnh (u, v) là w(u, v) và xác suất không chọn cạnh nào là 1 - $\sum_{u} w(u, v)$. Những cạnh được chọn được gọi là cạnh sống  (live - edge) và tất cả các cạnh còn lại được gọi là cạnh bị chặn (blocked-edge). Chi tiết cách lấy đồ thị mẫu được mô tả như sau:
+		\begin{center}
+			\includegraphics[scale=.5]{picture/LT}
+			
+			Thuật toán lấy đồ thị mẫu theo mô hình LT
+		\end{center}
+	
+		- Trên cây T$_{i}$, ảnh hưởng địa phương của nút v là số nút con của cây gốc v kể cả v trên cây T$_{i}$. Áp dụng thuật toán DFS dễ dàng tìm được số nút con của v. Ảnh hưởng giảm của nguồn S khi loại đỉnh u khỏi G bằng lượng ảnh hưởng giảm trung bình khi loại u trên tất cả các cây T$_{i}$. Sau đó áp dụng phương pháp Lazy forward của Leskovec \cite{krause} để tìm kiếm lời giải. Chi tiết cách làm được mô tả trong thuật toán dưới đây.
+		
+		\begin{center}
+			\includegraphics[scale=.5]{picture/STMB}
+			
+			Thuật toán xác định và ngăn chặn thông tin sai lệch STMB
+		\end{center}
+	
+		{\itshape Độ phức tạp của thuật toán: }
+		
+		Để đánh giá độ phức tạp của thuật toán trước tiên chúng ta đi phân tích độ phức tạp của các thuật toán con trong nó.
+		
+		- Thuật toán Merge source node có độ phức tạp là O(k + | N$_{in}(S)$ |).
+		
+		- Quá trình tạo ra $\mu$ đồ thị mẫu dòng 3 có độ phức tạp O($\mu(m + n)$).
+		
+		- Do T$_{l}$ là một cây tính toán r(T$_{l}$, u) $\forall u \in T_{l} trong O(\mu n)$ 
+		
+		- Phần Lazy Forward có độ phức tạp là O(qmn) với q là số vòng lặp từ dòng 10 đến 23.
+		
+		Vậy nên toàn bộ thuật toán TMB có độ phức tạp là O($\mu$(m+qn)).
+	
+	\subsection{ Áp dụng các giải pháp đề xuất trên dữ liệu thực}
+	Trong phần này nhóm tác giả đưa ra kết quả thực nghiệm của giải hai giải pháp chỉ ra trong mục trước trên dữ liệu có sẵn và dữ liệu thu thập được, từ đó để thấy được hiệu quả của phương pháp nhóm đề xuất.
+		
+		\subsubsection{Giải pháp Limiting the spread of epidemics within time constraint on online social network}
+		{\itshape - Dữ liệu có sẵn}
+		
+		Trong phần này, chúng tôi thực nghiệm trên một số MXH trực tuyến để kiểm chứng tính hiệu quả của thuật toán khi so sánh nó với các thuật toán cơ sở được sử dụng trong các bài toán lan truyền thông tin \cite{nguyen30}, \cite{kempe21}, \cite{zhang40}. Chúng tôi so sánh đánh gia trên ba yêu tố chính: chất lượng lời giải, tính mở rộng, tác động của số vòng lan truyền d trên một vài các MXH trực tuyến thực tiễn. Các thuật toán cơ sở sẽ sử dụng bao gồm:
+		
+		- Random: Thuật toán chọn ngẫu nhiên k đỉnh trong N$_{d}(S)$.
+		
+		- Maxdegree (Maxdeg): Thuật toán heuristic chọn lần lượt các đỉnh có bậc cao nhất trong tập V$_{d}$ cho đến khi đủ k đỉnh.
+		
+		- Greedy: Thuật toán heuristic chọn lần lượt k đỉnh, trong mỗi lần chọn sẽ chọn ra đỉnh sao cho khi loại bỏ đỉnh đó sẽ cứu được nhiều đỉnh nhất có thể.
+		
+		Chúng tôi thực nghiệm sử dụng một hệ thống máy có cấu hình sau: Intel(R) Core(TM) i5-6200U CPU @ 2.30 GHz (up to 2.40 GHz), bộ nhớ RAM 4GB, ngôn ngữ lập trình C++.
+		
+		{\itshape - Dữ liêu:}
+		
+		 Chúng tôi thực nghiệm thuật toán trên nhiều bộ dữ liệu thực tế khác nhau. Bên cạnh việc lựa chọn các bộ dữ liệu để đảm bảo sự đa dạng về kích thước, chúng tôi cũng lựa chọn nhiều miền dữ liệu khác nhau, bảng ... thể hiện các bộ dữ liệu nhóm tác giả sử dụng.
+		\begin{table}
+			\centering
+			\begin{tabular}{|c|c|c|c|c|}
+				\hline 
+				Mạng & Số đỉnh & Số cạnh & Loại & Bậc trung bình \\ 
+				\hline 
+				Gnutella & 6,301 & 20,777 & Có hướng & 3.29 \\ 
+				\hline 
+				Wikipedia vote & 7,115 & 103,689 & Có hướng & 14.57 \\ 
+				\hline 
+				Amazon & 262,111 & 1,234,877 & Có hướng & 4.71 \\ 
+				\hline 
+				Google web & 875,713 & 5,105,039 & Có hướng & 5.83 \\ 
+				\hline 
+			\end{tabular} 
+			\caption{Các bộ dữ liệu}
+		\end{table}
+		
+		{\itshape Các thiết lập} Chúng tôi sử dụng các thiết lập dưới đây cho việc đánh giá thực nghiệm:
+		
+		- Trọng số của cạnh: w(u,v) = 
 
 
 

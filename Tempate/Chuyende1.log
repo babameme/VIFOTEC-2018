@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.6.24)  27 JUN 2018 00:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.6.24)  29 JUN 2018 00:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -9,10 +9,14 @@ Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 \@input{MyTemplate.aux}
 \openout2 = `MyTemplate.aux'.
 
-(./MyTemplate.tex (c:/texlive/2018/texmf-dist/tex/latex/base/book.cls
-Document Class: book 2014/09/29 v1.4h Standard LaTeX document class
-(c:/texlive/2018/texmf-dist/tex/latex/base/bk10.clo
-File: bk10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+(./MyTemplate.tex (./mybook.cls
+
+LaTeX Warning: You have requested document class `mybook',
+               but the document class provides `book'.
+
+Document Class: book 1995/12/20 v1.3q Standard LaTeX document class
+(./bk14.clo
+File: bk14.clo 1997/07/06 v0.1 Nonstandard LaTeX file (size option)
 )
 \c@part=\count80
 \c@chapter=\count81
@@ -26,8 +30,7 @@ File: bk10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-)
-(c:/texlive/2018/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+) (c:/texlive/2018/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 
 (c:/texlive/2018/texmf-dist/tex/generic/xkeyval/xkeyval.tex
@@ -504,44 +507,36 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 \Gin@req@height=\dimen131
 \Gin@req@width=\dimen132
 )
-(c:/texlive/2018/texmf-dist/tex/latex/wrapfig/wrapfig.sty
-\wrapoverhang=\dimen133
-\WF@size=\dimen134
-\c@WF@wrappedlines=\count123
-\WF@box=\box32
-\WF@everypar=\toks30
-Package: wrapfig 2003/01/31  v 3.6
-)
 (c:/texlive/2018/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2017/10/31 v2.20.4
-\thm@style=\toks31
-\thm@bodyfont=\toks32
-\thm@headfont=\toks33
-\thm@notefont=\toks34
-\thm@headpunct=\toks35
+\thm@style=\toks30
+\thm@bodyfont=\toks31
+\thm@headfont=\toks32
+\thm@notefont=\toks33
+\thm@headpunct=\toks34
 \thm@preskip=\skip54
 \thm@postskip=\skip55
 \thm@headsep=\skip56
-\dth@everypar=\toks36
+\dth@everypar=\toks35
 )
 (c:/texlive/2018/texmf-dist/tex/latex/tools/array.sty
 Package: array 2018/04/07 v2.4g Tabular extension package (FMi)
-\col@sep=\dimen135
-\ar@mcellbox=\box33
-\extrarowheight=\dimen136
-\NC@list=\toks37
+\col@sep=\dimen133
+\ar@mcellbox=\box32
+\extrarowheight=\dimen134
+\NC@list=\toks36
 \extratabsurround=\skip57
 \backup@length=\skip58
-\ar@cellbox=\box34
+\ar@cellbox=\box33
 ) (./slashbox.sty
 slashbox style by K.Yasuoka, May 1993.
-\@slashboxa=\box35
-\@slashboxb=\box36
-\@slashboxc=\box37
-\@slashboxwd=\count124
-\@slashboxht=\count125
-\@slashsepl=\dimen137
-\@slashsepr=\dimen138
+\@slashboxa=\box34
+\@slashboxb=\box35
+\@slashboxc=\box36
+\@slashboxwd=\count123
+\@slashboxht=\count124
+\@slashsepl=\dimen135
+\@slashsepr=\dimen136
 ) (c:/texlive/2018/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
 s
@@ -557,28 +552,24 @@ s
 )
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 81.
+less on input line 80.
 
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 82.
+less on input line 81.
 
-\c@theo=\count126
-\c@lem=\count127
-\c@coro=\count128
-\c@dn=\count129
-\c@define=\count130
-\c@example=\count131
+\c@theo=\count125
+\c@lem=\count126
+\c@coro=\count127
+\c@dn=\count128
+\c@define=\count129
+\c@example=\count130
 )
 \@indexfile=\write3
 \openout3 = `Chuyende1.idx'.
 
 
 Writing index file Chuyende1.idx
-
-LaTeX Warning: Unused global option(s):
-    [14pt].
-
 (./Chuyende1.aux (./Chapter/Chapter1/Chapter1.aux)
 (./Chapter/Chapter2/Chapter2.aux) (./Chapter/Chapter3/Chapter3.aux)
 (./TLTK/TLTK.aux
@@ -608,7 +599,7 @@ LaTeX Font Info:    Try loading font information for T5+ptm on input line 8.
  (c:/texlive/2018/texmf-dist/tex/latex/vntex/t5ptm.fd
 File: t5utm.fd 2005/08/24 Fontinst v1.929 font definitions for T5/ptm.
 )
-\AtBeginShipoutBox=\box38
+\AtBeginShipoutBox=\box37
 Package hyperref Info: Link coloring OFF on input line 8.
 
 (c:/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
@@ -617,7 +608,7 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (c:/texlive/2018/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count132
+\c@section@level=\count131
 )
 LaTeX Info: Redefining \ref on input line 8.
 LaTeX Info: Redefining \pageref on input line 8.
@@ -644,15 +635,15 @@ LaTeX Info: Redefining \nameref on input line 8.
 * \textheight=702.78308pt
 * \oddsidemargin=13.08827pt
 * \evensidemargin=13.08827pt
-* \topmargin=-31.2056pt
-* \headheight=12.0pt
-* \headsep=18.06749pt
-* \topskip=10.0pt
-* \footskip=25.29494pt
-* \marginparwidth=61.0pt
+* \topmargin=-36.59592pt
+* \headheight=14.5pt
+* \headsep=20.95781pt
+* \topskip=14.5pt
+* \footskip=36.0pt
+* \marginparwidth=38.0pt
 * \marginparsep=7.0pt
 * \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=13.5pt plus 5.0pt minus 3.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -664,17 +655,17 @@ LaTeX Info: Redefining \nameref on input line 8.
 
 (c:/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count133
-\scratchdimen=\dimen139
-\scratchbox=\box39
-\nofMPsegments=\count134
-\nofMParguments=\count135
-\everyMPshowfont=\toks38
-\MPscratchCnt=\count136
-\MPscratchDim=\dimen140
-\MPnumerator=\count137
-\makeMPintoPDFobject=\count138
-\everyMPtoPDFconversion=\toks39
+\scratchcounter=\count132
+\scratchdimen=\dimen137
+\scratchbox=\box38
+\nofMPsegments=\count133
+\nofMParguments=\count134
+\everyMPshowfont=\toks37
+\MPscratchCnt=\count135
+\MPscratchDim=\dimen138
+\MPnumerator=\count136
+\makeMPintoPDFobject=\count137
+\everyMPtoPDFconversion=\toks38
 ) (c:/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -692,26 +683,38 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Font shape `T5/ptm/bx/n' in size <24.88> not available
+LaTeX Font Info:    Font shape `T5/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `T5/ptm/b/n' tried instead on input line 13.
 
-(./Chuyende1.toc
-LaTeX Font Info:    Font shape `T5/ptm/bx/n' in size <10> not available
-(Font)              Font shape `T5/ptm/b/n' tried instead on input line 1.
-)
+(./Chuyende1.toc [1
+
+
+
+
+{c:/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
 \tf@toc=\write5
 \openout5 = `Chuyende1.toc'.
 
- [1
 
 
+Package Fancyhdr Warning: \headheight is too small (14.5pt): 
+ Make it at least 18.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
 
-
-{c:/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+[2]
 \openout2 = `Chapter/Chapter1/Chapter1.aux'.
 
  (./Chapter/Chapter1/Chapter1.tex
 Ch\uhorn \ohorn ng 1.
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\uhorn' on input line 1.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ohorn' on input line 1.
+
 
 Package hyperref Warning: Composite letter `\textacute+\OHORN'
 (hyperref)                not defined in PD1 encoding,
@@ -771,8 +774,6 @@ Package hyperref Warning: Composite letter `\textdotbelow+\ECIRCUMFLEX'
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\ECIRCUMFLEX' on input line 1.
 
-LaTeX Font Info:    Font shape `T5/ptm/bx/n' in size <20.74> not available
-(Font)              Font shape `T5/ptm/b/n' tried instead on input line 1.
 
 Package hyperref Warning: Composite letter `\textacute+\ohorn'
 (hyperref)                not defined in PD1 encoding,
@@ -814,6 +815,17 @@ Package hyperref Warning: Composite letter `\textdotbelow+\ocircumflex'
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\ocircumflex' on input line 3.
 
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.13 	\subsection{ƒê·∫∑c ƒëi·ªÉm c·ªßa x√£ h√¥i}
+                                                 [1
+
+
+
+
+]
 
 Package hyperref Warning: Composite letter `\textdotbelow+\abreve'
 (hyperref)                not defined in PD1 encoding,
@@ -839,19 +851,8 @@ Package hyperref Warning: Glyph not defined in PD1 encoding,
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\h' on input line 13.
 
-LaTeX Font Info:    Font shape `T5/ptm/bx/it' in size <10> not available
+LaTeX Font Info:    Font shape `T5/ptm/bx/it' in size <14.4> not available
 (Font)              Font shape `T5/ptm/b/it' tried instead on input line 15.
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.17 		\subsubsection{T√≠nh ƒëa ph∆∞∆°ng ti·ªán}
-                                                 [1
-
-
-
-
-]
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ohorn'
 (hyperref)                not defined in PD1 encoding,
@@ -880,12 +881,17 @@ Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\ocircumflex' on input line 23.
 
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.55003pt.
+Package Fancyhdr Warning: \headheight is too small (18.0pt): 
+ Make it at least 37.72804pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[2]
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.25 ...ªëi b·∫°n b√®, gia ƒë√¨nh, c·ªông ƒë·ªìng}
+                                                   [2] [3] [4] [5]
 
 Package hyperref Warning: Composite letter `\textdotbelow+\uhorn'
 (hyperref)                not defined in PD1 encoding,
@@ -927,7 +933,6 @@ Package hyperref Warning: Composite letter `\textdotbelow+\ocircumflex'
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\ocircumflex' on input line 42.
 
-[3]
 
 Package hyperref Warning: Composite letter `\textdotbelow+i'
 (hyperref)                not defined in PD1 encoding,
@@ -956,7 +961,7 @@ Package hyperref Warning: Composite letter `\textacute+\acircumflex'
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\acircumflex' on input line 44.
 
-[4]
+[6] [7] [8]
 
 Package hyperref Warning: Composite letter `\textdotbelow+\uhorn'
 (hyperref)                not defined in PD1 encoding,
@@ -1007,7 +1012,7 @@ Package hyperref Warning: Composite letter `\textdotbelow+\ocircumflex'
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\ocircumflex' on input line 69.
 
-[5]
+[9] [10]
 
 Package hyperref Warning: Composite letter `\textacute+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
@@ -1034,11 +1039,19 @@ Package hyperref Warning: Glyph not defined in PD1 encoding,
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\ohorn' on input line 90.
 
-[6]) [7]
+[11]) [12]
 \openout2 = `Chapter/Chapter2/Chapter2.aux'.
 
  (./Chapter/Chapter2/Chapter2.tex
 Ch\uhorn \ohorn ng 2.
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\uhorn' on input line 1.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ohorn' on input line 1.
+
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\OHORN' on input line 1.
@@ -1070,6 +1083,11 @@ Package hyperref Warning: Composite letter `\textdotbelow+\ECIRCUMFLEX'
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\ECIRCUMFLEX' on input line 1.
 
+[13
+
+
+
+]
 
 Package hyperref Warning: Composite letter `\textasciigrave+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
@@ -1079,11 +1097,7 @@ Package hyperref Warning: Composite letter `\textasciigrave+\ecircumflex'
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\ecircumflex' on input line 9.
 
-[8
-
-
-
-]
+[14]
 
 Package hyperref Warning: Composite letter `\textasciigrave+\acircumflex'
 (hyperref)                not defined in PD1 encoding,
@@ -1115,8 +1129,8 @@ Package hyperref Warning: Composite letter `\textdotbelow+\acircumflex'
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\acircumflex' on input line 29.
 
-[9]
-<picture/Hinh2_1.png, id=205, 373.395pt x 365.86688pt>
+[15]
+<picture/Hinh2_1.png, id=247, 373.395pt x 365.86688pt>
 File: picture/Hinh2_1.png Graphic file (type png)
 <use picture/Hinh2_1.png>
 Package pdftex.def Info: picture/Hinh2_1.png  used on input line 48.
@@ -1144,13 +1158,13 @@ Package hyperref Warning: Composite letter `\textacute+\ecircumflex'
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\ecircumflex' on input line 58.
 
-[10 <./picture/Hinh2_1.png>]
-<picture/Hinh2_2.png, id=213, 430.60875pt x 160.34906pt>
+[16] [17 <./picture/Hinh2_1.png>]
+<picture/Hinh2_2.png, id=261, 430.60875pt x 160.34906pt>
 File: picture/Hinh2_2.png Graphic file (type png)
 <use picture/Hinh2_2.png>
 Package pdftex.def Info: picture/Hinh2_2.png  used on input line 80.
 (pdftex.def)             Requested size: 322.95575pt x 120.26149pt.
-
+ [18 <./picture/Hinh2_2.png>]
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ocircumflex'
 (hyperref)                not defined in PD1 encoding,
@@ -1237,11 +1251,19 @@ Package hyperref Warning: Composite letter `\textdotbelow+\ocircumflex'
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\ocircumflex' on input line 88.
 
-[11 <./picture/Hinh2_2.png>]) [12]
+[19]) [20]
 \openout2 = `Chapter/Chapter3/Chapter3.aux'.
 
  (./Chapter/Chapter3/Chapter3.tex
 Ch\uhorn \ohorn ng 3.
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\uhorn' on input line 1.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ohorn' on input line 1.
+
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\h' on input line 1.
@@ -1342,11 +1364,11 @@ Package hyperref Warning: Composite letter `\texttilde+\i'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\texttilde' on input line 3.
 
-[13
+[21
 
 
 
-]
+] [22]
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\h' on input line 24.
@@ -1376,6 +1398,7 @@ Package hyperref Warning: Glyph not defined in PD1 encoding,
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\h' on input line 24.
 
+[23]
 
 Package hyperref Warning: Composite letter `\textdotbelow+u'
 (hyperref)                not defined in PD1 encoding,
@@ -1397,7 +1420,7 @@ Package hyperref Warning: Glyph not defined in PD1 encoding,
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\uhorn' on input line 30.
 
-[14] [15]
+[24] [25]
 
 Package hyperref Warning: Composite letter `\texttilde+\i'
 (hyperref)                not defined in PD1 encoding,
@@ -1439,13 +1462,31 @@ Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\ecircumflex' on input line 47.
 
-<picture/Hinh3_1.png, id=275, 455.45157pt x 170.13562pt>
+<picture/Hinh3_1.png, id=335, 455.45157pt x 170.13562pt>
 File: picture/Hinh3_1.png Graphic file (type png)
 <use picture/Hinh3_1.png>
 Package pdftex.def Info: picture/Hinh3_1.png  used on input line 51.
 (pdftex.def)             Requested size: 227.72522pt x 85.0676pt.
-[16 <./picture/Hinh3_1.png>] [17]
-<picture/Hinh3_2.png, id=292, 432.11438pt x 301.8778pt>
+[26 <./picture/Hinh3_1.png>]
+Overfull \hbox (0.9916pt too wide) in paragraph at lines 71--72
+[]\T5/ptm/m/n/14.4 + https://www.facebook.com/ThaiDung2016: Gioan Th°i V´n Dung
+ l† sinh
+ []
+
+
+Overfull \hbox (3.1804pt too wide) in paragraph at lines 73--74
+[]\T5/ptm/m/n/14.4 + https://www.facebook.com/pham.doan.trang: Nh† b°o Ph§m ^^^
+oan Trang,
+ []
+
+[27]
+Overfull \hbox (29.23004pt too wide) in paragraph at lines 77--78
+[]\T5/ptm/m/n/14.4 + https://www.facebook.com/profile.php?id=100015485029386: N
+guyπn TrÂng
+ []
+
+[28] [29]
+<picture/Hinh3_2.png, id=361, 432.11438pt x 301.8778pt>
 File: picture/Hinh3_2.png Graphic file (type png)
 <use picture/Hinh3_2.png>
 Package pdftex.def Info: picture/Hinh3_2.png  used on input line 155.
@@ -1553,7 +1594,14 @@ Package hyperref Warning: Composite letter `\textdotbelow+\ocircumflex'
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\ocircumflex' on input line 161.
 
-[18 <./picture/Hinh3_2.png>]
+[30 <./picture/Hinh3_2.png>] [31]
+Overfull \hbox (2.42146pt too wide) in paragraph at lines 172--173
+\T5/ptm/m/n/14.4 tu¶n t¸ theo t¯ng b˜Óc thÌi gian rÌi r§c (c·n gÂi l† $\OT1/cmr
+/m/n/14.4 \$\T5/ptm/m/n/14.4 v·ng$\OT1/cmr/m/n/14.4 "$\T5/ptm/m/n/14.4 , $\OT1/
+cmr/m/n/14.4 \$\T5/ptm/m/n/14.4 b˜Óc$\OT1/cmr/m/n/14.4 "$\T5/ptm/m/n/14.4 ) t=0
+,1,2,...,d.
+ []
+
 
 LaTeX Warning: Command \' invalid in math mode on input line 176.
 
@@ -1575,12 +1623,13 @@ LaTeX Warning: Command \` invalid in math mode on input line 176.
 
 LaTeX Warning: Command \h invalid in math mode on input line 176.
 
-Missing character: There is no ° in font cmr10!
-Missing character: There is no ø in font cmr10!
-Missing character: There is no † in font cmr10!
-Missing character: There is no ¶ in font cmr10!
-Missing character: There is no ∑ in font cmr10!
-Missing character: There is no ı in font cmr10!
+Missing character: There is no ° in font cmr12!
+Missing character: There is no ø in font cmr12!
+Missing character: There is no † in font cmr12!
+Missing character: There is no ¶ in font cmr12!
+Missing character: There is no ∑ in font cmr12!
+Missing character: There is no ı in font cmr12!
+[32]
 
 LaTeX Warning: Command \textquotedblright invalid in math mode on input line 18
 3.
@@ -1601,8 +1650,8 @@ LaTeX Warning: Command \textquotedblright invalid in math mode on input line 18
 LaTeX Warning: Command \textquotedblright invalid in math mode on input line 18
 3.
 
-[19]
-<picture/Hinh3_3.png, id=309, 430.60875pt x 222.8325pt>
+[33] [34]
+<picture/Hinh3_3.png, id=390, 430.60875pt x 222.8325pt>
 File: picture/Hinh3_3.png Graphic file (type png)
 <use picture/Hinh3_3.png>
 Package pdftex.def Info: picture/Hinh3_3.png  used on input line 215.
@@ -1641,21 +1690,237 @@ LaTeX Warning: Command \^ invalid in math mode on input line 224.
 
 LaTeX Warning: Command \~ invalid in math mode on input line 224.
 
-Missing character: There is no ° in font cmr7!
-Missing character: There is no ø in font cmr7!
-Missing character: There is no † in font cmr7!
-Missing character: There is no ‚ in font cmr7!
-Missing character: There is no Ó in font cmr7!
-Missing character: There is no ¢ in font cmr7!
-Missing character: There is no ‡ in font cmr7!
-Missing character: There is no • in font cmr7!
-Missing character: There is no π in font cmr7!
-[20]
+Missing character: There is no ° in font cmr10!
+Missing character: There is no ø in font cmr10!
+Missing character: There is no † in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ó in font cmr10!
+Missing character: There is no ¢ in font cmr10!
+Missing character: There is no ‡ in font cmr10!
+Missing character: There is no • in font cmr10!
+Missing character: There is no π in font cmr10!
+[35 <./picture/Hinh3_3.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 243--244
 
  []
 
-) [21 <./picture/Hinh3_3.png>]
+[36] [37]
+
+LaTeX Warning: Command \` invalid in math mode on input line 284.
+
+Missing character: There is no † in font cmr12!
+
+LaTeX Warning: Command \` invalid in math mode on input line 284.
+
+Missing character: There is no † in font cmr12!
+<picture/thuattoan1.png, id=410, 331.99031pt x 185.19188pt>
+File: picture/thuattoan1.png Graphic file (type png)
+<use picture/thuattoan1.png>
+Package pdftex.def Info: picture/thuattoan1.png  used on input line 288.
+(pdftex.def)             Requested size: 215.79114pt x 120.37328pt.
+
+LaTeX Warning: Command \` invalid in math mode on input line 295.
+
+Missing character: There is no † in font cmr12!
+
+LaTeX Warning: Command \` invalid in math mode on input line 295.
+
+Missing character: There is no † in font cmr12!
+<picture/thuattoan2.png, id=412, 731.73375pt x 575.14874pt>
+File: picture/thuattoan2.png Graphic file (type png)
+<use picture/thuattoan2.png>
+Package pdftex.def Info: picture/thuattoan2.png  used on input line 299.
+(pdftex.def)             Requested size: 365.86598pt x 287.57367pt.
+
+LaTeX Warning: Command \` invalid in math mode on input line 301.
+
+Missing character: There is no † in font cmr12!
+
+LaTeX Warning: Command \` invalid in math mode on input line 306.
+
+Missing character: There is no † in font cmr12!
+
+LaTeX Warning: Command \` invalid in math mode on input line 306.
+
+Missing character: There is no † in font cmr12!
+
+LaTeX Warning: Command \` invalid in math mode on input line 306.
+
+Missing character: There is no † in font cmr12!
+
+LaTeX Warning: Command \` invalid in math mode on input line 306.
+
+Missing character: There is no † in font cmr12!
+[38] [39 <./picture/thuattoan1.png> <./picture/thuattoan2.png>]
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\h' on input line 307.
+
+
+Package hyperref Warning: Composite letter `\textdotbelow+a'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textdotbelow' on input line 307.
+
+
+Package hyperref Warning: Composite letter `\textacute+\ecircumflex'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textacute' on input line 307.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ecircumflex' on input line 307.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\dj' on input line 307.
+
+
+Package hyperref Warning: Composite letter `\textdotbelow+i'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textdotbelow' on input line 307.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\u' on input line 307.
+
+
+Package hyperref Warning: Composite letter `\textdotbelow+\abreve'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textdotbelow' on input line 307.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\abreve' on input line 307.
+
+
+Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textdotbelow' on input line 307.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ecircumflex' on input line 307.
+
+
+Package hyperref Warning: Composite letter `\textdotbelow+a'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textdotbelow' on input line 307.
+
+
+Package hyperref Warning: Composite letter `\textdotbelow+\ocircumflex'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textdotbelow' on input line 307.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ocircumflex' on input line 307.
+
+
+LaTeX Warning: Command \` invalid in math mode on input line 311.
+
+Missing character: There is no † in font cmr12!
+
+LaTeX Warning: Citation `kempe21' on page 40 undefined on input line 313.
+
+
+LaTeX Warning: Command \` invalid in math mode on input line 319.
+
+Missing character: There is no † in font cmr10!
+[40] [41]
+<picture/thamlam.png, id=439, 408.02437pt x 121.20282pt>
+File: picture/thamlam.png Graphic file (type png)
+<use picture/thamlam.png>
+Package pdftex.def Info: picture/thamlam.png  used on input line 346.
+(pdftex.def)             Requested size: 346.82236pt x 103.02287pt.
+
+
+LaTeX Warning: Citation `zhang39' on page 42 undefined on input line 354.
+
+<picture/HopNhat.png, id=440, 316.93407pt x 201.00093pt>
+File: picture/HopNhat.png Graphic file (type png)
+<use picture/HopNhat.png>
+Package pdftex.def Info: picture/HopNhat.png  used on input line 356.
+(pdftex.def)             Requested size: 158.46664pt x 100.50021pt.
+<picture/LT.png, id=441, 411.78844pt x 291.33844pt>
+File: picture/LT.png Graphic file (type png)
+<use picture/LT.png>
+Package pdftex.def Info: picture/LT.png  used on input line 363.
+(pdftex.def)             Requested size: 205.8937pt x 145.66885pt.
+[42 <./picture/thamlam.png> <./picture/HopNhat.png>]
+
+LaTeX Warning: Citation `krause' on page 43 undefined on input line 368.
+
+<picture/STMB.png, id=446, 413.29407pt x 344.03531pt>
+File: picture/STMB.png Graphic file (type png)
+<use picture/STMB.png>
+Package pdftex.def Info: picture/STMB.png  used on input line 371.
+(pdftex.def)             Requested size: 206.64651pt x 172.01723pt.
+[43 <./picture/LT.png> <./picture/STMB.png>]
+
+Package hyperref Warning: Composite letter `\textdotbelow+u'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textdotbelow' on input line 390.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\h' on input line 390.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\dj' on input line 390.
+
+
+Package hyperref Warning: Composite letter `\textasciigrave+\ecircumflex'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciigrave' on input line 390.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ecircumflex' on input line 390.
+
+
+Package hyperref Warning: Composite letter `\textacute+\acircumflex'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textacute' on input line 390.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\acircumflex' on input line 390.
+
+
+Package hyperref Warning: Composite letter `\texttilde+\uhorn'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\texttilde' on input line 390.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\uhorn' on input line 390.
+
+
+Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textdotbelow' on input line 390.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ecircumflex' on input line 390.
+
+
+Package hyperref Warning: Composite letter `\textdotbelow+\uhorn'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textdotbelow' on input line 390.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\uhorn' on input line 390.
+
+
+LaTeX Warning: Citation `kempe21' on page 44 undefined on input line 396.
+
+
+LaTeX Warning: Citation `zhang40' on page 44 undefined on input line 396.
+
+[44]) [45]
 \openout2 = `TLTK/TLTK.aux'.
 
  (./TLTK/TLTK.tex
@@ -1674,39 +1939,101 @@ Package hyperref Warning: Glyph not defined in PD1 encoding,
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
-\T5/ptm/m/n/10 ban/Cong-nghe-thong-tin/Nghi-dinh-72-2013-ND-CP-quan-ly-cung-cap
--su-dung-dich-vu-Internet-va-thong-
+\T5/ptm/m/n/14.4 https://thuvienphapluat.vn/van-ban/Cong-nghe-thong-tin/Nghi-di
+nh-72-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
+\T5/ptm/m/n/14.4 2013-ND-CP-quan-ly-cung-cap-su-dung-dich-vu-Internet-va-thong-
+tin-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 5--6
-[]\T5/ptm/m/n/10 Tin t∞c gi£ m§o ^^_´ng tin sai l∂ch tr∂n h¢ng thÊng tßn As-so-
-ci-ated Press. Truy
+\T5/ptm/m/n/14.4 Truy xußtt¯:https://www.usatoday.com/story/theoval/2013/04/23/
+obama-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5--6
-\T5/ptm/m/n/10 xußtt¯:https://www.usatoday.com/story/theoval/2013/04/23/obama-c
-arney-associated-press-hack-white-
+Underfull \hbox (badness 10000) in paragraph at lines 6--7
+[]\T5/ptm/m/n/14.4 Énh h˜ng cıa MXH vÓi b¶u c˚ Ph°p. Truy xußt t¯:
  []
 
-[22
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--7
+\T5/ptm/m/n/14.4 https://baomoi.com/facebook-va-phep-thu-mang-ten-bau-cu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
+[]\T5/ptm/m/n/14.4 Tin ^^_Án d‡ch Ebola bÚng ph°t t§i H† NÊi. Truy xußt t¯:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
+\T5/ptm/m/n/14.4 http://baophapluat.vn/tin-nong/lam-ro-danh-tinh-2-nguoi-tung-t
+in-don-
+ []
+
+
+Underfull \hbox (badness 5064) in paragraph at lines 8--9
+[]\T5/ptm/m/n/14.4 Tin ^^_Án cÊng ty For-musa x£ th£i ch˜a qua x˚ lΩ. Truy xußt
+
+ []
+
+
+Underfull \hbox (badness 5475) in paragraph at lines 11--12
+[]\T5/ptm/m/n/14.4 D. Kempe, J. Klein-berg, and E. Tar-dos. 2003. Max-i-miz-ing
+ the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--12
+\T5/ptm/m/n/14.4 spread of in-flu-ence through a so-cial net-work. In Pro-ceed-
+ings
+ []
+
+
+Underfull \hbox (badness 5022) in paragraph at lines 11--12
+\T5/ptm/m/n/14.4 of the ninth ACM SIGKDD in-ter-na-tional con-fer-ence on Knowl
+-
+ []
+
+
+Underfull \hbox (badness 2753) in paragraph at lines 11--12
+\T5/ptm/m/n/14.4 edge dis-cov-ery and data min-ing. Wash-ing-ton, DC, USA, 137-
+146.
+ []
+
+[46
 
 
 
-]pdfTeX warning (ext4): destination with the same identifier (name{cite.leskove
-c}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.17 	\bibitem{leskovec}
-                         J. Leskovec, A. Krause, C. Guestrin, C. Faloutsos, ...
+] [47pdfTeX warning (ext4): destination with the same identifier (name{cite.les
+kovec}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.20 	\bibitem{qazvin}
+                       V. Qazvinian, E. Rosengren, D. R. Radev, and Qiaozhu ...
+] [48]
+Underfull \hbox (badness 10000) in paragraph at lines 30--31
+[]\T5/ptm/m/n/14.4 Yadron D (2017) Twit-ter deletes 125,000 Isis ac-
+ []
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 30--31
-\T5/ptm/m/n/10 Web. https://www.theguardian.com/technology/2016/feb/05/ twitter
--deletes-isis-accounts-terrorismonline.
+\T5/ptm/m/n/14.4 counts and ex-pands anti-terror teams. The Guardian Web.
  []
 
-[23]) [24]
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--31
+\T5/ptm/m/n/14.4 https://www.theguardian.com/technology/2016/feb/05/ twitter-de
+letes-
+ []
+
+) [49]
 No file Chuyende1.ind.
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 49.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 49.
@@ -1716,7 +2043,10 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 49.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 49.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 49.
 Package rerunfilecheck Info: File `Chuyende1.out' has not changed.
-(rerunfilecheck)             Checksum: C0F7A776DFCD3F5052B1E8E250D00ED6;1988.
+(rerunfilecheck)             Checksum: 59C1DB0D02E6ADE24F270BC7FDA1B7DE;2305.
+
+
+LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1724,29 +2054,29 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 49.
  ) 
 Here is how much of TeX's memory you used:
- 8570 strings out of 492649
- 119204 string characters out of 6133384
- 230262 words of memory out of 5000000
- 12172 multiletter control sequences out of 15000+600000
- 23158 words of font info for 25 fonts, out of 8000000 for 9000
+ 8576 strings out of 492649
+ 119263 string characters out of 6133384
+ 226150 words of memory out of 5000000
+ 12140 multiletter control sequences out of 15000+600000
+ 15015 words of font info for 24 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  33i,11n,45p,2559b,446s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2018/texmf-dist/fonts/enc/dvips/vntex/t5.enc}<c:/texlive/2018/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2018/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2018/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmmi7.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmr10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb>
-<c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive
-/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2018/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2018/texmf-dist/fo
-nts/type1/vntex/urwvn/utmb8v.pfb><c:/texlive/2018/texmf-dist/fonts/type1/vntex/
-urwvn/utmbi8v.pfb><c:/texlive/2018/texmf-dist/fonts/type1/vntex/urwvn/utmr8v.pf
-b><c:/texlive/2018/texmf-dist/fonts/type1/vntex/urwvn/utmri8v.pfb>
-Output written on Chuyende1.pdf (25 pages, 711140 bytes).
+1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmmi7.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmr10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pf
+b><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texli
+ve/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2018/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2018/texmf-dist/
+fonts/type1/vntex/urwvn/utmb8v.pfb><c:/texlive/2018/texmf-dist/fonts/type1/vnte
+x/urwvn/utmbi8v.pfb><c:/texlive/2018/texmf-dist/fonts/type1/vntex/urwvn/utmr8v.
+pfb><c:/texlive/2018/texmf-dist/fonts/type1/vntex/urwvn/utmri8v.pfb>
+Output written on Chuyende1.pdf (51 pages, 1083682 bytes).
 PDF statistics:
- 405 PDF objects out of 1000 (max. 8388607)
- 356 compressed objects within 4 object streams
- 107 named destinations out of 1000 (max. 500000)
- 186 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 556 PDF objects out of 1000 (max. 8388607)
+ 473 compressed objects within 5 object streams
+ 141 named destinations out of 1000 (max. 500000)
+ 232 words of extra memory for PDF output out of 10000 (max. 10000000)
 

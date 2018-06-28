@@ -1,4 +1,4 @@
-\documentclass[14pt,oneside,titlepage,reqno,a4paper]{book}%{book}%%{these_gi}%twosidedraft,
+\documentclass[14pt,oneside,titlepage,reqno,a4paper]{mybook}%{book}%%{these_gi}%twosidedraft,
 \usepackage{xkeyval}
 \usepackage{titlesec}
 \usepackage{times} 
@@ -31,7 +31,7 @@
 \renewcommand\thesubsubsection{\alph{subsubsection})} %Số thứ tự của subsubsection là a), b)
 %
 %\titleformat{\section}[runin]{\bfseries}{\thesection}{1em}{} %Cho phép chữ đi ngay sau tiêu đề. Cái này không dùng ở đây.
-\titleformat{\section}[block]{\normalfont}{\thesection}{.5em}{ \bfseries }
+\titleformat{\section}[block]{\normalfont}{\thesection}{.5em}{ \bfseries}
 % Đặt cỡ chữ cho tiêu đề : \large: cớ lớn; \bfseries: là đậm
 %\titleformat{\section}[block]{\normalfont}{\thesection}{.5em}{\MakeUppercase}% Cài đặt form của section\bfseries. Makeuppercase là để chữ in hoa cho section
 \titlespacing{\section}{2em}{.5em}{.5em}%Khoảng cách section đến đầu dòng: thụt vào 2em = 1cm
@@ -62,7 +62,6 @@
 \usepackage{scalefnt}
 \usepackage[left=3.0 cm, right=2 cm, top=2.5 cm, bottom=2.5 cm]{geometry}%tạo lề của trangleft=3.5 cm, right=2.5 cm, top=2.5 cm, bottom=2.5 cm]
 \usepackage{graphicx}
-\usepackage{wrapfig}
 \usepackage{amsmath,amsthm,array}%
 \usepackage{slashbox}
 %==================
