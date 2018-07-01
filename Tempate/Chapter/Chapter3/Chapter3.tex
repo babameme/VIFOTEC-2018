@@ -12,10 +12,11 @@ Theo Điều 22, Luật An ninh Quốc gia nước Cộng hòa xã hội chủ n
 Một vấn đề đặt ra khác là, các thông tin sai lệch phán tán trên mạng xã hội xuất phát từ các nguồn phát tán với tốc độ nhanh, quy mô rộng lớn. Đã có nhiều nghiên cứu đưa ra nhằm xác định các nguồn phát tán này, tuy nhiên hiệu quả và độ chính xác vẫn còn nhiều hạn chế. Trong thực tế, các nguồn phát tán thông tin sai lệch, các thông tin chống đối và xuyên tạc chính sách, đường lối của Đảng, pháp luật của Nhà nước thường là các đối tượng chủ mưu, cầm đầu, nắm vai trò quan trọng trong các tổ chức phản động. Đây là những đối tượng cơ hội chính trị, đối tượng bất mãn, đối tượng bảo thủ, ngoan cố và rất khó để thuyết phục các đối tượng đó gỡ bỏ các bài đăng, thông tin sai lệch trên mạng xã hội.
 
 Trong nghiên cứu này, nhóm tác giả đã dùng phương pháp giám sát, điều tra để tìm ra những đối tượng có tính chất trên, coi họ là nguồn phát tán thông tin sai lệch. Sau đó, nhóm tác giả đã nghiên cứu và đề xuất giải pháp chọn ra tập người dùng để vô hiệu hóa họ trong việc tham gia vào quá trình phát tán thông tin sai lệch. Trên mạng xã hội, hoạt động này tương đương với các biện pháp như sau:
+\begin {itemize}
+	\item Thuyết phục người dùng không chấp nhận và lan truyền những thông tin sai lệch đến những người dùng khác, tức là làm cho người dùng này không tham gia vào quá trình phát tán thông tin sai lệch. Kĩ thuật này, ở trong các nghiên cứu gần đây còn được gọi là đặt giám sát (Monitor) người dùng \cite{zhang32}, \cite{zhang33}, \cite{zhang34}.
 
-- Thuyết phục người dùng không chấp nhận và lan truyền những thông tin sai lệch đến những người dùng khác, tức là làm cho người dùng này không tham gia vào quá trình phát tán thông tin sai lệch. Kĩ thuật này, ở trong các nghiên cứu gần đây còn được gọi là đặt giám sát (Monitor) người dùng \cite{zhang32}, \cite{zhang33}, \cite{zhang34}.
-
-- Bằng sự can thiệp và giúp đỡ của nhà mạng có thể loại bỏ, cách ly thông tin sai lệch đến với những người dùng này. Năm 2016, Twitter đã loại bỏ 125.000 tài khoản được nghi ngờ có liên quan đến các hoạt động khủng bố \cite{twitter}. Năm 2017, Facebook đã xóa 30.000 tài khoản giả mạo lan truyền các tin đồn trước cuộc bầu cử tổng thống Pháp năm 2017 \cite{french}.
+	\item Bằng sự can thiệp và giúp đỡ của nhà mạng có thể loại bỏ, cách ly thông tin sai lệch đến với những người dùng này. Năm 2016, Twitter đã loại bỏ 125.000 tài khoản được nghi ngờ có liên quan đến các hoạt động khủng bố \cite{twitter}. Năm 2017, Facebook đã xóa 30.000 tài khoản giả mạo lan truyền các tin đồn trước cuộc bầu cử tổng thống Pháp năm 2017 \cite{french}.
+\end {itemize}
 
 Dưới những điều kiện khác nhau, như tiềm lực tài chính, khả năng thuyết phục, phạm vi lan truyền thông tin khác nhau, cùng với đó là các mục tiêu khác nhau, có thể kể đến ảnh hưởng lan truyền của thông tin sai lệch, tỉ lệ người dùng nhiễm thông tin sai lệch và với các mô hình lan truyền thông tin khác nhau. Nhóm tác giả đã tiến hành thu thập dữ liệu trực tiếp từ mạng xã hội Facebook, với phạm vi xung quanh các đối tượng chống đối, đối tượng cầm đầu trong thời gian gần đây, sau đó mô hình hóa các dữ liệu thu được, và nghiên cứu lý thuyết, đề xuất hai giải pháp ngăn chặn hiệu quả, tiến hành thực nghiệm và so sánh với các giải pháp đã công bố trước đây. 
 
@@ -57,39 +58,39 @@ Nhằm giải quyết vấn đề trên, nhóm tác giả đề xuất một hư
 	Quá trình lấy dữ liệu, áp dụng để xử lý được mô tả thông qua mô hình ở Hình \ref {refhinh3_1}.
 		\subsubsection{Thu thập dữ liệu từ MXH Facebook}
 		Các bước cụ thể của giai đoạn thu thập dữ liệu trên MXH Facebook được mô tả cụ thể như sau:
+		\begin {itemize}
+			\item Đầu tiên, nhóm tác giả tạo một tài khoản Facebook rồi sử dụng Công cụ kiểm thử tự động Selenium để tự động đăng nhập vào tài khoản Facebook đó.
 		
-		- Đầu tiên, nhóm tác giả tạo một tài khoản Facebook rồi sử dụng Công cụ kiểm thử tự động Selenium để tự động đăng nhập vào tài khoản Facebook đó.
+			\item Bằng các truy vấn đặc biệt, nhóm tác giả lấy được ID (Identity Number) của tài khoản trên.
 		
-		- Bằng các truy vấn đặc biệt, nhóm tác giả lấy được ID (Identity Number) của tài khoản trên.
+			\item Thông qua phương pháp giám sát và điều tra, thông qua những tin tức, vụ việc trong thời gian gần đây. Nhóm tác giả khảo sát dữ liệu với tập nguồn ban đầu bao gồm 6 tài khoản Facebook, đây là các đối tượng chủ mưu, cầm đầu, nắm vai trò quan trọng trong các tổ chức phản động, thường xuyên có các bài viết, bình luận mang tính chất chống đối, và đặc biệt các đối tượng này có uy tín khá lớn, có lượng người theo dõi, bạn bè trên Facebook là vô cùng đông đảo.
+			\begin {enumerate} [+]
+				\item https://www.facebook.com/gioan.namphong: Linh mục giáo sứ Thái Hà Nguyễn Nam Phong, một nhân vật khá nổi tiếng trong làng chống chính quyền trong nước và thường xuyên ra nước ngoài để "liên lạc" với tổ chức khủng bố Việt Tân.
 		
-		- Thông qua phương pháp giám sát và điều tra, thông qua những tin tức, vụ việc trong thời gian gần đây. Nhóm tác giả khảo sát dữ liệu với tập nguồn ban đầu bao gồm 6 tài khoản Facebook, đây là các đối tượng chủ mưu, cầm đầu, nắm vai trò quan trọng trong các tổ chức phản động, thường xuyên có các bài viết, bình luận mang tính chất chống đối, và đặc biệt các đối tượng này có uy tín khá lớn, có lượng người theo dõi, bạn bè trên Facebook là vô cùng đông đảo.
+				\item https://www.facebook.com/minhnhat.paultran: Paul Trần Minh Nhật là giáo dân thuộc xứ Ngọc Long, xã Công Thành, Yên Thành, Nghệ An, từng bị bắt và kết án 4 năm tù về tội “hoạt động nhằm lật đổ chính quyền nhân dân”. Hiện tại, Minh Nhật đang là cộng tác viên của trang “Tin mừng cho người nghèo”, mang danh nghĩa rao giảng tin mừng của Chúa, nhưng lại nhuốm màu sắc chính trị, luôn ủng hộ các đối tượng vi phạm pháp luật.
 		
-		+	https://www.facebook.com/gioan.namphong: Linh mục giáo sứ Thái Hà Nguyễn Nam Phong, một nhân vật khá nổi tiếng trong làng chống chính quyền trong nước và thường xuyên ra nước ngoài để "liên lạc" với tổ chức khủng bố Việt Tân.
+				\item https://www.facebook.com/ThaiDung2016: Gioan Thái Văn Dung là sinh viên tốt nghiệp ngành tin học, đã tham gia quản lý cửa hàng Internet, Do hiểu biết được CNTT mà biết thêm về xã hội, tích cực truyền bá thông tin, hoạt động mạng, tham gia biểu tình chống TQ xâm lược.
 		
-		+	https://www.facebook.com/minhnhat.paultran: Paul Trần Minh Nhật là giáo dân thuộc xứ Ngọc Long, xã Công Thành, Yên Thành, Nghệ An, từng bị bắt và kết án 4 năm tù về tội “hoạt động nhằm lật đổ chính quyền nhân dân”. Hiện tại, Minh Nhật đang là cộng tác viên của trang “Tin mừng cho người nghèo”, mang danh nghĩa rao giảng tin mừng của Chúa, nhưng lại nhuốm màu sắc chính trị, luôn ủng hộ các đối tượng vi phạm pháp luật.
+				\item https://www.facebook.com/pham.doan.trang: Nhà báo Phạm Đoan Trang, từng công tác tại Báo Pháp Luật thành phố Hồ Chí Minh. Tác giả của cuốn sách “Chính trị Bình Dân” có những nội dung nhạy cảm, mang tính chất kích động, chống phá chính quyền, Đảng và Nhà Nước.
 		
-		+	https://www.facebook.com/ThaiDung2016: Gioan Thái Văn Dung là sinh viên tốt nghiệp ngành tin học, đã tham gia quản lý cửa hàng Internet, Do hiểu biết được CNTT mà biết thêm về xã hội, tích cực truyền bá thông tin, hoạt động mạng, tham gia biểu tình chống TQ xâm lược.
+				\item https://www.facebook.com/jbnguyenhuuvinh: Anh Ba Sàm, tên thật là Nguyễn Hữu Vinh là một blogger, từng là công an và đảng viên Đảng Cộng sản Việt Nam, từng công tác ở Ủy ban Việt kiều Trung ương. Ông bị Chính phủ CHXHCN Việt Nam bắt giữ và bị cáo buộc và phạt tù 5 năm do có hành vi đăng tải các bài viết trên mạng Internet vi phạm Điều 258 Bộ Luật Hình sự năm 2015 sửa đổi bổ sung năm 2017 về Tội lợi dụng các quyền tự do dân chủ xâm phạm lợi ích của Nhà nước, quyền, lợi ích hợp pháp của tổ chức, công dân.
 		
-		+	https://www.facebook.com/pham.doan.trang: Nhà báo Phạm Đoan Trang, từng công tác tại Báo Pháp Luật thành phố Hồ Chí Minh. Tác giả của cuốn sách “Chính trị Bình Dân” có những nội dung nhạy cảm, mang tính chất kích động, chống phá chính quyền, Đảng và Nhà Nước.
+				\item https://www.facebook.com/profile.php?id=100015485029386: Nguyễn Trọng đang sinh sống tại California, Hoa Kỳ. Lợi dụng quyền tự do dân chủ, thường xuyên có những bài viết xuyên tạc, chống phá đường lối chính sác của Đảng, pháp luật của Nhà nước.
+				\end {enumerate}
+			\item Tiếp theo, nhóm tác giả tự động trup cập vào trang web có địa chỉ www.facebook.com/{ID}/friends hoặc www.facebook.com/{name}/friends là trang bạn bè của những người dùng đó.
 		
-		+	https://www.facebook.com/jbnguyenhuuvinh: Anh Ba Sàm, tên thật là Nguyễn Hữu Vinh là một blogger, từng là công an và đảng viên Đảng Cộng sản Việt Nam, từng công tác ở Ủy ban Việt kiều Trung ương. Ông bị Chính phủ CHXHCN Việt Nam bắt giữ và bị cáo buộc và phạt tù 5 năm do có hành vi đăng tải các bài viết trên mạng Internet vi phạm Điều 258 Bộ Luật Hình sự năm 2015 sửa đổi bổ sung năm 2017 về Tội lợi dụng các quyền tự do dân chủ xâm phạm lợi ích của Nhà nước, quyền, lợi ích hợp pháp của tổ chức, công dân.
+			\item Theo thuật toán sắp xếp của Facebook, những người dùng có liên quan nhất và hay tương tác nhất với người dùng đang theo dõi sẽ hiện ra đầu tiên trong trang bạn bè nói trên. Nhóm tác giả sử dụng thư viện BeautifulSoup để lấy mã HTML của trang này, tìm và lấy các đường dẫn chứa địa chỉ Facebook bạn bè của người dùng đang theo dõi, lấy ID của họ.
 		
-		+	https://www.facebook.com/profile.php?id=100015485029386: Nguyễn Trọng đang sinh sống tại California, Hoa Kỳ. Lợi dụng quyền tự do dân chủ, thường xuyên có những bài viết xuyên tạc, chống phá đường lối chính sác của Đảng, pháp luật của Nhà nước.
-		
-		- Tiếp theo, nhóm tác giả tự động trup cập vào trang web có địa chỉ www.facebook.com/{ID}/friends hoặc www.facebook.com/{name}/friends là trang bạn bè của những người dùng đó.
-		
-		- Theo thuật toán sắp xếp của Facebook, những người dùng có liên quan nhất và hay tương tác nhất với người dùng đang theo dõi sẽ hiện ra đầu tiên trong trang bạn bè nói trên. Nhóm tác giả sử dụng thư viện BeautifulSoup để lấy mã HTML của trang này, tìm và lấy các đường dẫn chứa địa chỉ Facebook bạn bè của người dùng đang theo dõi, lấy ID của họ.
-		
-		- Nhóm tác giả thu thập theo phương pháp loang theo chiều rộng: Bắt đầu từ ID Facebook của 6 đối tượng kể trên, từ đó tìm tiếp thông tin về khoảng 20 người bạn xuất hiện đầu tiên trên trang Facebook bạn bè của mỗi người dùng đó. Với mỗi người dùng thu thập được, nhóm tác giả lại tiếp tục tiến hành thu thập như trên, và cứ tiếp tục tìm kiếm đến khi thu thập đủ số lượng người dùng cần thiết.
-		
+			\item Nhóm tác giả thu thập theo phương pháp loang theo chiều rộng: Bắt đầu từ ID Facebook của 6 đối tượng kể trên, từ đó tìm tiếp thông tin về khoảng 20 người bạn xuất hiện đầu tiên trên trang Facebook bạn bè của mỗi người dùng đó. Với mỗi người dùng thu thập được, nhóm tác giả lại tiếp tục tiến hành thu thập như trên, và cứ tiếp tục tìm kiếm đến khi thu thập đủ số lượng người dùng cần thiết.
+		\end {itemize}		
 		Cách làm này có ưu điểm là những người dùng thu thập được có nhiều mối liên hệ với nhau, đồ thị MXH thu thập được có nhiều liên kết, mang lại sự trực quan hơn cho cấu trúc đồ thị mạng. Ngoài ra còn có quá trình tiền xử lý, bước này sẽ hạn chế, loại bỏ được những đỉnh cô lập, hay những đỉnh khai thác được ít thông tin (Không công khai danh sách bạn bè).
 		
 		Bên cạnh những ưu điểm trên, thì cách làm này cũng có nhược điểm là không khai thác được hết thông tin của người dùng, bởi nhiều người dùng không để chế độ công khai bạn bè. Trong thực tế sẽ để lọt nhiều đối tượng nguy hiểm, ẩn chứa nhiều nguy cơ tiềm tàng.
 		
 		\subsubsection{Mô hình hóa dữ liệu thu được}
 		Ở bước này, từ những dữ liệu thu thập được về danh sách ID người dùng, mối quan hệ bạn bè giữa họ. Nhóm tác giả tiền xử lý, đánh số lại các đỉnh, xây dựng đồ thị mô tả MXH với các đỉnh đại diện cho các người dùng, các cạnh biểu diễn mối quan hệ bạn bè giữa những người đó, trọng số (nếu có) đại diện cho mức độ tương tác giữa người dùng với nhau. Kết quả đầu ra của thuật toán thu thập thông tin trên MXH Facebook bao gồm 2 file dữ liệu:
-		
-		- ID.txt chứa ánh xạ từ ID của người dùng sang chỉ số đỉnh được đánh số lại. Qua quá trình thu thập dữ liệu, chuẩn hóa, nhóm tác giả thu được 542 ID người dùng, được đánh số lại từ 0 – 541, xem bảng \ref{bang3_1}		
+		\begin {itemize}
+			\item ID.txt chứa ánh xạ từ ID của người dùng sang chỉ số đỉnh được đánh số lại. Qua quá trình thu thập dữ liệu, chuẩn hóa, nhóm tác giả thu được 542 ID người dùng, được đánh số lại từ 0 – 541, xem bảng \ref{bang3_1}		
 		\begin{table} [!htp]
 			\centering 
 			\begin{tabular}{|c|c|}
@@ -120,7 +121,7 @@ Nhằm giải quyết vấn đề trên, nhóm tác giả đề xuất một hư
 			\caption{Ví dụ ánh xạ ID người dùng sang chỉ số được đánh số.}
 			\label{bang3_1}
 		\end{table}
-		 - Network.txt chứa mô tả cụ thể của đồ thị MXH đã thu được. File dữ liệu gồm nhiều dòng, mỗi dòng chứa 2 số là chỉ số của 2 người dùng có quan hệ với nhau.
+		 	\item Network.txt chứa mô tả cụ thể của đồ thị MXH đã thu được. File dữ liệu gồm nhiều dòng, mỗi dòng chứa 2 số là chỉ số của 2 người dùng có quan hệ với nhau.
 		 
 		 \begin{table} [!htp]
 		 	\centering
@@ -158,25 +159,27 @@ Nhằm giải quyết vấn đề trên, nhóm tác giả đề xuất một hư
 	 			\label{refhinh3_2}
 	 		\end{figure}
 	 	\end{center}
+ 	\end {itemize}
  	\subsection{Giải pháp hạn chế: Limiting the spread of epidemics within time constraint on online social network (Ngăn chăn khả năng lan truyền của thông tin sai lệch trong thời gian giới hạn trên một mạng xã hội)}
  	Giải pháp này được đề xuất và nghiên cứu sau khi xem xét thực tế quá trình lan truyền của một thông tin sai lệch trên mạng xã hội. Thông tin sai lệch luôn bắt đầu từ một số người dùng nhất định (có thể coi như đỉnh “nguồn” phát tán thông tin sai lệch). Những người dùng này thường là những tên có tư tưởng lệch lạc, phản động, và thông tin sai lệch thường là những thông tin bị bóp méo, những sai lầm của cán bộ bị thồi phồng, hoặc những lời lẽ bịa đặt vô căn cứ. Từ những người dùng bắt đầu này, thông tin sẽ được biết đến bởi những người xung quanh có liên kết với chúng, thường là những người dùng có quan hệ bạn bè với chúng. Thông tin này ban đầu có thể không tác động tới người dùng xung quanh, tuy nhiên nếu nó xuất hiện thêm nhiều lần từ nhiều nguồn khác nhau thì họ có thể sẽ tiếp nhận thông tin đó, và từ đó trở thành một nguồn phát thông tin sai lệch mới. Nếu mọi việc cứ phát triển thì thông tin này dần dần sẽ lan truyền sang toàn bộ một cộng đồng, hoặc thậm chí là toàn mạng xã hội (Quá trình lan truyền này được biểu diễn thông qua mô hình lan truyền được định nghĩa bên dưới). Do đó, cần có phương pháp giúp kiểm soát tình hình, ngăn chặn thông tin sai lệch lan truyền quá rộng, và đây cũng là lí do mà giải pháp này được nghiên cứu và công bố. Giải pháp được thiết kế để có thể chọn một số người dùng đặc biệt. Những người dùng được chọn này sau đó sẽ được các cơ quan chức năng có thẩm quyền tiến hành các phương pháp phù hợp đề ngăn chặn khả năng phát tán thông tin của họ. Từ đó, thông tin sai lệch sẽ không có khả năng truyền thông qua những người dùng này, và dẫn đến khả năng lan truyền sang những người dùng tiếp theo bị cản trở. Giải pháp này đã được chứng minh rằng nó có thể lựa chọn ra các đỉnh hiệu quả nhất để ngăn chặn, do đó vừa đem lại hiệu quả cao mà không hao tốn quá nhiều tài nguyên vào việc ngăn chặn các đỉnh kém hiệu quả khác.
  		\subsubsection{Mô hình lan truyền thông tin Ngưỡng tuyến tính với bước thời gian rời rạc (Time Constraint Deterministic Linear Threshold - T-DLT).}
  		Như đã được trình bày ở trên, có hai mô hình phổ biến trong bài toán lan truyền thông tin nói chung là mô hình IC và mô hình LT. Tuy nhiên, ở giải pháp này chúng tôi đề xuất một mở rộng mô hình DLT \cite{zaixin}, vốn cũng là một trường hợp biến thể của mô hình LT, được gọi là T-DLT. Sở dĩ chúng tôi sử dụng mô hình này thay cho mô hình LT và IC bởi với bài toán này, mô hình T-DLT cho phép chúng tôi giảm thiểu tính phức tạp của cơ chế lan truyền, đồng thời vẫn đảm bảo kết quả không bị ảnh hưởng so với hai mô hình điển hình trên. Chi tiết mô hình T-DLT có thể được mô tả như sau:
+ 		\begin {itemize}
+ 			\item {\itshape Ký pháp đồ thị}: Đặt G=(V,E,w) là biểu diễn của MXH với tập đỉnh V, tập cạnh có hướng E, với |V|=n và |E|=m. Mỗi đỉnh đại diện cho một người dùng trong MXH, mỗi cạnh e=(u,v) trong tập E tương ứng đại diện cho mỗi quan hệ giữa người dùng u và người dùng v. Chúng tôi ký hiệu đỉnh vào liền kề và đỉnh ra liền kề của đỉnh u lần lượt là N$_{in}$(u) và N$_{out}$(u), d$_{in}$(u) và d$_(out)$(u) lần lượt là bậc vào và bậc ra của đỉnh u. Đặt I $\subset$ V là tập các đỉnh bị lây nhiễm ban đầu. Mỗi cạnh có hướng (u,v) sẽ có trọng số w(u,v), tượng trưng cho mức độ ảnh hưởng thông tin của v tới u, thỏa mãn $\sum$ $_(u)$ w(u,v) $\leq$ 1.
  		
- 		- {\itshape Ký pháp đồ thị}: Đặt G=(V,E,w) là biểu diễn của MXH với tập đỉnh V, tập cạnh có hướng E, với |V|=n và |E|=m. Mỗi đỉnh đại diện cho một người dùng trong MXH, mỗi cạnh e=(u,v) trong tập E tương ứng đại diện cho mỗi quan hệ giữa người dùng u và người dùng v. Chúng tôi ký hiệu đỉnh vào liền kề và đỉnh ra liền kề của đỉnh u lần lượt là N$_{in}$(u) và N$_{out}$(u), d$_{in}$(u) và d$_(out)$(u) lần lượt là bậc vào và bậc ra của đỉnh u. Đặt I $\subset$ V là tập các đỉnh bị lây nhiễm ban đầu. Mỗi cạnh có hướng (u,v) sẽ có trọng số w(u,v), tượng trưng cho mức độ ảnh hưởng thông tin của v tới u, thỏa mãn $\sum$ $_(u)$ w(u,v) $\leq$ 1.
+ 			\item {\itshape Trạng thái của đỉnh}: Quá trình phát tán thông tin sai lệch từ tập đỉnh ban đầu I tới các đỉnh còn lại trong MXH tiến triển theo từng bước thời gian rời rạc t=1,2,…,d. Mỗi đỉnh v $\in$ V có hai trạng thái là {\itshape bị lây nhiễm (hay “kích hoạt”)} và {\itshape không bị lây nhiễm (hay “không kích hoạt”)}.
  		
- 		- {\itshape Trạng thái của đỉnh}: Quá trình phát tán thông tin sai lệch từ tập đỉnh ban đầu I tới các đỉnh còn lại trong MXH tiến triển theo từng bước thời gian rời rạc t=1,2,…,d. Mỗi đỉnh v $\in$ V có hai trạng thái là {\itshape bị lây nhiễm (hay “kích hoạt”)} và {\itshape không bị lây nhiễm (hay “không kích hoạt”)}.
+ 			\item {\itshape Ngưỡng lây nhiễm (hay ngưỡng kích hoạt)}: Mỗi đỉnh v sẽ có một ngưỡng lây nhiễm cho trước $\theta$$_(v)$ $\in$ [0,1]. Giá trị này đại diện cho trọng số vào của đỉnh v cần chuyển thành bị lây nhiễm để v trở thành bị lây nhiễm.
  		
- 		- {\itshape Ngưỡng lây nhiễm (hay ngưỡng kích hoạt)}: Mỗi đỉnh v sẽ có một ngưỡng lây nhiễm cho trước $\theta$$_(v)$ $\in$ [0,1]. Giá trị này đại diện cho trọng số vào của đỉnh v cần chuyển thành bị lây nhiễm để v trở thành bị lây nhiễm.
+ 			\item {\itshape Quá trình lan truyền}: Quá trình lây lan thông tin sai lệch được mô phỏng tuần tự theo từng bước thời gian rời rạc (còn gọi là $``$vòng$"$, $``$bước$"$) t=0,1,2,…,d. Đặt I$_(t)$ là tập các đỉnh bị lây nhiễm sau t bước, quá trình lan truyền được mô phỏng như sau:
+ 			\begin {enumerate} [+]
+ 				\item Tại bước t=0, tất cả các đỉnh trong tập I đều bị lây nhiễm, I$_(0)$=I.
  		
- 		- {\itshape Quá trình lan truyền}: Quá trình lây lan thông tin sai lệch được mô phỏng tuần tự theo từng bước thời gian rời rạc (còn gọi là $``$vòng$"$, $``$bước$"$) t=0,1,2,…,d. Đặt I$_(t)$ là tập các đỉnh bị lây nhiễm sau t bước, quá trình lan truyền được mô phỏng như sau:
+ 				\item Tại bước t $\geq$ 1, tất cả các đỉnh không bị lây nhiễm v sẽ chuyển thành bị lây nhiễm nếu tổng số các đỉnh vào gần kề chạm ngưỡng lây nhiễm của nó, $\sum$$_(các đỉnh vào gần kề của u)$ w(u,v) $\geq$ $\theta$$_(v)$.	
  		
- 		+ Tại bước t=0, tất cả các đỉnh trong tập I đều bị lây nhiễm, I$_(0)$=I.
- 		
- 		+ Tại bước t $\geq$ 1, tất cả các đỉnh không bị lây nhiễm v sẽ chuyển thành bị lây nhiễm nếu tổng số các đỉnh vào gần kề chạm ngưỡng lây nhiễm của nó, $\sum$$_(các đỉnh vào gần kề của u)$ w(u,v) $\geq$ $\theta$$_(v)$.	
- 		
- 		+ Một đỉnh bị lây nhiễm sẽ giữ nguyên trạng thái bị lây nhiễm cho tới hết quả trình lan truyền. Qúa trình lan truyền chấm dứt khi t = d.
- 		
+ 				\item Một đỉnh bị lây nhiễm sẽ giữ nguyên trạng thái bị lây nhiễm cho tới hết quả trình lan truyền. Qúa trình lan truyền chấm dứt khi t = d.
+ 			\end {enumerate}
+ 		\end {itemize}
  		Trong mô hình LT, giá trị của ngưỡng $\theta$$_(v)$ được đặt một cách ngẫu nhiên trong khoảng [0,1] và sẽ được chỉnh sửa dựa vào thông tin có được thêm trong quá trình lan truyền. Do đó, mô hình này thuộc dạng mô hình ngẫu nhiên. Khác với mô hình LT, trong mô hình T-DLT ngưỡng lây nhiễm $\theta$$_(v)$ được cho trước. Trường hợp này, giá trị ngưỡng có thể được đặt dựa theo các khảo sát thực tế hoặc các phương pháp khai phá dữ liệu.
  		
  		\subsubsection{Định nghĩa bài toán}
@@ -202,12 +205,12 @@ Nhằm giải quyết vấn đề trên, nhóm tác giả đề xuất một hư
  		Bài toán SC đã được chứng minh là bài toán NP-Khó khi kích thước các tập được giới hạn là 3 và mỗi phần tử xuất hiện trong đúng hai tập con. Để giản thể bài toán SC về bài toán LSE, đầu tiên ta xây dựng một biểu diễn J$_{LSE}$ của LSE từ biểu diễn J$_{SC}$ của bài toán SC. Sau đó chúng tôi chỉ ra rằng nếu J$_{SC}$ có tồn tại lời giải S kích thước t, thì J$_{LSE}$ có lời giải A, | A | $\leq$ k với h$_{d}$(A) $\geq$ k + M và ngược lại.
  		
  		{\bfseries Xây dựng:} Cho một biểu diễn J$_{SC}$ = ($\vartheta$, S, t) của bài toán SC, ta xây dựng biểu diễn J$_{LSE}$ = (G, I, d, k) của bài toán LSE như theo hình \ref{refhinh3_3}
+ 		\begin {itemize}
+ 			\item Tập các đỉnh và các cạnh với mỗi S$_{i}$ $\in$ S, ta xây dựng một đỉnh u$_{i}$. Ta có thêm một cạnh có hướng (s$_{i}$, u$_{i}$). Với mỗi phần tử e$_{j}$ $\in$ $\vartheta$ ta thêm một đỉnh v$_{j}$ và thêm một cạnh có hướng (u,v) với mỗi e$_{j}$ $\in$ S$_{i}$. Để thuận tiện, ta đặt B = {u$_{1}$, u$_{2}$, ... , u$_{N}$}, C = {v$_{1}$, v$_{2}$, ... , v$_{M}$}.
  		
- 		- Tập các đỉnh và các cạnh với mỗi S$_{i}$ $\in$ S, ta xây dựng một đỉnh u$_{i}$. Ta có thêm một cạnh có hướng (s$_{i}$, u$_{i}$). Với mỗi phần tử e$_{j}$ $\in$ $\vartheta$ ta thêm một đỉnh v$_{j}$ và thêm một cạnh có hướng (u,v) với mỗi e$_{j}$ $\in$ S$_{i}$. Để thuận tiện, ta đặt B = {u$_{1}$, u$_{2}$, ... , u$_{N}$}, C = {v$_{1}$, v$_{2}$, ... , v$_{M}$}.
+ 			\item Ngưỡng lây nhiễm và trọng số: ta đặt w(u,v) = 1, w(u$_{i}$, v$_{i}$) = $\dfrac{1}{d_{in}(v_{j})}$, $\theta$$_{u_{i}}$ = $\theta$$_{v_{i}}$ = 1.
  		
- 		- Ngưỡng lây nhiễm và trọng số: ta đặt w(u,v) = 1, w(u$_{i}$, v$_{i}$) = $\dfrac{1}{d_{in}(v_{j})}$, $\theta$$_{u_{i}}$ = $\theta$$_{v_{i}}$ = 1.
- 		
- 		- Sau cùng, ta cho k = t, d = 2. 		
+ 			\item Sau cùng, ta cho k = t, d = 2. 		
  		
  		\begin{center}
  			\begin{figure}[!htp]
@@ -218,7 +221,7 @@ Nhằm giải quyết vấn đề trên, nhóm tác giả đề xuất một hư
  				\label{refhinh3_3}
  			\end{figure}
  		\end{center}
- 		
+ 		\end {itemize}
  		{\bfseries Phân tích:} Qua bước xây dựng, ta thấy rằng | f$_{d}$(I,$\emptyset$) | = M + N. Nếu như có đỉnh bất kì u$_{i} \in$ B là đỉnh kề vào và v$_{j} \in$ C là đỉnh chưa bị lây nhiễm thì: 
  		\begin{center}
  			$\sum_{Các đỉnh hàng xóm tới đã bị lây nhiễm u}$ w(u, v$_{j}$) $\leq$ 1 - $\dfrac{1}{d_{in}(v_{j})}$ < 1 = $\theta_{v_{j}}$
@@ -237,11 +240,11 @@ Nhằm giải quyết vấn đề trên, nhóm tác giả đề xuất một hư
  		{\itshape Chứng minh}: Để chứng minh kết quả này, ta sử dụng phương pháp gap-introduction reduction \cite{vijay38} để chứng minh tính khó xấp xỉ của bài toán LSE. Sử dụng phép giản thể trong thời gian đa thức từ bài toán SC thành bài toán LSE , chúng tôi sẽ chỉ ra nếu tồn tại một thuật toán có thời gian đa thức có thể xấp xỉ được bài toán trên với tỉ lệ $^{1 - \varepsilon}$, thì sẽ tồn tại một thuật toán có thời gian đa thức để giải bài toán gốc.
  		
  		{\bfseries Xây dựng:} Cho một biểu diễn của bài toán SC, J$_{SC}$ = ($\vartheta$, S, t), ta xây dựng một biểu diễn J$_{LSE}$ = (G, I, d, k) 
+ 		\begin {itemize}
+ 			\item Tập các đỉnh và các cạnh: Với mỗi đỉnh v$_{j} \in$ C, ta thêm n$_{0}$ = N$^{q}$ đỉnh X = { x$_{1}$, x$_{2}$, ... , x$_{n_{0}}$} với một hằng số q đủ lớn và thêm một cạnh có hướng (v$_{j}$, x$_{l}$), l = 1 ... n$_{0}$.
  		
- 		- Tập các đỉnh và các cạnh: Với mỗi đỉnh v$_{j} \in$ C, ta thêm n$_{0}$ = N$^{q}$ đỉnh X = { x$_{1}$, x$_{2}$, ... , x$_{n_{0}}$} với một hằng số q đủ lớn và thêm một cạnh có hướng (v$_{j}$, x$_{l}$), l = 1 ... n$_{0}$.
- 		
- 		- Ngưỡng lây nhiễm và trọng số: Gán w(v$_{j}$, x$_{l}$) = $\dfrac{1}{M}$; $\theta_{x_{l}}$ = $\dfrac{1}{M}$, l = 1 ... n$_{0}$.\\
- 		
+ 			\item Ngưỡng lây nhiễm và trọng số: Gán w(v$_{j}$, x$_{l}$) = $\dfrac{1}{M}$; $\theta_{x_{l}}$ = $\dfrac{1}{M}$, l = 1 ... n$_{0}$.\\
+ 		\end {itemize}
  		Giả sử J$_{SC}$ có tập phủ đinh S' kích cỡ t, ta chọn tập A = ${{u_{i} | S_{i} \in S}}$. Qua bước phân tích, mọi đỉnh C đều là các đỉnh không bị lây nhiễm. Điều này dẫn tới mọi đỉnh trong X đều là các đỉnh không bị lây nhiễm. Bởi bước xây dựng này, ta có: | f$_{d}(I, \emptyset)$ | = N + M + N$^{q}$, | f$_{d}(I, A)$ | = N - k, do đó: 
  		\begin{center}
  			h(A) = | f$_{d}(I, \emptyset)$ | - | f$_{d}(I, A)$ | = M + N$^{q}$ + k
@@ -253,10 +256,7 @@ Nhằm giải quyết vấn đề trên, nhóm tác giả đề xuất một hư
  		
  		Trong trường hợp J$_{SC}$ có tập đỉnh phủ kích cỡ t, theo cách xây dựng của chúng tôi, lời giải tối ưu A$_{opt}$ của J$_{LSE}$ có h(A$_{opt}$) = k + M + N$_{q}$. Thuật toán xấp xỉ lời giải tối ưu với tỉ lệ n$^{1 - \varepsilon}$ (n = 2N + M + N$_{q}$ là số đỉnh của đồ thị đầu vào) do đó có thể tìm kiếm lời giải. 
  		
- 			h(A(J$_{LSE}$)) $\geq$ $\dfrac{1}{n_{1 - \varepsilon}} h(A_{opt}) > \dfrac{1}{n^{1 - \varepsilon}}(M + N_{q} +k) = \dfrac{n^{\varepsilon}}{n}(M + N^{q} +k) > \dfrac{(M + N^{q} + k)^{\varepsilon}}{M + N^{q} + k}N^{q}$ 
- 			\begin{center}
- 				$> \dfrac{N^{q.\varepsilon}}{4N^{q}}N^{q} = \dfrac{1}{4}N^{q.\varepsilon}$. 
- 			\end{center}
+ 			h(A(J$_{LSE}$)) $\geq$ $\dfrac{1}{n_{1 - \varepsilon}} h(A_{opt}) > \dfrac{1}{n^{1 - \varepsilon}}(M + N_{q} +k) = \dfrac{n^{\varepsilon}}{n}(M + N^{q} +k) > \dfrac{(M + N^{q} + k)^{\varepsilon}}{M + N^{q} + k}N^{q}$$> \dfrac{N^{q.\varepsilon}}{4N^{q}}N^{q} = \dfrac{1}{4}N^{q.\varepsilon}$. 
  		
  		Cho q đủ lớn để q > $\dfrac{ln(8N)}{\varepsilon.ln(N)}$, ta được: 
  		\begin{center}
@@ -272,15 +272,15 @@ Nhằm giải quyết vấn đề trên, nhóm tác giả đề xuất một hư
  		
  		\subsubsection{Thuật toán nhanh và hiệu quả để giới hạn sự lây nhiễm thông tin (Fast And Effective Limiting Epidemics – FLE).}
  		Trong phần này, chúng tôi thiết kế một thuật toán heuristics có độ phức tạp thấp và kết quả rất khả quan. Trước khi bắt đầu, chúng tôi có định nghĩa một vài kí hiệu sẽ được sử dụng trong quá trình đề xuất thuật toán:
+ 		\begin {itemize}
+ 			\item t(u): vòng nhỏ nhất sao cho đỉnh u chuyển từ đỉnh không bị lây nhiễm sang đỉnh bị lây nhiễm.
  		
- 		- t(u): vòng nhỏ nhất sao cho đỉnh u chuyển từ đỉnh không bị lây nhiễm sang đỉnh bị lây nhiễm.
+ 			\item $a_{in}(u) = \sum_{I_{t(u) - 1} \bigcap N_{in}(u)} w(u,v):$ tổng trọng số các cạnh vào từ các đỉnh vào hàng xóm đã bị lây nhiễm trước vòng t(u).
  		
- 		- $a_{in}(u) = \sum_{I_{t(u) - 1} \bigcap N_{in}(u)} w(u,v):$ tổng trọng số các cạnh vào từ các đỉnh vào hàng xóm đã bị lây nhiễm trước vòng t(u).
+ 			\item $\propto(u) = \sum_{v \in U^{d}_{i=t(u)+1}} I_{i} \bigcap N(u)$ w(u,v), i = t(u) + 1, ... , d: tổng trọng số các cạnh ra từ u tới các đỉnh bị lây nhiễm b tại vòng i.
  		
- 		- $\propto(u) = \sum_{v \in U^{d}_{i=t(u)+1}} I_{i} \bigcap N(u)$ w(u,v), i = t(u) + 1, ... , d: tổng trọng số các cạnh ra từ u tới các đỉnh bị lây nhiễm b tại vòng i.
- 		
-		- $\beta(u): $ : số lượng các đỉnh ra, sao cho chúng chuyển từ bị lây nhiễm thành không bị lây nhiễm sau khi loại bỏ đỉnh u ra khỏi đồ thị.
-		
+			\item $\beta(u): $ : số lượng các đỉnh ra, sao cho chúng chuyển từ bị lây nhiễm thành không bị lây nhiễm sau khi loại bỏ đỉnh u ra khỏi đồ thị.
+		\end {itemize}
 		Một cách trực quan, số lượng gia tăng các đỉnh được cứu $\delta(A, u)$ có thể xấp xỉ theo $\beta(u)$. Bên cạnh đó, để tăng cường tính hiệu quả của thuật toán đề xuất, chúng tôi kết hợp $\propto(u) và \beta(u)$ để tính toán khả năng lan truyền tin sai lệch của đỉnh u. Ý tưởng chính của thuật toán là chọn ra các đỉnh một cách lần lượt theo đánh giá của hai hàm $\propto và \beta$. Ban đầu, chúng tôi khởi tạo tập đỉnh được chọn A=$\emptyset$ và đặt tập các đỉnh được xét chọn U bằng với $V_{d}$. Trong mỗi bước, chúng tôi chọn ra đỉnh có trị số $\beta(u)$ lớn nhất trong đồ thị còn lại. Trường hợp tất cả các đỉnh đều có giá trị $\beta(u)$ là 0, chúng tôi chọn đỉnh có giá trị $\propto(u)$ cực đại. Thuật toán được mô tả ở hình \ref{refthuattoan1} sau.
 		\begin{center}
 			\begin{figure}[htp]
@@ -313,19 +313,19 @@ Nhằm giải quyết vấn đề trên, nhóm tác giả đề xuất một hư
 		Đưa ra một tập nguồn S = {$s_{1}, s_{2}, ... , s_{n}$}, $s_{i} \in V$ là tập tiềm năng phát tán thông tin sai lệch (tương tự như tập hạt giống trong bài IM \cite{kempe21}).
 		
 		Trong mô hình LT, mỗi đỉnh v $\in$ V, có hai trạng thái active và inactive. Quá trình lan truyền trên mô hình LT được diễn tả như sau: Đầu tiên, mỗi đỉnh v được gán một trọng số ngẫu nhiên $\theta_{v} \in [0,1]$ thể hiện giá trị active của đỉnh kề u phải đạt được để có thể active v. Tiếp đến quá trình lan truyền diễn ra trong các vòng t = 1,2,3… như sau: 		
+		\begin {itemize}
+			\item Ở vòng 1, tất cả các đỉnh $s_{i} \in S$ ở trạng thái active và các đỉnh còn lại ở trạng thái inactive.
 		
-		- Ở vòng 1, tất cả các đỉnh $s_{i} \in S$ ở trạng thái active và các đỉnh còn lại ở trạng thái inactive.
+			\item Ở vòng t $\geq$ 1, một đỉnh v ở trạng thái inactive được active nếu thỏa mãn điều kiện $\sum_{u \in N_{in}(v), v là active} w(u,v) \geq \theta_{v}$.
 		
-		- Ở vòng t $\geq$ 1, một đỉnh v ở trạng thái inactive được active nếu thỏa mãn điều kiện $\sum_{u \in N_{in}(v), v là active} w(u,v) \geq \theta_{v}$.
-		
-		- Khi một đỉnh ở trạng thái active thì sẽ luôn duy trì trạng thái đó trong suốt quá trình lan truyền thông tin. Quá trình lan truyền kết thúc khi không có đỉnh nào được active thêm.	
-		
+			\item Khi một đỉnh ở trạng thái active thì sẽ luôn duy trì trạng thái đó trong suốt quá trình lan truyền thông tin. Quá trình lan truyền kết thúc khi không có đỉnh nào được active thêm.	
+		\end {itemize}
 		Kí hiệu $\sigma_{S}(G)$ là ảnh hưởng lan truyền của tập S trên đồ thị G dưới mô hình LT hay là số lượng đỉnh được active bởi nguồn S. Theo nghiên cứu của Kempe và các cộng sự đã chỉ ra rằng mô hình LT là tương đương với khả năng tiếp cận trong một đồ thị ngẫu nhiên g hay còn gọi là đồ thị live-edge (đồ thị mẫu). Đồ thị live-edge được xây dựng như sau:
+		\begin {itemize}
+			\item Với mỗi v $\in$ V, chọn tối đa một cạnh đi vào nó một cách ngẫu nhiên, xác suất (u, v) được chọn là w(u, v).
 		
-		- Với mỗi v $\in$ V, chọn tối đa một cạnh đi vào nó một cách ngẫu nhiên, xác suất (u, v) được chọn là w(u, v).
-		
-		- Xác suất không có cạnh nào được chọn là 1 - $\sum_{u \in N_{in}(v)} w(u,v)$.
-		
+			\item Xác suất không có cạnh nào được chọn là 1 - $\sum_{u \in N_{in}(v)} w(u,v)$.
+		\end {itemize}
 		Cạnh được chọn gọi là cạnh sống (live-edge) và tất cả các cạnh khác gọi là cạnh bị chặn (blocked-edge). Chúng ta có :
 		\begin{center}
 			 $\sigma_{S}(G) = \sum_{g \in G*} Pr[g]R(g, S)$			
@@ -350,41 +350,41 @@ Nhằm giải quyết vấn đề trên, nhóm tác giả đề xuất một hư
  		
 		{\itshape Thuật toán TMB (TMB algorithm)}
 		Thuật toán tham lam đưa ra một lời giải tốt xong lại không đảm bảo yêu cầu về thời gian với dữ liệu lớn do đó trong phần này chúng tôi đưa ra một giải pháp đảm bảo yêu cầu cả về độ tốt cũng như thời gian tính toán. Dưới đây là các bước chính trong thuật toán chúng tôi đề xuất:
-		
-		- Đầu tiên sáp nhập các đỉnh trong tập nguồn S thành một nút I bằng cách áp dụng thuật toán 2 được đề xuất bởi Zhang \cite{zhang39}. Chúng ta thu được một đồ thị mới và nguồn phát tán thông tin sai lệch bây giờ chỉ là một đỉnh I duy nhất.
+		\begin {itemize}
+			\item Đầu tiên sáp nhập các đỉnh trong tập nguồn S thành một nút I bằng cách áp dụng thuật toán 2 được đề xuất bởi Zhang \cite{zhang39}. Chúng ta thu được một đồ thị mới và nguồn phát tán thông tin sai lệch bây giờ chỉ là một đỉnh I duy nhất.
 		\begin{center}
 			\includegraphics[scale=.5]{picture/HopNhat}
 			
 			Thuật toán hợp nhất nguồn
 		\end{center}
 		
-		- Tiếp đến chúng tôi tạo ra $\mu(\mu \in N*)$ đô thị mẫu g từ G bằng cách: mỗi đỉnh v $\in$ V chọn nhiều nhất một đỉnh kề đi đến nó môt cách ngẫu nhiên sao cho xác suất chọn cạnh (u, v) là w(u, v) và xác suất không chọn cạnh nào là 1 - $\sum_{u} w(u, v)$. Những cạnh được chọn được gọi là cạnh sống  (live - edge) và tất cả các cạnh còn lại được gọi là cạnh bị chặn (blocked-edge). Chi tiết cách lấy đồ thị mẫu được mô tả như sau:
+			\item Tiếp đến chúng tôi tạo ra $\mu(\mu \in N*)$ đô thị mẫu g từ G bằng cách: mỗi đỉnh v $\in$ V chọn nhiều nhất một đỉnh kề đi đến nó môt cách ngẫu nhiên sao cho xác suất chọn cạnh (u, v) là w(u, v) và xác suất không chọn cạnh nào là 1 - $\sum_{u} w(u, v)$. Những cạnh được chọn được gọi là cạnh sống  (live - edge) và tất cả các cạnh còn lại được gọi là cạnh bị chặn (blocked-edge). Chi tiết cách lấy đồ thị mẫu được mô tả như sau:
 		\begin{center}
 			\includegraphics[scale=.5]{picture/LT}
 			
 			Thuật toán lấy đồ thị mẫu theo mô hình LT
 		\end{center}
 	
-		- Trên cây T$_{i}$, ảnh hưởng địa phương của nút v là số nút con của cây gốc v kể cả v trên cây T$_{i}$. Áp dụng thuật toán DFS dễ dàng tìm được số nút con của v. Ảnh hưởng giảm của nguồn S khi loại đỉnh u khỏi G bằng lượng ảnh hưởng giảm trung bình khi loại u trên tất cả các cây T$_{i}$. Sau đó áp dụng phương pháp Lazy forward của Leskovec \cite{krause} để tìm kiếm lời giải. Chi tiết cách làm được mô tả trong thuật toán dưới đây.
+			\item Trên cây T$_{i}$, ảnh hưởng địa phương của nút v là số nút con của cây gốc v kể cả v trên cây T$_{i}$. Áp dụng thuật toán DFS dễ dàng tìm được số nút con của v. Ảnh hưởng giảm của nguồn S khi loại đỉnh u khỏi G bằng lượng ảnh hưởng giảm trung bình khi loại u trên tất cả các cây T$_{i}$. Sau đó áp dụng phương pháp Lazy forward của Leskovec \cite{krause} để tìm kiếm lời giải. Chi tiết cách làm được mô tả trong thuật toán dưới đây.
 		
 		\begin{center}
 			\includegraphics[scale=.5]{picture/STMB}
 			
 			Thuật toán xác định và ngăn chặn thông tin sai lệch STMB
 		\end{center}
-	
+		\end {itemize}
 		{\itshape Độ phức tạp của thuật toán: }
 		
 		Để đánh giá độ phức tạp của thuật toán trước tiên chúng ta đi phân tích độ phức tạp của các thuật toán con trong nó.
+		\begin {itemize}
+			\item Thuật toán Merge source node có độ phức tạp là O(k + | N$_{in}(S)$ |).
 		
-		- Thuật toán Merge source node có độ phức tạp là O(k + | N$_{in}(S)$ |).
+			\item Quá trình tạo ra $\mu$ đồ thị mẫu dòng 3 có độ phức tạp O($\mu(m + n)$).
 		
-		- Quá trình tạo ra $\mu$ đồ thị mẫu dòng 3 có độ phức tạp O($\mu(m + n)$).
+			\item Do T$_{l}$ là một cây tính toán r(T$_{l}$, u) $\forall u \in T_{l} trong O(\mu n)$ 
 		
-		- Do T$_{l}$ là một cây tính toán r(T$_{l}$, u) $\forall u \in T_{l} trong O(\mu n)$ 
-		
-		- Phần Lazy Forward có độ phức tạp là O(qmn) với q là số vòng lặp từ dòng 10 đến 23.
-		
+			\item Phần Lazy Forward có độ phức tạp là O(qmn) với q là số vòng lặp từ dòng 10 đến 23.
+		\end {itemize}
 		Vậy nên toàn bộ thuật toán TMB có độ phức tạp là O($\mu$(m+qn)).
 	
 	\subsection{ Áp dụng các giải pháp đề xuất trên dữ liệu thực}
@@ -394,13 +394,13 @@ Nhằm giải quyết vấn đề trên, nhóm tác giả đề xuất một hư
 		{\itshape - Dữ liệu có sẵn}
 		
 		Trong phần này, chúng tôi thực nghiệm trên một số MXH trực tuyến để kiểm chứng tính hiệu quả của thuật toán khi so sánh nó với các thuật toán cơ sở được sử dụng trong các bài toán lan truyền thông tin \cite{nguyen30}, \cite{kempe21}, \cite{zhang40}. Chúng tôi so sánh đánh gia trên ba yêu tố chính: chất lượng lời giải, tính mở rộng, tác động của số vòng lan truyền d trên một vài các MXH trực tuyến thực tiễn. Các thuật toán cơ sở sẽ sử dụng bao gồm:
+		\begin {itemize}
+			\item Random: Thuật toán chọn ngẫu nhiên k đỉnh trong N$_{d}(S)$.
 		
-		- Random: Thuật toán chọn ngẫu nhiên k đỉnh trong N$_{d}(S)$.
+			\item Maxdegree (Maxdeg): Thuật toán heuristic chọn lần lượt các đỉnh có bậc cao nhất trong tập V$_{d}$ cho đến khi đủ k đỉnh.
 		
-		- Maxdegree (Maxdeg): Thuật toán heuristic chọn lần lượt các đỉnh có bậc cao nhất trong tập V$_{d}$ cho đến khi đủ k đỉnh.
-		
-		- Greedy: Thuật toán heuristic chọn lần lượt k đỉnh, trong mỗi lần chọn sẽ chọn ra đỉnh sao cho khi loại bỏ đỉnh đó sẽ cứu được nhiều đỉnh nhất có thể.
-		
+			\item Greedy: Thuật toán heuristic chọn lần lượt k đỉnh, trong mỗi lần chọn sẽ chọn ra đỉnh sao cho khi loại bỏ đỉnh đó sẽ cứu được nhiều đỉnh nhất có thể.
+		\end {itemize}
 		Chúng tôi thực nghiệm sử dụng một hệ thống máy có cấu hình sau: Intel(R) Core(TM) i5-6200U CPU @ 2.30 GHz (up to 2.40 GHz), bộ nhớ RAM 4GB, ngôn ngữ lập trình C++.
 		
 		{\itshape - Dữ liêu:}
