@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.6.24)  1 JUL 2018 19:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.6.24)  3 JUL 2018 01:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -895,7 +895,7 @@ been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.25 ...»‘i báº¡n bÃ¨, gia Ä‘Ã¬nh, cá»™ng Ä‘á»“ng}
-                                                   [2] [3] [4] [5]
+                                                   [2] [3] [4]
 
 Package hyperref Warning: Composite letter `\textdotbelow+\uhorn'
 (hyperref)                not defined in PD1 encoding,
@@ -937,6 +937,7 @@ Package hyperref Warning: Composite letter `\textdotbelow+\ocircumflex'
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\ocircumflex' on input line 42.
 
+[5]
 
 Package hyperref Warning: Composite letter `\textdotbelow+i'
 (hyperref)                not defined in PD1 encoding,
@@ -965,83 +966,83 @@ Package hyperref Warning: Composite letter `\textacute+\acircumflex'
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\acircumflex' on input line 44.
 
-[6] [7] [8]
+[6] [7]
 
 Package hyperref Warning: Composite letter `\textdotbelow+\uhorn'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 67.
+(hyperref)                removing `\textdotbelow' on input line 65.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 67.
+(hyperref)                removing `\uhorn' on input line 65.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+a'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 67.
+(hyperref)                removing `\textdotbelow' on input line 65.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\uhorn'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 67.
+(hyperref)                removing `\textdotbelow' on input line 65.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 67.
+(hyperref)                removing `\uhorn' on input line 65.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\h' on input line 67.
+(hyperref)                removing `\h' on input line 65.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 67.
+(hyperref)                removing `\textdotbelow' on input line 65.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 67.
+(hyperref)                removing `\ecircumflex' on input line 65.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+a'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 67.
+(hyperref)                removing `\textdotbelow' on input line 65.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ocircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 67.
+(hyperref)                removing `\textdotbelow' on input line 65.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ocircumflex' on input line 67.
+(hyperref)                removing `\ocircumflex' on input line 65.
 
-[9] [10]
+[8] [9] [10]
 
 Package hyperref Warning: Composite letter `\textacute+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 88.
+(hyperref)                removing `\textacute' on input line 86.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 88.
+(hyperref)                removing `\ecircumflex' on input line 86.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\acircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 88.
+(hyperref)                removing `\textdotbelow' on input line 86.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\acircumflex' on input line 88.
+(hyperref)                removing `\acircumflex' on input line 86.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 88.
+(hyperref)                removing `\uhorn' on input line 86.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ohorn' on input line 88.
+(hyperref)                removing `\ohorn' on input line 86.
 
 [11]) [12]
 \openout2 = `Chapter/Chapter2/Chapter2.aux'.
@@ -1947,70 +1948,70 @@ Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\h' on input line 2.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3--4
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
 \T5/ptm/m/n/14.4 https://thuvienphapluat.vn/van-ban/Cong-nghe-thong-tin/Nghi-di
 nh-72-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3--4
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
 \T5/ptm/m/n/14.4 2013-ND-CP-quan-ly-cung-cap-su-dung-dich-vu-Internet-va-thong-
 tin-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5--6
+Underfull \hbox (badness 10000) in paragraph at lines 6--7
 \T5/ptm/m/n/14.4 Truy xu§ttø:https://www.usatoday.com/story/theoval/2013/04/23/
 obama-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6--7
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
 []\T5/ptm/m/n/14.4 ƒnh h÷ðng cõa MXH vîi b¦u cû Ph¡p. Truy xu§t tø:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6--7
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
 \T5/ptm/m/n/14.4 https://baomoi.com/facebook-va-phep-thu-mang-ten-bau-cu-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7--8
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
 []\T5/ptm/m/n/14.4 Tin ^^_çn dàch Ebola bòng ph¡t t¤i H  Næi. Truy xu§t tø:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7--8
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
 \T5/ptm/m/n/14.4 http://baophapluat.vn/tin-nong/lam-ro-danh-tinh-2-nguoi-tung-t
 in-don-
  []
 
 
-Underfull \hbox (badness 5064) in paragraph at lines 8--9
+Underfull \hbox (badness 5064) in paragraph at lines 9--10
 []\T5/ptm/m/n/14.4 Tin ^^_çn cæng ty For-musa x£ th£i ch÷a qua xû l½. Truy xu§t
 
  []
 
 
-Underfull \hbox (badness 5475) in paragraph at lines 11--12
+Underfull \hbox (badness 5475) in paragraph at lines 14--15
 []\T5/ptm/m/n/14.4 D. Kempe, J. Klein-berg, and E. Tar-dos. 2003. Max-i-miz-ing
  the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 11--12
+Underfull \hbox (badness 10000) in paragraph at lines 14--15
 \T5/ptm/m/n/14.4 spread of in-flu-ence through a so-cial net-work. In Pro-ceed-
 ings
  []
 
 
-Underfull \hbox (badness 5022) in paragraph at lines 11--12
+Underfull \hbox (badness 5022) in paragraph at lines 14--15
 \T5/ptm/m/n/14.4 of the ninth ACM SIGKDD in-ter-na-tional con-fer-ence on Knowl
 -
  []
 
 
-Underfull \hbox (badness 2753) in paragraph at lines 11--12
+Underfull \hbox (badness 2753) in paragraph at lines 14--15
 \T5/ptm/m/n/14.4 edge dis-cov-ery and data min-ing. Wash-ing-ton, DC, USA, 137-
 146.
  []
@@ -2024,20 +2025,20 @@ kovec}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.20 	\bibitem{qazvin}
+l.23 	\bibitem{qazvin}
                        V. Qazvinian, E. Rosengren, D. R. Radev, and Qiaozhu ...
 ] [48]
-Underfull \hbox (badness 10000) in paragraph at lines 30--31
+Underfull \hbox (badness 10000) in paragraph at lines 35--36
 []\T5/ptm/m/n/14.4 Yadron D (2017) Twit-ter deletes 125,000 Isis ac-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 30--31
+Underfull \hbox (badness 10000) in paragraph at lines 35--36
 \T5/ptm/m/n/14.4 counts and ex-pands anti-terror teams. The Guardian Web.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 30--31
+Underfull \hbox (badness 10000) in paragraph at lines 35--36
 \T5/ptm/m/n/14.4 https://www.theguardian.com/technology/2016/feb/05/ twitter-de
 letes-
  []
@@ -2082,7 +2083,7 @@ exmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2018/texmf-dist/
 fonts/type1/vntex/urwvn/utmb8v.pfb><c:/texlive/2018/texmf-dist/fonts/type1/vnte
 x/urwvn/utmbi8v.pfb><c:/texlive/2018/texmf-dist/fonts/type1/vntex/urwvn/utmr8v.
 pfb><c:/texlive/2018/texmf-dist/fonts/type1/vntex/urwvn/utmri8v.pfb>
-Output written on Chuyende1.pdf (51 pages, 1084659 bytes).
+Output written on Chuyende1.pdf (51 pages, 1083766 bytes).
 PDF statistics:
  567 PDF objects out of 1000 (max. 8388607)
  484 compressed objects within 5 object streams
