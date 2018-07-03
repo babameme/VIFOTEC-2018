@@ -5,6 +5,11 @@
 \graphicspath{ {fig/} }
 %============================
 \makeindex%Sinh các chỉ mục
+
+\newcommand{\nocontentsline}[3]{}
+\newcommand{\tocless}[2]{\bgroup\let\addcontentsline=\nocontentsline#1{#2}\egroup}
+
+
 \begin{document}
 %\rm
 %\thispagestyle{empty}%
@@ -31,6 +36,8 @@
 \mainmatter %Định dạng các trang chính, số thứ tự được đánh kiểu ả rập: 1,2,3...
 %====================================
 %
+\include{Chapter/Modau/Modau}
+
 \include{Chapter/Chapter1/Chapter1}
 
 \include{Chapter/Chapter2/Chapter2}
