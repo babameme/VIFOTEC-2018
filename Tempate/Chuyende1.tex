@@ -15,9 +15,10 @@
 %\thispagestyle{empty}%
 
 %\listoffigures
+\pagenumbering{gobble}
 \tableofcontents
 
-\markboth{Mục lục}{}
+\markboth{Mở đầu}{}
 %\pagestyle{fancy}
 \frontmatter%Định dạng của các trang đầu, ở đây đánh số thứ tự kiểu la mã nhỏ: i,ii...
 {
@@ -36,6 +37,9 @@
 \mainmatter %Định dạng các trang chính, số thứ tự được đánh kiểu ả rập: 1,2,3...
 %====================================
 %
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
 \include{Chapter/Modau/Modau}
 
 \include{Chapter/Chapter1/Chapter1}

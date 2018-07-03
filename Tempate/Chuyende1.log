@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.6.24)  4 JUL 2018 01:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.6.24)  4 JUL 2018 01:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -688,7 +688,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 LaTeX Font Info:    Font shape `T5/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `T5/ptm/b/n' tried instead on input line 18.
+(Font)              Font shape `T5/ptm/b/n' tried instead on input line 19.
 
 (./Chuyende1.toc [1
 
@@ -706,14 +706,19 @@ Package Fancyhdr Warning: \headheight is too small (14.5pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.23 \frontmatter
+                 %Định dạng của các trang đầu, ở đây đánh s...
 [2]
 \openout2 = `Chapter/Modau/Modau.aux'.
 
  (./Chapter/Modau/Modau.tex
 
-Package hyperref Warning: Composite letter `\textasciigrave+\ohorn'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciigrave' on input line 2.
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\h' on input line 2.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
@@ -732,22 +737,12 @@ Package hyperref Warning: Composite letter `\textasciigrave+\acircumflex'
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\acircumflex' on input line 2.
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.10 
-      [1
+[1
 
 
 
 
-]pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
- been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.16 
-      [2] [3] [4]
+] [2] [3] [4]
 
 LaTeX Warning: The counter will not be printed.
              The label is: + on input line 44.
@@ -1205,7 +1200,7 @@ Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\acircumflex' on input line 29.
 
 [25]
-<picture/Hinh2_1.png, id=352, 373.395pt x 365.86688pt>
+<picture/Hinh2_1.png, id=353, 373.395pt x 365.86688pt>
 File: picture/Hinh2_1.png Graphic file (type png)
 <use picture/Hinh2_1.png>
 Package pdftex.def Info: picture/Hinh2_1.png  used on input line 46.
@@ -1234,7 +1229,7 @@ Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\ecircumflex' on input line 56.
 
 [27 <./picture/Hinh2_1.png>]
-<picture/Hinh2_2.png, id=365, 430.60875pt x 160.34906pt>
+<picture/Hinh2_2.png, id=366, 430.60875pt x 160.34906pt>
 File: picture/Hinh2_2.png Graphic file (type png)
 <use picture/Hinh2_2.png>
 Package pdftex.def Info: picture/Hinh2_2.png  used on input line 78.
@@ -1537,7 +1532,7 @@ Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\ecircumflex' on input line 48.
 
-<picture/Hinh3_1.png, id=438, 455.45157pt x 170.13562pt>
+<picture/Hinh3_1.png, id=439, 455.45157pt x 170.13562pt>
 File: picture/Hinh3_1.png Graphic file (type png)
 <use picture/Hinh3_1.png>
 Package pdftex.def Info: picture/Hinh3_1.png  used on input line 52.
@@ -1566,7 +1561,7 @@ Overfull \hbox (126.62978pt too wide) in paragraph at lines 80--81
  []
 
 [38] [39]
-<picture/Hinh3_2.png, id=469, 432.11438pt x 301.8778pt>
+<picture/Hinh3_2.png, id=470, 432.11438pt x 301.8778pt>
 File: picture/Hinh3_2.png Graphic file (type png)
 <use picture/Hinh3_2.png>
 Package pdftex.def Info: picture/Hinh3_2.png  used on input line 156.
@@ -1727,7 +1722,7 @@ LaTeX Warning: Command \textquotedblright invalid in math mode on input line 18
 6.
 
 [43] [44] [45]
-<picture/Hinh3_3.png, id=507, 430.60875pt x 222.8325pt>
+<picture/Hinh3_3.png, id=508, 430.60875pt x 222.8325pt>
 File: picture/Hinh3_3.png Graphic file (type png)
 <use picture/Hinh3_3.png>
 Package pdftex.def Info: picture/Hinh3_3.png  used on input line 218.
@@ -1790,7 +1785,7 @@ LaTeX Warning: Command \` invalid in math mode on input line 284.
 
 Missing character: There is no � in font cmr12!
 [48]
-<picture/thuattoan1.png, id=528, 331.99031pt x 185.19188pt>
+<picture/thuattoan1.png, id=529, 331.99031pt x 185.19188pt>
 File: picture/thuattoan1.png Graphic file (type png)
 <use picture/thuattoan1.png>
 Package pdftex.def Info: picture/thuattoan1.png  used on input line 288.
@@ -1804,7 +1799,7 @@ Missing character: There is no � in font cmr12!
 LaTeX Warning: Command \` invalid in math mode on input line 295.
 
 Missing character: There is no � in font cmr12!
-<picture/thuattoan2.png, id=530, 731.73375pt x 575.14874pt>
+<picture/thuattoan2.png, id=531, 731.73375pt x 575.14874pt>
 File: picture/thuattoan2.png Graphic file (type png)
 <use picture/thuattoan2.png>
 Package pdftex.def Info: picture/thuattoan2.png  used on input line 299.
@@ -1906,7 +1901,7 @@ LaTeX Warning: Command \` invalid in math mode on input line 319.
 
 Missing character: There is no � in font cmr10!
 [51]
-<picture/thamlam.png, id=548, 408.02437pt x 121.20282pt>
+<picture/thamlam.png, id=549, 408.02437pt x 121.20282pt>
 File: picture/thamlam.png Graphic file (type png)
 <use picture/thamlam.png>
 Package pdftex.def Info: picture/thamlam.png  used on input line 346.
@@ -1916,12 +1911,12 @@ Package pdftex.def Info: picture/thamlam.png  used on input line 346.
 LaTeX Warning: Citation `zhang39' on page 52 undefined on input line 354.
 
 [52 <./picture/thamlam.png>]
-<picture/HopNhat.png, id=555, 316.93407pt x 201.00093pt>
+<picture/HopNhat.png, id=556, 316.93407pt x 201.00093pt>
 File: picture/HopNhat.png Graphic file (type png)
 <use picture/HopNhat.png>
 Package pdftex.def Info: picture/HopNhat.png  used on input line 356.
 (pdftex.def)             Requested size: 158.46664pt x 100.50021pt.
-<picture/LT.png, id=556, 411.78844pt x 291.33844pt>
+<picture/LT.png, id=557, 411.78844pt x 291.33844pt>
 File: picture/LT.png Graphic file (type png)
 <use picture/LT.png>
 Package pdftex.def Info: picture/LT.png  used on input line 363.
@@ -1930,7 +1925,7 @@ Package pdftex.def Info: picture/LT.png  used on input line 363.
 
 LaTeX Warning: Citation `krause' on page 53 undefined on input line 368.
 
-<picture/STMB.png, id=557, 413.29407pt x 344.03531pt>
+<picture/STMB.png, id=558, 413.29407pt x 344.03531pt>
 File: picture/STMB.png Graphic file (type png)
 <use picture/STMB.png>
 Package pdftex.def Info: picture/STMB.png  used on input line 371.
@@ -2115,15 +2110,15 @@ letes-
 
 [59]) [60]
 No file Chuyende1.ind.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 56.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 56.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 60.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 60.
 (./Chuyende1.aux (./Chapter/Modau/Modau.aux) (./Chapter/Chapter1/Chapter1.aux)
 (./Chapter/Chapter2/Chapter2.aux) (./Chapter/Chapter3/Chapter3.aux)
 (./TLTK/TLTK.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 56.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 56.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 60.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 60.
 Package rerunfilecheck Info: File `Chuyende1.out' has not changed.
-(rerunfilecheck)             Checksum: A8858F0EC9B77C640ADB8DC77837F152;2353.
+(rerunfilecheck)             Checksum: 26B35DA20D8C8C951AE7F577706E89AA;2345.
 
 
 LaTeX Warning: There were undefined references.
@@ -2131,13 +2126,13 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 56.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 60.
  ) 
 Here is how much of TeX's memory you used:
- 8683 strings out of 492649
- 120359 string characters out of 6133384
+ 8685 strings out of 492649
+ 120375 string characters out of 6133384
  228277 words of memory out of 5000000
- 12169 multiletter control sequences out of 15000+600000
+ 12170 multiletter control sequences out of 15000+600000
  15015 words of font info for 24 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  33i,11n,45p,2559b,525s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2153,10 +2148,10 @@ exmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2018/texmf-dist/
 fonts/type1/vntex/urwvn/utmb8v.pfb><c:/texlive/2018/texmf-dist/fonts/type1/vnte
 x/urwvn/utmbi8v.pfb><c:/texlive/2018/texmf-dist/fonts/type1/vntex/urwvn/utmr8v.
 pfb><c:/texlive/2018/texmf-dist/fonts/type1/vntex/urwvn/utmri8v.pfb>
-Output written on Chuyende1.pdf (62 pages, 1107028 bytes).
+Output written on Chuyende1.pdf (62 pages, 1106966 bytes).
 PDF statistics:
- 685 PDF objects out of 1000 (max. 8388607)
- 590 compressed objects within 6 object streams
- 209 named destinations out of 1000 (max. 500000)
+ 686 PDF objects out of 1000 (max. 8388607)
+ 591 compressed objects within 6 object streams
+ 210 named destinations out of 1000 (max. 500000)
  240 words of extra memory for PDF output out of 10000 (max. 10000000)
 
