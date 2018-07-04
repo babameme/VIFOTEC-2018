@@ -361,7 +361,7 @@ Trong mục này chúng tôi chỉ ra một số kết quả về độ khó c�
 	Cho nguồn tiềm năng phát tán thông tin sai lệch S dưới mô hình LT, bài toán TMB là $\#P-hard$ nếu S chỉ chứa 1 đỉnh.
 \end{theo}
 \begin{proof}
-	Để chứng minh TMB là $\#P-hard$ chúng tôi sẽ chỉ ra độ khó của bài toán TMB là tương đương với độ khó của bài toán $s$-$t$ paths mà đã được chứng minh có độ khó là $\#P-hard$ trong \cite{vali}. 
+	Để chứng minh TMB là $\#P-hard$ chúng tôi sẽ chỉ ra độ khó của bài toán TMB là lớn hơn hoặc bằng với độ khó của bài toán $s$-$t$ paths mà đã được chứng minh có độ khó là $\#P-hard$ trong \cite{vali}. 
 	\begin{define}[Bài toán $s$-$t$ paths \cite{vali}]
 		Cho một đồ thị có hướng $G = (V, E), |V| = n, |E| = m$, bài toán s-t paths yêu cầu đếm số đường đi có hướng từ đỉnh $s$ tới đỉnh $t$ mà đi qua mọi đỉnh nhiều nhất một lần. 
 	\end{define}			
@@ -402,6 +402,7 @@ Trong mục này chúng tôi chỉ ra một số kết quả về độ khó c�
 	\\
 	& = \frac{2n+1}{2} \left(  \sum_{i=0}^{n-1} \alpha_i w^i +1 \right) 
 	\end{align}   		
+	với $\alpha_i=|\mathsf{P}_i(G, s, t)|$. Đặt $f(w)=\sum_{i=0}^{n-1}\alpha_i w^i$. Từ cấu trúc liên kết của G', chúng ta thấy rằng $h(u)=\max_{v \in G'}h(v)$ và $0 \leq  f(w) < 1$. Nếu có thể xác định $f(u) \geq \beta$ với $\forall \beta \in [0, 1]$ trong thời gian đa thức thì chúng ta sẽ giải được bài toán $s$-$t$ paths trong thời gian đa thức. Sử dụng tìm kiếm nhị phân trên đoạn [1, $\Delta^{n-1}$] chúng ta có thể xác định được giá trị của $f(w)$. Yêu cầu này được thực hiện trong $\mathcal{O}(\log(\Delta^{n-1}))=\mathcal{O}((n-1)\log\Delta) =\mathcal{O}(n\log n)$. Do đó việc tính toán $f(u)$ có thể thực hiện trong thời gian đa thức. Tiếp đến thay đổi trọng số w thành n giá trị 
 \end{proof}
 \subsubsection{Thuật toán đề xuất}
 {\itshape Thuật toán tham lam (Greedy algorithm)}

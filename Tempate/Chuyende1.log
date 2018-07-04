@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2018.6.6)  4 JUL 2018 17:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2018.6.6)  4 JUL 2018 20:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2315,88 +2315,87 @@ Overfull \hbox (24.58253pt too wide) in paragraph at lines 404--404
  []
 
 [54]
-LaTeX Font Info:    Calculating math sizes for size <13> on input line 437.
+LaTeX Font Info:    Calculating math sizes for size <13> on input line 438.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <13> not available
-(Font)              size <12> substituted on input line 437.
+(Font)              size <12> substituted on input line 438.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <6.5> not available
-(Font)              size <6> substituted on input line 437.
+(Font)              size <6> substituted on input line 438.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <13> not available
-(Font)              size <12> substituted on input line 437.
+(Font)              size <12> substituted on input line 438.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <6.5> not available
-(Font)              size <6> substituted on input line 437.
+(Font)              size <6> substituted on input line 438.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <13> not available
-(Font)              size <12> substituted on input line 437.
+(Font)              size <12> substituted on input line 438.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <6.5> not available
-(Font)              size <6> substituted on input line 437.
+(Font)              size <6> substituted on input line 438.
 
 
 LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <13> not available
-(Font)              size <12> substituted on input line 437.
+(Font)              size <12> substituted on input line 438.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <13> not available
-(Font)              size <12> substituted on input line 437.
+(Font)              size <12> substituted on input line 438.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <6.5> not available
-(Font)              size <6> substituted on input line 437.
+(Font)              size <6> substituted on input line 438.
 
 LaTeX Font Info:    Font shape `T5/ptm/bx/n' in size <13> not available
-(Font)              Font shape `T5/ptm/b/n' tried instead on input line 437.
-
-LaTeX Warning: Citation `khali' on page 55 undefined on input line 437.
-
+(Font)              Font shape `T5/ptm/b/n' tried instead on input line 438.
 
 LaTeX Warning: Citation `khali' on page 55 undefined on input line 438.
 
 
-Overfull \hbox (29.39374pt too wide) in paragraph at lines 454--454
+LaTeX Warning: Citation `khali' on page 55 undefined on input line 439.
+
+[55]
+Overfull \hbox (29.39374pt too wide) in paragraph at lines 455--455
 [] 
  []
 
-[55]
 
-LaTeX Warning: Citation `zhang39' on page 56 undefined on input line 467.
+LaTeX Warning: Citation `zhang39' on page 56 undefined on input line 468.
 
 LaTeX Font Info:    Font shape `T5/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `T5/ptm/b/n' tried instead on input line 472.
+(Font)              Font shape `T5/ptm/b/n' tried instead on input line 473.
 LaTeX Font Info:    Font shape `T5/ptm/bx/n' in size <10.00003> not available
-(Font)              Font shape `T5/ptm/b/n' tried instead on input line 472.
-<picture/1.pdf, id=626, 261.97874pt x 211.79124pt>
+(Font)              Font shape `T5/ptm/b/n' tried instead on input line 473.
+<picture/1.pdf, id=625, 261.97874pt x 211.79124pt>
 File: picture/1.pdf Graphic file (type pdf)
  <use picture/1.pdf>
-Package pdftex.def Info: picture/1.pdf used on input line 531.
+Package pdftex.def Info: picture/1.pdf used on input line 532.
 (pdftex.def)             Requested size: 136.57462pt x 110.41322pt.
 
-<picture/2.pdf, id=627, 261.97874pt x 211.79124pt>
+<picture/2.pdf, id=626, 261.97874pt x 211.79124pt>
 File: picture/2.pdf Graphic file (type pdf)
  <use picture/2.pdf>
-Package pdftex.def Info: picture/2.pdf used on input line 533.
+Package pdftex.def Info: picture/2.pdf used on input line 534.
 (pdftex.def)             Requested size: 136.57462pt x 110.41322pt.
 
-<picture/3.pdf, id=628, 261.97874pt x 146.5475pt>
+<picture/3.pdf, id=627, 261.97874pt x 146.5475pt>
 File: picture/3.pdf Graphic file (type pdf)
  <use picture/3.pdf>
-Package pdftex.def Info: picture/3.pdf used on input line 535.
+Package pdftex.def Info: picture/3.pdf used on input line 536.
 (pdftex.def)             Requested size: 136.57462pt x 76.39966pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-LaTeX Warning: Citation `krause' on page 56 undefined on input line 539.
+LaTeX Warning: Citation `krause' on page 56 undefined on input line 540.
 
 [56]
 
@@ -2406,66 +2405,66 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 Package hyperref Warning: Composite letter `\textdotbelow+u'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 598.
+(hyperref)                removing `\textdotbelow' on input line 599.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\h' on input line 598.
+(hyperref)                removing `\h' on input line 599.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\dj' on input line 598.
+(hyperref)                removing `\dj' on input line 599.
 
 
 Package hyperref Warning: Composite letter `\textasciigrave+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciigrave' on input line 598.
+(hyperref)                removing `\textasciigrave' on input line 599.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 598.
+(hyperref)                removing `\ecircumflex' on input line 599.
 
 
 Package hyperref Warning: Composite letter `\textacute+\acircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 598.
+(hyperref)                removing `\textacute' on input line 599.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\acircumflex' on input line 598.
+(hyperref)                removing `\acircumflex' on input line 599.
 
 
 Package hyperref Warning: Composite letter `\texttilde+\uhorn'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\texttilde' on input line 598.
+(hyperref)                removing `\texttilde' on input line 599.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 598.
+(hyperref)                removing `\uhorn' on input line 599.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 598.
+(hyperref)                removing `\textdotbelow' on input line 599.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 598.
+(hyperref)                removing `\ecircumflex' on input line 599.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\uhorn'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 598.
+(hyperref)                removing `\textdotbelow' on input line 599.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 598.
+(hyperref)                removing `\uhorn' on input line 599.
 
 
-LaTeX Warning: Citation `kempe21' on page 59 undefined on input line 604.
+LaTeX Warning: Citation `kempe21' on page 59 undefined on input line 605.
 
 
-LaTeX Warning: Citation `zhang40' on page 59 undefined on input line 604.
+LaTeX Warning: Citation `zhang40' on page 59 undefined on input line 605.
 
 [59 <./picture/1.pdf
 
@@ -2623,7 +2622,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 60.
 Here is how much of TeX's memory you used:
  11285 strings out of 492995
  161275 string characters out of 6136403
- 298360 words of memory out of 5000000
+ 299360 words of memory out of 5000000
  14299 multiletter control sequences out of 15000+600000
  39673 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2645,7 +2644,7 @@ nts/cm/cmtt12.pfb><c:/texlive/2017/texmf-dist/fonts/type1/vntex/urwvn/utmb8v.pf
 b><c:/texlive/2017/texmf-dist/fonts/type1/vntex/urwvn/utmbi8v.pfb><c:/texlive/2
 017/texmf-dist/fonts/type1/vntex/urwvn/utmr8v.pfb><c:/texlive/2017/texmf-dist/f
 onts/type1/vntex/urwvn/utmri8v.pfb>
-Output written on Chuyende1.pdf (68 pages, 1164966 bytes).
+Output written on Chuyende1.pdf (68 pages, 1166419 bytes).
 PDF statistics:
  943 PDF objects out of 1000 (max. 8388607)
  805 compressed objects within 9 object streams
