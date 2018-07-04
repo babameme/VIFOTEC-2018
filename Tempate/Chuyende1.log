@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2018.6.6)  4 JUL 2018 20:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2018.6.6)  4 JUL 2018 21:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2390,14 +2390,13 @@ File: picture/3.pdf Graphic file (type pdf)
  <use picture/3.pdf>
 Package pdftex.def Info: picture/3.pdf used on input line 536.
 (pdftex.def)             Requested size: 136.57462pt x 76.39966pt.
-
+ [56]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-LaTeX Warning: Citation `krause' on page 56 undefined on input line 540.
+LaTeX Warning: Citation `krause' on page 57 undefined on input line 540.
 
-[56]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -2622,7 +2621,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 60.
 Here is how much of TeX's memory you used:
  11285 strings out of 492995
  161275 string characters out of 6136403
- 299360 words of memory out of 5000000
+ 294360 words of memory out of 5000000
  14299 multiletter control sequences out of 15000+600000
  39673 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2644,7 +2643,7 @@ nts/cm/cmtt12.pfb><c:/texlive/2017/texmf-dist/fonts/type1/vntex/urwvn/utmb8v.pf
 b><c:/texlive/2017/texmf-dist/fonts/type1/vntex/urwvn/utmbi8v.pfb><c:/texlive/2
 017/texmf-dist/fonts/type1/vntex/urwvn/utmr8v.pfb><c:/texlive/2017/texmf-dist/f
 onts/type1/vntex/urwvn/utmri8v.pfb>
-Output written on Chuyende1.pdf (68 pages, 1166419 bytes).
+Output written on Chuyende1.pdf (68 pages, 1166909 bytes).
 PDF statistics:
  943 PDF objects out of 1000 (max. 8388607)
  805 compressed objects within 9 object streams
