@@ -5,10 +5,13 @@
 \usepackage{amsmath} 
 % Định nghĩa thuật toán
 %Tạo Index
-\usepackage{algorithm}
+%\usepackage{algorithm}
 \usepackage{algorithmic}
 \usepackage{multirow}
 \usepackage{makeidx}
+\usepackage[ruled,lined, linesnumbered]{algorithm2e}
+\usepackage{subfig}
+
 %Thụt vào đầu dòng mỗi đoạn
 \usepackage{indentfirst}
 \setlength{\parindent}{1cm} 
@@ -17,7 +20,7 @@
  \usepackage{enumitem} 
  \usepackage{enumerate}
 % \usepackage{lipsum} 
- \setlist[enumerate]{itemindent=\dimexpr\labelwidth+\labelsep\relax,leftmargin=1em} 
+% \setlist[enumerate]{itemindent=\dimexpr\labelwidth+\labelsep\relax,leftmargin=1em} 
 % \setlist[itemize][label =-]{itemindent=\dimexpr\labelwidth+\labelsep\relax,leftmargin=1em} 
 \setlist[itemize,1]{label=-}%thay vì dấu chấm thì là dấu gạch đầu dòng
  %
@@ -92,9 +95,10 @@
 \theoremstyle{definition}
 \newtheorem{dn}{Định nghĩa}[chapter]%[section]
 \newtheorem{define}{Định nghĩa}[chapter]
-\floatstyle{ruled}
-\newfloat{algorithm}{htbp}{loa}
-\floatname{algorithm}{Thuật toán}
+
+%\floatstyle{ruled}
+%\newfloat{algorithm}{htbp}{loa}
+%\floatname{algorithm}{Thuật toán}
 
 \renewcommand{\thedn}{\arabic{chapter}.\arabic{dn}}%
 %\newenvironment{proof}[1][Chứng minh.]{\begin{trivlist}
