@@ -160,150 +160,230 @@ Nhằm giải quyết vấn đề trên, nhóm tác giả đề xuất một hư
 	 		\end{figure}
 	 	\end{center}
  	\end {itemize}
- 	\subsection{Giải pháp hạn chế: Limiting the spread of epidemics within time constraint on online social network (Ngăn chăn khả năng lan truyền của thông tin sai lệch trong thời gian giới hạn trên một mạng xã hội)}
- 	Giải pháp này được đề xuất và nghiên cứu sau khi xem xét thực tế quá trình lan truyền của một thông tin sai lệch trên mạng xã hội. Thông tin sai lệch luôn bắt đầu từ một số người dùng nhất định (có thể coi như đỉnh “nguồn” phát tán thông tin sai lệch). Những người dùng này thường là những tên có tư tưởng lệch lạc, phản động, và thông tin sai lệch thường là những thông tin bị bóp méo, những sai lầm của cán bộ bị thồi phồng, hoặc những lời lẽ bịa đặt vô căn cứ. Từ những người dùng bắt đầu này, thông tin sẽ được biết đến bởi những người xung quanh có liên kết với chúng, thường là những người dùng có quan hệ bạn bè với chúng. Thông tin này ban đầu có thể không tác động tới người dùng xung quanh, tuy nhiên nếu nó xuất hiện thêm nhiều lần từ nhiều nguồn khác nhau thì họ có thể sẽ tiếp nhận thông tin đó, và từ đó trở thành một nguồn phát thông tin sai lệch mới. Nếu mọi việc cứ phát triển thì thông tin này dần dần sẽ lan truyền sang toàn bộ một cộng đồng, hoặc thậm chí là toàn mạng xã hội (Quá trình lan truyền này được biểu diễn thông qua mô hình lan truyền được định nghĩa bên dưới). Do đó, cần có phương pháp giúp kiểm soát tình hình, ngăn chặn thông tin sai lệch lan truyền quá rộng, và đây cũng là lí do mà giải pháp này được nghiên cứu và công bố. Giải pháp được thiết kế để có thể chọn một số người dùng đặc biệt. Những người dùng được chọn này sau đó sẽ được các cơ quan chức năng có thẩm quyền tiến hành các phương pháp phù hợp đề ngăn chặn khả năng phát tán thông tin của họ. Từ đó, thông tin sai lệch sẽ không có khả năng truyền thông qua những người dùng này, và dẫn đến khả năng lan truyền sang những người dùng tiếp theo bị cản trở. Giải pháp này đã được chứng minh rằng nó có thể lựa chọn ra các đỉnh hiệu quả nhất để ngăn chặn, do đó vừa đem lại hiệu quả cao mà không hao tốn quá nhiều tài nguyên vào việc ngăn chặn các đỉnh kém hiệu quả khác.
- 		\subsubsection{Mô hình lan truyền thông tin Ngưỡng tuyến tính với bước thời gian rời rạc (Time Constraint Deterministic Linear Threshold - T-DLT).}
- 		Như đã được trình bày ở trên, có hai mô hình phổ biến trong bài toán lan truyền thông tin nói chung là mô hình IC và mô hình LT. Tuy nhiên, ở giải pháp này chúng tôi đề xuất một mở rộng mô hình DLT \cite{zaixin}, vốn cũng là một trường hợp biến thể của mô hình LT, được gọi là T-DLT. Sở dĩ chúng tôi sử dụng mô hình này thay cho mô hình LT và IC bởi với bài toán này, mô hình T-DLT cho phép chúng tôi giảm thiểu tính phức tạp của cơ chế lan truyền, đồng thời vẫn đảm bảo kết quả không bị ảnh hưởng so với hai mô hình điển hình trên. Chi tiết mô hình T-DLT có thể được mô tả như sau:
- 		\begin {itemize}
- 			\item {\itshape Ký pháp đồ thị}: Đặt G=(V,E,w) là biểu diễn của MXH với tập đỉnh V, tập cạnh có hướng E, với |V|=n và |E|=m. Mỗi đỉnh đại diện cho một người dùng trong MXH, mỗi cạnh e=(u,v) trong tập E tương ứng đại diện cho mỗi quan hệ giữa người dùng u và người dùng v. Chúng tôi ký hiệu đỉnh vào liền kề và đỉnh ra liền kề của đỉnh u lần lượt là N$_{in}$(u) và N$_{out}$(u), d$_{in}$(u) và d$_(out)$(u) lần lượt là bậc vào và bậc ra của đỉnh u. Đặt I $\subset$ V là tập các đỉnh bị lây nhiễm ban đầu. Mỗi cạnh có hướng (u,v) sẽ có trọng số w(u,v), tượng trưng cho mức độ ảnh hưởng thông tin của v tới u, thỏa mãn $\sum$ $_(u)$ w(u,v) $\leq$ 1.
- 		
- 			\item {\itshape Trạng thái của đỉnh}: Quá trình phát tán thông tin sai lệch từ tập đỉnh ban đầu I tới các đỉnh còn lại trong MXH tiến triển theo từng bước thời gian rời rạc t=1,2,…,d. Mỗi đỉnh v $\in$ V có hai trạng thái là {\itshape bị lây nhiễm (hay “kích hoạt”)} và {\itshape không bị lây nhiễm (hay “không kích hoạt”)}.
- 		
- 			\item {\itshape Ngưỡng lây nhiễm (hay ngưỡng kích hoạt)}: Mỗi đỉnh v sẽ có một ngưỡng lây nhiễm cho trước $\theta$$_(v)$ $\in$ [0,1]. Giá trị này đại diện cho trọng số vào của đỉnh v cần chuyển thành bị lây nhiễm để v trở thành bị lây nhiễm.
- 		
- 			\item {\itshape Quá trình lan truyền}: Quá trình lây lan thông tin sai lệch được mô phỏng tuần tự theo từng bước thời gian rời rạc (còn gọi là $``$vòng$"$, $``$bước$"$) t=0,1,2,…,d. Đặt I$_(t)$ là tập các đỉnh bị lây nhiễm sau t bước, quá trình lan truyền được mô phỏng như sau:
- 			\begin {enumerate} [+]
- 				\item Tại bước t=0, tất cả các đỉnh trong tập I đều bị lây nhiễm, I$_(0)$=I.
- 		
- 				\item Tại bước t $\geq$ 1, tất cả các đỉnh không bị lây nhiễm v sẽ chuyển thành bị lây nhiễm nếu tổng số các đỉnh vào gần kề chạm ngưỡng lây nhiễm của nó, $\sum$$_(các đỉnh vào gần kề của u)$ w(u,v) $\geq$ $\theta$$_(v)$.	
- 		
- 				\item Một đỉnh bị lây nhiễm sẽ giữ nguyên trạng thái bị lây nhiễm cho tới hết quả trình lan truyền. Qúa trình lan truyền chấm dứt khi t = d.
- 			\end {enumerate}
- 		\end {itemize}
- 		Trong mô hình LT, giá trị của ngưỡng $\theta$$_(v)$ được đặt một cách ngẫu nhiên trong khoảng [0,1] và sẽ được chỉnh sửa dựa vào thông tin có được thêm trong quá trình lan truyền. Do đó, mô hình này thuộc dạng mô hình ngẫu nhiên. Khác với mô hình LT, trong mô hình T-DLT ngưỡng lây nhiễm $\theta$$_(v)$ được cho trước. Trường hợp này, giá trị ngưỡng có thể được đặt dựa theo các khảo sát thực tế hoặc các phương pháp khai phá dữ liệu.
- 		
- 		\subsubsection{Định nghĩa bài toán}
- 		Đối với giải pháp này, việc ngăn chặn thông tin sai lệch được tiến hành bằng cách loại bỏ một số người dùng ra khỏi mạng để thông tin không thể truyền qua được, sao cho phạm vi lan truyền của thông tin là nhỏ nhất có thể. Nếu như coi mạng xã hội là một đồ thị, thì ta có thể hiểu rằng những đỉnh $``$bị lây nhiễm$”$ là những người dùng đã bị ảnh hưởng bởi thông tin sai lệch và thông tin sai lệch đó có thể truyền từ người dùng này sang những người dùng thân cận, những đỉnh $``$không bị lây nhiễm$”$ là những đỉnh không bị ảnh hưởng bởi thông tin sai lệch, còn những đỉnh $``$cứu được$”$ là những đỉnh mà có trạng thái chuyển từ $``$bị lây nhiễm$”$ sang $``$không bị lây nhiễm$”$ khi chiến thuật loại bỏ đỉnh được áp dụng. Trong thực tế, việc loại bỏ một người dùng ra khỏi mạng xã hội có thể được thực hiện bằng cách thuyết phục người dùng đó thoát khỏi sự ảnh hưởng của thông tin sai lệch, hoặc ngăn chặn kết nối mạng của người dùng đó, hoặc xóa bỏ tài khoản của người dùng ra khỏi mạng xã hội, v.v… Tuy nhiên, những cách làm này đều là những cách làm yêu cầu có sự phối hợp từ nhiều bên liên quan, do đó nếu tiến hành loại bỏ quá nhiều sẽ dẫn đến chi phí phát sinh về thời gian và vật chất rất lớn, thậm chí sẽ gây ra trường hợp loại bỏ những thông tin lan truyền quá rộng dẫn đến vô ích. Vì vậy, vấn đề đặt ra là phải làm sao chọn ra được một số lượng K đỉnh nào đó để khi thực hiện chiến thuật loại bỏ, ta thu được số đỉnh cứu nhiều nhất. Số lượng K sẽ được tính toán một cách cân đối, cẩn thận nhất về chi phí để không làm mất tác dụng của chiến thuật loại bỏ. Chiến thuật loại bỏ K đỉnh này có thể được mô hình hóa và phát biểu khoa học như sau:  
- 		
- 		Kí hiệu f$_{d}$(I) là tập hợp các đỉnh đã bị lây nhiễm sau d vòng trên đồ thị G = (V,E) trong mô hình T-DLT, f$_(d)$(I,A) là tập các đỉnh bị lây nhiễm sau khi loại bỏ một tập các đỉnh A $\subseteq$ V \ I từ G (số đỉnh bị lây nhiễm trong đồ thị sót lại). Khi đó, số đỉnh cứu được khi loại bỏ tập A là: h$_{d}$(A) = | f$_{d}$(I, $\emptyset$) | - | f$_{d}$(I, A) |
- 		
- 		Trong mô hình T-DLT, ta xây dựng một bài toán tối ưu tổ hợp là: {\itshape Hạn chế sự lây lan của thông tin sai lệch} (Limiting the Spread of Epidemics - LSE), có mục tiêu tìm kiếm một tập đỉnh có kích cỡ tối đa k đỉnh sao cho khi loại bỏ tập đỉnh đó, số đỉnh cứu được sẽ đạt cực đại.  
- 		
- 		{\itshape Định nghĩa (Bài toán LSE): Cho đồ thị vô hướng G=(V,E) biểu diễn một MXH trong mô hình T-DLT. Một tập các đỉnh bị lây nhiễm ban đầu I $\subset$ V, số vòng lan truyền d và số đỉnh tối đa loại bỏ được là k > 0. Tìm một tập k đỉnh  A $\subseteq$ V \ I sao cho khi loại bỏ khỏi mạng thì số đỉnh cứu được sau d vòng là h$_{d}$(A) đạt cực đại.}
- 		
- 		Kí hiệu G$_{d}$ = (V$_{d}$, E$_{d}$) đồ thị con của đồ thị G=(V, E) trong đó V$_{d}$ là tập các đỉnh mà khoảng cách giữa một đỉnh bất kì trong đó với một đỉnh trong tập I tối đa là d, và tập E$_{d}$ là tập các cạnh nối từ các đỉnh thuộc tập I sang các đỉnh khác có khoảng cách tối đa là d, đồng thời n$_{d}$ = | V$_{d}$ |, m$_{d}$ = | E$_{d}$ |. Ta thấy rằng sự lan truyền thông tin sai lệch chỉ xảy ra bên trong đồ thị G$_{d}$. Do đó, để đơn giản hóa, thay vì xét đến tất cả các đỉnh thuộc G, ta sẽ chỉ tìm kiếm kết quả trong G$_{d}$.
- 		
- 		\subsubsection{Độ phức tạp và tính xấp xỉ của bài toán LSE}
- 		Trong mục này, chúng tôi chỉ ra tính NP-Khó của bài toán LSE bằng cách tương đương hóa bài toán LSE với bài toán Phủ đỉnh (Set Cover). Chúng tôi cũng sẽ chỉ ra tính khó xấp xỉ của LSE, tức là việc xấp xỉ bài toán LSE với tỉ lệ n$^{1 - \varepsilon}$, với 0 < $\varepsilon$ < 1, là bài toán NP-Khó.
- 		
- 		{\itshape Định lí: LSE là bài toán NP-Khó trong mô hình T-DLT}.
- 		
- 		{\itshape Chứng minh:} Để chứng minh LSE là bài toán NP-Khó, ta giản thể bài toán về bài toán Phủ đỉnh (Set cover) 
- 		
- 		{\bfseries Bài toán Phủ đỉnh (Set Cover - SC):} Cho một số tự nhiên dương t, một tập phổ quát $\vartheta$ = {e$_{1}$, e$_{2}$, ... ,e$_{M}$} và tập con S = {s$_{1}$, s$_{2}$, ... , s$_{N}$} ta có thể giả sử rằng t < M < N. Bài toán Phủ đỉnh yêu cầu rằng: Có tồn tại hay không 1 lương t tập con, sao cho chúng là $\vartheta$.
- 		
- 		Bài toán SC đã được chứng minh là bài toán NP-Khó khi kích thước các tập được giới hạn là 3 và mỗi phần tử xuất hiện trong đúng hai tập con. Để giản thể bài toán SC về bài toán LSE, đầu tiên ta xây dựng một biểu diễn J$_{LSE}$ của LSE từ biểu diễn J$_{SC}$ của bài toán SC. Sau đó chúng tôi chỉ ra rằng nếu J$_{SC}$ có tồn tại lời giải S kích thước t, thì J$_{LSE}$ có lời giải A, | A | $\leq$ k với h$_{d}$(A) $\geq$ k + M và ngược lại.
- 		
- 		{\bfseries Xây dựng:} Cho một biểu diễn J$_{SC}$ = ($\vartheta$, S, t) của bài toán SC, ta xây dựng biểu diễn J$_{LSE}$ = (G, I, d, k) của bài toán LSE như theo hình \ref{refhinh3_3}
- 		\begin {itemize}
- 			\item Tập các đỉnh và các cạnh với mỗi S$_{i}$ $\in$ S, ta xây dựng một đỉnh u$_{i}$. Ta có thêm một cạnh có hướng (s$_{i}$, u$_{i}$). Với mỗi phần tử e$_{j}$ $\in$ $\vartheta$ ta thêm một đỉnh v$_{j}$ và thêm một cạnh có hướng (u,v) với mỗi e$_{j}$ $\in$ S$_{i}$. Để thuận tiện, ta đặt B = {u$_{1}$, u$_{2}$, ... , u$_{N}$}, C = {v$_{1}$, v$_{2}$, ... , v$_{M}$}.
- 		
- 			\item Ngưỡng lây nhiễm và trọng số: ta đặt w(u,v) = 1, w(u$_{i}$, v$_{i}$) = $\dfrac{1}{d_{in}(v_{j})}$, $\theta$$_{u_{i}}$ = $\theta$$_{v_{i}}$ = 1.
- 		
- 			\item Sau cùng, ta cho k = t, d = 2. 		
- 		
- 		\begin{center}
- 			\begin{figure}[!htp]
- 				\begin{center}
- 					\includegraphics [scale=.5]{picture/Hinh3_3}
- 				\end{center}
- 				\caption{Giản thể từ bài toán SC về bài toán LSE.}
- 				\label{refhinh3_3}
- 			\end{figure}
- 		\end{center}
- 		\end {itemize}
- 		{\bfseries Phân tích:} Qua bước xây dựng, ta thấy rằng | f$_{d}$(I,$\emptyset$) | = M + N. Nếu như có đỉnh bất kì u$_{i} \in$ B là đỉnh kề vào và v$_{j} \in$ C là đỉnh chưa bị lây nhiễm thì: 
- 		\begin{center}
- 			$\sum_{Các đỉnh hàng xóm tới đã bị lây nhiễm u}$ w(u, v$_{j}$) $\leq$ 1 - $\dfrac{1}{d_{in}(v_{j})}$ < 1 = $\theta_{v_{j}}$
- 		\end{center}
- 		
- 		Do đó v$_{j}$ lầ đỉnh không bị lây nhiễm. Nếu không, các đỉnh trong C là các đỉnh không bị lây nhiễm.
- 		
- 		($\rightarrow$) Giả sử S' là lời giải của biểu diễn J$_{SC}$, có nghĩa là | S' | = t = k và nó phủ t phần tử $\vartheta$. Nếu ta chọn tập A chứa đỉnh u$_{i}$ tương ứng với S$_{i} \in$ S', với mọi đỉnh v$_{i} \in$ B kề với ít nhất một đỉnh trong A. Bằng bước phân tích trên, mọi đỉnh trong C là đỉnh không bị lây nhiễm. Ta có h$_{d}$(A) = t + M = k + M
- 		
- 		($\leftarrow$) Ngược lại, nếu J$_{LSE}$ có lời giải A, |A| $\leq$ k với h$_{d}$(I, A) $\geq$ k + M. Nếu A chứa t$_{1}$ (1 $\leq$ t$_{1}$ $\leq$ k) đỉnh trong C, h$_{d}$(I, A) $\leq$ k - t$_{1}$ + M < k + M. Do đó A không chứa bất kì đỉnh nào thuộc C. Ở đây, A $\subset$ B. Kết hợp với h$_{d}$(I, A) $\geq$ k + M, mọi đỉnh thuộc C là đỉnh không bị lây nhiễm. Do đó, mọi đỉnh u$_{i} \in$ A kề ít nhất với một đỉnh thuộc C. Vì vậy, qua bước xây dựng ta thấy rằng, S' = { S$_{i}$ | u$_{i} \in$ A } là lời giải cho bài toán J$_{1}$. Định lý được chứng minh.
- 		
- 		Bằng cách thay đổi một chút phương pháp chứng minh bên trên, ta có thể chứng minh thêm được một định lý về tính khó xấp xỉ của bài toán LSE.
- 		
- 		Định lý: Đánh giá xấp xỉ bài toán LSE với tỉ lệ n$^{1 - \varepsilon}$ trong mô hình T-DLT với mọi hằng số 0 < $\varepsilon$ < 1 là bài toán NP-khó .
- 		
- 		{\itshape Chứng minh}: Để chứng minh kết quả này, ta sử dụng phương pháp gap-introduction reduction \cite{vijay38} để chứng minh tính khó xấp xỉ của bài toán LSE. Sử dụng phép giản thể trong thời gian đa thức từ bài toán SC thành bài toán LSE , chúng tôi sẽ chỉ ra nếu tồn tại một thuật toán có thời gian đa thức có thể xấp xỉ được bài toán trên với tỉ lệ $^{1 - \varepsilon}$, thì sẽ tồn tại một thuật toán có thời gian đa thức để giải bài toán gốc.
- 		
- 		{\bfseries Xây dựng:} Cho một biểu diễn của bài toán SC, J$_{SC}$ = ($\vartheta$, S, t), ta xây dựng một biểu diễn J$_{LSE}$ = (G, I, d, k) 
- 		\begin {itemize}
- 			\item Tập các đỉnh và các cạnh: Với mỗi đỉnh v$_{j} \in$ C, ta thêm n$_{0}$ = N$^{q}$ đỉnh X = { x$_{1}$, x$_{2}$, ... , x$_{n_{0}}$} với một hằng số q đủ lớn và thêm một cạnh có hướng (v$_{j}$, x$_{l}$), l = 1 ... n$_{0}$.
- 		
- 			\item Ngưỡng lây nhiễm và trọng số: Gán w(v$_{j}$, x$_{l}$) = $\dfrac{1}{M}$; $\theta_{x_{l}}$ = $\dfrac{1}{M}$, l = 1 ... n$_{0}$.\\
- 		\end {itemize}
- 		Giả sử J$_{SC}$ có tập phủ đinh S' kích cỡ t, ta chọn tập A = ${{u_{i} | S_{i} \in S}}$. Qua bước phân tích, mọi đỉnh C đều là các đỉnh không bị lây nhiễm. Điều này dẫn tới mọi đỉnh trong X đều là các đỉnh không bị lây nhiễm. Bởi bước xây dựng này, ta có: | f$_{d}(I, \emptyset)$ | = N + M + N$^{q}$, | f$_{d}(I, A)$ | = N - k, do đó: 
- 		\begin{center}
- 			h(A) = | f$_{d}(I, \emptyset)$ | - | f$_{d}(I, A)$ | = M + N$^{q}$ + k
- 		\end{center}
- 		
- 		Trong trường hợp J$_{SC}$ không có tập phủ đỉnh kích thước t, nó có ít nhất một đỉnh v$_{j}$ bị lây nhiễm. Điều này dẫn tới việc mọi trong X đều bị lây nhiễm. Do đó, | f$_{d}$(I, A) | > N - k + N$_{q}$ dẫn tới h(A) = M  + k < 2N.
- 		
- 		Lúc này giá trị của thuật toán có thể xấp xỉ bài toán LSE trong tỉ lệ n$^{1 - \varepsilon}$, ta chứng minh được rằng lời giải của bài toán SC có thể được tìm trong thời gian đa thức. Với bất kì biểu diễn J$_{SC}$ nào, ta xây dựng một biểu diễn J$_{LSE}$ theo cách xây dựng trên trong thời gian đa thức của m và n. 
- 		
- 		Trong trường hợp J$_{SC}$ có tập đỉnh phủ kích cỡ t, theo cách xây dựng của chúng tôi, lời giải tối ưu A$_{opt}$ của J$_{LSE}$ có h(A$_{opt}$) = k + M + N$_{q}$. Thuật toán xấp xỉ lời giải tối ưu với tỉ lệ n$^{1 - \varepsilon}$ (n = 2N + M + N$_{q}$ là số đỉnh của đồ thị đầu vào) do đó có thể tìm kiếm lời giải. 
- 		
- 			h(A(J$_{LSE}$)) $\geq$ $\dfrac{1}{n_{1 - \varepsilon}} h(A_{opt}) > \dfrac{1}{n^{1 - \varepsilon}}(M + N_{q} +k) = \dfrac{n^{\varepsilon}}{n}(M + N^{q} +k) > \dfrac{(M + N^{q} + k)^{\varepsilon}}{M + N^{q} + k}N^{q}$$> \dfrac{N^{q.\varepsilon}}{4N^{q}}N^{q} = \dfrac{1}{4}N^{q.\varepsilon}$. 
- 		
- 		Cho q đủ lớn để q > $\dfrac{ln(8N)}{\varepsilon.ln(N)}$, ta được: 
- 		\begin{center}
-			$h(A(J_{LSE})) > 2N$.
- 		\end{center}
  	
- 		Nếu $J_{LSE}$ không có tập phủ đỉnh kích cỡ t, thì tập tối ưu $A_{opt}$ của $J_{LSE}$ có 
- 		\begin{center}
- 			$h(A(J_{LSE})) < 2N$.
- 		\end{center}
+ 	 	\subsection{Giải pháp hạn chế: Limiting the spread of epidemics within time constraint on online social network (Ngăn chăn khả năng lan truyền của thông tin sai lệch trong thời gian giới hạn trên một mạng xã hội)}
+ 	Giải pháp này được đề xuất và nghiên cứu sau khi xem xét thực tế quá trình lan truyền của một thông tin sai lệch trên mạng xã hội. Thông tin sai lệch luôn bắt đầu từ một số người dùng nhất định (có thể coi như đỉnh “nguồn” phát tán thông tin sai lệch). Những người dùng này thường là những kẻ có tư tưởng lệch lạc, phản động, và thông tin sai lệch thường là những thông tin bị bóp méo, những sai lầm của cán bộ bị thồi phồng, hoặc những lời lẽ bịa đặt vô căn cứ. Từ những người dùng bắt đầu này, thông tin sẽ được biết đến bởi những người xung quanh có liên kết với chúng, thường là những người dùng có quan hệ bạn bè với chúng. Thông tin này ban đầu có thể không tác động tới người dùng xung quanh, tuy nhiên nếu nó xuất hiện thêm nhiều lần từ nhiều nguồn khác nhau thì họ có thể sẽ tiếp nhận thông tin đó, và từ đó trở thành một nguồn phát thông tin sai lệch mới. Nếu mọi việc cứ phát triển thì thông tin này dần dần sẽ lan truyền sang toàn bộ một cộng đồng, hoặc thậm chí là toàn mạng xã hội (Quá trình lan truyền này được biểu diễn thông qua mô hình lan truyền được định nghĩa bên dưới). Do đó, cần có phương pháp giúp kiểm soát tình hình, ngăn chặn thông tin sai lệch lan truyền quá rộng, và đây cũng là lí do mà giải pháp này được nghiên cứu và công bố. Giải pháp được thiết kế để có thể chọn một số người dùng đặc biệt. Những người dùng được chọn này sau đó sẽ được các cơ quan chức năng có thẩm quyền tiến hành các phương pháp phù hợp đề ngăn chặn khả năng phát tán thông tin của họ. Từ đó, thông tin sai lệch sẽ không có khả năng truyền thông qua những người dùng này, và dẫn đến khả năng lan truyền sang những người dùng tiếp theo bị cản trở. Giải pháp này đã được chứng minh rằng nó có thể lựa chọn ra các đỉnh hiệu quả nhất để ngăn chặn, do đó vừa đem lại hiệu quả cao mà không hao tốn quá nhiều tài nguyên vào việc ngăn chặn các đỉnh kém hiệu quả khác.
+ 	\subsubsection{Mô hình lan truyền thông tin Ngưỡng tuyến tính với bước thời gian rời rạc (Time Constraint Deterministic Linear Threshold - T-DLT).}
+ 	Như đã được trình bày ở trên, có hai mô hình phổ biến trong bài toán lan truyền thông tin nói chung là mô hình IC và mô hình LT. Tuy nhiên, ở giải pháp này chúng tôi đề xuất một mở rộng mô hình DLT \cite{zaixin}, vốn cũng là một trường hợp biến thể của mô hình LT, được gọi là T-DLT. Sở dĩ chúng tôi sử dụng mô hình này thay cho mô hình LT và IC bởi với bài toán này, mô hình T-DLT cho phép chúng tôi giảm thiểu tính phức tạp của cơ chế lan truyền, đồng thời vẫn đảm bảo kết quả không bị ảnh hưởng so với hai mô hình điển hình trên. Chi tiết mô hình T-DLT có thể được mô tả như sau:
+ 	\begin {itemize}
+ 	\item {\itshape Ký pháp đồ thị}: Đặt $G=(V,E,w)$ là biểu diễn của mạng xã hội với tập đỉnh $V$, tập cạnh có hướng $E$, với $|V|=n$ và $|E|=m$. Mỗi đỉnh đại diện cho một người dùng trong mạng xã hội, mỗi cạnh $e=(u,v)$ trong tập $E$ tương ứng đại diện cho mỗi quan hệ giữa người dùng $u$ và người dùng $v$. Chúng tôi ký hiệu đỉnh vào liền kề và đỉnh ra liền kề của đỉnh $u$ lần lượt là $N_{\textup{in}}(u)$ và $N_{\textup{out}}(u)$, $d_{\textup{in}}(u)$ và $d_{\textup{out}}(u)$ lần lượt là bậc vào và bậc ra của đỉnh $u$. Đặt $I \subset V$ là tập các đỉnh bị lây nhiễm ban đầu. Mỗi cạnh có hướng $(u,v)$ sẽ có trọng số $w(u,v)$, tượng trưng cho mức độ ảnh hưởng thông tin của $v$ tới $u$, thỏa mãn $\sum_{u} w(u,v) \leq 1$.
  	
- 		Điều này cho thấy $J_{LSE}$ có một tập phủ đỉnh kích cỡ t khi và chỉ khi $h(A(J_{LSE})) < 2N$. Do đó ta có thể dùng A để giải quyết bài toán SC trong thời gian đa thức, hay P = NP. Điều này mâu thuẫn với giả thiết P $\neq$ NP.
- 		
- 		\subsubsection{Thuật toán nhanh và hiệu quả để giới hạn sự lây nhiễm thông tin (Fast And Effective Limiting Epidemics – FLE).}
- 		Trong phần này, chúng tôi thiết kế một thuật toán heuristics có độ phức tạp thấp và kết quả rất khả quan. Trước khi bắt đầu, chúng tôi có định nghĩa một vài kí hiệu sẽ được sử dụng trong quá trình đề xuất thuật toán:
- 		\begin {itemize}
- 			\item t(u): vòng nhỏ nhất sao cho đỉnh u chuyển từ đỉnh không bị lây nhiễm sang đỉnh bị lây nhiễm.
- 		
- 			\item $a_{in}(u) = \sum_{I_{t(u) - 1} \bigcap N_{in}(u)} w(u,v):$ tổng trọng số các cạnh vào từ các đỉnh vào hàng xóm đã bị lây nhiễm trước vòng t(u).
- 		
- 			\item $\propto(u) = \sum_{v \in U^{d}_{i=t(u)+1}} I_{i} \bigcap N(u)$ w(u,v), i = t(u) + 1, ... , d: tổng trọng số các cạnh ra từ u tới các đỉnh bị lây nhiễm b tại vòng i.
- 		
-			\item $\beta(u): $ : số lượng các đỉnh ra, sao cho chúng chuyển từ bị lây nhiễm thành không bị lây nhiễm sau khi loại bỏ đỉnh u ra khỏi đồ thị.
-		\end {itemize}
-		Một cách trực quan, số lượng gia tăng các đỉnh được cứu $\delta(A, u)$ có thể xấp xỉ theo $\beta(u)$. Bên cạnh đó, để tăng cường tính hiệu quả của thuật toán đề xuất, chúng tôi kết hợp $\propto(u) và \beta(u)$ để tính toán khả năng lan truyền tin sai lệch của đỉnh u. Ý tưởng chính của thuật toán là chọn ra các đỉnh một cách lần lượt theo đánh giá của hai hàm $\propto và \beta$. Ban đầu, chúng tôi khởi tạo tập đỉnh được chọn A=$\emptyset$ và đặt tập các đỉnh được xét chọn U bằng với $V_{d}$. Trong mỗi bước, chúng tôi chọn ra đỉnh có trị số $\beta(u)$ lớn nhất trong đồ thị còn lại. Trường hợp tất cả các đỉnh đều có giá trị $\beta(u)$ là 0, chúng tôi chọn đỉnh có giá trị $\propto(u)$ cực đại. Thuật toán được mô tả ở hình \ref{refthuattoan1} sau.
-		\begin{center}
-			\begin{figure}[htp]
-				\begin{center}
-					\includegraphics [scale=.65]{picture/thuattoan1}
-				\end{center}
-				\caption{Thuật toán nhanh và hiệu quả để giới hạn sự lây nhiễm thông tin}
-				\label{refthuattoan1}
-			\end{figure}
-		\end{center}
-	
-		Khó khăn trong thuật toán chủ yếu đến từ bước tính toán các hàm $\propto và \beta$. Để giải quyết việc này, chúng tôi bắt đầu với ý tưởng tìm kiếm theo chiều rộng (Breath First Search - BFS) để tính toán $f_{d}(I)$ và dần dần cập nhật hàm $\propto_{in}()$. Sau đó, chúng tôi sử dụng nó để tính toán các hàm  $\propto và \beta$ theo định nghĩa của chúng. Thuật toán chi tiết được thể hiện trong hình \ref{refthuattoan2}
-		\begin{center}
-			\begin{figure}[htp]
-				\begin{center}
-					\includegraphics [scale=.5]{picture/thuattoan2}
-				\end{center}
-				\caption{Thuật toán tính $\propto() và \beta()$ có độ phức tạp $O(k(m_{d} + n_{d}))$}.
-				\label{refthuattoan2}
-			\end{figure}
-		\end{center}
-	
-		{\itshape Chứng minh}: Để đánh giá độ phức tạp của thuật toán này, chúng ta cần đánh giá trước độ phức tạp của thuật toán. Ta dễ thấy rằng việc tính  toán $f_{d}(I)$ (dòng 5 - 19) có cách thức hoạt đông giống BFS. Do đó, độ phức tạp của nó là O($m_{d} và n_{d}$). Với bước tính toán $\propto(u) và \beta(u)$ (dòng 21 - 31), ta cần thăm tất cả các đỉnh trong $f_{d}(I)$ và tập các cạnh ra liền kề, do đó độ phức tạp của nó là O($m_{d} và n_{d}$). Do đó, độ phức tạp chung của thuật toán là O($m_{d} và n_{d}$). 
+ 	\item {\itshape Trạng thái của đỉnh}: Quá trình phát tán thông tin sai lệch từ tập đỉnh ban đầu $I$ tới các đỉnh còn lại trong mạng xã hội tiến triển theo từng bước thời gian rời rạc $t=1,2,…,d$. Mỗi đỉnh $v \in V$ có hai trạng thái là {\itshape bị lây nhiễm (hay “kích hoạt”)} và {\itshape không bị lây nhiễm (hay “không kích hoạt”)}.
+ 	
+ 	\item {\itshape Ngưỡng lây nhiễm (hay ngưỡng kích hoạt)}: Mỗi đỉnh $v$ sẽ có một ngưỡng lây nhiễm cho trước $\theta_{v} \in [0,1]$. Giá trị này đại diện cho trọng số vào của đỉnh $v$ cần chuyển thành bị lây nhiễm để $v$ trở thành bị lây nhiễm.
+ 	
+ 	\item {\itshape Quá trình lan truyền}: Quá trình lây lan thông tin sai lệch được mô phỏng tuần tự theo từng bước thời gian rời rạc (còn gọi là “vòng”, “bước”) $t=0,1,2,…,d$. Đặt $I_{t}$ là tập các đỉnh bị lây nhiễm sau $t$ bước, quá trình lan truyền được mô phỏng như sau:
+ 	\begin {enumerate} [+]
+ 	\item Tại bước $t=0$, tất cả các đỉnh trong tập $I$ đều bị lây nhiễm, $I_{0}=I$.
+ 	
+ 	\item Tại bước $t\geq1$, tất cả các đỉnh không bị lây nhiễm $v$ sẽ chuyển thành bị lây nhiễm nếu tổng trọng số các cạnh vào gần kề chạm ngưỡng lây nhiễm của nó, $\sum_{\text{các đỉnh vào gần kề của $u$}} w(u,v) \geq \theta_{v}$.	
+ 	
+ 	\item Một đỉnh bị lây nhiễm sẽ giữ nguyên trạng thái bị lây nhiễm cho tới hết quả trình lan truyền. Qúa trình lan truyền chấm dứt khi $t = d$.
+ 	\end {enumerate}
+ 	\end {itemize}
+ 	Trong mô hình LT, giá trị của ngưỡng $\theta_{v}$ được đặt một cách ngẫu nhiên trong khoảng $[0,1]$ và sẽ được chỉnh sửa dựa vào thông tin có được thêm trong quá trình lan truyền. Do đó, mô hình này thuộc dạng mô hình ngẫu nhiên. Khác với mô hình LT, trong mô hình T-DLT ngưỡng lây nhiễm $\theta_{v}$ được cho trước. Trường hợp này, giá trị ngưỡng có thể được đặt dựa theo các khảo sát thực tế hoặc các phương pháp khai phá dữ liệu.
+ 	
+ 	\subsubsection{Định nghĩa bài toán}
+ 	Đối với giải pháp này, việc ngăn chặn thông tin sai lệch được tiến hành bằng cách loại bỏ một số người dùng ra khỏi mạng để thông tin không thể truyền qua được, sao cho phạm vi lan truyền của thông tin là nhỏ nhất có thể. Nếu như coi mạng xã hội là một đồ thị, thì ta có thể hiểu rằng những đỉnh “bị lây nhiễm” là những người dùng đã bị ảnh hưởng bởi thông tin sai lệch và thông tin sai lệch đó có thể truyền từ người dùng này sang những người dùng thân cận, những đỉnh “không bị lây nhiễm” là những đỉnh không bị ảnh hưởng bởi thông tin sai lệch, còn những đỉnh “cứu được” là những đỉnh mà có trạng thái chuyển từ “bị lây nhiễm” sang “không bị lây nhiễm” khi chiến thuật loại bỏ đỉnh được áp dụng. Trong thực tế, việc loại bỏ một người dùng ra khỏi mạng xã hội có thể được thực hiện bằng cách thuyết phục người dùng đó thoát khỏi sự ảnh hưởng của thông tin sai lệch, hoặc ngăn chặn kết nối mạng của người dùng đó, hoặc xóa bỏ tài khoản của người dùng ra khỏi mạng xã hội, v.v… Tuy nhiên, những cách làm này đều là những cách làm yêu cầu có sự phối hợp từ nhiều bên liên quan, do đó nếu tiến hành loại bỏ quá nhiều sẽ dẫn đến chi phí phát sinh về thời gian và vật chất rất lớn, thậm chí sẽ gây ra trường hợp loại bỏ thành công như không kịp thời, khiến thông tin lan truyền quá rộng dẫn đến vô ích. Vì vậy, vấn đề đặt ra là phải làm sao chọn ra được một số lượng $k$ đỉnh nào đó để khi thực hiện chiến thuật loại bỏ, ta có được số đỉnh cứu nhiều nhất. Số lượng $k$ sẽ được tính toán một cách cân đối, cẩn thận nhất về chi phí để không làm mất tác dụng của chiến thuật loại bỏ. Chiến thuật loại bỏ $k$ đỉnh này có thể được mô hình hóa và phát biểu khoa học như sau:  
+ 	
+ 	Kí hiệu $f_{d}(I)$ là tập hợp các đỉnh đã bị lây nhiễm sau $d$ vòng trên đồ thị $G = (V,E)$ trong mô hình T-DLT, $f_{d}(I,A)$ là tập các đỉnh bị lây nhiễm sau khi loại bỏ một tập các đỉnh $A \subseteq V \setminus I$ từ $G$ (số đỉnh bị lây nhiễm trong đồ thị sót lại). Khi đó, số đỉnh cứu được khi loại bỏ tập $A$ là: $h_{d}(A)=| f_{d}(I,\emptyset)|-|f_{d}(I,A)|$.
+ 	
+ 	Trong mô hình T-DLT, ta xây dựng một bài toán tối ưu tổ hợp là: {\itshape Hạn chế sự lây lan của thông tin sai lệch} (Limiting the Spread of Epidemics - LSE), có mục tiêu tìm kiếm một tập đỉnh có kích cỡ tối đa $k$ đỉnh sao cho khi loại bỏ tập đỉnh đó, số đỉnh cứu được sẽ đạt cực đại.  
+ 	
+ 	{\itshape Định nghĩa (Bài toán LSE): Cho đồ thị vô hướng $G=(V,E)$ biểu diễn một mạng xã hội trong mô hình T-DLT. Một tập các đỉnh bị lây nhiễm ban đầu $I \subset V$, số vòng lan truyền $d$ và số đỉnh tối đa loại bỏ được là $k > 0$. Tìm một tập $k$ đỉnh  $A \subseteq V \ I$ sao cho khi loại bỏ khỏi mạng thì số đỉnh cứu được sau $d$ vòng là $h_{d}(A)$ đạt cực đại.}
+ 	
+ 	Kí hiệu $G_{d} = (V_{d}, E_{d})$ đồ thị con của đồ thị $G=(V, E)$ trong đó $V_{d}$ là tập các đỉnh mà khoảng cách giữa một đỉnh bất kì trong đó với một đỉnh trong tập $I$ tối đa là $d$, và tập $E_{d}$ là tập các cạnh nối giữa các đỉnh thuộc tập $V_{d}$, đồng thời $n_{d} = | V_{d} |$, $m_{d} = | E_{d} |$. Ta thấy rằng sự lan truyền thông tin sai lệch chỉ xảy ra bên trong đồ thị con $G_{d}$. Do đó, để đơn giản hóa, thay vì xét đến tất cả các đỉnh thuộc $G$, ta sẽ chỉ tìm kiếm kết quả trong đồ thị con $G_{d}$.
+ 	
+ 	\subsubsection{Độ phức tạp và tính xấp xỉ của bài toán LSE}
+ 	Trong mục này, chúng tôi chỉ ra tính NP-Khó của bài toán LSE bằng cách tương đương hóa bài toán LSE với bài toán Phủ đỉnh (Set Cover). Chúng tôi cũng sẽ chỉ ra tính khó xấp xỉ của LSE, tức là việc xấp xỉ bài toán LSE với tỉ lệ $n^{1 - \varepsilon}$, với $0 < \varepsilon < 1$, là bài toán NP-Khó.
+ 	
+ 	{\itshape Định lí: LSE là bài toán NP-Khó trong mô hình T-DLT}.
+ 	
+ 	{\itshape Chứng minh:} Để chứng minh LSE là bài toán NP-Khó, ta giản thể bài toán về bài toán Phủ đỉnh (Set cover) 
+ 	
+ 	{\bfseries Bài toán Phủ đỉnh (Set Cover - SC):} Cho một số tự nhiên dương $t$, một tập phổ quát $\vartheta = {e_{1}, e_{2}, ... ,e_{M}}$ và tập con $S = {s_{1}, s_{2}, ... , s_{N}}$ ta có thể giả sử rằng $t < M < N$. Bài toán Phủ đỉnh yêu cầu rằng: Có tồn tại hay không một lượng $t$ tập con, sao cho hợp của chúng là $\vartheta$.
+ 	
+ 	Bài toán SC đã được chứng minh là bài toán NP-Khó khi kích thước các tập được giới hạn là 3 và mỗi phần tử xuất hiện trong đúng hai tập con. Để giản thể bài toán SC về bài toán LSE, đầu tiên chúng tôi xây dựng một biểu diễn $J_{\text{LSE}}$ của bài toán LSE từ biểu diễn $J_{\text{SC}}$ của bài toán SC. Sau đó chúng tôi chỉ ra rằng nếu $J_{\text{SC}}$ có tồn tại lời giải $S$ kích thước $t$, thì $J_{\text{LSE}}$ có lời giải $A$, $| A | \leq k$ với $h_{d}(A) \geq k + M$ và ngược lại.
+ 	
+ 	{\bfseries Xây dựng:} Cho một biểu diễn $J_{SC} = (\vartheta, S, t)$ của bài toán SC, ta xây dựng biểu diễn $J_{LSE} = (G, I, d, k)$ của bài toán LSE như theo hình \ref{refhinh3_3}
+ 	\begin {itemize}
+ 	\item {\itshape Tập các đỉnh và các cạnh}: với mỗi $S_{i} \in S$, ta xây dựng một đỉnh bị lây nhiễm ban đầu $s_{i} \in I$ và một đỉnh $u_{i}$. Ta có thêm một cạnh có hướng $(s_{i}, u_{i})$. Với mỗi phần tử $e_{j} \in \vartheta$ ta thêm một đỉnh $v_{j}$ và thêm một cạnh có hướng $(u_{i},v_{j})$ với mỗi $u_{i}$. Để thuận tiện, ta đặt $B = {u_{1}, u_{2}, ... , u_{N}}$, $C = {v_{1}, v_{2}, ... , v_{M}}$.
+ 	
+ 	\item {\itshape Ngưỡng lây nhiễm và trọng số}: ta đặt $w(u,v) = 1$,\linebreak $w(u_{i}, v_{i}) = \dfrac{1}{d_{in}(v_{j})}$, $\theta_{u_{i}} = \theta_{v_{i}} = 1$.
+ 	
+ 	\item Sau cùng, ta cho $k = t$, $d = 2$. 		
+ 	
+ 	\begin{center}
+ 		\begin{figure}[!htp]
+ 			\begin{center}
+ 				\includegraphics [scale=.5]{picture/Hinh3_3}
+ 			\end{center}
+ 			\caption{Giản thể từ bài toán SC về bài toán LSE.}
+ 			\label{refhinh3_3}
+ 		\end{figure}
+ 	\end{center}
+ 	\end {itemize}
+ 	{\bfseries Phân tích:} Qua bước xây dựng, ta thấy rằng $| f_{d}(I,\emptyset) | = M + N$. Nếu như có đỉnh bất kì $u_{i} \in B$ là đỉnh kề vào và $v_{j} \in C$ là đỉnh chưa bị lây nhiễm thì: 
+ 	\begin{center}
+ 		$\sum_{\text{Các đỉnh hàng xóm tới đã bị lây nhiễm $u$}} w(u, v_{j}) \leq 1 - \dfrac{1}{d_{in}(v_{j})} < 1 = \theta_{v_{j}}$.
+ 	\end{center}
+ 	
+ 	Do đó $v_{j}$ lầ đỉnh không bị lây nhiễm. Nếu không, các đỉnh trong $C$ là các đỉnh không bị lây nhiễm.
+ 	
+ 	($\rightarrow$) Giả sử $S'$ là lời giải của biểu diễn $J_{\text{SC}}$, có nghĩa là $| S' | = t = k$ và nó phủ $t$ phần tử của $\vartheta$. Nếu ta chọn tập $A$ chứa đỉnh $u_{i}$ tương ứng với $S_{i} \in S'$, với mọi đỉnh $v_{i} \in B$ kề với ít nhất một đỉnh trong $A$. Bằng bước phân tích trên, mọi đỉnh trong $C$ là đỉnh không bị lây nhiễm. Ta có $h_{d}(A) = t + M = k + M$.
+ 	
+ 	($\leftarrow$) Ngược lại, nếu $J_{\text{LSE}}$ có lời giải $A$, $|A| \leq k$ với $h_{d}(I, A) \geq k + M$. Nếu $A$ chứa $t_{1} (1 \leq t_{1} \leq k)$ đỉnh trong $C$, $h_{d}(I, A) \leq k - t_{1} + M < k + M$. Do đó $A$ không chứa bất kì đỉnh nào thuộc $C$. Ở đây, $A \subset B$. Kết hợp với $h_{d}(I, A) \geq k + M$, mọi đỉnh thuộc $C$ là đỉnh không bị lây nhiễm. Do đó, mọi đỉnh $u_{i} \in A$ kề ít nhất với một đỉnh thuộc $C$. Vì vậy, qua bước xây dựng ta thấy rằng, $S' = \{ S_{i} | u_{i} \in A \}$ là lời giải cho bài toán $J_{\text{SC}}$. Định lý được chứng minh.
+ 	
+ 	Bằng cách thay đổi một chút phương pháp chứng minh bên trên, ta có thể chứng minh thêm được một định lý về tính khó xấp xỉ của bài toán LSE.
+ 	
+ 	Định lý: Đánh giá xấp xỉ bài toán LSE với tỉ lệ $n^{1 - \varepsilon}$ trong mô hình T-DLT với mọi hằng số $0 < \varepsilon < 1$ là bài toán NP-khó .
+ 	
+ 	{\itshape Chứng minh}: Để chứng minh kết quả này, ta sử dụng phương pháp {\itshape gap-introduction reduction} \cite{vijay38} để chứng minh tính khó xấp xỉ của bài toán LSE. Sử dụng phép giản thể trong thời gian đa thức thành bài toán SC từ bài toán LSE , chúng tôi sẽ chỉ ra nếu tồn tại một thuật toán có thời gian đa thức có thể xấp xỉ được bài toán trên với tỉ lệ $n^{1 - \varepsilon}$, thì sẽ tồn tại một thuật toán có thời gian đa thức để giải bài toán gốc.
+ 	
+ 	{\bfseries Xây dựng:} Cho một biểu diễn của bài toán SC, $J_{\text{SC}} = (\vartheta, S, t)$, ta xây dựng một biểu diễn $J_{\text{LSE}} = (G, I, d, k)$ 
+ 	\begin {itemize}
+ 	\item {\itshape Tập các đỉnh và các cạnh}: Với mỗi đỉnh $v_{j} \in C$, ta thêm $n_{0} = N^{q}$ đỉnh $X = { x_{1}, x_{2}, ... , x_{n_{0}}}$ với một hằng số $q$ đủ lớn và thêm một cạnh có hướng $(v_{j}, x_{l}), l = 1 ... n_{0}$.
+ 	
+ 	\item {\itshape Ngưỡng lây nhiễm và trọng số}: Gán $w(v_{j}, x_{l}) = \dfrac{1}{M}$; $\theta_{x_{l}} = \dfrac{1}{M}$, $l = 1 ... n_{0}$.\\
+ 	\end {itemize}
+ 	Giả sử $J_{\text{SC}}$ có tập phủ đinh $S'$ kích cỡ $t$, ta chọn tập $A = \{{u_{i} | S_{i} \in S}\}$. Qua bước phân tích ở trên, mọi đỉnh $C$ đều là đỉnh không bị lây nhiễm. Điều này dẫn tới mọi đỉnh trong $X$ đều là các đỉnh không bị lây nhiễm. Bởi bước xây dựng này, ta có: $| f_{d}(I, \emptyset) | = N + M + N^{q}$, $| f_{d}(I, A) | = N - k$, do đó: 
+ 	\begin{center}
+ 		$h(A) = | f_{d}(I, \emptyset) | - | f_{d}(I, A) | = M + N^{q} + k$.
+ 	\end{center}
+ 	
+ 	Trong trường hợp $J_{\text{SC}}$ không có tập phủ đỉnh kích thước $t$, nó có ít nhất một đỉnh $v_{j}$ bị lây nhiễm. Điều này dẫn tới việc mọi trong $X$ đều bị lây nhiễm. Do đó, $| f_{d}(I, A) | > N - k + N_{q}$ dẫn tới $h(A) = M  + k < 2N$.
+ 	
+ 	Lúc này, giả sử ta có thuật toán thời gian đa thức $ \mathcal{A} $ có thể xấp xỉ bài toán LSE trong tỉ lệ $n^{1 - \varepsilon}$, ta chứng minh rằng lời giải của bài toán SC có thể được tìm trong thời gian đa thức. Với bất kì biểu diễn $J_{\text{SC}}$ nào, ta có thể xây dựng một biểu diễn $J_{\text{LSE}}$ theo cách xây dựng trên trong thời gian đa thức của $m$ và $n$. 
+ 	
+ 	Trong trường hợp $J_{\text{SC}}$ có tập đỉnh phủ kích cỡ $t$, theo cách xây dựng của chúng tôi, lời giải tối ưu $A_{\text{opt}}$ của $J_{\text{LSE}}$ có $h(A_{\text{opt}}) = k + M + N_{q}$. Thuật toán $\mathcal{A}$ xấp xỉ lời giải tối ưu với tỉ lệ $n^{1 - \varepsilon}$ ($n = 2N + M + N_{q}$ là số đỉnh của đồ thị đầu vào) do đó có thể tìm kiếm được lời giải $\mathcal{A}(J_{\text{LSE}})$. 
+ 	\begin{center}
+ 		$h(\mathcal{A}(J_{\text{LSE}})) \geq \dfrac{1}{n_{1 - \varepsilon}} h(A_{\text{opt}}) > \dfrac{1}{n^{1 - \varepsilon}}(M + N_{q} +k) = \dfrac{n^{\varepsilon}}{n}(M + N^{q} +k) \linebreak > \dfrac{(M + N^{q} + k)^{\varepsilon}}{M + N^{q} + k}N^{q}> \dfrac{N^{q.\varepsilon}}{4N^{q}}N^{q} = \dfrac{1}{4}N^{q.\varepsilon}$. 	
+ 	\end{center}
+ 	
+ 	Cho $q$ đủ lớn để $q > \dfrac{ln(8N)}{\varepsilon.ln(N)}$, ta được: 
+ 	\begin{center}
+ 		$h(\mathcal{A}(J_{\text{LSE}})) > 2N$.
+ 	\end{center}
+ 	
+ 	Nếu $J_{\text{LSE}}$ không có tập phủ đỉnh kích cỡ $t$, thì tập tối ưu $A_{\text{opt}}$ của $J_{\text{LSE}}$ có 
+ 	\begin{center}
+ 		$h(\mathcal{A}(J_{\text{LSE}})) < 2N$.
+ 	\end{center}
+ 	
+ 	Điều này cho thấy $J_{\text{SC}}$ có một tập phủ đỉnh kích cỡ $t$ khi và chỉ khi $h(\mathcal{A}(J_{\text{LSE}})) < 2N$. Do đó ta có thể dùng $\mathcal{A}$ để giải quyết bài toán SC trong thời gian đa thức, hay $\text{P} = \text{NP}$. Điều này mâu thuẫn với giả thiết $\text{P} \neq \text{NP}$.
+ 	
+ 	\subsubsection{Thuật toán nhanh và hiệu quả để giới hạn sự lây nhiễm thông tin (Fast And Effective Limiting Epidemics – FLE).}
+ 	Trong phần này, chúng tôi thiết kế một thuật toán heuristics có độ phức tạp thấp và kết quả rất khả quan. Trước khi bắt đầu, chúng tôi có định nghĩa một vài kí hiệu sẽ được sử dụng trong quá trình đề xuất thuật toán:
+ 	\begin {itemize}
+ 	\item $t(u)$: vòng nhỏ nhất sao cho đỉnh $u$ chuyển từ đỉnh không bị lây nhiễm sang đỉnh bị lây nhiễm.
+ 	
+ 	\item $a_{\text{in}}(u) = \sum_{I_{t(u) - 1} \bigcap N_{in}(u)} w(u,v):$ tổng trọng số các cạnh vào từ các đỉnh vào hàng xóm đã bị lây nhiễm trước vòng $t(u)$.
+ 	
+ 	\item $\alpha(u) = \sum_{v \in U^{d}_{i=t(u)+1}} I_{i} \bigcap N(u)$ $w(u,v), i = t(u) + 1, ... , d$: tổng trọng số các cạnh ra từ $u$ tới các đỉnh bị lây nhiễm $v$ tại vòng $i$.
+ 	
+ 	\item $\beta(u): $ : số lượng các đỉnh ra cứu được, sao cho chúng chuyển từ bị lây nhiễm thành không bị lây nhiễm sau khi loại bỏ đỉnh $u$ ra khỏi đồ thị.
+ 	\end {itemize}
+ 	Một cách trực quan, số lượng gia tăng các đỉnh được cứu $\delta(A, u)$ có thể xấp xỉ theo $\beta(u)$. Bên cạnh đó, để tăng cường tính hiệu quả của thuật toán đề xuất, chúng tôi kết hợp $\alpha(u)$ và $\beta(u)$ để tính toán khả năng lan truyền tin sai lệch của đỉnh $u$. Ý tưởng chính của thuật toán là chọn ra các đỉnh một cách lần lượt theo đánh giá của hai hàm $\alpha$ và $\beta$. Ban đầu, chúng tôi khởi tạo tập đỉnh được chọn $A=\emptyset$ và đặt tập các đỉnh được xét chọn $U$ bằng với $V_{d}$. Trong mỗi bước, chúng tôi chọn ra đỉnh có trị số $\beta(u)$ lớn nhất trong đồ thị còn lại. Trường hợp tất cả các đỉnh đều có giá trị $\beta(u)$ là 0, chúng tôi chọn đỉnh có giá trị $\alpha(u)$ cực đại. Chi tiết thuật toán được mô tả trong Thuật toán \ref{alg:Algo1}.
+ 	\begin{algorithm}[h]
+ 		\caption{Fast Limit Epidemics (FLE) algorithm.}
+ 		\label{alg:Algo1}
+ 		%\SetAlgoNlRelativeSize{0}
+ 		\KwData{Graph $G=(V,E,\emptyset)$, set of initial infected nodes $I$, propagation hop $d$.}
+ 		\KwResult{Set of nodes $A$}
+ 		$S \gets \emptyset$; 
+ 		\\
+ 		Calculate $G' \gets G_{d}(I); U \gets V_{d}$
+ 		\\
+ 		\For {$i=1$ to $k$}
+ 		{
+ 			Calculate $\alpha(u)$, $\beta(u)$ on $G'$ (Algorithm 3)
+ 			\\
+ 			$u_{\text{max}} \gets 0$
+ 			\\
+ 			\eIf {$\beta(v)=0, \forall u \in U$}
+ 			{
+ 				$u_{\text{max}} \gets \text{arg max}_{v \in U}\alpha(v)$
+ 			}
+ 			{
+ 				$u_{\text{max}} \gets \text{arg max}_{v \in U}\beta(v)$
+ 			}
+ 			$S \gets S \cup \{u_{\text{max}}\}$
+ 			\\
+ 			$U \gets U \setminus \{u_{\text{max}}\}$
+ 			\\
+ 			Remove $u_{\text{max}}$ and all edges that adjacent with $u_{\text{max}}$ from $G'$
+ 		}
+ 		\Return $S$
+ 	\end{algorithm}
+ 	
+ 	Khó khăn trong thuật toán chủ yếu đến từ bước tính toán các hàm $\alpha$ và $\beta$. Để giải quyết việc này, chúng tôi bắt đầu với ý tưởng tìm kiếm theo chiều rộng (Breath First Search - BFS) để tính toán $f_{d}(I)$ và dần dần cập nhật hàm $\alpha_{\text{in}}()$. Sau đó, chúng tôi sử dụng nó để tính toán các hàm  $\alpha()$ và $\beta()$ theo định nghĩa của chúng. Chi tiết thuật toán được thể hiện trong Thuật toán \ref{alg:Algo2} và Thuật toán \ref{alg:Algo3}.
+ 	\begin{algorithm}[h]
+ 		\caption{Calculate $f_{d}(I), a_{\text{in}}(), t()$}
+ 		\label{alg:Algo2}
+ 		\KwData{Graph $G=(V,E,\emptyset)$, set of infected nodes $I$, propagation hop $d$.}
+ 		\KwResult{$f_{d}(I), a_{\text{in}}(u), t(u), \forall u \in G$.}
+ 		\ForEach {$u$ \textbf{in} $G$}
+ 		{
+ 			$t(u) \gets +\infty; a_{\text{in}}(u) \gets 0; \alpha(u) \gets 0; \beta(u) \gets 0$
+ 		}
+ 		\ForEach {$s$ \textbf{in} $I$}
+ 		{
+ 			$t(s) \gets 0$
+ 		} 
+ 		Queue $Q \gets \emptyset$
+ 		\\
+ 		\While{$Q \neq \emptyset$}
+ 		{
+ 			$u \gets Q.pop()$
+ 			\\
+ 			$f_{d}(I) \gets u$
+ 			\\
+ 			\If{$t(u)<d$}
+ 			{
+ 				\ForEach{$v \in N_{\text{out}}(u)$}
+ 				{
+ 					\If{$t(u)<t(v)$}
+ 					{
+ 						$a_{\text{in}}(v)=a_{\text{in}}(v)+w(u,v)$
+ 						\\
+ 						\If{$a_{\text{in}}(v) \geq theta_{v}$ and $t(u)+1<t(v)$}
+ 						{
+ 							$t(v) \gets t(u)+1$
+ 							\\
+ 							$Q,push(v)$
+ 						}
+ 					}
+ 				}
+ 			}	
+ 		}
+ 	\end{algorithm}
+ 	
+ 	\begin{algorithm}[h]
+ 		\caption{Calculate $\alpha()$ and $\beta()$}
+ 		\label{alg:Algo3}
+ 		\KwData{Graph $G=(V,E,\emptyset)$, set of infected nodes $I$, propagation hop $d$, $f_{d}(I), a_{\text{in}}(), t()$.}
+ 		\KwResult{$\alpha(u), \beta(u), \forall u \in G$.}
+ 		\ForEach{$u$ \textbf{in} $f_{d}(I)$}
+ 		{
+ 			$\alpha(u) \gets 0; \beta(u) \gets 0$
+ 			\\
+ 			\ForEach{$v$ \textbf{in} $N_{\text{out}}(u) \cap f_{d}(I)$}
+ 			{
+ 				\If{$t(u)<t(v)$}
+ 				{
+ 					$\alpha(u) \gets \alpha(u)+w(u,v)$
+ 					\\
+ 					\If{$a_{\text{in}}(v)-w(u,v)<\theta_{v}$}
+ 					{
+ 						$\beta(u) \gets \beta(u)+1$
+ 					}
+ 				}
+ 			}
+ 		}
+ 	\end{algorithm}
+ 	
+ 	{\itshape Chứng minh}: Để đánh giá độ phức tạp của thuật toán này, chúng ta cần đánh giá trước độ phức tạp của thuật toán. Ta dễ thấy rằng việc tính  toán $f_{d}(I)$ (Thuật toán \ref{alg:Algo2}, dòng 7 - 22) có cách thức hoạt đông giống BFS. Do đó, độ phức tạp của nó là $O(m_{d} + n_{d})$. Với bước tính toán $\alpha(u)$ và $\beta(u)$ (Thuật toán \ref{alg:Algo3}, dòng 1 - 11), ta thấy độ phức tạp của nó là $O(m_{d} + n_{d})$. Do đó, độ phức tạp chung của thuật toán là $O(m_{d} + n_{d})$. 
+		
 	\subsection{Giải pháp hạn chế Targeted Misinformation Blocking (Xác định và ngăn chặn thông tin sai lệch trên mạng xã hội)}
 Với cách tiếp cận như cách Twitter đã làm năm 2016 là loại bỏ 125.000 tài khoản được nghi ngờ có liên quan đến các hoạt động khủng bố, hay như Facebook đã xóa 30.000 tài khoản giả mạo lan truyền các tin đồn trước cuộc bầu cử tổng thống Pháp năm 2017, giải pháp hạn chế Targeted Misinformation Blocking được đưa ra nhằm mục đích tìm những tài khoản cần loại bỏ khỏi mạng để nhằm làm hạn chế phát tán thông tin sai lệch.
 
