@@ -490,7 +490,6 @@ Trong mục này chúng tôi chỉ ra một số kết quả về độ khó c�
 \subsubsection{Thuật toán đề xuất}
 {\itshape Thuật toán tham lam (Greedy algorithm)}
 Trong phần này chúng tôi giới thiệu một thuật toán xấp xỉ đảm bảo tỉ lệ 1 + ln($\gamma / \varepsilon$) dựa vào tính chất submodular và tính đơn điệu của hàm h(A). 		
-\\
 \begin{algorithm}[tbh]			
 	\SetNlSty{text}{}{.}
 	%\SetAlgoNlRelativeSize{0}
@@ -721,11 +720,11 @@ Vậy nên toàn bộ thuật toán TMB có độ phức tạp là O($\mu$(m+qn)
 		{\itshape Các thiết lập} Chúng tôi sử dụng các thiết lập dưới đây cho việc đánh giá thực nghiệm:
 		
 		- Trọng số của cạnh: w(u,v) = 
-		\subsubsection{Giải pháp Targeted Misinformation Blocking (Xác định và ngăn chặn thông tin sai lệch trên mạng xã hội)}
+				\subsubsection{Giải pháp Targeted Misinformation Blocking (Xác định và ngăn chặn thông tin sai lệch trên mạng xã hội)}
 		{\itshape Dữ liệu có sẵn}	
-				
+		
 		Trong mục này chúng tôi đưa ra kết quả thực nghiệm của thuật toán STMB với 3 bộ dữ liệu và so sánh về chất lượng lời giải, tốc độ thực hiện với một số thuật toán cơ bản khác.
-						
+		
 		{\itshape - Dữ liệu:}
 		\begin{table}[h]
 			\centering
@@ -750,10 +749,52 @@ Vậy nên toàn bộ thuật toán TMB có độ phức tạp là O($\mu$(m+qn)
 		\item PageRank: Tính toán ranking của các đỉnh trong đồ thị G dựa vào cấu trúc các cạnh liên kết với nó. Đây là thuật toán được thiết kế để xếp hạng các trang web từ đó đưa ra kết quả tìm kiếm. Do $h(\cdot)$ là hàm monotone nên sau khi sắp xếp hạng của các đỉnh trong đồ thị, chúng tôi sử dụng thuật toán tìm kiếm nhị phân để tìm kiếm tập lời giải A với |A| đỉnh có rank lớn nhất.
 		\item High-Degree: Một thuật toán heuristic dựa vào bậc của một đỉnh. Tương tự như thuật toán PageRank sau kho sắp xếp các đỉnh dựa trên bậc của chúng, chúng tôi sử dụng thuật toán tìm kiếm nhị phân để tìm lời giải cho bài toán.
 		\item Greedy: Thuật toán Greedy đưa ra trong thuật toán \ref{GA} kết hợp với các tối ưu trong \cite{Jleskovec}
-		\end{itemize} 
+	\end{itemize} 
+
+		{\itshape - Kết quả thực nghiệm:} Như mô tả trong hình \ref{solSTMB}, số lượng đỉnh được chọn đưa ra bởi thuật toán STMB là nhỏ nhất. STMB tốt hơn lên đến 39\% so với thuật toán Greedy, hơn 60\%-95\% và 57\%-87\% so với thuật toán PageRank và High-Degree tương ứng. Để kiểm tra kết quả thu được từ thuật toán STMB, chúng tôi chạy 1000 mẫu Monte-Carlo để ước lượng giá trị của hàm $h(A)$ và kết quả kiểm tra được đưa ra trong hình \ref{checkSTMB}. Trong hầu hết các trường hợp $h(A)$ vượt qua ngưỡng yêu cầu.
+		\begin{figure}
+			\begin{tabular}{lll}
+				\includegraphics[height = 3.2cm]{picture/NetS} &
+				\includegraphics[height = 3.2cm]{picture/AS} &   
+				\includegraphics[height = 3.2cm]{picture/NetHEPT}
+				\\
+				\includegraphics[height = 3.2cm]{picture/TimeNetS} &
+				\includegraphics[height = 3.2cm]{picture/TimeAS} &   
+				\includegraphics[height = 3.2cm]{picture/TimeNetHEPT}
+		\end{tabular}
+		\caption{So sách chất lượng lời giải và thời gian chạy của các thuật toán cho bài toán TMB}
+		\label{solSTMB}    
+		\end{figure}
+		\begin{figure}[htp]
+			\begin{tabular}{ccc}
+				\includegraphics[height = 3.2 cm]{picture/CheckNetS} &
+				\includegraphics[height = 3.2 cm]{picture/CheckAS} &   
+				\includegraphics[height = 3.2 cm]{picture/CheckNetHEPT}
+			\end{tabular}
+			\caption{Kiểm tra kết quả của thuật toán STMB}
+			\label{check}    
+		\end{figure}
 	
-		{\itshape - Kết quả thực nghiệm:} Như mô tả trong hình  
-		
-
-
-
+	Thời gian chạy của các thuật toán trên 3 bộ dữ liệu trong trường hợp có $\gamma$ là lớn nhất được đưa ra trong bảng \ref{timeSTMB}. Ta thấy thuật toán Greedy có chất lượng lời giải tương đương với thuật toán STMB song thời gian thực nghiệm trên các bộ dữ liệu lại rất không hiệu quả.
+	\begin{table}[h]
+		\label{tab:time}       % Give a unique label
+		% For LaTeX tables use
+		\begin{center}
+			\begin{tabular}{|c|c|c|c|c|}				
+				\hline 
+				\textbf{} & {$\mathsf{STMB}$} & {$\mathsf{Greedy}$} & {Page Rank} & {High-Degree} 				
+				\\ 
+				\hline 
+				NetS & \textbf{17.57(s)} &	14206.80(s) &	35.73(s) &	30.24(s)
+				\\ 
+				\hline 
+				AS & 45.70(s) & 14074.87(s) & \textbf{14.39(s)} &	17.85(s)
+				\\
+				\hline 
+				NetHEPT & \textbf{165.12(s)} & 582566.74(s) & 392.34(s) & 374.66(s)
+				\\
+				\hline 
+			\end{tabular}
+		\end{center}
+		\caption{So sánh thời gian chạy của các thuật toán với trường hợp $\gamma$ lớn nhất}
+	\end{table}
