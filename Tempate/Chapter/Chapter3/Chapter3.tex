@@ -283,8 +283,7 @@ Nhằm giải quyết vấn đề trên, nhóm tác giả đề xuất một hư
  	
  	\item $\beta(u): $ : số lượng các đỉnh ra cứu được, sao cho chúng chuyển từ bị lây nhiễm thành không bị lây nhiễm sau khi loại bỏ đỉnh $u$ ra khỏi đồ thị.
  	\end {itemize}
- 	Một cách trực quan, số lượng gia tăng các đỉnh được cứu $\delta(A, u)$ có thể xấp xỉ theo $\beta(u)$. Bên cạnh đó, để tăng cường tính hiệu quả của thuật toán đề xuất, chúng tôi kết hợp $\alpha(u)$ và $\beta(u)$ để tính toán khả năng lan truyền tin sai lệch của đỉnh $u$. Ý tưởng chính của thuật toán là chọn ra các đỉnh một cách lần lượt theo đánh giá của hai hàm $\alpha$ và $\beta$. Ban đầu, chúng tôi khởi tạo tập đỉnh được chọn $A=\emptyset$ và đặt tập các đỉnh được xét chọn $U$ bằng với $V_{d}$. Trong mỗi bước, chúng tôi chọn ra đỉnh có trị số $\beta(u)$ lớn nhất trong đồ thị còn lại. Trường hợp tất cả các đỉnh đều có giá trị $\beta(u)$ là 0, chúng tôi chọn đỉnh có giá trị $\alpha(u)$ cực đại. Chi tiết thuật toán được mô tả trong Thuật toán \ref{alg:Algo1}.
- 	\begin{algorithm}[h]
+ 	 	\begin{algorithm}[h]
  		\caption{Fast Limit Epidemics (FLE) algorithm.}
  		\label{alg:Algo1}
  		%\SetAlgoNlRelativeSize{0}
@@ -315,6 +314,8 @@ Nhằm giải quyết vấn đề trên, nhóm tác giả đề xuất một hư
  		}
  		\Return $S$
  	\end{algorithm}
+  	
+ 	Một cách trực quan, số lượng gia tăng các đỉnh được cứu $\delta(A, u)$ có thể xấp xỉ theo $\beta(u)$. Bên cạnh đó, để tăng cường tính hiệu quả của thuật toán đề xuất, chúng tôi kết hợp $\alpha(u)$ và $\beta(u)$ để tính toán khả năng lan truyền tin sai lệch của đỉnh $u$. Ý tưởng chính của thuật toán là chọn ra các đỉnh một cách lần lượt theo đánh giá của hai hàm $\alpha$ và $\beta$. Ban đầu, chúng tôi khởi tạo tập đỉnh được chọn $A=\emptyset$ và đặt tập các đỉnh được xét chọn $U$ bằng với $V_{d}$. Trong mỗi bước, chúng tôi chọn ra đỉnh có trị số $\beta(u)$ lớn nhất trong đồ thị còn lại. Trường hợp tất cả các đỉnh đều có giá trị $\beta(u)$ là 0, chúng tôi chọn đỉnh có giá trị $\alpha(u)$ cực đại. Chi tiết thuật toán được mô tả trong Thuật toán \ref{alg:Algo1}.
  	
  	Khó khăn trong thuật toán chủ yếu đến từ bước tính toán các hàm $\alpha$ và $\beta$. Để giải quyết việc này, chúng tôi bắt đầu với ý tưởng tìm kiếm theo chiều rộng (Breath First Search - BFS) để tính toán $f_{d}(I)$ và dần dần cập nhật hàm $\alpha_{\text{in}}()$. Sau đó, chúng tôi sử dụng nó để tính toán các hàm  $\alpha()$ và $\beta()$ theo định nghĩa của chúng. Chi tiết thuật toán được thể hiện trong Thuật toán \ref{alg:Algo2} và Thuật toán \ref{alg:Algo3}.
  	\begin{algorithm}[h]
@@ -441,7 +442,7 @@ Trong mục này chúng tôi chỉ ra một số kết quả về độ khó c�
 	Cho nguồn tiềm năng phát tán thông tin sai lệch S dưới mô hình LT, bài toán TMB là $\#P-hard$ nếu S chỉ chứa 1 đỉnh.
 \end{theo}
 \begin{proof}
-	Để chứng minh TMB là $\#P-hard$ chúng tôi sẽ chỉ ra độ khó của bài toán TMB là lớn hơn hoặc bằng với độ khó của bài toán $s$-$t$ paths mà đã được chứng minh có độ khó là $\#P-hard$ trong \cite{vali}. 
+	Để chứng minh TMB là $\#P-hard$ chúng tôi sẽ chỉ ra độ khó của bài toán TMB là lớn hơn hoặc bằng với độ khó của bài toán $s$-$t$ paths mà đã được chứng minh trong \cite{vali} là có độ khó $\#P-hard$. 
 	\begin{define}[Bài toán $s$-$t$ paths \cite{vali}]
 		Cho một đồ thị có hướng $G = (V, E), |V| = n, |E| = m$, bài toán s-t paths yêu cầu đếm số đường đi có hướng từ đỉnh $s$ tới đỉnh $t$ mà đi qua mọi đỉnh nhiều nhất một lần. 
 	\end{define}			
@@ -452,7 +453,7 @@ Trong mục này chúng tôi chỉ ra một số kết quả về độ khó c�
 			\label{reduce}   
 		\end{center}
 	\end{figure}			
-	Xem xét một thể hiện $\mathcal{I}_1$ của bài toán $s$-$t$ paths, với $G = (V, E), s, t$ cho trước. Như minh họa trong hình \ref{reduce}, từ G, chúng ta xây dựng G' như sau: Thêm đỉnh u và hai cạnh (s, u), (t, u) với trọng số $w(s, u) = w(t,u) = 1/2$, tiếp đó thêm tập $\mathcal{Q}$ gồm 2n đỉnh và kết nối u với chúng với trọng số là 1. Với các cạnh khác, thiết lập trọng số $w = 1/\Delta$, $\Delta$ là bậc vào lớn nhất của đồ thị G. Chúng ta chia tất cả các đường đi bắt đầu từ $s$ thành 2 nhóm: Tập tất cả các đường đi có đỉnh kết thúc thuộc tập $\mathcal{Q}$ và tập còn lại. Từ công thức \eqref{inf_path}, chúng ta có: 
+	Xem xét thể hiện $\mathcal{I}_1$ của bài toán $s$-$t$ paths, với $G = (V, E), s, t$ cho trước. Như minh họa trong hình \ref{reduce}, từ G, chúng ta xây dựng G' như sau: Thêm đỉnh u và hai cạnh (s, u), (t, u) với trọng số $w(s, u) = w(t,u) = 1/2$, tiếp đó thêm tập $\mathcal{Q}$ gồm 2n đỉnh và kết nối u với chúng với trọng số là 1. Với các cạnh khác, thiết lập trọng số $w = 1/\Delta$, $\Delta$ là bậc vào lớn nhất của đồ thị G. Chúng ta chia tất cả các đường đi bắt đầu từ $s$ thành 2 nhóm: Tập tất cả các đường đi có đỉnh kết thúc thuộc tập $\mathcal{Q}$ và tập còn lại. Từ công thức \eqref{inf_path}, chúng ta có: 
 	\begin{align}
 	\sigma_{S}(G')&=\sum_{x \in \mathsf{P}(G', s)} \prod_{e \in x}w(e)= \sum_{v \in  G' \setminus Q} \left(  \sum_{x \in \mathsf{P}(G', s, v)} \prod_{e \in x}w(e) \right) + \sum_{v \in Q} \left(  \sum_{x \in \mathsf{P}(G', s, v)} \prod_{e \in x}w(e) \right)  \nonumber
 	\\
@@ -484,7 +485,7 @@ Trong mục này chúng tôi chỉ ra một số kết quả về độ khó c�
 	\end{align}   		
 	với $\alpha_i=|\mathsf{P}_i(G, s, t)|$. Đặt $f(w)=\sum_{i=0}^{n-1}\alpha_i w^i$. Từ cấu trúc liên kết của G', chúng ta thấy rằng $h(u)=\max_{v \in G'}h(v)$ và $0 \leq  f(w) < 1$. Nếu có thể xác định $f(u) \geq \beta$ với $\forall \beta \in [0, 1]$ trong thời gian đa thức thì chúng ta sẽ giải được bài toán $s$-$t$ paths trong thời gian đa thức. Sử dụng tìm kiếm nhị phân trên đoạn [1, $\Delta^{n-1}$] chúng ta có thể xác định được giá trị của $f(w)$. Yêu cầu này được thực hiện trong $\mathcal{O}(\log(\Delta^{n-1}))=\mathcal{O}((n-1)\log\Delta) =\mathcal{O}(n\log n)$. Do đó việc tính toán $f(u)$ có thể thực hiện trong thời gian đa thức. Tiếp đến thay đổi trọng số w thành n giá trị phân biệt $\frac{1}{\Delta}, \frac{1}{\Delta+1}, \ldots, \frac{1}{\Delta+n-1}$, với mỗi giá trị w áp dụng phương pháp trên chúng ta thu được giá trị $f(w)$ tương ứng. Từ đó có được n phương trình $\sum_{i=0}^{n-1}\alpha_i w^i =f(w), w \in \{\frac{1}{\Delta}, \frac{1}{\Delta+1}, \ldots, \frac{1}{\Delta+n-1} \}$ với $\{\alpha_0, \alpha_2, \ldots, \alpha_{n-1}\}$ là các biến số. Ma trận tương ứng với hệ n phương trình trên là $M_{n \times n}=\{m_{ij}\}$ and $m_{ij}=w^{i} , i,j=0,..,n-1$, dễ thấy đây là ma trận Vandermonde do đó có thể dễ dàng tìm được lời giải $\{\alpha_0, \alpha_2, \ldots, \alpha_{n-1}\}$. Tổng số $s$-$t$ paths trên đồ thị G là $\sum_{i=0}^{n-1} \alpha_i$. Vì thế, nếu chúng ta xác định được $f(u) \geq \beta$ với bất kì $\beta \in [0, 1]$ trong thời gian đa thức thì sẽ giải được bài toán $s$-$t$ paths trong thời gian đa thức. 
 	
-	Bây giờ, xét một thể hiện $\mathcal{I}_2$ của bài toán TMB trong đó $S=\{s\}$, $\gamma = \frac{2n+1}{2}(\beta+ 1) , \beta \in [0, 1]$.  Giả sử rằng $\mathcal{A}$ là một thuật toán giải quyết bài toán TMB trong thời gian đa thức. Xem xét 2 trường hợp: (1) Nếu $\mathcal{A}$ trả ra kết quả là tập $A$ có $|A|=1$, thì chúng ta chỉ cần chọn $A={u}$. Kết luận $f(w) \geq \beta$; (2) Nếu $\mathcal{A}$ trả ra kết quả tập $A$ có $|A| \ge 1$ thì ngoài $u$ sẽ cần chọn thêm một số đỉnh khác. Kết luận $f(w) < \beta$. Vì vậy $\mathcal{A}$ có thể được sử dụng để quyết định $f(w)$ là lớn hơn $\beta$ và có thể giải quyết bài toán $s$-$t$ paths. Điều này chỉ ra rằng bài toán TMB là khó hơn hoặc bằng bài toán $s$-$t$ paths.
+	Bây giờ, xét thể hiện $\mathcal{I}_2$ của bài toán TMB trong đó $S=\{s\}$, $\gamma = \frac{2n+1}{2}(\beta+ 1) , \beta \in [0, 1]$.  Giả sử rằng $\mathcal{A}$ là một thuật toán giải quyết bài toán TMB trong thời gian đa thức. Xem xét 2 trường hợp: (1) Nếu $\mathcal{A}$ trả ra kết quả là tập $A$ có $|A|=1$, thì chúng ta chỉ cần chọn $A={u}$. Kết luận $f(w) \geq \beta$; (2) Nếu $\mathcal{A}$ trả ra kết quả tập $A$ có $|A| \ge 1$ thì ngoài $u$ sẽ cần chọn thêm một số đỉnh khác. Kết luận $f(w) < \beta$. Vì vậy $\mathcal{A}$ có thể được sử dụng để quyết định $f(w)$ là lớn hơn $\beta$ và có thể giải quyết bài toán $s$-$t$ paths. Điều này chỉ ra rằng bài toán TMB là khó hơn hoặc bằng bài toán $s$-$t$ paths.
 \end{proof}
 \subsubsection{Thuật toán đề xuất}
 {\itshape Thuật toán tham lam (Greedy algorithm)}
@@ -612,9 +613,9 @@ Thuật toán tham lam đưa ra một lời giải tốt xong lại không đả
 \begin{figure}[h]
 	\subfloat[Đồ thị $G'$ sau khi hợp nhất các đỉnh trong nguồn S\label{fig:test1}]
 	{\includegraphics[width=.3\linewidth]{picture/1}}\hfill
-	\subfloat[Một đồ thị mẫu $g$\label{fig:test2}]
+	\subfloat[Đồ thị mẫu $g$\label{fig:test2}]
 	{\includegraphics[width=.3\linewidth]{picture/2}}\hfill
-	\subfloat[Một cây gốc $I$ tạo ra từ $G$ \label{fig:test3}]
+	\subfloat[Cây gốc $I$ tạo ra từ $G$ \label{fig:test3}]
 	{\includegraphics[width=.3\linewidth]{picture/3}}
 	\caption{Ví dụ tạo ra một cây gốc $I$ từ $G$ trên mô hình LT}
 	\label{example}
@@ -665,6 +666,7 @@ Thuật toán tham lam đưa ra một lời giải tốt xong lại không đả
 	\label{STMB}
 \end{algorithm}				
 \end {itemize}
+
 {\itshape Độ phức tạp của thuật toán: }		
 Để đánh giá độ phức tạp của thuật toán trước tiên chúng ta đi phân tích độ phức tạp của các thuật toán con trong nó.
 \begin {itemize}
@@ -672,16 +674,17 @@ Thuật toán tham lam đưa ra một lời giải tốt xong lại không đả
 
 \item Quá trình tạo ra $\mu$ đồ thị mẫu dòng 3 có độ phức tạp O($\mu(m + n)$).
 
-\item Do T$_{I}^i$ là một cây nên việc tính toán h(u, T$_{I}^i$) $\forall u \in T_{I}^i$ mất O$(\mu n)$ 
+\item Do T$_{I}^i$ là một cây nên việc tính toán h(u, T$_{I}^i$) $\forall u \in \text{T}_{I}^i$ mất O$(\mu n)$ 
 
 \item Phần Lazy Forward có độ phức tạp là O(qmn) với q là số vòng lặp từ dòng 10 đến 23.
 \end {itemize}
+
 Vậy nên toàn bộ thuật toán TMB có độ phức tạp là O($\mu$(m+qn)).
 	
 	\subsection{ Áp dụng các giải pháp đề xuất trên dữ liệu thực}
 	Trong phần này nhóm tác giả đưa ra kết quả thực nghiệm của giải hai giải pháp chỉ ra trong mục trước trên dữ liệu có sẵn và dữ liệu thu thập được, từ đó để thấy được hiệu quả của phương pháp nhóm đề xuất.
 		
-		\subsubsection{Giải pháp Limiting the spread of epidemics within time constraint on online social network}
+		\subsubsection{Giải pháp Limiting the spread of epidemics within time constraint on online social network}		
 		{\itshape - Dữ liệu có sẵn}
 		
 		Trong phần này, chúng tôi thực nghiệm trên một số MXH trực tuyến để kiểm chứng tính hiệu quả của thuật toán khi so sánh nó với các thuật toán cơ sở được sử dụng trong các bài toán lan truyền thông tin \cite{nguyen30}, \cite{kempe21}, \cite{zhang40}. Chúng tôi so sánh đánh gia trên ba yêu tố chính: chất lượng lời giải, tính mở rộng, tác động của số vòng lan truyền d trên một vài các MXH trực tuyến thực tiễn. Các thuật toán cơ sở sẽ sử dụng bao gồm:
@@ -718,6 +721,39 @@ Vậy nên toàn bộ thuật toán TMB có độ phức tạp là O($\mu$(m+qn)
 		{\itshape Các thiết lập} Chúng tôi sử dụng các thiết lập dưới đây cho việc đánh giá thực nghiệm:
 		
 		- Trọng số của cạnh: w(u,v) = 
+		\subsubsection{Giải pháp Targeted Misinformation Blocking (Xác định và ngăn chặn thông tin sai lệch trên mạng xã hội)}
+		{\itshape Dữ liệu có sẵn}	
+				
+		Trong mục này chúng tôi đưa ra kết quả thực nghiệm của thuật toán STMB với 3 bộ dữ liệu và so sánh về chất lượng lời giải, tốc độ thực hiện với một số thuật toán cơ bản khác.
+						
+		{\itshape - Dữ liệu:}
+		\begin{table}[h]
+			\centering
+			\begin{tabular}{|c|c|c|c|}
+				\hline 
+				Mạng & NetS \cite{NetS} & AS \cite{AS} & NetHEPT \cite{kemple1, chen10LT}\\ 
+				\hline 
+				Số đỉnh & 1.5K & 6.4K & 15.2K \\ 
+				\hline 
+				Số cạnh & 5.4K & 12.5K & 32.2K\\ 
+				\hline 
+				Bậc trung bình & 3.8 & 7.5 & 4.2\\ 
+				\hline 
+				Số đỉnh nguồn & 100 & 300 & 1000\\ 
+				\hline 
+			\end{tabular} 
+			\caption{Các bộ dữ liệu dùng trong thực nghiệm với giải pháp TMB}
+			\label{TMB:table}
+		\end{table}
+		Chúng tôi sử dụng 3 bộ dữ liệu mạng thực tế thu thập trên trang snap.stanford.edu \footnote{https://snap.stanford.edu/data/index.html}, thông tin về chúng được mô tả trong bảng \ref{TMB:table}. Theo các nghiên cứu trước \cite{khali, kemple1,chen10LT}, trọng số các cạnh của đồ thị trên mô hình LT được gán theo công thức $w(u,v) = 1/N_{in}(v)$. Với nguồn phát tán thông tin sai lệch chúng tôi chọn ngẫu nhiên từ 4-6\% số lượng đỉnh của cả đồ thị. Code được viết bằng ngôn ngữ Python 2.7, sử dụng thư viện hỗ trợ NetworkX và chạy trên máy Linux Server với 2.30 GHz Intel\textsuperscript{\textregistered} Xeon\textsuperscript{\textregistered} CPU E5-2697 and 128G of RAM DDR4. Trong thực nghiệm, chúng tôi so sánh thuật toán STMB với một số thuật toán khác được liệt kê dưới đây:
+		\begin {itemize}
+		\item PageRank: Tính toán ranking của các đỉnh trong đồ thị G dựa vào cấu trúc các cạnh liên kết với nó. Đây là thuật toán được thiết kế để xếp hạng các trang web từ đó đưa ra kết quả tìm kiếm. Do $h(\cdot)$ là hàm monotone nên sau khi sắp xếp hạng của các đỉnh trong đồ thị, chúng tôi sử dụng thuật toán tìm kiếm nhị phân để tìm kiếm tập lời giải A với |A| đỉnh có rank lớn nhất.
+		\item High-Degree: Một thuật toán heuristic dựa vào bậc của một đỉnh. Tương tự như thuật toán PageRank sau kho sắp xếp các đỉnh dựa trên bậc của chúng, chúng tôi sử dụng thuật toán tìm kiếm nhị phân để tìm lời giải cho bài toán.
+		\item Greedy: Thuật toán Greedy đưa ra trong thuật toán \ref{GA} kết hợp với các tối ưu trong \cite{Jleskovec}
+		\end{itemize} 
+	
+		{\itshape - Kết quả thực nghiệm:} Như mô tả trong hình  
+		
 
 
 
