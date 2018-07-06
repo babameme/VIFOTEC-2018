@@ -1,4 +1,160 @@
 \chapter{ Áp dụng các giải pháp đề xuất trên dữ liệu thực}
+
+Tuy nhiên trong quá trình nghiên cứu, nhóm tác giả đã gặp phải một số vấn đề khó khăn.
+
+Theo Điều 22, Luật An ninh Quốc gia nước Cộng hòa xã hội chủ nghĩa Việt Nam năm 2004, Công An nhân dân mà một trong các cơ quan chuyên trách được giao thực hiện nhiệm vụ bảo vệ An ninh quốc gia. Theo Điều 10, Luật Viễn thông năm 2009 quy định Cơ quan quản lý chuyên ngành về viễn thông là cơ quan thuộc Bộ Thông tin và Truyền thông. Tuy nhiên trong thực tế, các cơ quan chức năng của Nhà nước ta chưa có quyền quản lý đối với các nội dung trên mạng xã hội, được quản lý bởi các tập đoàn Facebook, Twitter, Microsoft. Do đó, việc xóa bỏ các nội dung, thông tin sai lệch lan truyền trên mạng xã hội, hay vô hiệu hóa người dùng đăng tải thông tin sai lệch là không khả thi. 
+
+Một vấn đề đặt ra khác là, các thông tin sai lệch phán tán trên mạng xã hội xuất phát từ các nguồn phát tán với tốc độ nhanh, quy mô rộng lớn. Đã có nhiều nghiên cứu đưa ra nhằm xác định các nguồn phát tán này, tuy nhiên hiệu quả và độ chính xác vẫn còn nhiều hạn chế. Trong thực tế, các nguồn phát tán thông tin sai lệch, các thông tin chống đối và xuyên tạc chính sách, đường lối của Đảng, pháp luật của Nhà nước thường là các đối tượng chủ mưu, cầm đầu, nắm vai trò quan trọng trong các tổ chức phản động. Đây là những đối tượng cơ hội chính trị, đối tượng bất mãn, đối tượng bảo thủ, ngoan cố và rất khó để thuyết phục các đối tượng đó gỡ bỏ các bài đăng, thông tin sai lệch trên mạng xã hội.
+
+Trong nghiên cứu này, nhóm tác giả đã dùng phương pháp giám sát, điều tra để tìm ra những đối tượng có tính chất trên, coi họ là nguồn phát tán thông tin sai lệch. Sau đó, nhóm tác giả đã nghiên cứu và đề xuất giải pháp chọn ra tập người dùng để vô hiệu hóa họ trong việc tham gia vào quá trình phát tán thông tin sai lệch. Trên mạng xã hội, hoạt động này tương đương với các biện pháp như sau:
+\begin {itemize}
+\item Thuyết phục người dùng không chấp nhận và lan truyền những thông tin sai lệch đến những người dùng khác, tức là làm cho người dùng này không tham gia vào quá trình phát tán thông tin sai lệch. Kĩ thuật này, ở trong các nghiên cứu gần đây còn được gọi là đặt giám sát (Monitor) người dùng \cite{zhang32}, \cite{zhang33}, \cite{zhang34}.
+
+\item Bằng sự can thiệp và giúp đỡ của nhà mạng có thể loại bỏ, cách ly thông tin sai lệch đến với những người dùng này. Năm 2016, Twitter đã loại bỏ 125.000 tài khoản được nghi ngờ có liên quan đến các hoạt động khủng bố \cite{twitter}. Năm 2017, Facebook đã xóa 30.000 tài khoản giả mạo lan truyền các tin đồn trước cuộc bầu cử tổng thống Pháp năm 2017 \cite{french}.
+\end {itemize}
+
+Dưới những điều kiện khác nhau, như tiềm lực tài chính, khả năng thuyết phục, phạm vi lan truyền thông tin khác nhau, cùng với đó là các mục tiêu khác nhau, có thể kể đến ảnh hưởng lan truyền của thông tin sai lệch, tỉ lệ người dùng nhiễm thông tin sai lệch và với các mô hình lan truyền thông tin khác nhau. Nhóm tác giả đã tiến hành thu thập dữ liệu trực tiếp từ mạng xã hội Facebook, với phạm vi xung quanh các đối tượng chống đối, đối tượng cầm đầu trong thời gian gần đây, sau đó mô hình hóa các dữ liệu thu được, và nghiên cứu lý thuyết, đề xuất hai giải pháp ngăn chặn hiệu quả, tiến hành thực nghiệm và so sánh với các giải pháp đã công bố trước đây. 
+
+Kết quả cuối cùng của giải pháp đưa ra một danh sách người dùng tiềm năng, theo đánh giá về lý thuyết và thực nghiệm cho thấy, nếu dùng các biện pháp ngăn chặn nêu trên để vô hiệu hóa những người dùng này, ảnh hưởng của những thông tin sai lệch đối với mạng xã hội là nhỏ hơn những giải pháp đã được công bố trước đây, và thời gian thực hiện các giải pháp của nhóm tác giả là tương đối nhanh.
+
+\section{Tổng thể về giải pháp}
+Giải pháp ngăn chặn thông tin sai lệch trên MXH được nhóm tác giả thực hiện qua 4 bước. Đầu tiên là quá trình giám sát, điều tra để thu thập được tài khoản mạng xã hội của những đối tượng chủ mưu, cầm đầu các tổ chức phản động, các đối tượng có uy tín lớn. Sau đó nhóm tác giả sử dụng công cụ kiểm thử Selenium để thu thập mạng xã hội xung quanh các đối tượng này. Bước tiếp theo, nhóm tác giả mô hình hóa toán học mạng xã hội thực thu được ở bước trên, và cuối cùng đề xuất, áp dụng hai giải pháp hiệu quả, để đưa ra tập người dùng tiềm năng có thể áp dụng các biện pháp vô hiệu hóa để ảnh hưởng của thông tin sai lệch trên mạng là nhỏ nhất.
+
+MXH cho phép các nhà phát triển (Developers) có thể lấy được thông tin dữ liệu, tuy nhiên điều đó phải được sự cho phép của người dùng thông qua các mã truy cập Access Token (Access Token là một đoạn mã do MXH sinh ra ngẫu nhiên khi người dùng đồng ý cho ứng dụng thứ 3 thực hiện các thao tác đối với tài khoản của người dùng). Điều này là một vấn đề khó khăn khi chúng ta cần khảo sát, lấy thông tin đối với một số lượng lớn người dùng nhằm xây dựng được đồ thị quan hệ giữa các người dùng trên MXH.
+
+Nhằm giải quyết vấn đề trên, nhóm tác giả đề xuất một hướng tiếp cận mới là sử dụng công cụ kiểm thử phần mềm tự động mã nguồn mở Selenium cho việc kiểm thử ứng dụng Web. Cụ thể ở đây nhóm tác giả thư viện mã nguồn mở của Selenium trên ngôn ngữ Python, kiểm thử tự động với trình duyện Chromnium.
+\subsection{Công cụ kiểm thử Selenium}
+Selenium là một công cụ kiểm thử phần mềm tự động, được phát triển bởi ThoughtWorks từ năm 2004 với tên ban đầu là JavaScriptTestRunner. Đến năm 2007, tác giả Jason Huggins rời ThoughtWorks và gia nhập Selenium Team, một phần của Google và phát triển thành Selenium như hiện nay.
+
+Selenium cung cấp công cụ phát lại (Playback) cho việc tạo ra các bài kiểm thử mà không cần phải học một ngôn ngữ kịch bản khác (Selenium IDE). Nó cũng cung cấp một ngôn ngữ thử nghiệm tên miền cụ thể (Selenese) để tạo ra các bài kiểm thử bằng một số ngôn ngữ lập trình phổ biến bao gồm C\#, Groovy, Java, Perl, Python, PHP, Ruby, Scala. Các thử nghiệm sau đó có thể chạy trên hầu hết các trình duyệt Web hiện đại. Selenium triển khai trên các nền tảng Windows, Linux và cả MacOS. Selenium là phần mềm mã nguồn mỡ, được phát hành theo giấy phép Apache 2.0.
+
+Selenium bao gồm một số thành phần với mỗi thành phần tham gia vào một vai trò cụ thể trong việc hỗ trợ phát triển tự động kiểm tra ứng dụng Web.
+\subsubsection{IDE Selenium}
+Là một môi trường phát triển tích hợp hoàn chỉnh (IDE) cho các bài kiểm tra Selenium. Nó được thực hiện như một Tiện ích bổ sung của Firefox và cho phép ghi lại, chỉnh sửa và gỡ lỗi. Nó trước đây được gọi là Selenium Recorder. Selenium-IDE ban đầu được tạo ra bởi Shinya Kasatani và được tặng cho dự án Selenium vào năm 2006. Nó ít được duy trì và tương thích với Selenium RC. Các tập lệnh có thể tự động được ghi lại và chỉnh sửa theo cách thủ công, cung cấp hỗ trợ tự động hoàn thành và khả năng di chuyển các lệnh nhanh chóng. Kịch bản được ghi lại trong Selenese ,một ngôn ngữ kịch bản thử nghiệm đặc biệt cho Selenium. Selenese cung cấp các lệnh để thực hiện các hành động trong một trình duyệt (bấm vào một liên kết, chọn một tùy chọn) và để lấy dữ liệu từ các trang kết quả.
+\subsubsection{API Client Selenium}
+Để thay thế cho các bài kiểm tra viết bằng Selen, các bài kiểm tra cũng có thể được viết bằng nhiều ngôn ngữ lập trình khác nhau. Những thử nghiệm này sau đó giao tiếp với Selenium bằng cách gọi các phương thức trong API ứng dụng khách Selenium. Selenium hiện cung cấp các API ứng dụng khách cho Java , C\#, Ruby , JavaScript và Python. Với Selenium 2, một API ứng dụng khách mới đã được giới thiệu (với WebDriver là thành phần trung tâm của nó). Tuy nhiên, API cũ (sử dụng lớp Selenium) vẫn được hỗ trợ.
+\subsubsection{Selenium WebDriver}
+Selenium WebDriver là sự kế thừa của Selenium RC. Selenium WebDriver chấp nhận các lệnh (được gửi bằng Selenese hoặc thông qua API ứng dụng khách) và gửi chúng tới trình duyệt. Điều này được thực hiện thông qua trình điều khiển trình duyệt cụ thể cho trình duyệt, trình điều khiển sẽ gửi lệnh tới trình duyệt và truy xuất kết quả. Selenium WebDriver không cần một máy chủ đặc biệt để thực hiện các thử nghiệm. Thay vào đó, WebDriver trực tiếp khởi động một cá thể trình duyệt và điều khiển nó. Tuy nhiên, Selenium Grid có thể được sử dụng với WebDriver để thực hiện các kiểm tra trên các hệ thống từ xa. Nếu có thể, WebDriver sử dụng chức năng cấp hệ điều hành gốc hơn là các lệnh JavaScript dựa trên trình duyệt để điều khiển trình duyệt. Điều này bỏ qua các vấn đề với sự khác biệt tinh tế giữa lệnh gốc và JavaScript, bao gồm cả các hạn chế bảo mật.
+\subsubsection{Selenium remote control}
+Selenium Remote Control (RC) là một máy chủ, được viết bằng Java, chấp nhận các lệnh cho trình duyệt thông qua HTTP. RC giúp có thể viết các bài kiểm tra tự động cho một ứng dụng web bằng bất kỳ ngôn ngữ lập trình nào, cho phép tích hợp tốt hơn Selenium trong các khung kiểm thử đơn vị hiện có. Để làm cho các bài kiểm tra viết dễ dàng hơn, dự án Selenium hiện cung cấp các trình điều khiển máy khách cho PHP, Python, Ruby, .NET, Perl và Java.
+\subsubsection{Selenium Grid}
+Selenium Grid là một máy chủ cho phép kiểm tra sử dụng các cá thể trình duyệt web chạy trên các máy từ xa. Với Selenium Grid, một máy chủ hoạt động như một hub. Kiểm tra liên hệ với trung tâm để có được quyền truy cập vào các phiên bản trình duyệt. Trung tâm có một danh sách các máy chủ cung cấp quyền truy cập vào các cá thể của trình duyệt (các nút WebDriver) và cho phép các thử nghiệm sử dụng các cá thể này. Selenium Grid cho phép chạy thử nghiệm song song trên nhiều máy và quản lý các phiên bản trình duyệt khác nhau và cấu hình trình duyệt tập trung (thay vì trong từng thử nghiệm riêng lẻ).
+
+\subsection{Kĩ thuật lấy dữ liệu trên MXH}
+\begin{center}
+	\begin{figure}[htp]
+		\begin{center}
+			\includegraphics [scale=.5]{picture/Hinh3_1}
+		\end{center}
+		\caption{Quá trình lấy dữ liệu}
+		\label{refhinh3_1}
+	\end{figure}
+\end{center}
+Quá trình lấy dữ liệu, áp dụng để xử lý được mô tả thông qua mô hình ở Hình \ref {refhinh3_1}.
+\subsubsection{Thu thập dữ liệu từ MXH Facebook}
+Các bước cụ thể của giai đoạn thu thập dữ liệu trên MXH Facebook được mô tả cụ thể như sau:
+\begin {itemize}
+\item Đầu tiên, nhóm tác giả tạo một tài khoản Facebook rồi sử dụng Công cụ kiểm thử tự động Selenium để tự động đăng nhập vào tài khoản Facebook đó.
+
+\item Bằng các truy vấn đặc biệt, nhóm tác giả lấy được ID (Identity Number) của tài khoản trên.
+
+\item Thông qua phương pháp giám sát và điều tra, thông qua những tin tức, vụ việc trong thời gian gần đây. Nhóm tác giả khảo sát dữ liệu với tập nguồn ban đầu bao gồm 6 tài khoản Facebook, đây là các đối tượng chủ mưu, cầm đầu, nắm vai trò quan trọng trong các tổ chức phản động, thường xuyên có các bài viết, bình luận mang tính chất chống đối, và đặc biệt các đối tượng này có uy tín khá lớn, có lượng người theo dõi, bạn bè trên Facebook là vô cùng đông đảo.
+\begin {enumerate} [+]
+\item https://www.facebook.com/gioan.namphong: Linh mục giáo sứ Thái Hà Nguyễn Nam Phong, một nhân vật khá nổi tiếng trong làng chống chính quyền trong nước và thường xuyên ra nước ngoài để "liên lạc" với tổ chức khủng bố Việt Tân.
+
+\item https://www.facebook.com/minhnhat.paultran: Paul Trần Minh Nhật là giáo dân thuộc xứ Ngọc Long, xã Công Thành, Yên Thành, Nghệ An, từng bị bắt và kết án 4 năm tù về tội “hoạt động nhằm lật đổ chính quyền nhân dân”. Hiện tại, Minh Nhật đang là cộng tác viên của trang “Tin mừng cho người nghèo”, mang danh nghĩa rao giảng tin mừng của Chúa, nhưng lại nhuốm màu sắc chính trị, luôn ủng hộ các đối tượng vi phạm pháp luật.
+
+\item https://www.facebook.com/ThaiDung2016: Gioan Thái Văn Dung là sinh viên tốt nghiệp ngành tin học, đã tham gia quản lý cửa hàng Internet, Do hiểu biết được CNTT mà biết thêm về xã hội, tích cực truyền bá thông tin, hoạt động mạng, tham gia biểu tình chống TQ xâm lược.
+
+\item https://www.facebook.com/pham.doan.trang: Nhà báo Phạm Đoan Trang, từng công tác tại Báo Pháp Luật thành phố Hồ Chí Minh. Tác giả của cuốn sách “Chính trị Bình Dân” có những nội dung nhạy cảm, mang tính chất kích động, chống phá chính quyền, Đảng và Nhà Nước.
+
+\item https://www.facebook.com/jbnguyenhuuvinh: Anh Ba Sàm, tên thật là Nguyễn Hữu Vinh là một blogger, từng là công an và đảng viên Đảng Cộng sản Việt Nam, từng công tác ở Ủy ban Việt kiều Trung ương. Ông bị Chính phủ CHXHCN Việt Nam bắt giữ và bị cáo buộc và phạt tù 5 năm do có hành vi đăng tải các bài viết trên mạng Internet vi phạm Điều 258 Bộ Luật Hình sự năm 2015 sửa đổi bổ sung năm 2017 về Tội lợi dụng các quyền tự do dân chủ xâm phạm lợi ích của Nhà nước, quyền, lợi ích hợp pháp của tổ chức, công dân.
+
+\item https://www.facebook.com/profile.php?id=100015485029386: Nguyễn Trọng đang sinh sống tại California, Hoa Kỳ. Lợi dụng quyền tự do dân chủ, thường xuyên có những bài viết xuyên tạc, chống phá đường lối chính sác của Đảng, pháp luật của Nhà nước.
+\end {enumerate}
+\item Tiếp theo, nhóm tác giả tự động trup cập vào trang web có địa chỉ www.facebook.com/{ID}/friends hoặc www.facebook.com/{name}/friends là trang bạn bè của những người dùng đó.
+
+\item Theo thuật toán sắp xếp của Facebook, những người dùng có liên quan nhất và hay tương tác nhất với người dùng đang theo dõi sẽ hiện ra đầu tiên trong trang bạn bè nói trên. Nhóm tác giả sử dụng thư viện BeautifulSoup để lấy mã HTML của trang này, tìm và lấy các đường dẫn chứa địa chỉ Facebook bạn bè của người dùng đang theo dõi, lấy ID của họ.
+
+\item Nhóm tác giả thu thập theo phương pháp loang theo chiều rộng: Bắt đầu từ ID Facebook của 6 đối tượng kể trên, từ đó tìm tiếp thông tin về khoảng 20 người bạn xuất hiện đầu tiên trên trang Facebook bạn bè của mỗi người dùng đó. Với mỗi người dùng thu thập được, nhóm tác giả lại tiếp tục tiến hành thu thập như trên, và cứ tiếp tục tìm kiếm đến khi thu thập đủ số lượng người dùng cần thiết.
+\end {itemize}		
+Cách làm này có ưu điểm là những người dùng thu thập được có nhiều mối liên hệ với nhau, đồ thị MXH thu thập được có nhiều liên kết, mang lại sự trực quan hơn cho cấu trúc đồ thị mạng. Ngoài ra còn có quá trình tiền xử lý, bước này sẽ hạn chế, loại bỏ được những đỉnh cô lập, hay những đỉnh khai thác được ít thông tin (Không công khai danh sách bạn bè).
+
+Bên cạnh những ưu điểm trên, thì cách làm này cũng có nhược điểm là không khai thác được hết thông tin của người dùng, bởi nhiều người dùng không để chế độ công khai bạn bè. Trong thực tế sẽ để lọt nhiều đối tượng nguy hiểm, ẩn chứa nhiều nguy cơ tiềm tàng.
+
+\subsubsection{Mô hình hóa dữ liệu thu được}
+Ở bước này, từ những dữ liệu thu thập được về danh sách ID người dùng, mối quan hệ bạn bè giữa họ. Nhóm tác giả tiền xử lý, đánh số lại các đỉnh, xây dựng đồ thị mô tả MXH với các đỉnh đại diện cho các người dùng, các cạnh biểu diễn mối quan hệ bạn bè giữa những người đó, trọng số (nếu có) đại diện cho mức độ tương tác giữa người dùng với nhau. Kết quả đầu ra của thuật toán thu thập thông tin trên MXH Facebook bao gồm 2 file dữ liệu:
+\begin {itemize}
+\item ID.txt chứa ánh xạ từ ID của người dùng sang chỉ số đỉnh được đánh số lại. Qua quá trình thu thập dữ liệu, chuẩn hóa, nhóm tác giả thu được 542 ID người dùng, được đánh số lại từ 0 – 541, xem bảng \ref{bang3_1}		
+\begin{table} [!htp]
+	\centering 
+	\begin{tabular}{|c|c|}
+		\hline 
+		0 & 100003708850657 \\ 
+		\hline 
+		1 & 100009945675640 \\ 
+		\hline 
+		2 & 100010197936720 \\ 
+		\hline 
+		3 & 641613321 \\ 
+		\hline 
+		4 & 100002541019308 \\ 
+		\hline 
+		5 & 100015485029386 \\ 
+		\hline 
+		6 & 100004745583805 \\ 
+		\hline 
+		... & ... \\ 
+		\hline 
+		539 & 100004236103486 \\ 
+		\hline 
+		540 & 100004142778267 \\ 
+		\hline 
+		541 & 100006259445960 \\ 
+		\hline 
+	\end{tabular} 
+	\caption{Ví dụ ánh xạ ID người dùng sang chỉ số được đánh số.}
+	\label{bang3_1}
+\end{table}
+\item Network.txt chứa mô tả cụ thể của đồ thị MXH đã thu được. File dữ liệu gồm nhiều dòng, mỗi dòng chứa 2 số là chỉ số của 2 người dùng có quan hệ với nhau.
+
+\begin{table} [!htp]
+	\centering
+	\begin{tabular}{|c|c|}
+		\hline 
+		0 & 7 \\ 
+		\hline 
+		0 & 8 \\ 
+		\hline 
+		0 & 9 \\ 
+		\hline 
+		0 & 4 \\ 
+		\hline 
+		... & ... \\ 
+		\hline 
+		99 & 400 \\ 
+		\hline 
+		99 & 437 \\ 
+		\hline 
+		99 & 498 \\ 
+		\hline 
+	\end{tabular}
+	\caption{Mô tả cụ thể của đồ thị MXH thu được}
+	\label{bang3_2} 
+\end{table}
+
+Từ dữ liệu thu được, nhóm tác giả mô phỏng lại và thu được hình ảnh tổng quan về cấu trúc mạng như sau :
+
+\begin{center}
+	\begin{figure}[htp]
+		\begin{center}
+			\includegraphics [scale=.5]{picture/Hinh3_2}
+		\end{center}
+		\caption{Mô phỏng cấu trúc toàn mạng dữ liệu thu được}
+		\label{refhinh3_2}
+	\end{figure}
+\end{center}
+\end {itemize}
 Trong chương này, nhóm tác giả đưa ra các kết quả thực nghiệm của hai giải pháp đã được đưa ra trong chương trước trên dữ liệu có sẵn và dữ liệu thu thập được, từ đó để thấy được hiệu quả của phương pháp nhóm đề xuất. Dữ liệu có sẵn là các bộ dữ liệu được lấy từ những nguồn uy tín hàng đầu, được các bài báo có chung mục tiêu nghiên cứu khác sử dụng và được các hội nghị, hội thảo thế giới công nhận. Dữ liệu thực là dữ liệu được thu thập trực tiếp trên mạng xã hội Facebook bằng các công cụ thích hợp. Việc sử dụng cả hai loại dữ liệu đảm bảo được rằng các giải pháp đưa ra vừa thỏa mãn được tính chất học thuật cao, vừa thỏa mãn được khả năng ứng dụng thực tế ngay tại Việt Nam.
 
 \section{Giải pháp Limiting the spread of epidemics within time constraint on online social network}
