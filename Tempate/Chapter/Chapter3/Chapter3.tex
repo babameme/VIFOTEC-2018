@@ -283,7 +283,7 @@ Nhằm giải quyết vấn đề trên, nhóm tác giả đề xuất một hư
  	
  	\item $\beta(u): $ : số lượng các đỉnh ra cứu được, sao cho chúng chuyển từ bị lây nhiễm thành không bị lây nhiễm sau khi loại bỏ đỉnh $u$ ra khỏi đồ thị.
  	\end {itemize}
- 	 	\begin{algorithm}[h]
+ 	 	\begin{algorithm}[hpt]
  		\caption{Fast Limit Epidemics (FLE) algorithm.}
  		\label{alg:Algo1}
  		%\SetAlgoNlRelativeSize{0}
@@ -318,7 +318,7 @@ Nhằm giải quyết vấn đề trên, nhóm tác giả đề xuất một hư
  	Một cách trực quan, số lượng gia tăng các đỉnh được cứu $\delta(A, u)$ có thể xấp xỉ theo $\beta(u)$. Bên cạnh đó, để tăng cường tính hiệu quả của thuật toán đề xuất, chúng tôi kết hợp $\alpha(u)$ và $\beta(u)$ để tính toán khả năng lan truyền tin sai lệch của đỉnh $u$. Ý tưởng chính của thuật toán là chọn ra các đỉnh một cách lần lượt theo đánh giá của hai hàm $\alpha$ và $\beta$. Ban đầu, chúng tôi khởi tạo tập đỉnh được chọn $A=\emptyset$ và đặt tập các đỉnh được xét chọn $U$ bằng với $V_{d}$. Trong mỗi bước, chúng tôi chọn ra đỉnh có trị số $\beta(u)$ lớn nhất trong đồ thị còn lại. Trường hợp tất cả các đỉnh đều có giá trị $\beta(u)$ là 0, chúng tôi chọn đỉnh có giá trị $\alpha(u)$ cực đại. Chi tiết thuật toán được mô tả trong Thuật toán \ref{alg:Algo1}.
  	
  	Khó khăn trong thuật toán chủ yếu đến từ bước tính toán các hàm $\alpha$ và $\beta$. Để giải quyết việc này, chúng tôi bắt đầu với ý tưởng tìm kiếm theo chiều rộng (Breath First Search - BFS) để tính toán $f_{d}(I)$ và dần dần cập nhật hàm $\alpha_{\text{in}}()$. Sau đó, chúng tôi sử dụng nó để tính toán các hàm  $\alpha()$ và $\beta()$ theo định nghĩa của chúng. Chi tiết thuật toán được thể hiện trong Thuật toán \ref{alg:Algo2} và Thuật toán \ref{alg:Algo3}.
- 	\begin{algorithm}[h]
+ 	\begin{algorithm}[hpt]
  		\caption{Calculate $f_{d}(I), a_{\text{in}}(), t()$}
  		\label{alg:Algo2}
  		\KwData{Graph $G=(V,E,\emptyset)$, set of infected nodes $I$, propagation hop $d$.}
@@ -490,7 +490,7 @@ Trong mục này chúng tôi chỉ ra một số kết quả về độ khó c�
 \subsubsection{Thuật toán đề xuất}
 {\itshape Thuật toán tham lam (Greedy algorithm)}
 Trong phần này chúng tôi giới thiệu một thuật toán xấp xỉ đảm bảo tỉ lệ 1 + ln($\gamma / \varepsilon$) dựa vào tính chất submodular và tính đơn điệu của hàm h(A). 		
-\begin{algorithm}[tbh]			
+\begin{algorithm}[hpt]			
 	\SetNlSty{text}{}{.}
 	%\SetAlgoNlRelativeSize{0}
 	\KwData{Graph $G=(V,E, w)$,  $S=\{s_1, s_2, .., s_k\}$, threshold $<\gamma < |V|$, parameter $\epsilon \in (0, \gamma)$} 
@@ -545,7 +545,7 @@ Thuật toán tham lam đưa ra một lời giải tốt xong lại không đả
 \begin {itemize}
 \item Đầu tiên sáp nhập các đỉnh trong tập nguồn S thành một nút I bằng cách áp dụng thuật toán 2 được đề xuất bởi Zhang \cite{zhang39}. Chúng ta thu được một đồ thị mới và nguồn phát tán thông tin sai lệch bây giờ chỉ là một đỉnh I duy nhất.
 
-\begin{algorithm}[tbh]			
+\begin{algorithm}[hpt]			
 	\KwData{Graph $G=(V,E, w)$,  $S=\{s_1, s_2, .., s_k\}$} 
 	\KwResult{Graph $G'=(V', E', w')$, I}
 	$G' \leftarrow G$;
@@ -616,7 +616,7 @@ Thuật toán tham lam đưa ra một lời giải tốt xong lại không đả
 	\label{example}
 \end{figure}			
 \item Trên cây T$_{I}^i$, ảnh hưởng địa phương của nút v là số nút con của cây gốc v kể cả v trên cây T$_{I}^i$. Áp dụng thuật toán DFS dễ dàng tìm được số nút con của v. Ảnh hưởng giảm của nguồn S khi loại đỉnh u khỏi G bằng lượng ảnh hưởng giảm trung bình khi loại u trên tất cả các cây T$_{I}^i$. Kí hiệu h(u, $T_I^i$) là lượng ảnh hưởng giảm trên cây $T_I^i$ sau khi loại bỏ đỉnh u khỏi $T_I^i$. Áp dụng phương pháp Lazy forward của Leskovec \cite{krause} để tìm kiếm lời giải. 
-\begin{algorithm}[h]
+\begin{algorithm}[hpt]
 	%\SetAlgoNlRelativeSize{0}
 	\KwData{Graph $G=(V,E, w)$,  $\mathcal{S}=\{s_1, s_2, .., s_q\}$, threshold $\gamma>0$} 
 	\KwResult{set of nodes $A$}
@@ -675,122 +675,3 @@ Thuật toán tham lam đưa ra một lời giải tốt xong lại không đả
 \end {itemize}
 
 Vậy nên toàn bộ thuật toán TMB có độ phức tạp là O($\mu$(m+qn)).
-	
-	\subsection{ Áp dụng các giải pháp đề xuất trên dữ liệu thực}
-	Trong phần này nhóm tác giả đưa ra kết quả thực nghiệm của giải hai giải pháp chỉ ra trong mục trước trên dữ liệu có sẵn và dữ liệu thu thập được, từ đó để thấy được hiệu quả của phương pháp nhóm đề xuất.
-		
-		\subsubsection{Giải pháp Limiting the spread of epidemics within time constraint on online social network}		
-		{\itshape - Dữ liệu có sẵn}
-		
-		Trong phần này, chúng tôi thực nghiệm trên một số MXH trực tuyến để kiểm chứng tính hiệu quả của thuật toán khi so sánh nó với các thuật toán cơ sở được sử dụng trong các bài toán lan truyền thông tin \cite{nguyen30}, \cite{kempe21}, \cite{zhang40}. Chúng tôi so sánh đánh gia trên ba yêu tố chính: chất lượng lời giải, tính mở rộng, tác động của số vòng lan truyền d trên một vài các MXH trực tuyến thực tiễn. Các thuật toán cơ sở sẽ sử dụng bao gồm:
-		\begin {itemize}
-			\item Random: Thuật toán chọn ngẫu nhiên k đỉnh trong N$_{d}(S)$.
-		
-			\item Maxdegree (Maxdeg): Thuật toán heuristic chọn lần lượt các đỉnh có bậc cao nhất trong tập V$_{d}$ cho đến khi đủ k đỉnh.
-		
-			\item Greedy: Thuật toán heuristic chọn lần lượt k đỉnh, trong mỗi lần chọn sẽ chọn ra đỉnh sao cho khi loại bỏ đỉnh đó sẽ cứu được nhiều đỉnh nhất có thể.
-		\end {itemize}
-		Chúng tôi thực nghiệm sử dụng một hệ thống máy có cấu hình sau: Intel(R) Core(TM) i5-6200U CPU @ 2.30 GHz (up to 2.40 GHz), bộ nhớ RAM 4GB, ngôn ngữ lập trình C++.
-		
-		{\itshape - Dữ liêu:}
-		
-		 Chúng tôi thực nghiệm thuật toán trên nhiều bộ dữ liệu thực tế khác nhau. Bên cạnh việc lựa chọn các bộ dữ liệu để đảm bảo sự đa dạng về kích thước, chúng tôi cũng lựa chọn nhiều miền dữ liệu khác nhau, bảng ... thể hiện các bộ dữ liệu nhóm tác giả sử dụng.
-		\begin{table}
-			\centering
-			\begin{tabular}{|c|c|c|c|c|}
-				\hline 
-				Mạng & Số đỉnh & Số cạnh & Loại & Bậc trung bình \\ 
-				\hline 
-				Gnutella & 6,301 & 20,777 & Có hướng & 3.29 \\ 
-				\hline 
-				Wikipedia vote & 7,115 & 103,689 & Có hướng & 14.57 \\ 
-				\hline 
-				Amazon & 262,111 & 1,234,877 & Có hướng & 4.71 \\ 
-				\hline 
-				Google web & 875,713 & 5,105,039 & Có hướng & 5.83 \\ 
-				\hline 
-			\end{tabular} 
-			\caption{Các bộ dữ liệu}
-		\end{table}
-		
-		{\itshape Các thiết lập} Chúng tôi sử dụng các thiết lập dưới đây cho việc đánh giá thực nghiệm:
-		
-		- Trọng số của cạnh: w(u,v) = 
-				\subsubsection{Giải pháp Targeted Misinformation Blocking (Xác định và ngăn chặn thông tin sai lệch trên mạng xã hội)}
-		{\itshape Dữ liệu có sẵn}	
-		
-		Trong mục này chúng tôi đưa ra kết quả thực nghiệm của thuật toán STMB với 3 bộ dữ liệu và so sánh về chất lượng lời giải, tốc độ thực hiện với một số thuật toán cơ bản khác.
-		
-		{\itshape - Dữ liệu:}
-		\begin{table}[h]
-			\centering
-			\begin{tabular}{|c|c|c|c|}
-				\hline 
-				Mạng & NetS \cite{NetS} & AS \cite{AS} & NetHEPT \cite{kemple1, chen10LT}\\ 
-				\hline 
-				Số đỉnh & 1.5K & 6.4K & 15.2K \\ 
-				\hline 
-				Số cạnh & 5.4K & 12.5K & 32.2K\\ 
-				\hline 
-				Bậc trung bình & 3.8 & 7.5 & 4.2\\ 
-				\hline 
-				Số đỉnh nguồn & 100 & 300 & 1000\\ 
-				\hline 
-			\end{tabular} 
-			\caption{Các bộ dữ liệu dùng trong thực nghiệm với giải pháp TMB}
-			\label{TMB:table}
-		\end{table}
-		Chúng tôi sử dụng 3 bộ dữ liệu mạng thực tế thu thập trên trang snap.stanford.edu \footnote{https://snap.stanford.edu/data/index.html}, thông tin về chúng được mô tả trong bảng \ref{TMB:table}. Theo các nghiên cứu trước \cite{khali, kemple1,chen10LT}, trọng số các cạnh của đồ thị trên mô hình LT được gán theo công thức $w(u,v) = 1/N_{in}(v)$. Với nguồn phát tán thông tin sai lệch chúng tôi chọn ngẫu nhiên từ 4-6\% số lượng đỉnh của cả đồ thị. Code được viết bằng ngôn ngữ Python 2.7, sử dụng thư viện hỗ trợ NetworkX và chạy trên máy Linux Server với 2.30 GHz Intel\textsuperscript{\textregistered} Xeon\textsuperscript{\textregistered} CPU E5-2697 and 128G of RAM DDR4. Trong thực nghiệm, chúng tôi so sánh thuật toán STMB với một số thuật toán khác được liệt kê dưới đây:
-		\begin {itemize}
-		\item PageRank: Tính toán ranking của các đỉnh trong đồ thị G dựa vào cấu trúc các cạnh liên kết với nó. Đây là thuật toán được thiết kế để xếp hạng các trang web từ đó đưa ra kết quả tìm kiếm. Do $h(\cdot)$ là hàm monotone nên sau khi sắp xếp hạng của các đỉnh trong đồ thị, chúng tôi sử dụng thuật toán tìm kiếm nhị phân để tìm kiếm tập lời giải A với |A| đỉnh có rank lớn nhất.
-		\item High-Degree: Một thuật toán heuristic dựa vào bậc của một đỉnh. Tương tự như thuật toán PageRank sau kho sắp xếp các đỉnh dựa trên bậc của chúng, chúng tôi sử dụng thuật toán tìm kiếm nhị phân để tìm lời giải cho bài toán.
-		\item Greedy: Thuật toán Greedy đưa ra trong thuật toán \ref{GA} kết hợp với các tối ưu trong \cite{Jleskovec}
-	\end{itemize} 
-
-		{\itshape - Kết quả thực nghiệm:} Như mô tả trong hình \ref{solSTMB}, số lượng đỉnh được chọn đưa ra bởi thuật toán STMB là nhỏ nhất. STMB tốt hơn lên đến 39\% so với thuật toán Greedy, hơn 60\%-95\% và 57\%-87\% so với thuật toán PageRank và High-Degree tương ứng. Để kiểm tra kết quả thu được từ thuật toán STMB, chúng tôi chạy 1000 mẫu Monte-Carlo để ước lượng giá trị của hàm $h(A)$ và kết quả kiểm tra được đưa ra trong hình \ref{checkSTMB}. Trong hầu hết các trường hợp $h(A)$ vượt qua ngưỡng yêu cầu.
-		\begin{figure}
-			\begin{tabular}{lll}
-				\includegraphics[height = 3.2cm]{picture/NetS} &
-				\includegraphics[height = 3.2cm]{picture/AS} &   
-				\includegraphics[height = 3.2cm]{picture/NetHEPT}
-				\\
-				\includegraphics[height = 3.2cm]{picture/TimeNetS} &
-				\includegraphics[height = 3.2cm]{picture/TimeAS} &   
-				\includegraphics[height = 3.2cm]{picture/TimeNetHEPT}
-		\end{tabular}
-		\caption{So sách chất lượng lời giải và thời gian chạy của các thuật toán cho bài toán TMB}
-		\label{solSTMB}    
-		\end{figure}
-		\begin{figure}[htp]
-			\begin{tabular}{ccc}
-				\includegraphics[height = 3.2 cm]{picture/CheckNetS} &
-				\includegraphics[height = 3.2 cm]{picture/CheckAS} &   
-				\includegraphics[height = 3.2 cm]{picture/CheckNetHEPT}
-			\end{tabular}
-			\caption{Kiểm tra kết quả của thuật toán STMB}
-			\label{check}    
-		\end{figure}
-	
-	Thời gian chạy của các thuật toán trên 3 bộ dữ liệu trong trường hợp có $\gamma$ là lớn nhất được đưa ra trong bảng \ref{timeSTMB}. Ta thấy thuật toán Greedy có chất lượng lời giải tương đương với thuật toán STMB song thời gian thực nghiệm trên các bộ dữ liệu lại rất không hiệu quả.
-	\begin{table}[h]
-		\label{tab:time}       % Give a unique label
-		% For LaTeX tables use
-		\begin{center}
-			\begin{tabular}{|c|c|c|c|c|}				
-				\hline 
-				\textbf{} & {$\mathsf{STMB}$} & {$\mathsf{Greedy}$} & {Page Rank} & {High-Degree} 				
-				\\ 
-				\hline 
-				NetS & \textbf{17.57(s)} &	14206.80(s) &	35.73(s) &	30.24(s)
-				\\ 
-				\hline 
-				AS & 45.70(s) & 14074.87(s) & \textbf{14.39(s)} &	17.85(s)
-				\\
-				\hline 
-				NetHEPT & \textbf{165.12(s)} & 582566.74(s) & 392.34(s) & 374.66(s)
-				\\
-				\hline 
-			\end{tabular}
-		\end{center}
-		\caption{So sánh thời gian chạy của các thuật toán với trường hợp $\gamma$ lớn nhất}
-	\end{table}
