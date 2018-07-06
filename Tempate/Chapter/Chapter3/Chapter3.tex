@@ -359,7 +359,7 @@ Nhằm giải quyết vấn đề trên, nhóm tác giả đề xuất một hư
  		}
  	\end{algorithm}
  	
- 	\begin{algorithm}[h]
+ 	\begin{algorithm}[hpt]
  		\caption{Calculate $\alpha()$ and $\beta()$}
  		\label{alg:Algo3}
  		\KwData{Graph $G=(V,E,\emptyset)$, set of infected nodes $I$, propagation hop $d$, $f_{d}(I), a_{\text{in}}(), t()$.}
@@ -542,7 +542,7 @@ Trong phần này chúng tôi giới thiệu một thuật toán xấp xỉ đ�
 Thuật toán tham lam đưa ra một lời giải tốt xong lại không đảm bảo yêu cầu về thời gian với dữ liệu lớn do đó trong phần này chúng tôi đưa ra một giải pháp đảm bảo yêu cầu cả về chất lượng lời giải cũng như thời gian tính toán. Dưới đây là các bước chính trong thuật toán chúng tôi đề xuất:
 \begin {itemize}
 \item Đầu tiên sáp nhập các đỉnh trong tập nguồn S thành một nút I bằng cách áp dụng thuật toán \ref{MERGE} được đề xuất bởi Zhang \cite{zhang39}. Chúng ta thu được một đồ thị mới và nguồn phát tán thông tin sai lệch bây giờ chỉ còn là một đỉnh I duy nhất.
-\begin{algorithm}[h]			
+\begin{algorithm}[hpt]			
 	\KwData{Graph $G=(V,E, w)$,  $S=\{s_1, s_2, .., s_k\}$} 
 	\KwResult{Graph $G'=(V', E', w')$, I}
 	$G' \leftarrow G$;
