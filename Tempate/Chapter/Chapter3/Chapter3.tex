@@ -513,9 +513,6 @@ Trong phần này chúng tôi giới thiệu một thuật toán xấp xỉ đ�
 	\label{sub}
 \end{theo}	
 
-\begingroup
-\fontsize{13pt}{12pt}
-\selectfont		 
 \begin{proof}	
 	Kí hiệu $N_E(A)$ là tập tất cả các cạnh (u, v) với u, v $\in$ $A$. Theo định lý 5 trong \cite{khali}, cho $A \subseteq T$ chúng ta có $h(T)-h(A)=\sigma_{S}(N_E(A))- \sigma_{S}(N_E(T)) \geq 0$. Do đó $h(\cdot)$ là một hàm monotone. 
 	Tiếp đến chúng ta chỉ ra rằng $\sigma_S(G \setminus A)$ là một hàm submodular với $A$ là biến số. Đặt $E_{T, v}=N_E(T+\{v\})\setminus N_E(T), E_{A, v}= N_E(A+\{v\}) \setminus N_E(A)$ dễ thấy $E_{T, v} \subseteq E_{A, v}$  và vì thế $A \subseteq T$ $\Rightarrow$ $N_E(A)\cup E_{T, v} \subseteq N_E(A+ \{v\})$. Lấy $\sigma_S(G \setminus X)$ là ảnh hưởng lan truyền của tập $S$ trên đồ thị $G$ sau khi loại bỏ tập cạnh $X \subset E$, chúng ta thu được $\sigma_{S}(G \setminus A)=\sigma_{S}(G \setminus N_E(A)$. Theo định lý 6 trong \cite{khali}, $\forall X \subseteq Y, e \in Y\setminus X$, chúng ta có: 
@@ -537,7 +534,6 @@ Trong phần này chúng tôi giới thiệu một thuật toán xấp xỉ đ�
 	\end{align}
 	Combine with $h(A)= \sigma_S(G)- \sigma_S(G\setminus A)$ we easy see that $h(\cdot)$ is a supmodular function.
 \end{proof}
-\endgroup
 
 \begin{theo} Với $\forall$ $\epsilon \in (0, \gamma)$, thuật toán \ref{GA} đưa ra lời giải $A$ thỏa mãn $h(A) \geq \gamma- \epsilon$, và $|A|$ là không vượt quá tích của $1+\ln(\gamma/ \epsilon)$ với số đỉnh của lời giải tối ưu \label{app}
 \end{theo}		
@@ -614,7 +610,7 @@ Thuật toán tham lam đưa ra một lời giải tốt xong lại không đả
 	{\includegraphics[width=.3\linewidth]{picture/1}}\hfill
 	\subfloat[Đồ thị mẫu $g$\label{fig:test2}]
 	{\includegraphics[width=.3\linewidth]{picture/2}}\hfill
-	\subfloat[Cây gốc $I$ tạo ra từ $G$ \label{fig:test3}]
+	\subfloat[Cây gốc $I$ tạo ra từ $g$ \label{fig:test3}]
 	{\includegraphics[width=.3\linewidth]{picture/3}}
 	\caption{Ví dụ tạo ra một cây gốc $I$ từ $G$ trên mô hình LT}
 	\label{example}
