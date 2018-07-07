@@ -1,6 +1,6 @@
 \include{MyTemplate}
 %===============
-\setcounter{section}{0}
+%\setcounter{section}{0}
 
 \graphicspath{ {fig/} }
 %============================
@@ -11,13 +11,15 @@
 
 \usepackage{scrextend}
 \changefontsizes{13pt}
+
 \begin{document}
 %\rm
 %\thispagestyle{empty}%
 
-%\listoffigures
-
+\pagenumbering{gobble}
 \tableofcontents
+\listoffigures
+\listoftables
 
 \markboth{Mở đầu}{}
 %\pagestyle{fancy}
@@ -38,8 +40,9 @@
 \mainmatter %Định dạng các trang chính, số thứ tự được đánh kiểu ả rập: 1,2,3...
 %====================================
 %
+
+\setcounter{page}{1}
 \pagenumbering{arabic}
-%\setcounter{page}{1}
 
 \include{Chapter/Modau/Modau}
 
