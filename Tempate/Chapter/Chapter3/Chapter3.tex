@@ -280,20 +280,20 @@ trong đó $R(g, S)$ là tập các đỉnh đến được từ S trên g và $
 \sigma_{S}(G)=\sum_{x \in \mathsf{P}(G, S)} \prod_{e \in x}w(e)
 \label{inf_path}
 \end{align} 				
-với $\mathsf{P}(G, S)$ là tập tất cả các đường đi đơn từ $s \in S$ tới bất kỳ đỉnh $v \in G \setminus \{S \cup \{s\} \} $ trên đồ thị G.		
+với $\mathsf{P}(G, S)$ là tập tất cả các đường đi đơn từ $s \in S$ tới bất kỳ đỉnh $v \in G \setminus \{S \cup \{s\} \} $ trên đồ thị $G$.		
 
-\textbf{Phát biểu bài toán (Bài toán TMB):} Gọi G(V,E,w) là một đồ thị có hướng biểu diễn một mạng xã hội. Đưa ra một tập nguồn S = {$s_{1}, s_{2}, ... , s_{k}$}, S $\in$ V là tập tiềm năng phát tán thông tin sai lệch và một số nguyên $\gamma \leq | V |$ thể hiện cho số lượng người dùng tối thiểu chúng ta muốn đảm bảo thông tin sai lệch không lan truyền đến được họ.
+\textbf{Phát biểu bài toán (Bài toán TMB):} Gọi $G(V,E,w)$ là một đồ thị có hướng biểu diễn một mạng xã hội. Đưa ra một tập nguồn $S = {s_{1}, s_{2}, ... , s_{k}}, S \in V$ là tập tiềm năng phát tán thông tin sai lệch và một số nguyên $\gamma \leq | V |$ thể hiện cho số lượng người dùng tối thiểu chúng ta muốn đảm bảo thông tin sai lệch không lan truyền đến được họ.
 
-\textbf{Yêu cầu:} Tìm tập đỉnh A $\in V \backslash S$ có ít đỉnh nhất sao cho khi xóa các đỉnh trong tập A khỏi đồ thị G thì đảm bảo h(A) = $\sigma_{S}(G) - \sigma_{S}(G \backslash A) \geq \gamma$, tức là đảm bảo ít nhất $\gamma$ người dùng không tiếp xúc với thông tin sai lệch.
+\textbf{Yêu cầu:} Tìm tập đỉnh A $\in V \backslash S$ có ít đỉnh nhất sao cho khi xóa các đỉnh trong tập A khỏi đồ thị $G$ thì đảm bảo h(A) = $\sigma_{S}(G) - \sigma_{S}(G \backslash A) \geq \gamma$, tức là đảm bảo ít nhất $\gamma$ người dùng không tiếp xúc với thông tin sai lệch.
 \subsubsection{Độ phức tạp của bài toán}		
 Trong mục này chúng tôi chỉ ra một số kết quả về độ khó của bài toán TMB trên mô hình LT.
 \begin{theo}
-	Cho nguồn tiềm năng phát tán thông tin sai lệch S dưới mô hình LT, bài toán TMB là $\#P-khó$ nếu S chỉ chứa 1 đỉnh.
+	Cho nguồn tiềm năng phát tán thông tin sai lệch S dưới mô hình LT, bài toán TMB là $\#P-\text{khó}$ nếu S chỉ chứa 1 đỉnh.
 \end{theo}
 \begin{proof}
 	Để chứng minh TMB là $\#P-\text{khó}$ chúng tôi sẽ chỉ ra độ khó của bài toán TMB là lớn hơn hoặc bằng với độ khó của bài toán $s$-$t$ paths mà đã được chứng minh trong \cite{vali} là có độ khó $\#P-\text{khó}$. 
 	\begin{define}[Bài toán $s$-$t$ paths \cite{vali}]
-		Cho một đồ thị có hướng $G = (V, E), |V| = n, |E| = m$, bài toán s-t paths yêu cầu đếm số đường đi có hướng từ đỉnh $s$ tới đỉnh $t$ mà đi qua mọi đỉnh nhiều nhất một lần. 
+		Cho một đồ thị có hướng $G = (V, E), |V| = n, |E| = m$, bài toán $s$-$t$ paths yêu cầu tìm số đường đi có hướng từ đỉnh $s$ tới đỉnh $t$ mà đi qua mọi đỉnh nhiều nhất một lần. 
 	\end{define}			
 	\begin{figure}[h]
 		\begin{center}
@@ -302,7 +302,7 @@ Trong mục này chúng tôi chỉ ra một số kết quả về độ khó c�
 			\label{reduce}   
 		\end{center}
 	\end{figure}			
-	Xem xét thể hiện $\mathcal{I}_1$ của bài toán $s$-$t$ paths, với $G = (V, E), s, t$ cho trước. Như minh họa trong hình \ref{reduce}, từ G, chúng ta xây dựng G' như sau: Thêm đỉnh u và hai cạnh (s, u), (t, u) với trọng số $w(s, u) = w(t,u) = 1/2$, tiếp đó thêm tập $\mathcal{Q}$ gồm 2n đỉnh và kết nối u với chúng với trọng số là 1. Với các cạnh khác, thiết lập trọng số $w = 1/\Delta$, $\Delta$ là bậc vào lớn nhất của đồ thị G. Chúng ta chia tất cả các đường đi bắt đầu từ $s$ thành 2 nhóm: Tập tất cả các đường đi có đỉnh kết thúc thuộc tập $\mathcal{Q}$ và tập còn lại. Từ công thức \eqref{inf_path}, chúng ta có: 
+	Xem xét thể hiện $\mathcal{I}_1$ của bài toán $s$-$t$ paths, với $G = (V, E), s, t$ cho trước. Như minh họa trong hình \ref{reduce}, từ $G$, chúng ta xây dựng $G'$ như sau: Thêm đỉnh u và hai cạnh (s, u), (t, u) với trọng số $w(s, u) = w(t,u) = 1/2$, tiếp đó thêm tập $Q$ gồm 2n đỉnh và kết nối u với chúng với trọng số là 1. Với các cạnh khác, thiết lập trọng số $w = 1/\Delta$, trong đó $\Delta$ là bậc vào lớn nhất của đồ thị $G$. Chúng ta chia tất cả các đường đi bắt đầu từ $s$ thành 2 nhóm: Nhóm thứ nhất là tập tất cả các đường đi có đỉnh kết thúc thuộc tập $\mathcal{Q}$ và nhóm thứ hai là tập còn lại. Từ công thức \eqref{inf_path}, chúng ta có: 
 	\begin{align}
 	\sigma_{S}(G')&=\sum_{x \in \mathsf{P}(G', s)} \prod_{e \in x}w(e)= \sum_{v \in  G' \setminus Q} \left(  \sum_{x \in \mathsf{P}(G', s, v)} \prod_{e \in x}w(e) \right) + \sum_{v \in Q} \left(  \sum_{x \in \mathsf{P}(G', s, v)} \prod_{e \in x}w(e) \right)  \nonumber
 	\\
@@ -337,8 +337,8 @@ Trong mục này chúng tôi chỉ ra một số kết quả về độ khó c�
 	Bây giờ, xét thể hiện $\mathcal{I}_2$ của bài toán TMB trong đó $S=\{s\}$, $\gamma = \frac{2n+1}{2}(\beta+ 1) , \beta \in [0, 1]$.  Giả sử rằng $\mathcal{A}$ là một thuật toán giải quyết bài toán TMB trong thời gian đa thức. Xem xét 2 trường hợp: (1) Nếu $\mathcal{A}$ trả ra kết quả là tập $A$ có $|A|=1$, thì chúng ta chỉ cần chọn $A={u}$. Kết luận $f(w) \geq \beta$; (2) Nếu $\mathcal{A}$ trả ra kết quả tập $A$ có $|A| \ge 1$ thì ngoài $u$ sẽ cần chọn thêm một số đỉnh khác. Kết luận $f(w) < \beta$. Vì vậy $\mathcal{A}$ có thể được sử dụng để quyết định $f(w)$ là như thế nào so với $\beta$ và có thể giải quyết bài toán $s$-$t$ paths. Điều này chỉ ra rằng bài toán TMB là khó hơn hoặc bằng bài toán $s$-$t$ paths.
 \end{proof}
 \subsubsection{Thuật toán đề xuất}
-{\itshape Thuật toán tham lam (Greedy algorithm)}
-Trong phần này chúng tôi giới thiệu một thuật toán xấp xỉ đảm bảo tỉ lệ 1 + ln($\gamma / \varepsilon$) dựa vào tính chất submodular và tính đơn điệu của hàm h($\cdot$). 		
+\textbf{\textit{Thuật toán tham lam (Greedy algorithm)}}
+Trong phần này chúng tôi giới thiệu một thuật toán xấp xỉ đảm bảo tỉ lệ 1 + ln($\gamma / \varepsilon$) dựa vào tính chất submodular và tính monotone của hàm h($\cdot$). Hàm $f(x)$ được gọi là hàm submodular nếu $A \subset T, v \notin T$ $ f(A+ \{v\})- f(A) \geq f(T+ \{v\})- f(T)$. Còn $f(x)$ được gọi là monotone nếu $\forall T \subseteq S$ chúng ta có $f(T) \leq f(S)$.
 \begin{algorithm}[hpt]			
 	\KwData{Graph $G=(V,E, w)$,  $S=\{s_1, s_2, .., s_k\}$, threshold $\gamma < |V|$, parameter $\epsilon \in (0, \gamma)$} 
 	\KwResult{set of nodes $A$}
@@ -361,16 +361,17 @@ Trong phần này chúng tôi giới thiệu một thuật toán xấp xỉ đ�
 \end{theo}	
 
 \begin{proof}	
-	Kí hiệu $N_E(A)$ là tập tất cả các cạnh (u, v) $\in$ E với u, v $\in$ $A$. Theo định lý 5 trong \cite{khali}, cho $A \subseteq T$ chúng ta có $h(T)-h(A)=\sigma_{S}(N_E(A))- \sigma_{S}(N_E(T)) \geq 0$. Do đó $h(\cdot)$ là một hàm monotone. 
-	Tiếp đến chúng ta chỉ ra rằng $\sigma_S(G \setminus A)$ là một hàm submodular với $A$ là biến số. Đặt $E_{T, v}=N_E(T+\{v\})\setminus N_E(T), E_{A, v}= N_E(A+\{v\}) \setminus N_E(A)$ dễ thấy $E_{T, v} \subseteq E_{A, v}$  và vì thế $A \subseteq T$ $\Rightarrow$ $N_E(A)\cup E_{T, v} \subseteq N_E(A+ \{v\})$. Lấy $\sigma_S(G \setminus X)$ là ảnh hưởng lan truyền của tập $S$ trên đồ thị $G$ sau khi loại bỏ tập cạnh $X \subset E$, chúng ta thu được $\sigma_{S}(G \setminus A)=\sigma_{S}(G \setminus N_E(A)$. Theo định lý 6 trong \cite{khali}, $\forall X \subseteq Y, e \in Y\setminus X$, chúng ta có: 
+	Theo định lý 5 trong \cite{khali}, cho $A \subseteq T$ chúng ta có $h(T)-h(A)=\sigma_S(G) - \sigma_S(G \setminus T) -(\sigma_S(G) - \sigma_S(G \setminus A))  =\sigma_{S}(G \setminus A)- \sigma_{S}(G \setminus T) \geq 0$. Do đó $h(\cdot)$ là một hàm monotone. 
+	
+	Tiếp đến chúng ta chỉ ra rằng $\sigma_S(G \setminus A)$ là một hàm submodular với $A$ là biến số. Kí hiệu $N_E(A)$ là tập tất cả các cạnh (u, v) $\in$ E với u, v $\in$ $A$. Đặt $E_{T, v}=N_E(T+\{v\})\setminus N_E(T), E_{A, v}= N_E(A+\{v\}) \setminus N_E(A)$ dễ thấy $E_{T, v} \subseteq E_{A, v}$  nếu $A \subseteq T$ $\Rightarrow$ $N_E(A)\cup E_{T, v} \subseteq N_E(A+ \{v\})$. Lấy $\sigma_S(G \setminus N_E(X))$ là ảnh hưởng lan truyền của tập $S$ trên đồ thị $G$ sau khi loại bỏ tập cạnh $N_E(X) \subset E$, chúng ta nhận thấy $\sigma_{S}(G \setminus X)=\sigma_{S}(G \setminus N_E(X)$. Theo định lý 6 trong \cite{khali}, $\forall N_E(X) \subseteq N_E(Y), e \in N_E(Y)\setminus N_E(X)$, chúng ta có: 
 	\begin{align}
-	\sigma_{S}(G \setminus (X \cup \{e\}) - \sigma_{S}(G \setminus X) 
-	\leq \sigma_{S}(G \setminus (Y \cup \{e\})) - \sigma_{S}(G \setminus Y)
+	\sigma_{S}(G \setminus (N_E(X) \cup \{e\}) - \sigma_{S}(G \setminus X) 
+	\leq \sigma_{S}(G \setminus (N_E(Y) \cup \{e\})) - \sigma_{S}(G \setminus Y)
 	\label{super}
 	\end{align}
 	Vì thế,
 	\begin{align}
-	\sigma_{S}(G \setminus A)-\sigma_{S}(G \setminus (A \cup \{u\})) 
+	\sigma_{S}(G \setminus A)-\sigma_{S}(G \setminus (A \cup \{v\})) 
 	& =\sigma_{S}(G \setminus N_E(A))-\sigma_{S}(G \setminus N_E(A+\{v\})) 
 	\\
 	&	\geq \sigma_{S}(G \setminus N_E(A))-\sigma_{S}(G \setminus (N_E(A) \cup E_{T, v})) 
@@ -379,7 +380,7 @@ Trong phần này chúng tôi giới thiệu một thuật toán xấp xỉ đ�
 	\\
 	& = \sigma_{S}(G\setminus T)-\sigma_{S}(G \setminus (T \cup \{u\}))  (\mbox{Theo BĐT \eqref{super}})
 	\end{align}
-	Combine with $h(A)= \sigma_S(G)- \sigma_S(G\setminus A)$ we easy see that $h(\cdot)$ is a supmodular function.
+	Kết hợp với công thức $h(A)= \sigma_S(G)- \sigma_S(G\setminus A)$ chúng ta có được $h(\cdot)$ là một hàm submodular.
 \end{proof}
 
 \begin{theo} Với $\forall$ $\epsilon \in (0, \gamma)$, thuật toán \ref{GA} đưa ra lời giải $A$ thỏa mãn $h(A) \geq \gamma- \epsilon$, và $|A|$ là không vượt quá tích của $1+\ln(\gamma/ \epsilon)$ với số đỉnh của lời giải tối ưu \label{app}
@@ -387,7 +388,7 @@ Trong phần này chúng tôi giới thiệu một thuật toán xấp xỉ đ�
 \begin{proof}
 	Chi tiết cách chứng minh định lý \ref{app} được chỉ ra trong \cite{snam}. 
 \end{proof}
-{\itshape Thuật toán STMB (STMB algorithm)}
+\textbf{\textit{Thuật toán STMB (STMB algorithm)}}
 Thuật toán tham lam đưa ra một lời giải tốt xong lại không đảm bảo yêu cầu về thời gian với dữ liệu lớn do đó trong phần này chúng tôi đưa ra một giải pháp đảm bảo yêu cầu cả về chất lượng lời giải cũng như thời gian tính toán. Dưới đây là các bước chính trong thuật toán chúng tôi đề xuất:
 \begin {itemize}
 \item Đầu tiên sáp nhập các đỉnh trong tập nguồn S thành một nút I bằng cách áp dụng thuật toán \ref{MERGE} được đề xuất bởi Zhang \cite{zhang39}. Chúng ta thu được một đồ thị mới và nguồn phát tán thông tin sai lệch bây giờ chỉ còn là một đỉnh I duy nhất.
