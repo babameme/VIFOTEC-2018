@@ -148,7 +148,7 @@ Từ dữ liệu thu được, nhóm tác giả mô phỏng lại và thu đư�
 \begin{center}
 	\begin{figure}[htp]
 		\begin{center}
-			\includegraphics [scale=.5]{picture/Hinh3_2}
+			\includegraphics [scale=.5]{picture/Net}
 		\end{center}
 		\caption{Mô phỏng cấu trúc toàn mạng dữ liệu thu được}
 		\label{refhinh3_2}
@@ -281,12 +281,12 @@ Chúng tôi cũng xem xét ảnh hưởng của tham số $\theta$ đối với 
 
 Trong mục này chúng tôi đưa ra kết quả thực nghiệm của thuật toán STMB với 3 bộ dữ liệu và so sánh về chất lượng lời giải, tốc độ thực hiện với một số thuật toán cơ bản khác.
 \subsubsection{Dữ liệu}
-Chúng tôi sử dụng 3 bộ dữ liệu mạng thực tế thu thập trên trang snap.stanford.edu \footnote{https://snap.stanford.edu/data/index.html}, thông tin về chúng được mô tả trong bảng \ref{TMB:table}. 
+Với mục đích thực nghiệm, chúng tôi sử dụng 3 bộ dữ liệu mạng thực tế thu thập trên trang snap.stanford.edu \footnote{https://snap.stanford.edu/data/index.html}, Một vài thông tin cơ bản về chúng được đưa ra trong bảng \ref{TMB:table}. 
 \begin{table}[h]
 	\centering
 	\begin{tabular}{|c|c|c|c|}
 		\hline 
-		Mạng & NetS \cite{NetS} & AS \cite{AS} & NetHEPT \cite{kemple1, chen10LT}\\ 
+		Mạng & NetS & AS & NetHEPT\\ 
 		\hline 
 		Số đỉnh & 1.5K & 6.4K & 15.2K \\ 
 		\hline 
@@ -301,11 +301,17 @@ Chúng tôi sử dụng 3 bộ dữ liệu mạng thực tế thu thập trên t
 	\label{TMB:table}
 \end{table}
 
-Theo các nghiên cứu trước \cite{khali, kemple1,chen10LT}, trọng số các cạnh của đồ thị trên mô hình LT được gán theo công thức $w(u,v) = 1/N_{in}(v)$. Với nguồn phát tán thông tin sai lệch chúng tôi chọn ngẫu nhiên từ 4-6\% số lượng đỉnh của cả đồ thị. Code được viết bằng ngôn ngữ Python 2.7, sử dụng thư viện hỗ trợ NetworkX và chạy trên máy Linux Server với 2.30 GHz Intel\textsuperscript{\textregistered} Xeon\textsuperscript{\textregistered} CPU E5-2697 and 128G of RAM DDR4. Trong thực nghiệm, chúng tôi so sánh thuật toán STMB với một số thuật toán khác được liệt kê dưới đây:
+\texttt{NetS}\cite{NetS}: Một mạng lưới các nhà khoa học làm việc trên lý thuyết và thử nghiệm mạng, được biên soạn vào tháng 5/2006.
+
+\texttt{AS}\cite{AS}: Biểu đồ các bộ định tuyến bao gồm Internet có thể được sắp xếp thành các biểu đồ con được gọi là Autonomous Systems(AS). Mỗi AS trao đổi lưu lượng với một số hàng xóm(peer). Chúng ta có thể xây dựng một mạng lưới các AS liên kết với nhau dựa trên nhật ký BGP(Border Gateway Protocol). Bộ dữ liệu là kết quá từ dự án University of Oregon Route Views. 
+
+\texttt{NetHEPT}\cite{kemple1, chen10LT}: Một mạng lưới hợp tác học thuật được trích xuất từ phần "High Energy Physics-Theory" của trang điện tử arXiv trong khoảng thời gian từ năm 1991--2003. Mỗi đỉnh trong mạng đại diện cho một tác giả và mỗi cạnh kết nối 2 đỉnh cho biết 2 tác giả đã đồng tác giả của một bài báo.
+
+Theo các nghiên cứu trước \cite{khali, kemple1,chen10LT}, trọng số các cạnh của đồ thị trên mô hình LT được gán theo công thức $w(u,v) = 1/N_{in}(v)$. Với nguồn phát tán thông tin sai lệch chúng tôi chọn ngẫu nhiên từ 4-6\% số lượng đỉnh của cả đồ thị, phụ thuộc vào kích thước của đồ thị. Code được viết bằng ngôn ngữ Python 2.7, sử dụng thư viện hỗ trợ NetworkX\footnote{Hướng dẫn sử dụng https://networkx.github.io/} và chạy trên máy Linux Server với 2.30 GHz Intel\textsuperscript{\textregistered} Xeon\textsuperscript{\textregistered} CPU E5-2697 and 128G of RAM DDR4. Trong thực nghiệm, chúng tôi so sánh thuật toán STMB với một số thuật toán khác được liệt kê dưới đây:
 \begin {itemize}
 \item PageRank: Tính toán ranking của các đỉnh trong đồ thị G dựa vào cấu trúc các cạnh liên kết với nó. Đây là thuật toán được thiết kế để xếp hạng các trang web từ đó đưa ra kết quả tìm kiếm. Do $h(\cdot)$ là hàm monotone nên sau khi sắp xếp hạng của các đỉnh trong đồ thị, chúng tôi sử dụng thuật toán tìm kiếm nhị phân để tìm kiếm tập lời giải A với |A| đỉnh có rank lớn nhất.
-\item High-Degree: Một thuật toán heuristic dựa vào bậc của một đỉnh. Tương tự như thuật toán PageRank sau kho sắp xếp các đỉnh dựa trên bậc của chúng, chúng tôi sử dụng thuật toán tìm kiếm nhị phân để tìm lời giải cho bài toán.
-\item Greedy: Thuật toán Greedy đưa ra trong thuật toán \ref{GA} kết hợp với các tối ưu trong \cite{Jleskovec}
+\item High-Degree: Một thuật toán heuristic dựa vào bậc của một đỉnh. Bậc của một đỉnh ở đây là tổng số đỉnh được tính theo công thức $d(v) = N_{in}(v) + N_{out}(v)$. Tương tự như thuật toán PageRank sau khi sắp xếp các đỉnh dựa trên bậc của chúng, chúng tôi sử dụng thuật toán tìm kiếm nhị phân để tìm lời giải cho bài toán.
+\item Greedy: Thuật toán Greedy đưa ra trong thuật toán \ref{GA} kết hợp với các tối ưu trong \cite{Jleskovec} giúp tăng tốc độ thuật toán song không làm ảnh hưởng đến chất lượng lời giải.
 \end{itemize} 
 
 \subsubsection{Kết quả thực nghiệm} 
@@ -323,7 +329,7 @@ Như mô tả trong hình \ref{solSTMB}, số lượng đỉnh được chọn �
 \caption{So sách chất lượng lời giải và thời gian chạy của các thuật toán cho bài toán TMB}
 \label{solSTMB}    
 \end{figure}
-\begin{figure}[htp]
+\begin{figure}[hbt]
 \begin{tabular}{ccc}
 	\includegraphics[height = 3.2 cm]{picture/CheckNetS} &
 	\includegraphics[height = 3.2 cm]{picture/CheckAS} &   
@@ -332,8 +338,6 @@ Như mô tả trong hình \ref{solSTMB}, số lượng đỉnh được chọn �
 \caption{Kiểm tra kết quả của thuật toán STMB}
 \label{check}    
 \end{figure}
-
-Thời gian chạy của các thuật toán trên 3 bộ dữ liệu trong trường hợp có $\gamma$ là lớn nhất được đưa ra trong bảng \ref{timeSTMB}. Ta thấy thuật toán Greedy có chất lượng lời giải tương đương với thuật toán STMB song thời gian thực nghiệm trên các bộ dữ liệu lại rất không hiệu quả.
 \begin{table}[h]
 \label{tab:time}       % Give a unique label
 % For LaTeX tables use
@@ -357,6 +361,4 @@ Thời gian chạy của các thuật toán trên 3 bộ dữ liệu trong trư�
 \caption{So sánh thời gian chạy của các thuật toán với trường hợp $\gamma$ lớn nhất}
 \label{timeSTMB}
 \end{table}
-
-
-
+Thời gian chạy của các thuật toán trên 3 bộ dữ liệu trong trường hợp có $\gamma$ là lớn nhất được đưa ra trong bảng \ref{timeSTMB}. Ta thấy thuật toán Greedy có chất lượng lời giải tương đương với thuật toán STMB song thời gian thực nghiệm trên các bộ dữ liệu lại rất không hiệu quả.
