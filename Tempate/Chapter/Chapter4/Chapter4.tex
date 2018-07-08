@@ -319,6 +319,37 @@ Chúng tôi cũng xem xét ảnh hưởng của tham số $\theta$ đối với 
 	\label{fig:FLE_d}   
 \end{figure} 
 
+\subsection{Dữ liệu thu thập được}
+
+Với dữ liệu thu thập được từ phần \ref{data}, chúng tôi chuẩn hóa dữ liệu theo mô hình T-DLT, sau đó thực nghiệm với các thuật toán MaxDegree, Random và FLE như được trình bày ở trên và thu được kết quả như hình \ref{fig:FLE_FB}:
+
+\begin{center}
+	\begin{figure}[htp]
+		\begin{center}
+			\includegraphics {picture/FLE/FB_res}
+		\end{center}
+		\caption{So sánh chất lượng lời giải của các thuật toán với dữ liệu Facebook}
+		\label{fig:FLE_FB}
+	\end{figure}
+\end{center}
+
+Trong hình \ref{fig:FLE_FB}, ta có thể thấy rằng FLE, với cùng một ngưỡng số đỉnh tối đa cứu được chặn là $k$, luôn đạt được kết quả tốt hơn so với hai thuật toán còn lại. Đặc biệt, với $k>=80$, thuật toán FLE chỉ ra được phương pháp chặn bắt để số đỉnh cứu được là tối đa, điều mà hai thuật toán Random và MaxDegree dù với $k=100$ cũng không thể làm được.
+
+Vì số đỉnh của đồ thị thu được là khá nhiều cho việc mô tả chỉ tiết nên chúng tôi lựa chọn một phần của đồ thị để mô phỏng, mà cụ thể là phần trung tâm của đồ thị (phần tập trung nguồn phát tán thông tin sai lệch). Sử dụng công cụ graph\_tool\footnote{https://graph-tool.skewed.de/}, chúng tôi cỏ thể mô tả lại một phần mạng dữ liệu được sử dụng như hình \ref{fig:FLE_MP}:
+
+\begin{center}
+	\begin{figure}[htp]
+		\begin{center}
+			\includegraphics {picture/FLE/FB_MP}
+		\end{center}
+		\caption{Kết quả mô phỏng với dữ liệu thu thập được trên Facebook.}
+		\label{fig:FLE_MP}
+	\end{figure}
+\end{center}
+
+Các đỉnh được tô màu đỏ thể hiện nguồn phát tán thông tin sai lệch, các đỉnh được tô màu xám là tập đỉnh được lụa chọn để loại ra đồ thị theo kết quả thuật toán, các đỉnh còn lại sẽ được tô màu xanh.
+
+
 \section{Giải pháp Targeted Misinformation Blocking (Xác định và ngăn chặn thông tin sai lệch trên mạng xã hội)}
 \subsection{Dữ liệu có sẵn}	
 
