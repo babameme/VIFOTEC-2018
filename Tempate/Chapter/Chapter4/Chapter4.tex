@@ -9,7 +9,7 @@ Nhóm tác giả đề xuất một giải pháp tổng thể bao gồm bốn b�
 	\item Bước cuối cùng: Ánh xạ người dùng thực. Bước này tiến hành ánh xạ ngược tập đỉnh thu được trong bước 3 nhằm thu được danh sách người dùng có vai trò quan trọng trong việc lan truyền thông tin sai lệch đối với 2 kịch bản ngăn chặn đã đề xuất.
 \end{itemize}
 
-Hình sau mô tả tổng thể giải pháp nhóm tác giả đề xuất
+Hình \ref{TongTheGiaiPhap} mô tả tổng thể giải pháp nhóm tác giả đề xuất
 \begin{center}
 	\begin{figure}[!htp]
 		\begin{center}
@@ -19,29 +19,6 @@ Hình sau mô tả tổng thể giải pháp nhóm tác giả đề xuất
 		\label{TongTheGiaiPhap}
 	\end{figure}
 \end{center}
-
-%%%%%
-
-Tuy nhiên trong quá trình nghiên cứu, nhóm tác giả đã gặp phải một số vấn đề khó khăn.
-
-Theo Điều 22, Luật An ninh Quốc gia nước Cộng hòa xã hội chủ nghĩa Việt Nam năm 2004, Công An nhân dân mà một trong các cơ quan chuyên trách được giao thực hiện nhiệm vụ bảo vệ An ninh quốc gia. Theo Điều 10, Luật Viễn thông năm 2009 quy định Cơ quan quản lý chuyên ngành về viễn thông là cơ quan thuộc Bộ Thông tin và Truyền thông. Tuy nhiên trong thực tế, các cơ quan chức năng của Nhà nước ta chưa có quyền quản lý đối với các nội dung trên mạng xã hội, được quản lý bởi các tập đoàn Facebook, Twitter, Microsoft. Do đó, việc xóa bỏ các nội dung, thông tin sai lệch lan truyền trên mạng xã hội, hay vô hiệu hóa người dùng đăng tải thông tin sai lệch là không khả thi. 
-
-%%%%%%
-Sau đó, nhóm tác giả đã nghiên cứu và đề xuất giải pháp chọn ra tập người dùng để vô hiệu hóa họ trong việc tham gia vào quá trình phát tán thông tin sai lệch. Trên mạng xã hội, hoạt động này tương đương với các biện pháp như sau:
-\begin {itemize}
-\item Thuyết phục người dùng không chấp nhận và lan truyền những thông tin sai lệch đến những người dùng khác, tức là làm cho người dùng này không tham gia vào quá trình phát tán thông tin sai lệch. Kĩ thuật này, ở trong các nghiên cứu gần đây còn được gọi là đặt giám sát (Monitor) người dùng \cite{zhang32}, \cite{zhang33}, \cite{zhang34}.
-
-\item Bằng sự can thiệp và giúp đỡ của nhà mạng có thể loại bỏ, cách ly thông tin sai lệch đến với những người dùng này. Năm 2016, Twitter đã loại bỏ 125.000 tài khoản được nghi ngờ có liên quan đến các hoạt động khủng bố \cite{twitter}. Năm 2017, Facebook đã xóa 30.000 tài khoản giả mạo lan truyền các tin đồn trước cuộc bầu cử tổng thống Pháp năm 2017 \cite{french}.
-\end {itemize}
-
-%%%%
- sau đó mô hình hóa các dữ liệu thu được, và nghiên cứu lý thuyết, đề xuất hai giải pháp ngăn chặn hiệu quả, tiến hành thực nghiệm và so sánh với các giải pháp đã công bố trước đây. 
-
-Kết quả cuối cùng của giải pháp đưa ra một danh sách người dùng tiềm năng, theo đánh giá về lý thuyết và thực nghiệm cho thấy, nếu dùng các biện pháp ngăn chặn nêu trên để vô hiệu hóa những người dùng này, ảnh hưởng của những thông tin sai lệch đối với mạng xã hội là nhỏ hơn những giải pháp đã được công bố trước đây, và thời gian thực hiện các giải pháp của nhóm tác giả là tương đối nhanh.
-
-%%\section{Tổng thể về giải pháp}
-Giải pháp ngăn chặn thông tin sai lệch trên MXH được nhóm tác giả thực hiện qua 4 bước. Đầu tiên là quá trình giám sát, điều tra để thu thập được tài khoản mạng xã hội của những đối tượng chủ mưu, cầm đầu các tổ chức phản động, các đối tượng có uy tín lớn. Sau đó nhóm tác giả sử dụng công cụ kiểm thử Selenium để thu thập mạng xã hội xung quanh các đối tượng này. Bước tiếp theo, nhóm tác giả mô hình hóa toán học mạng xã hội thực thu được ở bước trên, và cuối cùng đề xuất, áp dụng hai giải pháp hiệu quả, để đưa ra tập người dùng tiềm năng có thể áp dụng các biện pháp vô hiệu hóa để ảnh hưởng của thông tin sai lệch trên mạng là nhỏ nhất.
-%%
 
 \section{Thu thập dữ liệu}
 
@@ -113,7 +90,7 @@ Bên cạnh những ưu điểm trên, thì cách làm này cũng có nhược �
 \section{Mô hình hóa dữ liệu thu được}
 Ở bước này, từ những dữ liệu thu thập được về danh sách ID người dùng, mối quan hệ bạn bè giữa họ. Nhóm tác giả tiền xử lý, đánh số lại các đỉnh, xây dựng đồ thị mô tả MXH với các đỉnh đại diện cho các người dùng, các cạnh biểu diễn mối quan hệ bạn bè giữa những người đó. Kết quả đầu ra của thuật toán thu thập thông tin trên MXH Facebook và quá trình chuẩn hóa, xử lý bao gồm 2 file dữ liệu:
 \begin {itemize}
-\item ID.txt chứa ánh xạ từ ID của người dùng sang chỉ số đỉnh được đánh số lại. Qua quá trình thu thập dữ liệu, chuẩn hóa, nhóm tác giả thu được 542 ID người dùng, được đánh số lại từ 0 – 541, xem bảng \ref{bang3_1}		
+\item ID.txt chứa ánh xạ từ ID của người dùng sang chỉ số đỉnh được đánh số lại. Qua quá trình thu thập dữ liệu, chuẩn hóa, nhóm tác giả thu được 542 ID người dùng, được đánh số lại từ 0 – 541, xem bảng \ref{bang4_1}		
 \begin{table} [!htp]
 	\centering 
 	\begin{tabular}{|c|c|}
@@ -141,10 +118,10 @@ Bên cạnh những ưu điểm trên, thì cách làm này cũng có nhược �
 		541 & 100006259445960 \\ 
 		\hline 
 	\end{tabular} 
-	\caption{Ví dụ ánh xạ ID người dùng sang chỉ số được đánh số.}
-	\label{bang3_1}
+	\caption{Ánh xạ ID người dùng sang chỉ số được đánh số - ID.txt}
+	\label{bang4_1}
 \end{table}
-\item Network.txt chứa mô tả cụ thể của đồ thị MXH đã thu được. File dữ liệu gồm nhiều dòng, mỗi dòng chứa 2 số là chỉ số của 2 người dùng có quan hệ với nhau. Mô tả cụ thể được thể hiện trên bảng \ref{bang3_2}
+\item Network.txt chứa mô tả cụ thể của đồ thị MXH đã thu được. File dữ liệu gồm nhiều dòng, mỗi dòng chứa 2 số là chỉ số của 2 người dùng có quan hệ với nhau. Mô tả cụ thể được thể hiện trên bảng \ref{bang4_2}
 
 \begin{table} [!htp]
 	\centering
@@ -177,11 +154,11 @@ Bên cạnh những ưu điểm trên, thì cách làm này cũng có nhược �
 		99 & 498 \\ 
 		\hline 
 	\end{tabular}
-	\caption{Mô tả cụ thể của đồ thị MXH thu được}
-	\label{bang3_2} 
+	\caption{Mô tả cụ thể của đồ thị MXH thu được - Network.txt}
+	\label{bang4_2} 
 \end{table}
 
-Từ dữ liệu thu được, nhóm tác giả mô phỏng lại và thu được tổng quan về cấu trúc mạng như trên hình \ref{refhinh3_2} :
+Từ dữ liệu thu được, nhóm tác giả mô phỏng lại và thu được tổng quan về cấu trúc mạng như trên hình \ref{refhinh4_2} :
 
 \begin{center}
 	\begin{figure}[htp]
@@ -189,52 +166,231 @@ Từ dữ liệu thu được, nhóm tác giả mô phỏng lại và thu đư�
 			\includegraphics [scale=.6]{picture/Net}
 		\end{center}
 		\caption{Mô phỏng cấu trúc toàn mạng dữ liệu thu được}
-		\label{refhinh3_2}
+		\label{refhinh4_2}
 	\end{figure}
 \end{center}
 \end {itemize}
 
-Tiếp theo, ứng với mỗi kịch bản ngăn chặn, mô hình phát tán thông tin tương ứng, nhóm tác giả tiến hành thiết lập trọng số đại diện cho mức độ tương tác giữa các người dùng với nhau. Kết quả thu được ứng với 
+Tiếp theo, ứng với mỗi kịch bản ngăn chặn, mô hình phát tán thông tin tương ứng, nhóm tác giả tiến hành thiết lập trọng số đại diện cho mức độ tương tác giữa các người dùng với nhau, chuẩn hóa dữ liệu tương ứng với đầu vào yêu cầu của bài toán. Kết quả thu được như sau:
 
-\newpage
-
-Trong chương này, nhóm tác giả đưa ra các kết quả thực nghiệm của hai giải pháp đã được đưa ra trong chương trước trên dữ liệu có sẵn và dữ liệu thu thập được, từ đó để thấy được hiệu quả của phương pháp nhóm đề xuất. Dữ liệu có sẵn là các bộ dữ liệu được lấy từ những nguồn uy tín hàng đầu, được các bài báo có chung mục tiêu nghiên cứu khác sử dụng và được các hội nghị, hội thảo thế giới công nhận. Dữ liệu thực là dữ liệu được thu thập trực tiếp trên mạng xã hội Facebook bằng các công cụ thích hợp. Việc sử dụng cả hai loại dữ liệu đảm bảo được rằng các giải pháp đưa ra vừa thỏa mãn được tính chất học thuật cao, vừa thỏa mãn được khả năng ứng dụng thực tế ngay tại Việt Nam.
-
-\section{Giải pháp Limiting the spread of epidemics within time constraint on online social network}
-\subsection{Dữ liệu có sẵn}
-
-Trong phần này, chúng tôi thực nghiệm trên một số mạng xã hội trực tuyến để kiểm chứng tính hiệu quả của thuật toán khi so sánh nó với các thuật toán cơ sở được sử dụng trong các bài toán lan truyền thông tin \cite{nguyen30}, \cite{kemple1}, \cite{zhang32}. Chúng tôi so sánh đánh gia trên ba yêu tố chính: chất lượng lời giải, tính mở rộng, tác động của số vòng lan truyền $d$ trên một vài các mạng xã hội trực tuyến thực tiễn. Các thuật toán cơ sở sẽ sử dụng bao gồm:
 \begin{itemize}
-\item Random: Thuật toán chọn ngẫu nhiên $k$ đỉnh trong $N_{d}(S)$.
+	\item Đối với kịch bản FLE: Đầu vào là tệp tin input.inp chứa mô tả của đồ thị mạng xã hội, tập đỉnh nguồn phát tán thông tin sai lệch, số đỉnh cần xóa.
+	File dữ liệu gồm nhiều dòng. 
+	\begin{enumerate}
+		\item Dòng đầu tiên chứa hai số nguyên dương cách nhau bởi một dấu cách $n m$. Trong đó $n$ là số đỉnh, $m$ là số cạnh của đồ thị.
+		\item $m$ dòng tiếp theo, mỗi dòng chứa 3 số là chỉ số của 2 đỉnh có cạnh nối với nhau và trọng số cạnh tương ứng.
+		\item Dòng tiếp theo là số nguyên $k$, số lượng đỉnh nguồn phát tán thông tin, cụ thể $k = 6$.
+		\item $k$ dòng tiếp theo, mỗi dòng chứa một số nguyên dương là chỉ số đỉnh là nguồn phát tán thông tin của đồ thị, ở đây các đỉnh nguồn nhóm tác giả đánh số từ 1-6.
+		\item Dòng cuối cùng là số nguyên đại diện số lượng đỉnh cần xóa.
+	\end{enumerate}
+	Mô tả cụ thể được thể hiện trên bảng \ref{bang4_3}
+	
+	\begin{table} [!htp]
+		\centering
+		\begin{tabular}{|c|c|c|}
+			\hline 
+			542 & 2336 & \\ 
+			\hline 
+			1 & 3 & 0.040\\ 
+			\hline 
+			1 & 5 & 0.030\\ 
+			\hline 
+			... & ... & ...\\ 
+			\hline 
+			542 & 100 & 0.062\\
+			\hline
+			6 & & \\
+			\hline
+			1 & & \\
+			\hline
+			2 & & \\
+			\hline
+			3 & & \\
+			\hline
+			4 & & \\
+			\hline
+			5 & & \\
+			\hline
+			6 & & \\
+			\hline
+			10 & & \\
+			\hline 
+		\end{tabular}
+		\caption{Dữ liệu đầu vào ứng với giải pháp FLE - input.txt}
+		\label{bang4_3} 
+	\end{table}
+	
+	\item Đối với kịch bản STMB: Đầu vào bao gồm 2 tệp tin
+	\begin{enumerate}
+		\item Tệp tin TestFacebook.txt chứa mô tả đồ thị mạng xã hội. Tệp tin gồm nhiều dòng, mỗi dòng chứa 3 số là chỉ số của 2 đỉnh có cạnh nối với nhau và trọng số cạnh tương ứng.
+		Mô tả cụ thể được thể hiện trên bảng \ref{bang4_4}
+		\begin{table} [!htp]
+			\centering
+			\begin{tabular}{|c|c|c|}
+				\hline 
+				1 & 3 & 0.040\\ 
+				\hline 
+				1 & 5 & 0.030\\ 
+				\hline 
+				1 & 8 & 0.030\\ 
+				\hline 
+				1 & 9 & 0.025\\ 
+				\hline 
+				... & ... & ...\\ 
+				539 & 98 & 0.062\\
+				\hline 
+				540 & 99 & 0.048\\
+				\hline 
+				541 & 100 & 0.062\\
+				\hline 
+				542 & 100 & 0.062\\		
+				\hline 
+			\end{tabular}
+			\caption{Dữ liệu đầu vào ứng với giải pháp STMB - TestFacebook.txt}
+			\label{bang4_4} 
+		\end{table}
+	
+		\item Tệp tin TestSourceFacebook.txt chứa tập chỉ số các đỉnh nguồn phát tán thông tin. Tệp tin gồm 6 dòng, mô tả cụ thể thể hiện trên bảng \ref{bang4_5}
+		\begin{table} [!htp]
+			\centering
+			\begin{tabular}{|c|}
+				\hline
+				1\\	
+				\hline 
+				2\\	
+				\hline 
+				3\\	
+				\hline 
+				4\\	
+				\hline 
+				5\\	
+				\hline 
+				6\\	
+				\hline 
+			\end{tabular}
+			\caption{Dữ liệu đầu vào ứng với giải pháp STMB - TestSourceFacebook.txt}
+			\label{bang4_5} 
+		\end{table}
+	\end{enumerate}
+	\end{itemize}
+	
+\section{Áp dụng kịch bản và giải pháp ngăn chặn}
 
-\item Maxdegree (Maxdeg): Thuật toán heuristic chọn lần lượt các đỉnh có bậc cao nhất trong tập $V_{d}$ cho đến khi đủ $k$ đỉnh.
+Trong bước này, nhóm tác giả tiến hành áp dụng hai giải pháp ngăn chặn tương ứng với hai kịch bản đã đề xuất đối với các dữ liệu thực đã thu thập từ mạng xã hội Facebook và đã được mô hình hóa. Kết quả thu được đối với từng giải pháp như sau:
 
-\item Greedy: Thuật toán heuristic chọn lần lượt $k$ đỉnh, trong mỗi lần chọn sẽ chọn ra đỉnh sao cho khi loại bỏ đỉnh đó sẽ cứu được nhiều đỉnh nhất có thể.
+\begin{itemize}
+	\item Áp dụng giải pháp FLE đối với kịch bản LSE. Kết quả được lưu lại trong tệp tin Output.txt, được mô tả cụ thể trên bảng \ref{bang4_6}.
+	\begin{table} [!htp]
+		\centering
+		\begin{tabular}{|c|}
+			\hline
+			8 -> 100002788524244\\
+			\hline
+			15 -> 634032152\\
+			\hline
+			18 -> 100000315904157\\
+			\hline
+			19 -> 1849592060\\
+			\hline
+			22 -> 100004460193964\\
+			\hline
+			30 -> 100003888766757\\
+			\hline
+			39 -> 100000757109103\\
+			\hline
+			115 -> 100001730194864\\
+			\hline
+			338 -> 100005228346422\\
+			\hline
+			397 -> 100003276218628\\
+			\hline
+			Saved = 150\\
+			\hline 
+		\end{tabular}
+		\caption{Kết quả thực hiện giải pháp FLE với dữ liệu thu thập - Output.txt}
+		\label{bang4_6} 
+	\end{table}
+
+	\item Áp dụng giải pháp STMB đối với kịch bản TMB. Kết quả được lưu lại trong các tệp tin có cấu trúc tên là $Seed_STMB_Facebook_x.y.txt$ chứa thông tin về các chỉ số đỉnh tìm được, mỗi đỉnh một dòng, trong đó $x$ là số lần lấy mẫu, $y$ là ngưỡng của bài toán đặt ra.
+	Ngoài ra kết quả tổng hợp được lưu trong tệp tin Result.txt, được mô tả cụ thể trên bảng \ref{bang4_7}.
+	
+	\begin{table} [!htp]
+		\centering
+		\begin{tabular}{|c|}
+			\hline
+			|V| = 536\\
+			\hline
+			sigma comming : 74.84\\
+			\hline
+			Hmax = 12.841\\
+			\hline
+			Threshold = 3\\
+			\hline
+			Hmax = 12.841\\
+			\hline
+			Threshold = 6\\
+			\hline
+			Hmax = 12.841\\
+			\hline
+			Threshold = 9\\
+			\hline
+			...\\
+			\hline
+			Hmax = 28.288\\
+			\hline
+			Threshold = 24\\
+			\hline
+			Hmax = 28.288\\
+			\hline
+			Threshold = 27\\
+			\hline
+			Hmax = 32.827\\
+			\hline
+			Threshold = 30\\
+			\hline 
+		\end{tabular}
+		\caption{Kết quả thực hiện giải pháp SMTB với dữ liệu thu thập - Result.txt}
+		\label{bang4_7} 
+	\end{table}
 \end{itemize}
-
-Chúng tôi thực nghiệm sử dụng một hệ thống máy có cấu hình sau: Intel(R) Core(TM) i5-6200U CPU @ 2.30 GHz (up to 2.40 GHz), bộ nhớ RAM 4GB, ngôn ngữ lập trình C++.
-
-\subsubsection{Dữ liêu:}
-
-Chúng tôi thực nghiệm thuật toán trên nhiều bộ dữ liệu thực tế khác nhau. Bên cạnh việc lựa chọn các bộ dữ liệu để đảm bảo sự đa dạng về kích thước, chúng tôi cũng lựa chọn nhiều miền dữ liệu khác nhau, bảng \ref{tab:Table1} thể hiện các bộ dữ liệu nhóm tác giả sử dụng.
-\begin{table}
-	\centering
-	\begin{tabular}{|c|c|c|c|c|}
-		\hline 
-		Mạng & Số đỉnh & Số cạnh & Loại & Bậc trung bình \\ 
-		\hline 
-		Gnutella & 6,301 & 20,777 & Có hướng & 3.29 \\ 
-		\hline 
-		Wikipedia vote & 7,115 & 103,689 & Có hướng & 14.57 \\ 
-		\hline 
-		Amazon & 262,111 & 1,234,877 & Có hướng & 4.71 \\ 
-		\hline 
-		Google web & 875,713 & 5,105,039 & Có hướng & 5.83 \\ 
-		\hline 
-	\end{tabular} 
-	\caption{Các bộ dữ liệu}
-	\label{tab:Table1}
-\end{table}
+	
+	Trong chương này, nhóm tác giả đưa ra các kết quả thực nghiệm của hai giải pháp đã được đưa ra trong chương trước trên dữ liệu có sẵn và dữ liệu thu thập được, từ đó để thấy được hiệu quả của phương pháp nhóm đề xuất. Dữ liệu có sẵn là các bộ dữ liệu được lấy từ những nguồn uy tín hàng đầu, được các bài báo có chung mục tiêu nghiên cứu khác sử dụng và được các hội nghị, hội thảo thế giới công nhận. Dữ liệu thực là dữ liệu được thu thập trực tiếp trên mạng xã hội Facebook bằng các công cụ thích hợp. Việc sử dụng cả hai loại dữ liệu đảm bảo được rằng các giải pháp đưa ra vừa thỏa mãn được tính chất học thuật cao, vừa thỏa mãn được khả năng ứng dụng thực tế ngay tại Việt Nam.
+	
+	\section{Giải pháp Limiting the spread of epidemics within time constraint on online social network}
+	\subsection{Dữ liệu có sẵn}
+	
+	Trong phần này, chúng tôi thực nghiệm trên một số mạng xã hội trực tuyến để kiểm chứng tính hiệu quả của thuật toán khi so sánh nó với các thuật toán cơ sở được sử dụng trong các bài toán lan truyền thông tin \cite{nguyen30}, \cite{kemple1}, \cite{zhang32}. Chúng tôi so sánh đánh gia trên ba yêu tố chính: chất lượng lời giải, tính mở rộng, tác động của số vòng lan truyền $d$ trên một vài các mạng xã hội trực tuyến thực tiễn. Các thuật toán cơ sở sẽ sử dụng bao gồm:
+	\begin{itemize}
+	\item Random: Thuật toán chọn ngẫu nhiên $k$ đỉnh trong $N_{d}(S)$.
+	
+	\item Maxdegree (Maxdeg): Thuật toán heuristic chọn lần lượt các đỉnh có bậc cao nhất trong tập $V_{d}$ cho đến khi đủ $k$ đỉnh.
+	
+	\item Greedy: Thuật toán heuristic chọn lần lượt $k$ đỉnh, trong mỗi lần chọn sẽ chọn ra đỉnh sao cho khi loại bỏ đỉnh đó sẽ cứu được nhiều đỉnh nhất có thể.
+	\end{itemize}
+	
+	Chúng tôi thực nghiệm sử dụng một hệ thống máy có cấu hình sau: Intel(R) Core(TM) i5-6200U CPU @ 2.30 GHz (up to 2.40 GHz), bộ nhớ RAM 4GB, ngôn ngữ lập trình C++.
+	
+	\subsubsection{Dữ liêu:}
+	
+	Chúng tôi thực nghiệm thuật toán trên nhiều bộ dữ liệu thực tế khác nhau. Bên cạnh việc lựa chọn các bộ dữ liệu để đảm bảo sự đa dạng về kích thước, chúng tôi cũng lựa chọn nhiều miền dữ liệu khác nhau, bảng \ref{tab:Table1} thể hiện các bộ dữ liệu nhóm tác giả sử dụng.
+	\begin{table}
+		\centering
+		\begin{tabular}{|c|c|c|c|c|}
+			\hline 
+			Mạng & Số đỉnh & Số cạnh & Loại & Bậc trung bình \\ 
+			\hline 
+			Gnutella & 6,301 & 20,777 & Có hướng & 3.29 \\ 
+			\hline 
+			Wikipedia vote & 7,115 & 103,689 & Có hướng & 14.57 \\ 
+			\hline 
+			Amazon & 262,111 & 1,234,877 & Có hướng & 4.71 \\ 
+			\hline 
+			Google web & 875,713 & 5,105,039 & Có hướng & 5.83 \\ 
+			\hline 
+		\end{tabular} 
+		\caption{Các bộ dữ liệu}
+		\label{tab:Table1}
+	\end{table}
 
 \subsubsection{Các thiết lập}
 Chúng tôi sử dụng các thiết lập dưới đây cho việc đánh giá thực nghiệm:
