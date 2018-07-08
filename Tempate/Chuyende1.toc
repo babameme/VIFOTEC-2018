@@ -39,7 +39,7 @@
 \contentsline {subsubsection}{\numberline {a)}\IeC {\DJ }\IeC {\d i}nh ngh\IeC {\~\i }a b\IeC {\`a}i to\IeC {\'a}n}{34}{subsubsection.3.2.0.1}
 \contentsline {subsubsection}{\numberline {b)}\IeC {\DJ }\IeC {\d \ocircumflex } ph\IeC {\'\uhorn }c t\IeC {\d a}p c\IeC {\h u}a b\IeC {\`a}i to\IeC {\'a}n}{36}{subsubsection.3.2.0.2}
 \contentsline {subsubsection}{\numberline {c)}Thu\IeC {\d \acircumflex }t to\IeC {\'a}n \IeC {\dj }\IeC {\`\ecircumflex } xu\IeC {\'\acircumflex }t}{38}{subsubsection.3.2.0.3}
-\contentsline {chapter}{\bf Chương \numberline {4. } \IeC {\'A}p d\IeC {\d u}ng c\IeC {\'a}c gi\IeC {\h a}i ph\IeC {\'a}p \IeC {\dj }\IeC {\`\ecircumflex } xu\IeC {\'\acircumflex }t tr\IeC {\^e}n d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u th\IeC {\d \uhorn }c}{44}{chapter.4}
+\contentsline {chapter}{\bf Chương \numberline {4. } \IeC {\'A}P D\IeC {\d U}NG C\IeC {\'A}C GI\IeC {\h A}I PH\IeC {\'A}P \IeC {\DJ }\IeC {\`\ECIRCUMFLEX } XU\IeC {\'\ACIRCUMFLEX }T TR\IeC {\^E}N D\IeC {\~\UHORN } LI\IeC {\d \ECIRCUMFLEX }U TH\IeC {\d \UHORN }C}{44}{chapter.4}
 \contentsline {section}{\numberline {\bfseries 1.}T\IeC {\h \ocircumflex }ng th\IeC {\h \ecircumflex } v\IeC {\`\ecircumflex } gi\IeC {\h a}i ph\IeC {\'a}p}{46}{section.4.1}
 \contentsline {subsection}{\numberline {1.1.}C\IeC {\^o}ng c\IeC {\d u} ki\IeC {\h \ecircumflex }m th\IeC {\h \uhorn } Selenium}{46}{subsection.4.1.1}
 \contentsline {subsubsection}{\numberline {a)}IDE Selenium}{47}{subsubsection.4.1.1.1}
