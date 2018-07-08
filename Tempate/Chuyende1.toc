@@ -43,21 +43,18 @@
 \contentsline {section}{\numberline {\bfseries 1.}Thu th\IeC {\d \acircumflex }p d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u}{46}{section.4.1}
 \contentsline {subsection}{\numberline {1.1.}X\IeC {\'a}c \IeC {\dj }\IeC {\d i}nh ngu\IeC {\`\ocircumflex }n ph\IeC {\'a}t t\IeC {\'a}n th\IeC {\^o}ng tin sai l\IeC {\d \ecircumflex }ch}{46}{subsection.4.1.1}
 \contentsline {subsection}{\numberline {1.2.}X\IeC {\^a}y d\IeC {\d \uhorn }ng c\IeC {\^o}ng c\IeC {\d u} thu th\IeC {\d \acircumflex }p d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u tr\IeC {\^e}n m\IeC {\d a}ng x\IeC {\~a} h\IeC {\d \ocircumflex }i Facebook}{47}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {1.3.}C\IeC {\^o}ng c\IeC {\d u} ki\IeC {\h \ecircumflex }m th\IeC {\h \uhorn } Selenium}{48}{subsection.4.1.3}
-\contentsline {subsubsection}{\numberline {a)}API Client Selenium}{48}{subsubsection.4.1.3.1}
-\contentsline {subsubsection}{\numberline {b)}Selenium WebDriver}{48}{subsubsection.4.1.3.2}
-\contentsline {subsection}{\numberline {1.4.}K\IeC {\~\i } thu\IeC {\d \acircumflex }t l\IeC {\'\acircumflex }y d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u tr\IeC {\^e}n MXH}{49}{subsection.4.1.4}
-\contentsline {subsubsection}{\numberline {a)}Thu th\IeC {\d \acircumflex }p d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u t\IeC {\`\uhorn } MXH Facebook}{49}{subsubsection.4.1.4.1}
-\contentsline {subsubsection}{\numberline {b)}M\IeC {\^o} h\IeC {\`\i }nh h\IeC {\'o}a d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u thu \IeC {\dj }\IeC {\uhorn }\IeC {\d \ohorn }c}{50}{subsubsection.4.1.4.2}
+\contentsline {subsubsection}{\numberline {a)}T\IeC {\h \ocircumflex }ng quan v\IeC {\`\ecircumflex } c\IeC {\^o}ng c\IeC {\d u} ki\IeC {\h \ecircumflex }m th\IeC {\h \uhorn } Selenium}{48}{subsubsection.4.1.2.1}
+\contentsline {subsubsection}{\numberline {b)}Qu\IeC {\'a} tr\IeC {\`\i }nh thu th\IeC {\d \acircumflex }p d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u}{49}{subsubsection.4.1.2.2}
+\contentsline {subsection}{\numberline {1.3.}M\IeC {\^o} h\IeC {\`\i }nh h\IeC {\'o}a d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u thu \IeC {\dj }\IeC {\uhorn }\IeC {\d \ohorn }c}{50}{subsection.4.1.3}
 \contentsline {section}{\numberline {\bfseries 2.}Gi\IeC {\h a}i ph\IeC {\'a}p Limiting the spread of epidemics within time constraint on online social network}{52}{section.4.2}
 \contentsline {subsection}{\numberline {2.1.}D\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u c\IeC {\'o} s\IeC {\~\abreve }n}{52}{subsection.4.2.1}
-\contentsline {subsubsection}{\numberline {a)}D\IeC {\~\uhorn } li\IeC {\^e}u:}{53}{subsubsection.4.2.1.1}
-\contentsline {subsubsection}{\numberline {b)}C\IeC {\'a}c thi\IeC {\'\ecircumflex }t l\IeC {\d \acircumflex }p}{53}{subsubsection.4.2.1.2}
+\contentsline {subsubsection}{\numberline {a)}D\IeC {\~\uhorn } li\IeC {\^e}u:}{52}{subsubsection.4.2.1.1}
+\contentsline {subsubsection}{\numberline {b)}C\IeC {\'a}c thi\IeC {\'\ecircumflex }t l\IeC {\d \acircumflex }p}{52}{subsubsection.4.2.1.2}
 \contentsline {subsubsection}{\numberline {c)}C\IeC {\'a}c thu\IeC {\d \acircumflex }t to\IeC {\'a}n s\IeC {\h \uhorn } d\IeC {\d u}ng}{53}{subsubsection.4.2.1.3}
-\contentsline {subsubsection}{\numberline {d)}K\IeC {\'\ecircumflex }t qu\IeC {\h a} th\IeC {\d \uhorn }c nghi\IeC {\d \ecircumflex }m}{54}{subsubsection.4.2.1.4}
-\contentsline {section}{\numberline {\bfseries 3.}Gi\IeC {\h a}i ph\IeC {\'a}p Targeted Misinformation Blocking (X\IeC {\'a}c \IeC {\dj }\IeC {\d i}nh v\IeC {\`a} ng\IeC {\u a}n ch\IeC {\d \abreve }n th\IeC {\^o}ng tin sai l\IeC {\d \ecircumflex }ch tr\IeC {\^e}n m\IeC {\d a}ng x\IeC {\~a} h\IeC {\d \ocircumflex }i)}{55}{section.4.3}
-\contentsline {subsection}{\numberline {3.1.}D\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u c\IeC {\'o} s\IeC {\~\abreve }n}{55}{subsection.4.3.1}
-\contentsline {subsubsection}{\numberline {a)}D\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u}{55}{subsubsection.4.3.1.1}
-\contentsline {subsubsection}{\numberline {b)}K\IeC {\'\ecircumflex }t qu\IeC {\h a} th\IeC {\d \uhorn }c nghi\IeC {\d \ecircumflex }m}{59}{subsubsection.4.3.1.2}
-\contentsline {subsection}{\numberline {3.2.}D\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u thu th\IeC {\d \acircumflex }p \IeC {\dj }\IeC {\uhorn }\IeC {\d \ohorn }c}{60}{subsection.4.3.2}
-\contentsline {chapter}{T\`ai li\d \ecircumflex u tham kh\h {a}o}{63}{chapter*.33}
+\contentsline {subsubsection}{\numberline {d)}K\IeC {\'\ecircumflex }t qu\IeC {\h a} th\IeC {\d \uhorn }c nghi\IeC {\d \ecircumflex }m}{53}{subsubsection.4.2.1.4}
+\contentsline {section}{\numberline {\bfseries 3.}Gi\IeC {\h a}i ph\IeC {\'a}p Targeted Misinformation Blocking (X\IeC {\'a}c \IeC {\dj }\IeC {\d i}nh v\IeC {\`a} ng\IeC {\u a}n ch\IeC {\d \abreve }n th\IeC {\^o}ng tin sai l\IeC {\d \ecircumflex }ch tr\IeC {\^e}n m\IeC {\d a}ng x\IeC {\~a} h\IeC {\d \ocircumflex }i)}{57}{section.4.3}
+\contentsline {subsection}{\numberline {3.1.}D\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u c\IeC {\'o} s\IeC {\~\abreve }n}{57}{subsection.4.3.1}
+\contentsline {subsubsection}{\numberline {a)}D\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u}{57}{subsubsection.4.3.1.1}
+\contentsline {subsubsection}{\numberline {b)}K\IeC {\'\ecircumflex }t qu\IeC {\h a} th\IeC {\d \uhorn }c nghi\IeC {\d \ecircumflex }m}{58}{subsubsection.4.3.1.2}
+\contentsline {subsection}{\numberline {3.2.}D\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u thu th\IeC {\d \acircumflex }p \IeC {\dj }\IeC {\uhorn }\IeC {\d \ohorn }c}{59}{subsection.4.3.2}
+\contentsline {chapter}{T\`ai li\d \ecircumflex u tham kh\h {a}o}{62}{chapter*.32}
