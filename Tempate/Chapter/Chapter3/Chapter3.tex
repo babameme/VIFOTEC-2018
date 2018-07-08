@@ -243,7 +243,7 @@ Kịch bản này được đề xuất và nghiên cứu sau khi xem xét thự
  	
  	{\itshape Chứng minh}: Để đánh giá độ phức tạp của thuật toán này, chúng ta cần đánh giá trước độ phức tạp của thuật toán. Ta dễ thấy rằng việc tính  toán $f_{d}(I)$ (Thuật toán \ref{alg:Algo2}, dòng 7 - 22) có cách thức hoạt đông giống BFS. Do đó, độ phức tạp của nó là $O(m_{d} + n_{d})$. Với bước tính toán $\alpha(u)$ và $\beta(u)$ (Thuật toán \ref{alg:Algo3}, dòng 1 - 11), ta thấy độ phức tạp của nó là $O(m_{d} + n_{d})$. Do đó, độ phức tạp chung của thuật toán là $O(m_{d} + n_{d})$. 
 		
-\subsection{Kết quả thực nghiệm}
+\subsection{Kết quả thực nghiệm với dữ liệu có sẵn}
 
 Trong phần này, chúng tôi thực nghiệm thuật toán đối với dữ liệu sẵn có trên một số mạng xã hội trực tuyến để kiểm chứng tính hiệu quả của thuật toán khi so sánh nó với các thuật toán cơ sở được sử dụng trong các bài toán lan truyền thông tin \cite{nguyen30}, \cite{kemple1}, \cite{zhang32}. Chúng tôi so sánh đánh gia trên ba yêu tố chính: chất lượng lời giải, tính mở rộng, tác động của số vòng lan truyền $d$ trên một vài các mạng xã hội trực tuyến thực tiễn. Các thuật toán cơ sở sẽ sử dụng bao gồm:
 \begin{itemize}
@@ -254,7 +254,7 @@ Trong phần này, chúng tôi thực nghiệm thuật toán đối với dữ l
 	\item Greedy: Thuật toán heuristic chọn lần lượt $k$ đỉnh, trong mỗi lần chọn sẽ chọn ra đỉnh sao cho khi loại bỏ đỉnh đó sẽ cứu được nhiều đỉnh nhất có thể.
 \end{itemize}
 
-Chúng tôi thực nghiệm sử dụng một hệ thống máy có cấu hình sau: Intel(R) Core(TM) i5-6200U CPU @ 2.30 GHz (up to 2.40 GHz), bộ nhớ RAM 4GB, ngôn ngữ lập trình Python.
+Chúng tôi thực nghiệm sử dụng một hệ thống máy có cấu hình sau: Intel(R) Core(TM) i5-6200U CPU @ 2.30 GHz (up to 2.40 GHz), bộ nhớ RAM 4GB, ngôn ngữ lập trình Python 2.7.
 
 \subsubsection{Dữ liêu:}
 
@@ -472,6 +472,7 @@ Trong mục này chúng tôi chỉ ra một số kết quả về độ khó c�
 \subsection{Thuật toán đề xuất}
 \subsubsection{Thuật toán tham lam (Greedy algorithm)}
 Trong phần này chúng tôi giới thiệu một thuật toán xấp xỉ đảm bảo tỉ lệ 1 + ln($\gamma / \varepsilon$) dựa vào tính chất submodular và tính monotone của hàm h($\cdot$). Hàm $f(x)$ được gọi là hàm submodular nếu $A \subset T, v \notin T$ $ f(A+ \{v\})- f(A) \geq f(T+ \{v\})- f(T)$. Còn $f(x)$ được gọi là monotone nếu $\forall T \subseteq S$ chúng ta có $f(T) \leq f(S)$.
+
 \begin{algorithm}[H]			
 	\KwData{Graph $G=(V,E, w)$,  $S=\{s_1, s_2, .., s_k\}$, threshold $\gamma < |V|$, parameter $\epsilon \in (0, \gamma)$} 
 	\KwResult{set of nodes $A$}
@@ -487,6 +488,8 @@ Trong phần này chúng tôi giới thiệu một thuật toán xấp xỉ đ�
 	\caption{Greedy Algorithm (GA)}
 	\label{GA}
 \end{algorithm}
+
+\newpage
 
 \begin{theo}					
 	Hàm $h(\cdot)$ là hàm submodular và monotone. 
@@ -597,6 +600,7 @@ Thuật toán tham lam đưa ra một lời giải tốt xong lại không đả
 	\label{GSGLT}
 \end{algorithm}	
 \item Trên cây T$_{I}^i$, ảnh hưởng địa phương của nút v là số nút con của cây gốc v kể cả v trên cây T$_{I}^i$. Áp dụng thuật toán DFS dễ dàng tìm được số nút con của v. Ảnh hưởng giảm của nguồn S khi loại đỉnh u khỏi G bằng lượng ảnh hưởng giảm trung bình khi loại u trên tất cả các cây T$_{I}^i$. Kí hiệu h(u, $T_I^i$) là lượng ảnh hưởng giảm trên cây $T_I^i$ sau khi loại bỏ đỉnh u khỏi $T_I^i$. Áp dụng phương pháp Lazy forward của Leskovec \cite{krause} để tìm kiếm lời giải. 
+
 \begin{algorithm}[H]
 	%\SetAlgoNlRelativeSize{0}
 	\KwData{Graph $G=(V,E, w)$,  $\mathcal{S}=\{s_1, s_2, .., s_q\}$, threshold $\gamma>0$} 
@@ -656,3 +660,96 @@ Thuật toán tham lam đưa ra một lời giải tốt xong lại không đả
 \end {itemize}
 
 Vậy nên toàn bộ thuật toán TMB có độ phức tạp là O($\mu$(m+qn)).
+
+\subsection{Kết quả thực nghiệm với dữ liệu với dữ liệu có sẵn}	
+
+Trong mục này chúng tôi đưa ra kết quả thực nghiệm của thuật toán STMB với 3 bộ dữ liệu có sẵn của các mạng xã hội và so sánh về chất lượng lời giải, tốc độ thực hiện với một số thuật toán cơ bản khác.
+Thuật toán được thực hiện bằng ngôn ngữ Python 2.7, sử dụng thư viện hỗ trợ NetworkX\footnote{Hướng dẫn sử dụng https://networkx.github.io/} và chạy trên máy Linux Server với 2.30 GHz Intel\textsuperscript{\textregistered} Xeon\textsuperscript{\textregistered} CPU E5-2697, bộ nhớ 128G of RAM DDR4.
+\subsubsection{Dữ liệu}
+Với mục đích thực nghiệm, chúng tôi sử dụng 3 bộ dữ liệu mạng thực tế thu thập trên trang snap.stanford.edu \footnote{https://snap.stanford.edu/data/index.html}, Một vài thông tin cơ bản về chúng được đưa ra trong bảng \ref{TMB:table}. 
+\begin{table}[h]
+	\centering
+	\begin{tabular}{|c|c|c|c|}
+		\hline 
+		Mạng & NetS & AS & NetHEPT\\ 
+		\hline 
+		Số đỉnh & 1.5K & 6.4K & 15.2K \\ 
+		\hline 
+		Số cạnh & 5.4K & 12.5K & 32.2K\\ 
+		\hline 
+		Bậc trung bình & 3.8 & 7.5 & 4.2\\ 
+		\hline 
+		Số đỉnh nguồn & 100 & 300 & 1000\\ 
+		\hline 
+	\end{tabular} 
+	\caption{Các bộ dữ liệu dùng trong thực nghiệm với giải pháp TMB}
+	\label{TMB:table}
+\end{table}
+
+\texttt{NetS}\cite{NetS}: Một mạng lưới các nhà khoa học làm việc trên lý thuyết và thử nghiệm mạng, được biên soạn vào tháng 5/2006.
+
+\texttt{AS}\cite{AS}: Biểu đồ các bộ định tuyến bao gồm Internet có thể được sắp xếp thành các biểu đồ con được gọi là Autonomous Systems(AS). Mỗi AS trao đổi lưu lượng với một số hàng xóm(peer). Chúng ta có thể xây dựng một mạng lưới các AS liên kết với nhau dựa trên nhật ký BGP(Border Gateway Protocol). Bộ dữ liệu là kết quá từ dự án University of Oregon Route Views. 
+
+\texttt{NetHEPT}\cite{kemple1, chen10LT}: Một mạng lưới hợp tác học thuật được trích xuất từ phần "High Energy Physics-Theory" của trang điện tử arXiv trong khoảng thời gian từ năm 1991--2003. Mỗi đỉnh trong mạng đại diện cho một tác giả và mỗi cạnh kết nối 2 đỉnh cho biết 2 tác giả đã đồng tác giả của một bài báo.
+
+\subsubsection{Các thiết lập}
+Chúng tôi sử dụng các thiết lập dưới đây cho việc đánh giá thực nghiệm:
+Theo các nghiên cứu trước \cite{khali, kemple1,chen10LT}, chúng tôi thiết lập trọng số các cạnh của đồ thị trên mô hình LT theo công thức $w(u,v) = 1/N_{in}(v)$. Với nguồn phát tán thông tin sai lệch chúng tôi chọn ngẫu nhiên từ 4-6\% số lượng đỉnh của cả đồ thị, phụ thuộc vào kích thước của đồ thị. 
+
+
+\subsubsection{Các thuật toán sử dụng}
+Trong thực nghiệm, chúng tôi so sánh thuật toán STMB với một số thuật toán sau:
+\begin {itemize}
+\item PageRank: Tính toán ranking của các đỉnh trong đồ thị $G$ dựa vào cấu trúc các cạnh liên kết với nó. Đây là thuật toán được thiết kế để xếp hạng các trang web từ đó đưa ra kết quả tìm kiếm. Do $h(\cdot)$ là hàm monotone nên sau khi sắp xếp hạng của các đỉnh trong đồ thị, chúng tôi sử dụng thuật toán tìm kiếm nhị phân để tìm kiếm tập lời giải A với |A| đỉnh có rank lớn nhất.
+\item High-Degree: Một thuật toán heuristic dựa vào bậc của một đỉnh. Bậc của một đỉnh ở đây là tổng số đỉnh được tính theo công thức $d(v) = N_{in}(v) + N_{out}(v)$. Tương tự như thuật toán PageRank sau khi sắp xếp các đỉnh dựa trên bậc của chúng, chúng tôi sử dụng thuật toán tìm kiếm nhị phân để tìm lời giải cho bài toán.
+\item Greedy: Thuật toán Greedy đưa ra trong thuật toán \ref{GA} kết hợp với các tối ưu trong \cite{Jleskovec} giúp tăng tốc độ thuật toán song không làm ảnh hưởng đến chất lượng lời giải.
+\end{itemize} 
+
+\subsubsection{Kết quả thực nghiệm} 
+Như mô tả trong hình \ref{solSTMB}, số lượng đỉnh được chọn đưa ra bởi thuật toán STMB là nhỏ nhất. STMB tốt hơn lên đến 39\% so với thuật toán Greedy, hơn 60\%-95\% và 57\%-87\% so với thuật toán PageRank và High-Degree tương ứng. Để kiểm tra kết quả thu được từ thuật toán STMB, chúng tôi chạy 1000 mẫu Monte-Carlo để ước lượng giá trị của hàm $h(A)$ và kết quả kiểm tra được đưa ra trong hình \ref{check}. Trong hầu hết các trường hợp $h(A)$ vượt qua ngưỡng yêu cầu.
+\begin{figure}[H]
+\begin{tabular}{lll}
+	\includegraphics[height = 3.2cm]{picture/NetS} &
+	\includegraphics[height = 3.2cm]{picture/AS} &   
+	\includegraphics[height = 3.2cm]{picture/NetHEPT}
+	\\
+	\includegraphics[height = 3.2cm]{picture/TimeNetS} &
+	\includegraphics[height = 3.2cm]{picture/TimeAS} &   
+	\includegraphics[height = 3.2cm]{picture/TimeNetHEPT}
+\end{tabular}
+\caption{So sách chất lượng lời giải và thời gian chạy của các thuật toán cho bài toán TMB}
+\label{solSTMB}    
+\end{figure}
+\begin{figure}[H]
+\begin{tabular}{ccc}
+	\includegraphics[height = 3.2 cm]{picture/CheckNetS} &
+	\includegraphics[height = 3.2 cm]{picture/CheckAS} &   
+	\includegraphics[height = 3.2 cm]{picture/CheckNetHEPT}
+\end{tabular}
+\caption{Kiểm tra kết quả của thuật toán STMB}
+\label{check}    
+\end{figure}
+\begin{table}[h]
+\label{tab:time}       % Give a unique label
+% For LaTeX tables use
+\begin{center}
+	\begin{tabular}{|c|c|c|c|c|}				
+		\hline 
+		\textbf{} & {$\mathsf{STMB}$} & {$\mathsf{Greedy}$} & {Page Rank} & {High-Degree} 				
+		\\ 
+		\hline 
+		NetS & \textbf{17.57(s)} &	14206.80(s) &	35.73(s) &	30.24(s)
+		\\ 
+		\hline 
+		AS & 45.70(s) & 14074.87(s) & \textbf{14.39(s)} &	17.85(s)
+		\\
+		\hline 
+		NetHEPT & \textbf{165.12(s)} & 582566.74(s) & 392.34(s) & 374.66(s)
+		\\
+		\hline 
+	\end{tabular}
+\end{center}
+\caption{So sánh thời gian chạy của các thuật toán với trường hợp $\gamma$ lớn nhất}
+\label{timeSTMB}
+\end{table}
+Thời gian chạy của các thuật toán trên 3 bộ dữ liệu trong trường hợp có $\gamma$ là lớn nhất được đưa ra trong bảng \ref{timeSTMB} cho thấy thuật toán Greedy có chất lượng lời giải tương đương với thuật toán STMB song thời gian thực nghiệm trên các bộ dữ liệu lại rất không hiệu quả. Trong khi đó thuật toán STMB có thời gian thực hiện khá là nhanh, không khác biệt nhiều so với các thuật toán cơ bản song vẫn đảm bảo có một lời giải tốt.
