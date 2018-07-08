@@ -1,6 +1,6 @@
 \contentsline {chapter}{Danh s\'ach h\`inh v\~e}{}{chapter*.2}
 \contentsline {chapter}{Danh s\'ach b\h {a}ng}{}{chapter*.3}
-\contentsline {chapter}{M\IeC {\h \ohorn } \IeC {\dj }\IeC {\`\acircumflex }u}{1}{chapter*.4}
+\contentsline {chapter}{M\IeC {\h \ohorn } \IeC {\dj }\IeC {\`\acircumflex }u}{1}{chapter*.6}
 \contentsline {chapter}{\bf Ch\IeC {\uhorn }\IeC {\ohorn }ng \numberline {1. } GI\IeC {\'\OHORN }I THI\IeC {\d \ECIRCUMFLEX }U V\IeC {\`\ECIRCUMFLEX } M\IeC {\d A}NG X\IeC {\~A} H\IeC {\d \OCIRCUMFLEX }I V\IeC {\`A} T\IeC {\'A}C H\IeC {\d A}I C\IeC {\h U}A TH\IeC {\^O}NG TIN SAI L\IeC {\d \ECIRCUMFLEX }CH }{9}{chapter.1}
 \contentsline {section}{\numberline {\bfseries 1.}Gi\IeC {\'\ohorn }i thi\IeC {\d \ecircumflex }u chung v\IeC {\`\ecircumflex } m\IeC {\d a}ng x\IeC {\~a} h\IeC {\d \ocircumflex }i}{9}{section.1.1}
 \contentsline {subsection}{\numberline {1.1.}\IeC {\DJ }\IeC {\d \abreve }c \IeC {\dj }i\IeC {\h \ecircumflex }m c\IeC {\h u}a MXH}{9}{subsection.1.1.1}
@@ -59,4 +59,4 @@
 \contentsline {subsubsection}{\numberline {a)}D\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u}{59}{subsubsection.4.4.1.1}
 \contentsline {subsubsection}{\numberline {b)}K\IeC {\'\ecircumflex }t qu\IeC {\h a} th\IeC {\d \uhorn }c nghi\IeC {\d \ecircumflex }m}{61}{subsubsection.4.4.1.2}
 \contentsline {subsection}{\numberline {4.2.}D\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u thu th\IeC {\d \acircumflex }p \IeC {\dj }\IeC {\uhorn }\IeC {\d \ohorn }c}{62}{subsection.4.4.2}
-\contentsline {chapter}{T\`ai li\d \ecircumflex u tham kh\h {a}o}{65}{chapter*.34}
+\contentsline {chapter}{T\`ai li\d \ecircumflex u tham kh\h {a}o}{65}{chapter*.36}
