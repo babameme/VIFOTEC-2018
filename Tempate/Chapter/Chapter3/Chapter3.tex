@@ -71,9 +71,9 @@ Kịch bản này được đề xuất và nghiên cứu sau khi xem xét thự
  	\item Sau cùng, ta cho $k = t$, $d = 2$. 		
  	
  	\begin{center}
- 		\begin{figure}[!htp]
+ 		\begin{figure}[H]
  			\begin{center}
- 				\includegraphics [scale=.5]{picture/Hinh3_3}
+ 				\includegraphics [scale=1]{picture/Hinh3_3}
  			\end{center}
  			\caption{Giản thể từ bài toán SC về bài toán LSE.}
  			\label{refhinh3_3}
@@ -129,8 +129,9 @@ Kịch bản này được đề xuất và nghiên cứu sau khi xem xét thự
  	
  	Điều này cho thấy $J_{\text{SC}}$ có một tập phủ đỉnh kích cỡ $t$ khi và chỉ khi $h(\mathcal{A}(J_{\text{LSE}})) < 2N$. Do đó ta có thể dùng $\mathcal{A}$ để giải quyết bài toán SC trong thời gian đa thức, hay $\text{P} = \text{NP}$. Điều này mâu thuẫn với giả thiết $\text{P} \neq \text{NP}$.
  	
- 	\subsection{Thuật toán nhanh và hiệu quả để giới hạn sự lây nhiễm thông tin (Fast And Effective Limiting Epidemics – FLE).}
- 	Trong phần này, chúng tôi thiết kế một thuật toán heuristics có độ phức tạp thấp và kết quả rất khả quan. Trước khi bắt đầu, chúng tôi có định nghĩa một vài kí hiệu sẽ được sử dụng trong quá trình đề xuất thuật toán:
+ 	\subsection{Thuật toán đề xuất}
+ 	Trong phần này, chúng tôi thiết kế một thuật toán heuristics có độ phức tạp thấp và kết quả rất khả quan. Tên gọi của thuật toán là Thuật toán nhanh và hiệu quả để giới hạn sự lây nhiễm thông tin(Fast And Effective Limiting Epidemics – FLE). 
+ 	Trước khi bắt đầu, chúng tôi có định nghĩa một vài kí hiệu sẽ được sử dụng trong quá trình đề xuất thuật toán:
  	\begin {itemize}
  	\item $t(u)$: vòng nhỏ nhất sao cho đỉnh $u$ chuyển từ đỉnh không bị lây nhiễm sang đỉnh bị lây nhiễm.
  	
@@ -140,7 +141,7 @@ Kịch bản này được đề xuất và nghiên cứu sau khi xem xét thự
  	
  	\item $\beta(u): $ : số lượng các đỉnh ra cứu được, sao cho chúng chuyển từ bị lây nhiễm thành không bị lây nhiễm sau khi loại bỏ đỉnh $u$ ra khỏi đồ thị.
  	\end {itemize}
- 	 	\begin{algorithm}[hpt]
+ 	 	\begin{algorithm}[H]
  		\caption{Fast Limit Epidemics (FLE) algorithm.}
  		\label{alg:Algo1}
  		%\SetAlgoNlRelativeSize{0}
@@ -242,6 +243,124 @@ Kịch bản này được đề xuất và nghiên cứu sau khi xem xét thự
  	
  	{\itshape Chứng minh}: Để đánh giá độ phức tạp của thuật toán này, chúng ta cần đánh giá trước độ phức tạp của thuật toán. Ta dễ thấy rằng việc tính  toán $f_{d}(I)$ (Thuật toán \ref{alg:Algo2}, dòng 7 - 22) có cách thức hoạt đông giống BFS. Do đó, độ phức tạp của nó là $O(m_{d} + n_{d})$. Với bước tính toán $\alpha(u)$ và $\beta(u)$ (Thuật toán \ref{alg:Algo3}, dòng 1 - 11), ta thấy độ phức tạp của nó là $O(m_{d} + n_{d})$. Do đó, độ phức tạp chung của thuật toán là $O(m_{d} + n_{d})$. 
 		
+\subsection{Kết quả thực nghiệm}
+
+Trong phần này, chúng tôi thực nghiệm thuật toán đối với dữ liệu sẵn có trên một số mạng xã hội trực tuyến để kiểm chứng tính hiệu quả của thuật toán khi so sánh nó với các thuật toán cơ sở được sử dụng trong các bài toán lan truyền thông tin \cite{nguyen30}, \cite{kemple1}, \cite{zhang32}. Chúng tôi so sánh đánh gia trên ba yêu tố chính: chất lượng lời giải, tính mở rộng, tác động của số vòng lan truyền $d$ trên một vài các mạng xã hội trực tuyến thực tiễn. Các thuật toán cơ sở sẽ sử dụng bao gồm:
+\begin{itemize}
+	\item Random: Thuật toán chọn ngẫu nhiên $k$ đỉnh trong $N_{d}(S)$.
+	
+	\item Maxdegree (Maxdeg): Thuật toán heuristic chọn lần lượt các đỉnh có bậc cao nhất trong tập $V_{d}$ cho đến khi đủ $k$ đỉnh.
+	
+	\item Greedy: Thuật toán heuristic chọn lần lượt $k$ đỉnh, trong mỗi lần chọn sẽ chọn ra đỉnh sao cho khi loại bỏ đỉnh đó sẽ cứu được nhiều đỉnh nhất có thể.
+\end{itemize}
+
+Chúng tôi thực nghiệm sử dụng một hệ thống máy có cấu hình sau: Intel(R) Core(TM) i5-6200U CPU @ 2.30 GHz (up to 2.40 GHz), bộ nhớ RAM 4GB, ngôn ngữ lập trình Python.
+
+\subsubsection{Dữ liêu:}
+
+Chúng tôi thực nghiệm thuật toán trên nhiều bộ dữ liệu thực tế khác nhau. Bên cạnh việc lựa chọn các bộ dữ liệu để đảm bảo sự đa dạng về kích thước, chúng tôi cũng lựa chọn nhiều miền dữ liệu khác nhau, bảng \ref{tab:Table1} thể hiện các bộ dữ liệu nhóm tác giả sử dụng.
+\begin{table}
+	\centering
+	\begin{tabular}{|c|c|c|c|c|}
+		\hline 
+		Mạng & Số đỉnh & Số cạnh & Loại & Bậc trung bình \\ 
+		\hline 
+		Gnutella & 6,301 & 20,777 & Có hướng & 3.29 \\ 
+		\hline 
+		Wikipedia vote & 7,115 & 103,689 & Có hướng & 14.57 \\ 
+		\hline 
+		Amazon & 262,111 & 1,234,877 & Có hướng & 4.71 \\ 
+		\hline 
+		Google web & 875,713 & 5,105,039 & Có hướng & 5.83 \\ 
+		\hline 
+	\end{tabular} 
+	\caption{Các bộ dữ liệu}
+	\label{tab:Table1}
+\end{table}
+
+\subsubsection{Các thiết lập}
+Chúng tôi sử dụng các thiết lập dưới đây cho việc đánh giá thực nghiệm:
+
+\begin{itemize}
+	\item Trọng số của cạnh: $w(u,v)=\frac{1}{d_{\text{in}}(v)}$, với $d_{\text{in}}(v)$ là bậc vào của đỉnh $v$ \cite{kemple1} \cite{chen10LT} \cite{khali} \cite{amit21}.
+	\item Ngưỡng lây nhiễm: chúng tôi lựa chọn ngưỡng lây nhiễm trong tập \\ $\{0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9\}$.
+	\item Số vòng lây nhiễm: chúng tôi lựa chọn số vòng lây nhiễm $d = 2, 3, 4, 5$ dựa theo một nghiên cứu có trước \cite{cha23}.
+	\item Số đỉnh bị nhiễm ban đầu: trong mọi bộ dữ liệu, chúng tôi lấy $1\%$ số đỉnh làm tập đỉnh bị lây nhiễm ban đầu. 
+\end{itemize}
+
+\subsubsection{Các thuật toán sử dụng}
+Chúng tôi sử dụng các thuật toán sau đây cho việc đánh giá thực nghiệm cùng với thuật toán FLE, các thuật toán này đều là các thuật toán được nhiều bài báo khác sử dụng trong quá trình đánh giá của mình:
+
+\begin{itemize}
+	\item {\itshape Random}: Thuật toán lựa chọn ngẫu nhiên $k$ đỉnh trong đồ thị mạng xã hội để loại bỏ.
+	\item {\itshape Greedy}: Thuật toán thực hiện $k$ lần, mỗi lần chạy thuật toán sẽ thử loại bỏ lần lượt từng đỉnh ra khỏi đồ thị và đánh giá số lượng đỉnh cứu được tuong ứng, qua đó lựa chọn ra đỉnh loại đi mà cứu được nhiều đỉnh nhất để loại bỏ.
+	\item {\itshape MaxDegree}: Thuật toán thực hiện $k$ lần, mỗi lần chọn thuật toán sẽ chọn ra đỉnh có bậc lớn nhất để loại nó ra khỏi đồ thị. 
+\end{itemize} 
+
+\subsubsection{Kết quả thực nghiệm}
+
+- {\itshape Kết quả lời giải:}
+
+Chúng tôi đo đạc hiệu suất của thuật toán trong ba trường hợp: (1) giá trị $k$ thay đổi từ $10$ đến $100$, $d=5$, $\theta=0.5$ (hình \ref{fig:FLE_k}); (2) ngưỡng $\theta$ thay đổi, $d$ và $k$ giữ nguyên giá trị $50$ (hình \ref{fig:FLE_theta}); (3) giá trị vòng lây nhiêm $d$ thay đổi, $\theta$ và $k$ không đổi (hình \ref{fig:FLE_d}). Trong mọi trường hợp, FLE và Greedy cho kết quả tốt hơn so với các thuật toán còn lại, cụ thể là số lượng đỉnh cứu được nhiều hơn $48.5$ lần so với thuật toán MaxDegree và Random trong hai bộ dữ liệu Gnutella và Wiki Vote. Khi so sánh Greedy và FLE, chúng tôi thấy Greedy có hiệu suất tốt hơn từ $1.02$ đến $1.05$ lần so với FLE trong bộ dữ liệu mạng Gnutella. Tuy nhiên, khoảng cách này bị thu hẹp lại khi $\theta$ và $k$ tăng. Đặc biệt khi $k \geq 50$ và $\theta \geq 0.4$, hiệu suất của hai thuật toán là tương đương nhau. Hình \ref{fig:FLE_k}, \ref{fig:FLE_theta}, \ref{fig:FLE_d} cho thấy Greedy và FLE có hiệu suất tương đương nhau trong bộ dữ liệu mạng Wiki Vote. Trong khi Greedy không thể chạy trong thời gian cho phép trên bộ Amazon và Google Web, FLE vẫn có thể đưa ra kết quả tốt hơn nhiều so với hai thuật toán còn lại.
+
+- {\itshape Kết quả thời gian:}
+
+Thời gian chạy của thuật toán cũng được mô tả trong hình \ref{fig:FLE_k}, \ref{fig:FLE_theta}, \ref{fig:FLE_d}. Đúng như dự đoán, thời gian chạy của Greedy là cực kỳ cao so với các thuật toán còn lại, chiếm $4.5$ phút cho bộ dữ liệu Gnutella và $20.2$ phút cho mạng Wiki Vote. Thuật toán FLE nhanh hơn từ $4820$ đến $6789$ lần so với Greedy trong mạng Gnutella và nhanh hơn từ $5839$ đến $14490$ lần so với Greedy trong mạng Wiki Vote. Điều này xảy ra do Greedy có độ phức tạp thuật toán lớn $O(n_{d}k(m_{d}+n_{d}))$, trong khi FLE chỉ có độ phức tạp nhỏ hơn nhiều $O(k(m_{d}+n_{d}))$. Trong bộ dữ liệu Amazon và Google Web, Greedy không thể tìm thấy lời giải trong vòng $12$ tiếng và bị buộc dừng chạy, trong khi FLE chỉ mất $0.45$ giây và $7.8$ giây tương ứng với mỗi bộ dữ liệu trên. Điều này cho thấy FLE vẫn chạy tốt ngay cả với các bộ dữ liệu lớn.
+
+- {\itshape Ảnh hưởng của tham số $d$:}
+
+Chúng tôi khám phá ảnh hưởng của tham số $d$ đối với các thuật toán khác nhau. Cho $d$ thay đổi từ $2$ đến $5$ trong mạng Gnutella, kết quả được thể hiện trong hình \ref{fig:FLE_d}. Với Greedy và FLE, số đỉnh cứu được tăng khi giá trị $d$ tăng. Đăc biệt, số đỉnh cứu được tăng mạnh với $d=2,3$ và tăng ít hơn với $d=4,5$. Điều này chứng tỏ để ngăn chặn lây lan, ta phải loại bỏ đỉnh càng sớm càng tốt.
+
+
+- {\itshape Ảnh hưởng của tham số $\theta$:}
+
+Chúng tôi cũng xem xét ảnh hưởng của tham số $\theta$ đối với các thuật toán bằng cách cho $\theta$ thay đổi trong khi giữ nguyên $d$ và $k$. Chúng tôi lựa chọn giá trị $d=5$, $k=50$. Đối với mạng Amazon và Google Web, số đỉnh cứu được sẽ giảm nếu giá trị $\theta$ giảm. Đối với mạng Gnutella và Wiki Vote, số đỉnh cứu được tăng khi $\theta$ tăng từ $0.1$ đến $0.3$ và giảm khi $\theta$ tăng từ $0.3$ đến $0.9$. Tổng quát lại, ta có thể thấy rằng thự tế việc giá trị $\theta$ càng cao sẽ làm quá trình lây làn gặp khó khăn. Từ hình \ref{fig:FLE_theta}, ta thấy Greedy và FLE cho kết quả tốt hơn nhiều so với hai thuật toán còn lại. Điều này một lần nữa cho thấy tính ưu việt của thuật toán FLE.
+
+\begin{figure}[H]
+	\begin{tabular}{lll}
+		\includegraphics[height = 4.4cm]{picture/FLE/gnu_res} &
+		\includegraphics[height = 4.4cm]{picture/FLE/gnu_time} 
+		\\
+		\includegraphics[height = 4.4cm]{picture/FLE/wiki_res} &
+		\includegraphics[height = 4.4cm]{picture/FLE/wiki_time} 
+		\\
+		\includegraphics[height = 4.4cm]{picture/FLE/amazon_res} &
+		\includegraphics[height = 4.4cm]{picture/FLE/amazon_time} 
+		\\
+		\includegraphics[height = 4.4cm]{picture/FLE/google_res} &
+		\includegraphics[height = 4.4cm]{picture/FLE/google_time} 
+	\end{tabular}
+	\caption{So sách chất lượng lời giải và thời gian chạy của các thuật toán khi $k$ thay đổi, $d=5$, $\theta=0.5$.} 
+	\label{fig:FLE_k}   
+\end{figure}
+
+\begin{figure}[H]
+	\begin{tabular}{lll}
+		\includegraphics[height = 4.4cm]{picture/FLE/gnu_res_theta} &
+		\includegraphics[height = 4.4cm]{picture/FLE/gnu_time_theta} 
+		\\
+		\includegraphics[height = 4.4cm]{picture/FLE/wiki_res_theta} &
+		\includegraphics[height = 4.4cm]{picture/FLE/wiki_time_theta} 
+		\\
+		\includegraphics[height = 4.4cm]{picture/FLE/amazon_res_theta} &
+		\includegraphics[height = 4.4cm]{picture/FLE/amazon_time_theta} 
+		\\
+		\includegraphics[height = 4.4cm]{picture/FLE/google_res_theta} &
+		\includegraphics[height = 4.4cm]{picture/FLE/google_time_theta} 
+	\end{tabular}
+	\caption{So sách chất lượng lời giải và thời gian chạy của các thuật toán khi $\theta$ thay đổi, $d=5$, $k=50$.} 
+	\label{fig:FLE_theta}   
+\end{figure} 
+
+\begin{figure}[H]
+	\begin{tabular}{lll}
+		\includegraphics[height = 4.4cm]{picture/FLE/gnu_res_d} &
+		\includegraphics[height = 4.4cm]{picture/FLE/gnu_time_d}
+	\end{tabular}
+	\caption{So sách chất lượng lời giải và thời gian chạy của các thuật toán khi $d$ thay đổi, $\theta=0.5$, $k=50$ trong mạng Gnutella.} 
+	\label{fig:FLE_d}   
+\end{figure} 
+
 \section{Kịch bản Targeted Misinformation Blocking (Xác định và ngăn chặn thông tin sai lệch)}
 
 Với cách tiếp cận như cách Twitter đã làm năm 2016 là loại bỏ 125.000 tài khoản được nghi ngờ có liên quan đến các hoạt động khủng bố, hay cách tiếp cận như Facebook đã xóa 30.000 tài khoản giả mạo lan truyền các tin đồn trước cuộc bầu cử tổng thống Pháp năm 2017, kịch bản Targeted Misinformation Blocking được đưa ra nghiên cứu nhằm mục đích tìm giải pháp xác định được những tài khoản cần loại bỏ khỏi mạng để hạn chế sự phát tán thông tin sai lệch một cách tối ưu nhất.
@@ -309,7 +428,7 @@ Trong mục này chúng tôi chỉ ra một số kết quả về độ khó c�
 	\begin{define}[Bài toán $s$-$t$ paths \cite{vali}]
 		Cho một đồ thị có hướng $G = (V, E), |V| = n, |E| = m$, bài toán $s$-$t$ paths yêu cầu tìm số đường đi có hướng từ đỉnh $s$ tới đỉnh $t$ mà đi qua mọi đỉnh nhiều nhất một lần. 
 	\end{define}			
-	\begin{figure}[h]
+	\begin{figure}[H]
 		\begin{center}
 			\includegraphics[height = 3 cm]{picture/reduce}
 			\caption{Giản thể từ bài toán $s$-$t$ paths sang bài toán TMB.}
@@ -351,9 +470,9 @@ Trong mục này chúng tôi chỉ ra một số kết quả về độ khó c�
 	Bây giờ, xét thể hiện $\mathcal{I}_2$ của bài toán TMB trong đó $S=\{s\}$, $\gamma = \frac{2n+1}{2}(\beta+ 1) , \beta \in [0, 1]$.  Giả sử rằng $\mathcal{A}$ là một thuật toán giải quyết bài toán TMB trong thời gian đa thức. Xem xét 2 trường hợp: (1) Nếu $\mathcal{A}$ trả ra kết quả là tập $A$ có $|A|=1$, thì chúng ta chỉ cần chọn $A={u}$. Kết luận $f(w) \geq \beta$; (2) Nếu $\mathcal{A}$ trả ra kết quả tập $A$ có $|A| \ge 1$ thì ngoài $u$ sẽ cần chọn thêm một số đỉnh khác. Kết luận $f(w) < \beta$. Vì vậy $\mathcal{A}$ có thể được sử dụng để quyết định $f(w)$ là như thế nào so với $\beta$ và có thể giải quyết bài toán $s$-$t$ paths. Điều này chỉ ra rằng bài toán TMB là khó hơn hoặc bằng bài toán $s$-$t$ paths.
 \end{proof}
 \subsection{Thuật toán đề xuất}
-\textbf{\textit{Thuật toán tham lam (Greedy algorithm)}}
+\subsubsection{Thuật toán tham lam (Greedy algorithm)}
 Trong phần này chúng tôi giới thiệu một thuật toán xấp xỉ đảm bảo tỉ lệ 1 + ln($\gamma / \varepsilon$) dựa vào tính chất submodular và tính monotone của hàm h($\cdot$). Hàm $f(x)$ được gọi là hàm submodular nếu $A \subset T, v \notin T$ $ f(A+ \{v\})- f(A) \geq f(T+ \{v\})- f(T)$. Còn $f(x)$ được gọi là monotone nếu $\forall T \subseteq S$ chúng ta có $f(T) \leq f(S)$.
-\begin{algorithm}[hpt]			
+\begin{algorithm}[H]			
 	\KwData{Graph $G=(V,E, w)$,  $S=\{s_1, s_2, .., s_k\}$, threshold $\gamma < |V|$, parameter $\epsilon \in (0, \gamma)$} 
 	\KwResult{set of nodes $A$}
 	$A \leftarrow \emptyset$;
@@ -404,11 +523,11 @@ Trong phần này chúng tôi giới thiệu một thuật toán xấp xỉ đ�
 \end{proof}
 Thuật toán tham lam có cách tiếp cận khá đơn giản là mỗi bước tìm đỉnh $u$ sao cho hàm $h(A)$ tăng nhiều nhất. Song vấn đề khó khăn nhất gặp phải là tính giá trị hàm $\sigma(\cdot)$ có độ khó là $\#P-\text{khó}$, chứng minh trong \ref{}. Vì vậy chúng tôi đưa ra một thuật toán hiệu quả trong phần sau.
  
-\textbf{\textit{Thuật toán STMB (STMB algorithm)}}
+\subsubsection{Thuật toán STMB (STMB algorithm)}
 Thuật toán tham lam đưa ra một lời giải tốt xong lại không đảm bảo yêu cầu về thời gian với dữ liệu lớn do đó trong phần này chúng tôi đưa ra một giải pháp đảm bảo yêu cầu cả về chất lượng lời giải cũng như thời gian tính toán. Dưới đây là các bước chính trong thuật toán chúng tôi đề xuất:
 \begin {itemize}
 \item Đầu tiên sáp nhập các đỉnh trong tập nguồn S thành một nút I bằng cách áp dụng thuật toán \ref{MERGE} được đề xuất bởi Zhang \cite{zhang39}. Chúng ta thu được một đồ thị mới và nguồn phát tán thông tin sai lệch bây giờ chỉ còn là một đỉnh I duy nhất.
-\begin{algorithm}[hpt]			
+\begin{algorithm}[H]			
 	\KwData{Graph $G=(V,E, w)$,  $S=\{s_1, s_2, .., s_k\}$} 
 	\KwResult{Graph $G'=(V', E', w')$, I}
 	$G' \leftarrow G$;
@@ -438,7 +557,7 @@ Thuật toán tham lam đưa ra một lời giải tốt xong lại không đả
 	\label{MERGE}
 \end{algorithm}				
 \item Tiếp đến chúng tôi tạo ra $\mu(\mu \in N*)$ đồ thị mẫu g từ G bằng cách: mỗi đỉnh v $\in$ V chọn nhiều nhất một đỉnh kề đi đến nó một cách ngẫu nhiên sao cho xác suất chọn cạnh (u, v) là w(u, v) và xác suất không chọn cạnh nào là 1 - $\sum_{u} w(u, v)$. Những cạnh được chọn được gọi là cạnh sống  (live - edge) và tất cả các cạnh còn lại được gọi là cạnh bị chặn (blocked-edge). Chi tiết cách lấy đồ thị mẫu được mô tả trong thuật toán \ref{GSGLT} và trong hình \ref{example}: 
-\begin{figure}[htb]
+\begin{figure}[H]
 	\subfloat[Đồ thị $G'$ sau khi hợp nhất các đỉnh trong nguồn S\label{fig:test1}]
 	{\includegraphics[width=.3\linewidth]{picture/1}}\hfill
 	\subfloat[Đồ thị mẫu $g$\label{fig:test2}]
@@ -448,7 +567,7 @@ Thuật toán tham lam đưa ra một lời giải tốt xong lại không đả
 	\caption{Ví dụ tạo ra một cây gốc $I$ từ $G$ trên mô hình LT}
 	\label{example}
 \end{figure}	
-\begin{algorithm}
+\begin{algorithm}[H]
 	\KwData{Graph G=(V,E, w), I} 
 	\KwResult{Tree g root at I}			
 	g $\Leftarrow \emptyset$
@@ -478,7 +597,7 @@ Thuật toán tham lam đưa ra một lời giải tốt xong lại không đả
 	\label{GSGLT}
 \end{algorithm}	
 \item Trên cây T$_{I}^i$, ảnh hưởng địa phương của nút v là số nút con của cây gốc v kể cả v trên cây T$_{I}^i$. Áp dụng thuật toán DFS dễ dàng tìm được số nút con của v. Ảnh hưởng giảm của nguồn S khi loại đỉnh u khỏi G bằng lượng ảnh hưởng giảm trung bình khi loại u trên tất cả các cây T$_{I}^i$. Kí hiệu h(u, $T_I^i$) là lượng ảnh hưởng giảm trên cây $T_I^i$ sau khi loại bỏ đỉnh u khỏi $T_I^i$. Áp dụng phương pháp Lazy forward của Leskovec \cite{krause} để tìm kiếm lời giải. 
-\begin{algorithm}[hpt]
+\begin{algorithm}[H]
 	%\SetAlgoNlRelativeSize{0}
 	\KwData{Graph $G=(V,E, w)$,  $\mathcal{S}=\{s_1, s_2, .., s_q\}$, threshold $\gamma>0$} 
 	\KwResult{set of nodes $A$}
