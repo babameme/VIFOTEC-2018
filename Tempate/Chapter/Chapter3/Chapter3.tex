@@ -392,7 +392,7 @@ Kí hiệu $G = (V, E, w)$ là một đồ thị có hướng biểu diễn cho 
 
 Đưa ra một tập nguồn $S = {s_{1}, s_{2}, ... , s_{n}}$, $s_{i} \in V$ là tập tiềm năng phát tán thông tin sai lệch (tương tự như tập hạt giống trong bài IM \cite{kemple2}).
 
-Kí hiệu $\sigma_{S}(G)$ là ảnh hưởng lan truyền của tập S trên đồ thị G dưới mô hình LT hay là số lượng đỉnh được active bởi nguồn S. Theo nghiên cứu của Kempe và các cộng sự đã chỉ ra rằng mô hình LT là tương đương với khả năng tiếp cận trong một đồ thị ngẫu nhiên g, thường được gọi là đồ thị live-edge hoặc đồ thị mẫu. Trên mô hình LT, đồ thị live-edge được xây dựng như sau:
+Kí hiệu $\sigma_{S}(G)$ là ảnh hưởng lan truyền của tập S trên đồ thị G dưới mô hình LT hay là số lượng đỉnh được active bởi nguồn S. Theo nghiên cứu của Kempe và các cộng sự \cite{kemple1} đã chỉ ra rằng mô hình LT là tương đương với khả năng tiếp cận trong một đồ thị ngẫu nhiên g, thường được gọi là đồ thị live-edge hoặc đồ thị mẫu. Trên mô hình LT, đồ thị live-edge được xây dựng như sau:
 \begin {itemize}
 \item Với mỗi v $\in$ V, chọn tối đa một cạnh đi vào nó một cách ngẫu nhiên, xác suất cạnh (u, v) được chọn là w(u, v).
 
@@ -698,7 +698,7 @@ Với mục đích thực nghiệm, chúng tôi sử dụng 3 bộ dữ liệu m
 
 \texttt{AS}\cite{AS}: Biểu đồ các bộ định tuyến bao gồm Internet có thể được sắp xếp thành các biểu đồ con được gọi là Autonomous Systems(AS). Mỗi AS trao đổi lưu lượng với một số hàng xóm(peer). Chúng ta có thể xây dựng một mạng lưới các AS liên kết với nhau dựa trên nhật ký BGP(Border Gateway Protocol). Bộ dữ liệu là kết quá từ dự án University of Oregon Route Views. 
 
-\texttt{NetHEPT}\cite{kemple1, chen10LT}: Một mạng lưới hợp tác học thuật được trích xuất từ phần "High Energy Physics-Theory" của trang điện tử arXiv trong khoảng thời gian từ năm 1991--2003. Mỗi đỉnh trong mạng đại diện cho một tác giả và mỗi cạnh kết nối 2 đỉnh cho biết 2 tác giả đã đồng tác giả của một bài báo.
+\texttt{NetHEPT}\cite{kemple1, chen10LT}: Một mạng lưới hợp tác học thuật được trích xuất từ phần "High Energy Physics-Theory" của trang điện tử arXiv\footnote{https://arxiv.org/} trong khoảng thời gian từ năm 1991--2003. Mỗi đỉnh trong mạng đại diện cho một tác giả và mỗi cạnh kết nối 2 đỉnh cho biết 2 tác giả đã đồng tác giả của một bài báo.
 
 \subsubsection{Các thiết lập}
 Chúng tôi sử dụng các thiết lập dưới đây cho việc đánh giá thực nghiệm:

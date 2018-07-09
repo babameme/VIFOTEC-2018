@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2018.6.6)  9 JUL 2018 18:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2018.6.6)  9 JUL 2018 18:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2457,7 +2457,7 @@ Package hyperref Warning: Composite letter `\textdotbelow+a'
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\h' on input line 429.
 
-<picture/reduce.pdf, id=746, 456.70625pt x 182.6825pt>
+<picture/reduce.pdf, id=747, 456.70625pt x 182.6825pt>
 File: picture/reduce.pdf Graphic file (type pdf)
 
 <use picture/reduce.pdf>
@@ -2504,7 +2504,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 482--499
 
  []
 
-[45] [46] <picture/1.pdf, id=835, 261.97874pt x 211.79124pt>
+[45] [46] <picture/1.pdf, id=836, 261.97874pt x 211.79124pt>
 File: picture/1.pdf Graphic file (type pdf)
 
 <use picture/1.pdf>
@@ -2545,13 +2545,13 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <7.58339> not available
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <5.41673> not available
 (Font)              size <5> substituted on input line 574.
 
-<picture/2.pdf, id=836, 261.97874pt x 211.79124pt>
+<picture/2.pdf, id=837, 261.97874pt x 211.79124pt>
 File: picture/2.pdf Graphic file (type pdf)
  <use picture/2.pdf>
 Package pdftex.def Info: picture/2.pdf used on input line 576.
 (pdftex.def)             Requested size: 136.57462pt x 110.41322pt.
 
-<picture/3.pdf, id=837, 261.97874pt x 146.5475pt>
+<picture/3.pdf, id=838, 261.97874pt x 146.5475pt>
 File: picture/3.pdf Graphic file (type pdf)
  <use picture/3.pdf>
 Package pdftex.def Info: picture/3.pdf used on input line 578.
@@ -2701,38 +2701,38 @@ LaTeX Font Info:    Try loading font information for T5+pcr on input line 697.
  (c:/texlive/2017/texmf-dist/tex/latex/vntex/t5pcr.fd
 File: t5ucr.fd 2005/08/24 Fontinst v1.929 font definitions for T5/pcr.
 ) [50]
-<picture/NetS.pdf, id=1005, 351.3125pt x 250.9375pt>
+<picture/NetS.pdf, id=1008, 351.3125pt x 250.9375pt>
 File: picture/NetS.pdf Graphic file (type pdf)
  <use picture/NetS.pdf>
 Package pdftex.def Info: picture/NetS.pdf used on input line 720.
 (pdftex.def)             Requested size: 127.46947pt x 91.04872pt.
 
-<picture/AS.pdf, id=1006, 351.3125pt x 250.9375pt>
+<picture/AS.pdf, id=1009, 351.3125pt x 250.9375pt>
 File: picture/AS.pdf Graphic file (type pdf)
  <use picture/AS.pdf>
 Package pdftex.def Info: picture/AS.pdf used on input line 721.
 (pdftex.def)             Requested size: 127.46947pt x 91.04872pt.
 
-<picture/NetHEPT.pdf, id=1007, 351.3125pt x 250.9375pt>
+<picture/NetHEPT.pdf, id=1010, 351.3125pt x 250.9375pt>
 File: picture/NetHEPT.pdf Graphic file (type pdf)
 
 <use picture/NetHEPT.pdf>
 Package pdftex.def Info: picture/NetHEPT.pdf used on input line 722.
 (pdftex.def)             Requested size: 127.46947pt x 91.04872pt.
- <picture/TimeNetS.pdf, id=1008, 361.35pt x 216.81pt>
+ <picture/TimeNetS.pdf, id=1011, 361.35pt x 216.81pt>
 File: picture/TimeNetS.pdf Graphic file (type pdf)
 
 <use picture/TimeNetS.pdf>
 Package pdftex.def Info: picture/TimeNetS.pdf used on input line 724.
 (pdftex.def)             Requested size: 151.74942pt x 91.04872pt.
- <picture/TimeAS.pdf, id=1009, 361.35pt x 216.81pt>
+ <picture/TimeAS.pdf, id=1012, 361.35pt x 216.81pt>
 File: picture/TimeAS.pdf Graphic file (type pdf)
 
 <use picture/TimeAS.pdf>
 Package pdftex.def Info: picture/TimeAS.pdf used on input line 725.
 (pdftex.def)             Requested size: 151.74942pt x 91.04872pt.
 
-<picture/TimeNetHEPT.pdf, id=1010, 361.35pt x 216.81pt>
+<picture/TimeNetHEPT.pdf, id=1013, 361.35pt x 216.81pt>
 File: picture/TimeNetHEPT.pdf Graphic file (type pdf)
 
 <use picture/TimeNetHEPT.pdf>
@@ -2743,20 +2743,20 @@ Overfull \hbox (36.0042pt too wide) in paragraph at lines 719--728
 [][] 
  []
 
-<picture/CheckNetS.pdf, id=1011, 361.35pt x 216.81pt>
+<picture/CheckNetS.pdf, id=1014, 361.35pt x 216.81pt>
 File: picture/CheckNetS.pdf Graphic file (type pdf)
 
 <use picture/CheckNetS.pdf>
 Package pdftex.def Info: picture/CheckNetS.pdf used on input line 733.
 (pdftex.def)             Requested size: 151.74942pt x 91.04872pt.
 
-<picture/CheckAS.pdf, id=1012, 361.35pt x 216.81pt>
+<picture/CheckAS.pdf, id=1015, 361.35pt x 216.81pt>
 File: picture/CheckAS.pdf Graphic file (type pdf)
  <use picture/CheckAS.pdf>
 Package pdftex.def Info: picture/CheckAS.pdf used on input line 734.
 (pdftex.def)             Requested size: 151.74942pt x 91.04872pt.
 
-<picture/CheckNetHEPT.pdf, id=1013, 361.35pt x 216.81pt>
+<picture/CheckNetHEPT.pdf, id=1016, 361.35pt x 216.81pt>
 File: picture/CheckNetHEPT.pdf Graphic file (type pdf)
 
 <use picture/CheckNetHEPT.pdf>
@@ -2858,7 +2858,7 @@ Package hyperref Warning: Composite letter `\textdotbelow+\UHORN'
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\UHORN' on input line 1.
 
-<picture/TongTheGiaiPhap.png, id=1132, 1028.34187pt x 578.16pt>
+<picture/TongTheGiaiPhap.png, id=1135, 1028.34187pt x 578.16pt>
 File: picture/TongTheGiaiPhap.png Graphic file (type png)
 
 <use picture/TongTheGiaiPhap.png>
@@ -3026,7 +3026,7 @@ Package hyperref Warning: Composite letter `\textdotbelow+\ohorn'
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\ohorn' on input line 90.
 
-[57] <picture/Net.pdf, id=1160, 602.25pt x 602.25pt>
+[57] <picture/Net.pdf, id=1163, 602.25pt x 602.25pt>
 File: picture/Net.pdf Graphic file (type pdf)
  <use picture/Net.pdf>
 Package pdftex.def Info: picture/Net.pdf used on input line 166.
@@ -3064,7 +3064,7 @@ Package hyperref Warning: Composite letter `\textdotbelow+\abreve'
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\abreve' on input line 277.
 
-<picture/FLE/FB_res.png, id=1192, 396.7322pt x 212.29312pt>
+<picture/FLE/FB_res.png, id=1195, 396.7322pt x 212.29312pt>
 File: picture/FLE/FB_res.png Graphic file (type png)
 
 <use picture/FLE/FB_res.png>
@@ -3076,21 +3076,21 @@ Overfull \hbox (20.83214pt too wide) in paragraph at lines 320--321
  []
 
 [61] [62 <./picture/FLE/FB_res.png>]
-<picture/PartMH.png, id=1207, 481.04718pt x 536.0025pt>
+<picture/PartMH.png, id=1210, 481.04718pt x 536.0025pt>
 File: picture/PartMH.png Graphic file (type png)
 
 <use picture/PartMH.png>
 Package pdftex.def Info: picture/PartMH.png used on input line 333.
 (pdftex.def)             Requested size: 336.73073pt x 375.19919pt.
  [63 <./picture/PartMH.png>]
-<picture/Facebook.pdf, id=1216, 361.35pt x 216.81pt>
+<picture/Facebook.pdf, id=1220, 361.35pt x 216.81pt>
 File: picture/Facebook.pdf Graphic file (type pdf)
 
 <use picture/Facebook.pdf>
 Package pdftex.def Info: picture/Facebook.pdf used on input line 388.
 (pdftex.def)             Requested size: 361.34912pt x 216.80946pt.
  [64]
-<picture/TimeFacebook.pdf, id=1224, 361.35pt x 216.81pt>
+<picture/TimeFacebook.pdf, id=1227, 361.35pt x 216.81pt>
 File: picture/TimeFacebook.pdf Graphic file (type pdf)
 
 <use picture/TimeFacebook.pdf>
@@ -3100,7 +3100,7 @@ Package pdftex.def Info: picture/TimeFacebook.pdf used on input line 401.
 
 pdfTeX warning: pdflatex.exe (file ./picture/TimeFacebook.pdf): PDF inclusion: 
 multiple pdfs with page group included in a single page
->] <picture/PartPVQ.png, id=1257, 481.8pt x 511.9125pt>
+>] <picture/PartPVQ.png, id=1260, 481.8pt x 511.9125pt>
 File: picture/PartPVQ.png Graphic file (type png)
 
 <use picture/PartPVQ.png>
@@ -3246,8 +3246,8 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 67.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 12460 strings out of 492995
- 182629 string characters out of 6136403
+ 12461 strings out of 492995
+ 182640 string characters out of 6136403
  332498 words of memory out of 5000000
  15288 multiletter control sequences out of 15000+600000
  51436 words of font info for 73 fonts, out of 8000000 for 9000
@@ -3274,10 +3274,10 @@ nts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2017/texmf-dist/fonts/type1/vntex
 /urwvn/utmb8v.pfb><c:/texlive/2017/texmf-dist/fonts/type1/vntex/urwvn/utmbi8v.p
 fb><c:/texlive/2017/texmf-dist/fonts/type1/vntex/urwvn/utmr8v.pfb><c:/texlive/2
 017/texmf-dist/fonts/type1/vntex/urwvn/utmri8v.pfb>
-Output written on Chuyende1.pdf (77 pages, 2425984 bytes).
+Output written on Chuyende1.pdf (77 pages, 2426112 bytes).
 PDF statistics:
- 1462 PDF objects out of 1728 (max. 8388607)
- 1219 compressed objects within 13 object streams
- 417 named destinations out of 1000 (max. 500000)
+ 1465 PDF objects out of 1728 (max. 8388607)
+ 1222 compressed objects within 13 object streams
+ 418 named destinations out of 1000 (max. 500000)
  518 words of extra memory for PDF output out of 10000 (max. 10000000)
 
