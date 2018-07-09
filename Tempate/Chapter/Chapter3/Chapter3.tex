@@ -68,7 +68,7 @@ Trong mục này, chúng tôi chỉ ra tính NP-Khó của bài toán LSE bằng
 \begin{proof}
 	Để chứng minh LSE là bài toán NP-Khó, ta sử dụng phép dẫn đa thức từ bài toán Phủ đỉnh (Set Cover) về bài toán LSE. 
 	
-	{\bfseries Bài toán Phủ đỉnh (Set Cover - SC):} Cho một số tự nhiên dương $t$, một tập phổ quát $\vartheta = {e_{1}, e_{2}, ... ,e_{M}}$ và tập con $S = {s_{1}, s_{2}, ... , s_{N}}$ ta có thể giả sử rằng $t < M < N$. Bài toán Phủ đỉnh yêu cầu rằng: Có tồn tại hay không một lượng $t$ tập con, sao cho hợp của chúng là $\vartheta$.
+	{\bfseries Bài toán Phủ đỉnh (Set Cover - SC):} Cho một số tự nhiên dương $t$, một tập phổ quát $\vartheta = {e_{1}, e_{2}, ... ,e_{M}}$ và tập con $S = {s_{1}, s_{2}, ... , s_{N}}$ ta có thể giả sử rằng $t < M < N$. Bài toán Phủ đỉnh yêu cầu rằng: có tồn tại hay không một lượng $t$ tập con, sao cho hợp của chúng là $\vartheta$.
 	
 	Bài toán SC đã được chứng minh là bài toán NP-Khó khi kích thước các tập được giới hạn là 3 và mỗi phần tử xuất hiện trong đúng hai tập con. Để giản thể bài toán SC về bài toán LSE, đầu tiên chúng tôi xây dựng một biểu diễn $J_{\text{LSE}}$ của bài toán LSE từ biểu diễn $J_{\text{SC}}$ của bài toán SC. Sau đó chúng tôi chỉ ra rằng nếu $J_{\text{SC}}$ có tồn tại lời giải $S$ kích thước $t$, thì $J_{\text{LSE}}$ có lời giải $A$, $| A | \leq k$ với $h_{d}(A) \geq k + M$ và ngược lại.
 	

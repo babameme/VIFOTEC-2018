@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.7.3)  10 JUL 2018 01:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.6.24)  10 JUL 2018 01:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -160,6 +160,11 @@ Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
 (c:/texlive/2018/texmf-dist/tex/latex/relsize/relsize.sty
 Package: relsize 2013/03/29 ver 4.1
+
+
+Package relsize Warning: Failed to get list of defined font sizes.
+(relsize)                Size scaling will attempt arbitrary sizes..
+
 )
 \skiptotal=\skip53
 \skiplinenumber=\skip54
@@ -196,8 +201,7 @@ Package: relsize 2013/03/29 ver 4.1
 \c@algocf=\count112
 \algocf@algoframe=\box37
 \algocf@algobox=\box38
-)
-(c:/texlive/2018/texmf-dist/tex/latex/subfig/subfig.sty
+) (c:/texlive/2018/texmf-dist/tex/latex/subfig/subfig.sty
 Package: subfig 2005/06/28 ver: 1.3 subfig package
 
 (c:/texlive/2018/texmf-dist/tex/latex/caption/caption.sty
@@ -1737,7 +1741,7 @@ Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\acircumflex' on input line 103.
 
 [30 <./picture/Hinh3_3.png>]
-LaTeX Font Info:    Font shape `T5/ptm/bx/n' in size <8.66673> not available
+LaTeX Font Info:    Font shape `T5/ptm/bx/n' in size <9.02782> not available
 (Font)              Font shape `T5/ptm/b/n' tried instead on input line 121.
  [31] [32]
 
@@ -2865,9 +2869,15 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 72.
 )
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 72.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 72.
-Package rerunfilecheck Info: File `Chuyende1.out' has not changed.
-(rerunfilecheck)             Checksum: 9938F4EBA298950FCA26D598F7B57D92;3645.
 
+
+Package rerunfilecheck Warning: File `Chuyende1.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Chuyende1.out':
+(rerunfilecheck)             Before: DC0B112A156E861593F5728BD3000C2E;3685
+(rerunfilecheck)             After:  9938F4EBA298950FCA26D598F7B57D92;3645.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.75pt have occurred.
@@ -2875,13 +2885,13 @@ LaTeX Font Warning: Size substitutions with differences
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 72.
  ) 
 Here is how much of TeX's memory you used:
- 12111 strings out of 492649
- 179866 string characters out of 6133385
- 318993 words of memory out of 5000000
- 15248 multiletter control sequences out of 15000+600000
+ 12105 strings out of 492649
+ 179838 string characters out of 6133384
+ 318914 words of memory out of 5000000
+ 15242 multiletter control sequences out of 15000+600000
  51436 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 65i,24n,98p,2542b,741s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 65i,24n,98p,2542b,739s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2018/texmf-dist/fonts/enc/dvips/vntex/t5.enc}<c:/texlive/2018/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2018/texmf-dist/f
 onts/type1/public/amsfonts/cmextra/cmex9.pfb><c:/texlive/2018/texmf-dist/fonts/
@@ -2903,7 +2913,7 @@ helvetic/uhvr8a.pfb><c:/texlive/2018/texmf-dist/fonts/type1/vntex/urwvn/utmb8v.
 pfb><c:/texlive/2018/texmf-dist/fonts/type1/vntex/urwvn/utmbi8v.pfb><c:/texlive
 /2018/texmf-dist/fonts/type1/vntex/urwvn/utmr8v.pfb><c:/texlive/2018/texmf-dist
 /fonts/type1/vntex/urwvn/utmri8v.pfb>
-Output written on Chuyende1.pdf (79 pages, 2427503 bytes).
+Output written on Chuyende1.pdf (79 pages, 2427528 bytes).
 PDF statistics:
  1489 PDF objects out of 1728 (max. 8388607)
  1244 compressed objects within 13 object streams
