@@ -1,7 +1,7 @@
 \contentsline {chapter}{Danh s\'ach h\`inh v\~e}{}{chapter*.2}
 \contentsline {chapter}{Danh s\'ach b\h {a}ng}{}{chapter*.3}
 \contentsline {chapter}{M\IeC {\h \ohorn } \IeC {\dj }\IeC {\`\acircumflex }u}{1}{chapter*.6}
-\contentsline {chapter}{\bf Ch\IeC {\uhorn }\IeC {\ohorn }ng \numberline {1. } GI\IeC {\'\OHORN }I THI\IeC {\d \ECIRCUMFLEX }U V\IeC {\`\ECIRCUMFLEX } M\IeC {\d A}NG X\IeC {\~A} H\IeC {\d \OCIRCUMFLEX }I V\IeC {\`A} T\IeC {\'A}C H\IeC {\d A}I C\IeC {\h U}A TH\IeC {\^O}NG TIN SAI L\IeC {\d \ECIRCUMFLEX }CH }{9}{chapter.1}
+\contentsline {chapter}{\bf Chương \numberline {1. } GI\IeC {\'\OHORN }I THI\IeC {\d \ECIRCUMFLEX }U V\IeC {\`\ECIRCUMFLEX } M\IeC {\d A}NG X\IeC {\~A} H\IeC {\d \OCIRCUMFLEX }I V\IeC {\`A} T\IeC {\'A}C H\IeC {\d A}I C\IeC {\h U}A TH\IeC {\^O}NG TIN SAI L\IeC {\d \ECIRCUMFLEX }CH }{9}{chapter.1}
 \contentsline {section}{\numberline {\bfseries 1.}Gi\IeC {\'\ohorn }i thi\IeC {\d \ecircumflex }u chung v\IeC {\`\ecircumflex } m\IeC {\d a}ng x\IeC {\~a} h\IeC {\d \ocircumflex }i}{9}{section.1.1}
 \contentsline {subsection}{\numberline {1.1.}\IeC {\DJ }\IeC {\d \abreve }c \IeC {\dj }i\IeC {\h \ecircumflex }m c\IeC {\h u}a MXH}{9}{subsection.1.1.1}
 \contentsline {subsubsection}{\numberline {a)}T\IeC {\'\i }nh li\IeC {\^e}n k\IeC {\'\ecircumflex }t c\IeC {\d \ocircumflex }ng \IeC {\dj }\IeC {\`\ocircumflex }ng}{10}{subsubsection.1.1.1.1}
@@ -24,12 +24,12 @@
 \contentsline {subsubsection}{\numberline {a)}Th\IeC {\d \uhorn }c tr\IeC {\d a}ng th\IeC {\'\ecircumflex } gi\IeC {\'\ohorn }i}{15}{subsubsection.1.2.2.1}
 \contentsline {subsubsection}{\numberline {b)}Th\IeC {\d \uhorn }c tr\IeC {\d a}ng t\IeC {\d a}i Vi\IeC {\d \ecircumflex }t Nam}{16}{subsubsection.1.2.2.2}
 \contentsline {subsection}{K\IeC {\'\ecircumflex }t lu\IeC {\d \acircumflex }n ch\IeC {\uhorn }\IeC {\ohorn }ng}{17}{subsubsection.1.2.2.2}
-\contentsline {chapter}{\bf Ch\IeC {\uhorn }\IeC {\ohorn }ng \numberline {2. } C\IeC {\OHORN } CH\IeC {\'\ECIRCUMFLEX } LAN TRUY\IeC {\`\ECIRCUMFLEX }N TH\IeC {\^O}NG TIN SAI L\IeC {\d \ECIRCUMFLEX }CH}{18}{chapter.2}
+\contentsline {chapter}{\bf Chương \numberline {2. } C\IeC {\OHORN } CH\IeC {\'\ECIRCUMFLEX } LAN TRUY\IeC {\`\ECIRCUMFLEX }N TH\IeC {\^O}NG TIN SAI L\IeC {\d \ECIRCUMFLEX }CH}{18}{chapter.2}
 \contentsline {section}{\numberline {\bfseries 1.}M\IeC {\^o} h\IeC {\`\i }nh lan truy\IeC {\`\ecircumflex }n th\IeC {\^o}ng tin}{18}{section.2.1}
 \contentsline {subsection}{\numberline {1.1.}M\IeC {\^o} h\IeC {\`\i }nh t\IeC {\`\acircumflex }ng \IeC {\dj }\IeC {\d \ocircumflex }c l\IeC {\d \acircumflex }p}{20}{subsection.2.1.1}
 \contentsline {subsection}{\numberline {1.2.}M\IeC {\^o} h\IeC {\`\i }nh ng\IeC {\uhorn }\IeC {\~\ohorn }ng tuy\IeC {\'\ecircumflex }n t\IeC {\'\i }nh}{21}{subsection.2.1.2}
 \contentsline {section}{\numberline {\bfseries 2.}M\IeC {\d \ocircumflex }t s\IeC {\'\ocircumflex } h\IeC {\uhorn }\IeC {\'\ohorn }ng nghi\IeC {\^e}n c\IeC {\'\uhorn }u li\IeC {\^e}n quan b\IeC {\`a}i to\IeC {\'a}n h\IeC {\d a}n ch\IeC {\'\ecircumflex } lan truy\IeC {\`\ecircumflex }n th\IeC {\^o}ng tin sai l\IeC {\d \ecircumflex }ch tr\IeC {\^e}n m\IeC {\d a}ng x\IeC {\~a} h\IeC {\d \ocircumflex }i}{23}{section.2.2}
-\contentsline {chapter}{\bf Ch\IeC {\uhorn }\IeC {\ohorn }ng \numberline {3. } GI\IeC {\h A}I PH\IeC {\'A}P NG\IeC {\u A}N CH\IeC {\d \ABREVE }N S\IeC {\d \UHORN } PH\IeC {\'A}T T\IeC {\'A}N C\IeC {\h U}A TH\IeC {\^O}NG TIN SAI L\IeC {\d \ECIRCUMFLEX }CH}{25}{chapter.3}
+\contentsline {chapter}{\bf Chương \numberline {3. } GI\IeC {\h A}I PH\IeC {\'A}P NG\IeC {\u A}N CH\IeC {\d \ABREVE }N S\IeC {\d \UHORN } PH\IeC {\'A}T T\IeC {\'A}N C\IeC {\h U}A TH\IeC {\^O}NG TIN SAI L\IeC {\d \ECIRCUMFLEX }CH}{25}{chapter.3}
 \contentsline {section}{\numberline {\bfseries 1.}K\IeC {\d i}ch b\IeC {\h a}n Limiting the spread of epidemics within time constraint on online social network (H\IeC {\d a}n ch\IeC {\'\ecircumflex } s\IeC {\d \uhorn } lan truy\IeC {\`\ecircumflex }n c\IeC {\h u}a th\IeC {\^o}ng tin sai l\IeC {\d \ecircumflex }ch trong th\IeC {\`\ohorn }i gian gi\IeC {\'\ohorn }i h\IeC {\d a}n tr\IeC {\^e}n m\IeC {\d \ocircumflex }t m\IeC {\d a}ng x\IeC {\~a} h\IeC {\d \ocircumflex }i)}{26}{section.3.1}
 \contentsline {subsection}{\numberline {1.1.}T\IeC {\h \ocircumflex }ng quan k\IeC {\d i}ch b\IeC {\h a}n}{26}{subsection.3.1.1}
 \contentsline {subsection}{\numberline {1.2.}M\IeC {\^o} h\IeC {\`\i }nh lan truy\IeC {\`\ecircumflex }n th\IeC {\^o}ng tin Ng\IeC {\uhorn }\IeC {\~\ohorn }ng tuy\IeC {\'\ecircumflex }n t\IeC {\'\i }nh v\IeC {\'\ohorn }i b\IeC {\uhorn }\IeC {\'\ohorn }c th\IeC {\`\ohorn }i gian r\IeC {\`\ohorn }i r\IeC {\d a}c (Time Constraint Deterministic Linear Threshold - T-DLT).}{27}{subsection.3.1.2}
@@ -43,27 +43,27 @@
 \contentsline {subsubsection}{\numberline {d)}K\IeC {\'\ecircumflex }t qu\IeC {\h a} th\IeC {\d \uhorn }c nghi\IeC {\d \ecircumflex }m}{38}{subsubsection.3.1.6.4}
 \contentsline {section}{\numberline {\bfseries 2.}K\IeC {\d i}ch b\IeC {\h a}n Targeted Misinformation Blocking (X\IeC {\'a}c \IeC {\dj }\IeC {\d i}nh v\IeC {\`a} ng\IeC {\u a}n ch\IeC {\d \abreve }n th\IeC {\^o}ng tin sai l\IeC {\d \ecircumflex }ch)}{41}{section.3.2}
 \contentsline {subsection}{\numberline {2.1.}T\IeC {\h \ocircumflex }ng quan k\IeC {\d i}ch b\IeC {\h a}n}{41}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {2.2.}M\IeC {\^o} h\IeC {\`\i }nh lan truy\IeC {\`\ecircumflex }n th\IeC {\^o}ng tin Ng\IeC {\uhorn }\IeC {\~\ohorn }ng tuy\IeC {\'\ecircumflex }n t\IeC {\'\i }nh Linear Threshold}{41}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {2.2.}M\IeC {\^o} h\IeC {\`\i }nh lan truy\IeC {\`\ecircumflex }n th\IeC {\^o}ng tin Ng\IeC {\uhorn }\IeC {\~\ohorn }ng tuy\IeC {\'\ecircumflex }n t\IeC {\'\i }nh Linear Threshold}{42}{subsection.3.2.2}
 \contentsline {subsection}{\numberline {2.3.}\IeC {\DJ }\IeC {\d i}nh ngh\IeC {\~\i }a b\IeC {\`a}i to\IeC {\'a}n}{42}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {2.4.}\IeC {\DJ }\IeC {\d \ocircumflex } ph\IeC {\'\uhorn }c t\IeC {\d a}p c\IeC {\h u}a b\IeC {\`a}i to\IeC {\'a}n}{43}{subsection.3.2.4}
-\contentsline {subsection}{\numberline {2.5.}Thu\IeC {\d \acircumflex }t to\IeC {\'a}n \IeC {\dj }\IeC {\`\ecircumflex } xu\IeC {\'\acircumflex }t}{45}{subsection.3.2.5}
-\contentsline {subsubsection}{\numberline {a)}Thu\IeC {\d \acircumflex }t to\IeC {\'a}n tham lam (Greedy algorithm)}{45}{subsubsection.3.2.5.1}
-\contentsline {subsubsection}{\numberline {b)}Thu\IeC {\d \acircumflex }t to\IeC {\'a}n STMB (STMB algorithm)}{46}{subsubsection.3.2.5.2}
-\contentsline {subsection}{\numberline {2.6.}K\IeC {\'\ecircumflex }t qu\IeC {\h a} th\IeC {\d \uhorn }c nghi\IeC {\d \ecircumflex }m v\IeC {\'\ohorn }i d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u v\IeC {\'\ohorn }i d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u c\IeC {\'o} s\IeC {\~\abreve }n}{50}{subsection.3.2.6}
-\contentsline {subsubsection}{\numberline {a)}D\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u}{50}{subsubsection.3.2.6.1}
-\contentsline {subsubsection}{\numberline {b)}C\IeC {\'a}c thi\IeC {\'\ecircumflex }t l\IeC {\d \acircumflex }p}{51}{subsubsection.3.2.6.2}
-\contentsline {subsubsection}{\numberline {c)}C\IeC {\'a}c thu\IeC {\d \acircumflex }t to\IeC {\'a}n s\IeC {\h \uhorn } d\IeC {\d u}ng}{51}{subsubsection.3.2.6.3}
-\contentsline {subsubsection}{\numberline {d)}K\IeC {\'\ecircumflex }t qu\IeC {\h a} th\IeC {\d \uhorn }c nghi\IeC {\d \ecircumflex }m}{51}{subsubsection.3.2.6.4}
-\contentsline {chapter}{\bf Ch\IeC {\uhorn }\IeC {\ohorn }ng \numberline {4. } \IeC {\'A}P D\IeC {\d U}NG C\IeC {\'A}C GI\IeC {\h A}I PH\IeC {\'A}P \IeC {\DJ }\IeC {\`\ECIRCUMFLEX } XU\IeC {\'\ACIRCUMFLEX }T TR\IeC {\^E}N D\IeC {\~\UHORN } LI\IeC {\d \ECIRCUMFLEX }U TH\IeC {\d \UHORN }C}{53}{chapter.4}
-\contentsline {section}{\numberline {\bfseries 1.}Thu th\IeC {\d \acircumflex }p d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u}{54}{section.4.1}
-\contentsline {subsection}{\numberline {1.1.}X\IeC {\'a}c \IeC {\dj }\IeC {\d i}nh ngu\IeC {\`\ocircumflex }n ph\IeC {\'a}t t\IeC {\'a}n th\IeC {\^o}ng tin sai l\IeC {\d \ecircumflex }ch}{54}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {1.2.}X\IeC {\^a}y d\IeC {\d \uhorn }ng c\IeC {\^o}ng c\IeC {\d u} thu th\IeC {\d \acircumflex }p d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u tr\IeC {\^e}n m\IeC {\d a}ng x\IeC {\~a} h\IeC {\d \ocircumflex }i Facebook}{55}{subsection.4.1.2}
-\contentsline {subsubsection}{\numberline {a)}T\IeC {\h \ocircumflex }ng quan v\IeC {\`\ecircumflex } c\IeC {\^o}ng c\IeC {\d u} ki\IeC {\h \ecircumflex }m th\IeC {\h \uhorn } Selenium}{56}{subsubsection.4.1.2.1}
-\contentsline {subsubsection}{\numberline {b)}Qu\IeC {\'a} tr\IeC {\`\i }nh thu th\IeC {\d \acircumflex }p d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u}{57}{subsubsection.4.1.2.2}
-\contentsline {section}{\numberline {\bfseries 2.}M\IeC {\^o} h\IeC {\`\i }nh h\IeC {\'o}a d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u thu \IeC {\dj }\IeC {\uhorn }\IeC {\d \ohorn }c}{58}{section.4.2}
-\contentsline {section}{\numberline {\bfseries 3.}\IeC {\'A}p d\IeC {\d u}ng k\IeC {\d i}ch b\IeC {\h a}n v\IeC {\`a} gi\IeC {\h a}i ph\IeC {\'a}p ng\IeC {\u a}n ch\IeC {\d \abreve }n}{61}{section.4.3}
-\contentsline {section}{\numberline {\bfseries 4.}Gi\IeC {\h a}i ph\IeC {\'a}p Limiting the spread of epidemics within time constraint on online social network}{63}{section.4.4}
-\contentsline {subsection}{\numberline {4.1.}D\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u thu th\IeC {\d \acircumflex }p \IeC {\dj }\IeC {\uhorn }\IeC {\d \ohorn }c}{63}{subsection.4.4.1}
-\contentsline {section}{\numberline {\bfseries 5.}Gi\IeC {\h a}i ph\IeC {\'a}p Targeted Misinformation Blocking (X\IeC {\'a}c \IeC {\dj }\IeC {\d i}nh v\IeC {\`a} ng\IeC {\u a}n ch\IeC {\d \abreve }n th\IeC {\^o}ng tin sai l\IeC {\d \ecircumflex }ch tr\IeC {\^e}n m\IeC {\d a}ng x\IeC {\~a} h\IeC {\d \ocircumflex }i)}{64}{section.4.5}
-\contentsline {subsection}{\numberline {5.1.}D\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u thu th\IeC {\d \acircumflex }p \IeC {\dj }\IeC {\uhorn }\IeC {\d \ohorn }c}{64}{subsection.4.5.1}
-\contentsline {chapter}{T\`ai li\d \ecircumflex u tham kh\h {a}o}{67}{chapter*.36}
+\contentsline {subsection}{\numberline {2.4.}\IeC {\DJ }\IeC {\d \ocircumflex } ph\IeC {\'\uhorn }c t\IeC {\d a}p c\IeC {\h u}a b\IeC {\`a}i to\IeC {\'a}n}{44}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {2.5.}Thu\IeC {\d \acircumflex }t to\IeC {\'a}n \IeC {\dj }\IeC {\`\ecircumflex } xu\IeC {\'\acircumflex }t}{46}{subsection.3.2.5}
+\contentsline {subsubsection}{\numberline {a)}Thu\IeC {\d \acircumflex }t to\IeC {\'a}n tham lam (Greedy algorithm)}{46}{subsubsection.3.2.5.1}
+\contentsline {subsubsection}{\numberline {b)}Thu\IeC {\d \acircumflex }t to\IeC {\'a}n STMB (STMB algorithm)}{47}{subsubsection.3.2.5.2}
+\contentsline {subsection}{\numberline {2.6.}K\IeC {\'\ecircumflex }t qu\IeC {\h a} th\IeC {\d \uhorn }c nghi\IeC {\d \ecircumflex }m v\IeC {\'\ohorn }i d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u v\IeC {\'\ohorn }i d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u c\IeC {\'o} s\IeC {\~\abreve }n}{51}{subsection.3.2.6}
+\contentsline {subsubsection}{\numberline {a)}D\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u}{51}{subsubsection.3.2.6.1}
+\contentsline {subsubsection}{\numberline {b)}C\IeC {\'a}c thi\IeC {\'\ecircumflex }t l\IeC {\d \acircumflex }p}{52}{subsubsection.3.2.6.2}
+\contentsline {subsubsection}{\numberline {c)}C\IeC {\'a}c thu\IeC {\d \acircumflex }t to\IeC {\'a}n s\IeC {\h \uhorn } d\IeC {\d u}ng}{52}{subsubsection.3.2.6.3}
+\contentsline {subsubsection}{\numberline {d)}K\IeC {\'\ecircumflex }t qu\IeC {\h a} th\IeC {\d \uhorn }c nghi\IeC {\d \ecircumflex }m}{52}{subsubsection.3.2.6.4}
+\contentsline {chapter}{\bf Chương \numberline {4. } \IeC {\'A}P D\IeC {\d U}NG C\IeC {\'A}C GI\IeC {\h A}I PH\IeC {\'A}P \IeC {\DJ }\IeC {\`\ECIRCUMFLEX } XU\IeC {\'\ACIRCUMFLEX }T TR\IeC {\^E}N D\IeC {\~\UHORN } LI\IeC {\d \ECIRCUMFLEX }U TH\IeC {\d \UHORN }C}{54}{chapter.4}
+\contentsline {section}{\numberline {\bfseries 1.}Thu th\IeC {\d \acircumflex }p d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u}{55}{section.4.1}
+\contentsline {subsection}{\numberline {1.1.}X\IeC {\'a}c \IeC {\dj }\IeC {\d i}nh ngu\IeC {\`\ocircumflex }n ph\IeC {\'a}t t\IeC {\'a}n th\IeC {\^o}ng tin sai l\IeC {\d \ecircumflex }ch}{55}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {1.2.}X\IeC {\^a}y d\IeC {\d \uhorn }ng c\IeC {\^o}ng c\IeC {\d u} thu th\IeC {\d \acircumflex }p d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u tr\IeC {\^e}n m\IeC {\d a}ng x\IeC {\~a} h\IeC {\d \ocircumflex }i Facebook}{56}{subsection.4.1.2}
+\contentsline {subsubsection}{\numberline {a)}T\IeC {\h \ocircumflex }ng quan v\IeC {\`\ecircumflex } c\IeC {\^o}ng c\IeC {\d u} ki\IeC {\h \ecircumflex }m th\IeC {\h \uhorn } Selenium}{57}{subsubsection.4.1.2.1}
+\contentsline {subsubsection}{\numberline {b)}Qu\IeC {\'a} tr\IeC {\`\i }nh thu th\IeC {\d \acircumflex }p d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u}{58}{subsubsection.4.1.2.2}
+\contentsline {section}{\numberline {\bfseries 2.}M\IeC {\^o} h\IeC {\`\i }nh h\IeC {\'o}a d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u thu \IeC {\dj }\IeC {\uhorn }\IeC {\d \ohorn }c}{59}{section.4.2}
+\contentsline {section}{\numberline {\bfseries 3.}\IeC {\'A}p d\IeC {\d u}ng k\IeC {\d i}ch b\IeC {\h a}n v\IeC {\`a} gi\IeC {\h a}i ph\IeC {\'a}p ng\IeC {\u a}n ch\IeC {\d \abreve }n}{62}{section.4.3}
+\contentsline {section}{\numberline {\bfseries 4.}Gi\IeC {\h a}i ph\IeC {\'a}p Limiting the spread of epidemics within time constraint on online social network}{64}{section.4.4}
+\contentsline {subsection}{\numberline {4.1.}D\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u thu th\IeC {\d \acircumflex }p \IeC {\dj }\IeC {\uhorn }\IeC {\d \ohorn }c}{64}{subsection.4.4.1}
+\contentsline {section}{\numberline {\bfseries 5.}Gi\IeC {\h a}i ph\IeC {\'a}p Targeted Misinformation Blocking (X\IeC {\'a}c \IeC {\dj }\IeC {\d i}nh v\IeC {\`a} ng\IeC {\u a}n ch\IeC {\d \abreve }n th\IeC {\^o}ng tin sai l\IeC {\d \ecircumflex }ch tr\IeC {\^e}n m\IeC {\d a}ng x\IeC {\~a} h\IeC {\d \ocircumflex }i)}{65}{section.4.5}
+\contentsline {subsection}{\numberline {5.1.}D\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u thu th\IeC {\d \acircumflex }p \IeC {\dj }\IeC {\uhorn }\IeC {\d \ohorn }c}{65}{subsection.4.5.1}
+\contentsline {chapter}{T\`ai li\d \ecircumflex u tham kh\h {a}o}{68}{chapter*.36}
