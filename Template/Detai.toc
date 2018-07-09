@@ -38,7 +38,7 @@
 \contentsline {subsection}{\numberline {1.5.}Thu\IeC {\d \acircumflex }t to\IeC {\'a}n \IeC {\dj }\IeC {\`\ecircumflex } xu\IeC {\'\acircumflex }t}{30}{subsection.3.1.5}
 \contentsline {subsection}{\numberline {1.6.}K\IeC {\'\ecircumflex }t qu\IeC {\h a} th\IeC {\d \uhorn }c nghi\IeC {\d \ecircumflex }m v\IeC {\'\ohorn }i d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u \IeC {\dj }\IeC {\~a} c\IeC {\^o}ng b\IeC {\'\ocircumflex }}{33}{subsection.3.1.6}
 \contentsline {subsubsection}{\numberline {a)}D\IeC {\~\uhorn } li\IeC {\^e}u:}{34}{subsubsection.3.1.6.1}
-\contentsline {subsubsection}{\numberline {b)}C\IeC {\'a}c thi\IeC {\'\ecircumflex }t l\IeC {\d \acircumflex }p}{34}{subsubsection.3.1.6.2}
+\contentsline {subsubsection}{\numberline {b)}Thi\IeC {\'\ecircumflex }t l\IeC {\d \acircumflex }p tham s\IeC {\'\ocircumflex }}{34}{subsubsection.3.1.6.2}
 \contentsline {subsubsection}{\numberline {c)}C\IeC {\'a}c thu\IeC {\d \acircumflex }t to\IeC {\'a}n s\IeC {\h \uhorn } d\IeC {\d u}ng}{34}{subsubsection.3.1.6.3}
 \contentsline {subsubsection}{\numberline {d)}K\IeC {\'\ecircumflex }t qu\IeC {\h a} th\IeC {\d \uhorn }c nghi\IeC {\d \ecircumflex }m}{35}{subsubsection.3.1.6.4}
 \contentsline {section}{\numberline {\bfseries 2.}B\IeC {\`a}i to\IeC {\'a}n 2: T\IeC {\`\i }m chi ph\IeC {\'\i } nh\IeC {\h o} nh\IeC {\'\acircumflex }t \IeC {\dj }\IeC {\h \ecircumflex } ng\IeC {\u a}n ch\IeC {\d \abreve }n th\IeC {\^o}ng tin sai l\IeC {\d \ecircumflex }ch}{38}{section.3.2}
