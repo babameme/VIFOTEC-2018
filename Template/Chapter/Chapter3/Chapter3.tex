@@ -260,7 +260,7 @@ Chúng tôi sử dụng các thiết lập tham số dưới đây cho việc đ
 \end{itemize}
 
 \subsubsection{Các thuật toán sử dụng}
-Chúng tôi sử dụng các thuật toán sau đây cho việc đánh giá thực nghiệm cùng với thuật toán FLE, các thuật toán này đều là các thuật toán được nhiều bài báo khác sử dụng trong quá trình đánh giá của mình:
+Chúng tôi sử dụng các thuật toán sau đây cho việc đánh giá thực nghiệm cùng với thuật toán FLE, các thuật toán này đều là các thuật toán được sử dụng trong các nghiên cứu liên quan đã có trước:
 
 \begin{itemize}
 	\item {\itshape Random}: Thuật toán lựa chọn ngẫu nhiên $k$ đỉnh trong đồ thị mạng xã hội để loại bỏ.
@@ -644,7 +644,7 @@ $ h_{max} \leftarrow 0$; $iteration \leftarrow 1$
 
 Vậy nên toàn bộ thuật toán TMB có độ phức tạp là O($\mu$(m+qn)).
 
-\subsection{Kết quả thực nghiệm với dữ liệu với dữ liệu đã công bố}	
+\subsection{Kết quả thực nghiệm với dữ liệu đã công bố}	
 
 Trong mục này chúng tôi đưa ra kết quả thực nghiệm của thuật toán STMB với 3 bộ dữ liệu đã công bố của các mạng xã hội và so sánh về chất lượng lời giải, tốc độ thực hiện với một số thuật toán cơ bản khác.
 Thuật toán được thực hiện bằng ngôn ngữ Python 2.7, sử dụng thư viện hỗ trợ NetworkX\footnote{Hướng dẫn sử dụng https://networkx.github.io/} và chạy trên máy Linux Server với 2.30 GHz Intel\textsuperscript{\textregistered} Xeon\textsuperscript{\textregistered} CPU E5-2697, bộ nhớ 128G of RAM DDR4.
@@ -681,7 +681,7 @@ Theo các nghiên cứu trước \cite{khali, kemple1,chen10LT}, chúng tôi thi
 
 
 \subsubsection{Các thuật toán sử dụng}
-Trong thực nghiệm, chúng tôi so sánh thuật toán STMB với một số thuật toán sau:
+Trong thực nghiệm, chúng tôi so sánh thuật toán STMB với một số thuật toán sau, các thuật toán này thường được sử dụng trong các nghiên cứu liên quan về vấn đề nhóm tác giả nghiên cứu:
 \begin {itemize}
 \item PageRank: Tính toán ranking của các đỉnh trong đồ thị $G$ dựa vào cấu trúc các cạnh liên kết với nó. Đây là thuật toán được thiết kế để xếp hạng các trang web từ đó đưa ra kết quả tìm kiếm. Do $h(\cdot)$ là hàm monotone nên sau khi sắp xếp hạng của các đỉnh trong đồ thị, chúng tôi sử dụng thuật toán tìm kiếm nhị phân để tìm kiếm tập lời giải A với |A| đỉnh có rank lớn nhất.
 \item High-Degree: Một thuật toán heuristic dựa vào bậc của một đỉnh. Bậc của một đỉnh ở đây là tổng số đỉnh được tính theo công thức $d(v) = N_{in}(v) + N_{out}(v)$. Tương tự như thuật toán PageRank sau khi sắp xếp các đỉnh dựa trên bậc của chúng, chúng tôi sử dụng thuật toán tìm kiếm nhị phân để tìm lời giải cho bài toán.

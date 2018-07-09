@@ -49,7 +49,7 @@
 \contentsline {subsection}{\numberline {2.5.}Thu\IeC {\d \acircumflex }t to\IeC {\'a}n \IeC {\dj }\IeC {\`\ecircumflex } xu\IeC {\'\acircumflex }t}{43}{subsection.3.2.5}
 \contentsline {subsubsection}{\numberline {a)}Thu\IeC {\d \acircumflex }t to\IeC {\'a}n tham lam (Greedy algorithm)}{43}{subsubsection.3.2.5.1}
 \contentsline {subsubsection}{\numberline {b)}Thu\IeC {\d \acircumflex }t to\IeC {\'a}n STMB (STMB algorithm)}{44}{subsubsection.3.2.5.2}
-\contentsline {subsection}{\numberline {2.6.}K\IeC {\'\ecircumflex }t qu\IeC {\h a} th\IeC {\d \uhorn }c nghi\IeC {\d \ecircumflex }m v\IeC {\'\ohorn }i d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u v\IeC {\'\ohorn }i d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u \IeC {\dj }\IeC {\~a} c\IeC {\^o}ng b\IeC {\'\ocircumflex }}{48}{subsection.3.2.6}
+\contentsline {subsection}{\numberline {2.6.}K\IeC {\'\ecircumflex }t qu\IeC {\h a} th\IeC {\d \uhorn }c nghi\IeC {\d \ecircumflex }m v\IeC {\'\ohorn }i d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u \IeC {\dj }\IeC {\~a} c\IeC {\^o}ng b\IeC {\'\ocircumflex }}{48}{subsection.3.2.6}
 \contentsline {subsubsection}{\numberline {a)}D\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u}{48}{subsubsection.3.2.6.1}
 \contentsline {subsubsection}{\numberline {b)}Thi\IeC {\'\ecircumflex }t l\IeC {\d \acircumflex }p tham s\IeC {\'\ocircumflex }}{48}{subsubsection.3.2.6.2}
 \contentsline {subsubsection}{\numberline {c)}C\IeC {\'a}c thu\IeC {\d \acircumflex }t to\IeC {\'a}n s\IeC {\h \uhorn } d\IeC {\d u}ng}{49}{subsubsection.3.2.6.3}
