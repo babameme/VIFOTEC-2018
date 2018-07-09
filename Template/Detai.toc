@@ -30,7 +30,7 @@
 \contentsline {subsection}{\numberline {2.1.}M\IeC {\^o} h\IeC {\`\i }nh t\IeC {\`\acircumflex }ng \IeC {\dj }\IeC {\d \ocircumflex }c l\IeC {\d \acircumflex }p}{20}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.}M\IeC {\^o} h\IeC {\`\i }nh ng\IeC {\uhorn }\IeC {\~\ohorn }ng tuy\IeC {\'\ecircumflex }n t\IeC {\'\i }nh}{21}{subsection.2.2.2}
 \contentsline {chapter}{\bf Ch\IeC {\uhorn }\IeC {\ohorn }ng \numberline {3. } Gi\IeC {\h a}i ph\IeC {\'a}p ng\IeC {\u a}n ch\IeC {\d \abreve }n s\IeC {\d \uhorn } ph\IeC {\'a}t t\IeC {\'a}n c\IeC {\h u}a TTSL}{24}{chapter.3}
-\contentsline {section}{\numberline {\bfseries 1.}B\IeC {\`a}i to\IeC {\'a}n 1: Ng\IeC {\u a}n ch\IeC {\d \abreve }n th\IeC {\^o}ng tin sai l\IeC {\d \ecircumflex }ch v\IeC {\'\ohorn }i ng\IeC {\^a}n s\IeC {\'a}ch gi\IeC {\'\ohorn }i h\IeC {\d a}n)}{25}{section.3.1}
+\contentsline {section}{\numberline {\bfseries 1.}B\IeC {\`a}i to\IeC {\'a}n 1: Ng\IeC {\u a}n ch\IeC {\d \abreve }n th\IeC {\^o}ng tin sai l\IeC {\d \ecircumflex }ch v\IeC {\'\ohorn }i ng\IeC {\^a}n s\IeC {\'a}ch gi\IeC {\'\ohorn }i h\IeC {\d a}n}{25}{section.3.1}
 \contentsline {subsection}{\numberline {1.1.}T\IeC {\h \ocircumflex }ng quan b\IeC {\`a}i to\IeC {\'a}n}{25}{subsection.3.1.1}
 \contentsline {subsection}{\numberline {1.2.}M\IeC {\^o} h\IeC {\`\i }nh lan truy\IeC {\`\ecircumflex }n th\IeC {\^o}ng tin Ng\IeC {\uhorn }\IeC {\~\ohorn }ng tuy\IeC {\'\ecircumflex }n t\IeC {\'\i }nh v\IeC {\'\ohorn }i b\IeC {\uhorn }\IeC {\'\ohorn }c th\IeC {\`\ohorn }i gian r\IeC {\`\ohorn }i r\IeC {\d a}c (Time Constraint Deterministic Linear Threshold - T-DLT).}{26}{subsection.3.1.2}
 \contentsline {subsection}{\numberline {1.3.}\IeC {\DJ }\IeC {\d i}nh ngh\IeC {\~\i }a b\IeC {\`a}i to\IeC {\'a}n}{28}{subsection.3.1.3}
