@@ -38,7 +38,7 @@
 \contentsline {subsection}{\numberline {1.5.}Thu\IeC {\d \acircumflex }t to\IeC {\'a}n \IeC {\dj }\IeC {\`\ecircumflex } xu\IeC {\'\acircumflex }t}{32}{subsection.3.1.5}
 \contentsline {subsection}{\numberline {1.6.}K\IeC {\'\ecircumflex }t qu\IeC {\h a} th\IeC {\d \uhorn }c nghi\IeC {\d \ecircumflex }m v\IeC {\'\ohorn }i d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u \IeC {\dj }\IeC {\~a} c\IeC {\^o}ng b\IeC {\'\ocircumflex }}{35}{subsection.3.1.6}
 \contentsline {subsubsection}{\numberline {a)}D\IeC {\~\uhorn } li\IeC {\^e}u:}{36}{subsubsection.3.1.6.1}
-\contentsline {subsubsection}{\numberline {b)}C\IeC {\'a}c thi\IeC {\'\ecircumflex }t l\IeC {\d \acircumflex }p}{36}{subsubsection.3.1.6.2}
+\contentsline {subsubsection}{\numberline {b)}Thi\IeC {\'\ecircumflex }t l\IeC {\^a}p tham s\IeC {\'\ocircumflex }}{36}{subsubsection.3.1.6.2}
 \contentsline {subsubsection}{\numberline {c)}C\IeC {\'a}c thu\IeC {\d \acircumflex }t to\IeC {\'a}n s\IeC {\h \uhorn } d\IeC {\d u}ng}{36}{subsubsection.3.1.6.3}
 \contentsline {subsubsection}{\numberline {d)}K\IeC {\'\ecircumflex }t qu\IeC {\h a} th\IeC {\d \uhorn }c nghi\IeC {\d \ecircumflex }m}{37}{subsubsection.3.1.6.4}
 \contentsline {section}{\numberline {\bfseries 2.}B\IeC {\`a}i to\IeC {\'a}n 2: T\IeC {\`\i }m chi ph\IeC {\'\i } nh\IeC {\h o} nh\IeC {\'\acircumflex }t \IeC {\dj }\IeC {\h \ecircumflex } ng\IeC {\u a}n ch\IeC {\d \abreve }n th\IeC {\^o}ng tin sai l\IeC {\d \ecircumflex }ch}{40}{section.3.2}
@@ -51,7 +51,7 @@
 \contentsline {subsubsection}{\numberline {b)}Thu\IeC {\d \acircumflex }t to\IeC {\'a}n STMB (STMB algorithm)}{46}{subsubsection.3.2.5.2}
 \contentsline {subsection}{\numberline {2.6.}K\IeC {\'\ecircumflex }t qu\IeC {\h a} th\IeC {\d \uhorn }c nghi\IeC {\d \ecircumflex }m v\IeC {\'\ohorn }i d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u v\IeC {\'\ohorn }i d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u \IeC {\dj }\IeC {\~a} c\IeC {\^o}ng b\IeC {\'\ocircumflex }}{50}{subsection.3.2.6}
 \contentsline {subsubsection}{\numberline {a)}D\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u}{50}{subsubsection.3.2.6.1}
-\contentsline {subsubsection}{\numberline {b)}C\IeC {\'a}c thi\IeC {\'\ecircumflex }t l\IeC {\d \acircumflex }p}{50}{subsubsection.3.2.6.2}
+\contentsline {subsubsection}{\numberline {b)}Thi\IeC {\'\ecircumflex }t l\IeC {\d \acircumflex }p tham s\IeC {\'\ocircumflex }}{50}{subsubsection.3.2.6.2}
 \contentsline {subsubsection}{\numberline {c)}C\IeC {\'a}c thu\IeC {\d \acircumflex }t to\IeC {\'a}n s\IeC {\h \uhorn } d\IeC {\d u}ng}{51}{subsubsection.3.2.6.3}
 \contentsline {subsubsection}{\numberline {d)}K\IeC {\'\ecircumflex }t qu\IeC {\h a} th\IeC {\d \uhorn }c nghi\IeC {\d \ecircumflex }m}{51}{subsubsection.3.2.6.4}
 \contentsline {chapter}{\bf Ch\IeC {\uhorn }\IeC {\ohorn }ng \numberline {4. } \IeC {\'A}P D\IeC {\d U}NG C\IeC {\'A}C GI\IeC {\h A}I PH\IeC {\'A}P \IeC {\DJ }\IeC {\`\ECIRCUMFLEX } XU\IeC {\'\ACIRCUMFLEX }T TR\IeC {\^E}N D\IeC {\~\UHORN } LI\IeC {\d \ECIRCUMFLEX }U TH\IeC {\d \UHORN }C}{53}{chapter.4}
