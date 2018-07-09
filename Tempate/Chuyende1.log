@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.6.26)  9 JUL 2018 18:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.6.26)  9 JUL 2018 20:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1418,7 +1418,7 @@ Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\acircumflex' on input line 40.
 
 [20]
-<picture/Hinh2_1.png, id=485, 373.395pt x 365.86688pt>
+<picture/Hinh2_1.png, id=490, 373.395pt x 365.86688pt>
 File: picture/Hinh2_1.png Graphic file (type png)
 <use picture/Hinh2_1.png>
 Package pdftex.def Info: picture/Hinh2_1.png  used on input line 55.
@@ -1447,7 +1447,7 @@ Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\ecircumflex' on input line 65.
 
 [21 <./picture/Hinh2_1.png>]
-<picture/Hinh2_2.png, id=492, 430.60875pt x 160.34906pt>
+<picture/Hinh2_2.png, id=497, 430.60875pt x 160.34906pt>
 File: picture/Hinh2_2.png Graphic file (type png)
 <use picture/Hinh2_2.png>
 Package pdftex.def Info: picture/Hinh2_2.png  used on input line 83.
@@ -1775,7 +1775,7 @@ mm/m/it/12 w\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 u; v\OT1/cmr/m/n/12 ) = 1$\T5/ptm
 /m/n/13 ,
  []
 
-<picture/Hinh3_3.png, id=537, 430.60875pt x 222.8325pt>
+<picture/Hinh3_3.png, id=542, 430.60875pt x 222.8325pt>
 File: picture/Hinh3_3.png Graphic file (type png)
 <use picture/Hinh3_3.png>
 Package pdftex.def Info: picture/Hinh3_3.png  used on input line 78.
@@ -1888,89 +1888,89 @@ Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\abreve' on input line 248.
 
 [33] [34] [35] [36] [37]
-<picture/FLE/gnu_res.PNG, id=669, 252.19218pt x 178.41656pt>
+<picture/FLE/gnu_res.PNG, id=674, 252.19218pt x 178.41656pt>
 File: picture/FLE/gnu_res.PNG Graphic file (type png)
 <use picture/FLE/gnu_res.PNG>
 Package pdftex.def Info: picture/FLE/gnu_res.PNG  used on input line 323.
 (pdftex.def)             Requested size: 176.96046pt x 125.19194pt.
-<picture/FLE/gnu_time.PNG, id=671, 250.68657pt x 180.675pt>
+<picture/FLE/gnu_time.PNG, id=676, 250.68657pt x 180.675pt>
 File: picture/FLE/gnu_time.PNG Graphic file (type png)
 <use picture/FLE/gnu_time.PNG>
 Package pdftex.def Info: picture/FLE/gnu_time.PNG  used on input line 324.
 (pdftex.def)             Requested size: 173.70451pt x 125.19194pt.
-<picture/FLE/wiki_res.PNG, id=672, 258.21469pt x 175.40532pt>
+<picture/FLE/wiki_res.PNG, id=677, 258.21469pt x 175.40532pt>
 File: picture/FLE/wiki_res.PNG Graphic file (type png)
 <use picture/FLE/wiki_res.PNG>
 Package pdftex.def Info: picture/FLE/wiki_res.PNG  used on input line 326.
 (pdftex.def)             Requested size: 184.29901pt x 125.19194pt.
-<picture/FLE/wiki_time.PNG, id=673, 251.43938pt x 179.16937pt>
+<picture/FLE/wiki_time.PNG, id=678, 251.43938pt x 179.16937pt>
 File: picture/FLE/wiki_time.PNG Graphic file (type png)
 <use picture/FLE/wiki_time.PNG>
 Package pdftex.def Info: picture/FLE/wiki_time.PNG  used on input line 327.
 (pdftex.def)             Requested size: 175.69174pt x 125.19194pt.
-<picture/FLE/amazon_res.PNG, id=674, 249.18094pt x 178.41656pt>
+<picture/FLE/amazon_res.PNG, id=679, 249.18094pt x 178.41656pt>
 File: picture/FLE/amazon_res.PNG Graphic file (type png)
 <use picture/FLE/amazon_res.PNG>
 Package pdftex.def Info: picture/FLE/amazon_res.PNG  used on input line 329.
 (pdftex.def)             Requested size: 174.84749pt x 125.19194pt.
-<picture/FLE/amazon_time.PNG, id=675, 250.68657pt x 174.6525pt>
+<picture/FLE/amazon_time.PNG, id=680, 250.68657pt x 174.6525pt>
 File: picture/FLE/amazon_time.PNG Graphic file (type png)
 <use picture/FLE/amazon_time.PNG>
 Package pdftex.def Info: picture/FLE/amazon_time.PNG  used on input line 330.
 (pdftex.def)             Requested size: 179.69472pt x 125.19194pt.
-<picture/FLE/google_res.PNG, id=676, 251.43938pt x 180.675pt>
+<picture/FLE/google_res.PNG, id=681, 251.43938pt x 180.675pt>
 File: picture/FLE/google_res.PNG Graphic file (type png)
 <use picture/FLE/google_res.PNG>
 Package pdftex.def Info: picture/FLE/google_res.PNG  used on input line 332.
 (pdftex.def)             Requested size: 174.22615pt x 125.19194pt.
-<picture/FLE/google_time.PNG, id=677, 253.69781pt x 172.39406pt>
+<picture/FLE/google_time.PNG, id=682, 253.69781pt x 172.39406pt>
 File: picture/FLE/google_time.PNG Graphic file (type png)
 <use picture/FLE/google_time.PNG>
 Package pdftex.def Info: picture/FLE/google_time.PNG  used on input line 333.
 (pdftex.def)             Requested size: 184.23395pt x 125.19194pt.
-<picture/FLE/gnu_res_theta.PNG, id=678, 292.84406pt x 204.01219pt>
+<picture/FLE/gnu_res_theta.PNG, id=683, 292.84406pt x 204.01219pt>
 File: picture/FLE/gnu_res_theta.PNG Graphic file (type png)
 <use picture/FLE/gnu_res_theta.PNG>
 Package pdftex.def Info: picture/FLE/gnu_res_theta.PNG  used on input line 341.
 
 (pdftex.def)             Requested size: 179.70256pt x 125.19194pt.
-<picture/FLE/gnu_time_theta.PNG, id=679, 283.81032pt x 203.25937pt>
+<picture/FLE/gnu_time_theta.PNG, id=684, 283.81032pt x 203.25937pt>
 File: picture/FLE/gnu_time_theta.PNG Graphic file (type png)
 <use picture/FLE/gnu_time_theta.PNG>
 Package pdftex.def Info: picture/FLE/gnu_time_theta.PNG  used on input line 342
 .
 (pdftex.def)             Requested size: 174.8043pt x 125.19194pt.
-<picture/FLE/wiki_res_theta.PNG, id=680, 288.3272pt x 206.27063pt>
+<picture/FLE/wiki_res_theta.PNG, id=685, 288.3272pt x 206.27063pt>
 File: picture/FLE/wiki_res_theta.PNG Graphic file (type png)
 <use picture/FLE/wiki_res_theta.PNG>
 Package pdftex.def Info: picture/FLE/wiki_res_theta.PNG  used on input line 344
 .
 (pdftex.def)             Requested size: 174.99501pt x 125.19194pt.
-<picture/FLE/wiki_time_theta.PNG, id=681, 295.85532pt x 200.24812pt>
+<picture/FLE/wiki_time_theta.PNG, id=686, 295.85532pt x 200.24812pt>
 File: picture/FLE/wiki_time_theta.PNG Graphic file (type png)
 <use picture/FLE/wiki_time_theta.PNG>
 Package pdftex.def Info: picture/FLE/wiki_time_theta.PNG  used on input line 34
 5.
 (pdftex.def)             Requested size: 184.96779pt x 125.19194pt.
-<picture/FLE/amazon_res_theta.PNG, id=682, 292.09125pt x 191.21437pt>
+<picture/FLE/amazon_res_theta.PNG, id=687, 292.09125pt x 191.21437pt>
 File: picture/FLE/amazon_res_theta.PNG Graphic file (type png)
 <use picture/FLE/amazon_res_theta.PNG>
 Package pdftex.def Info: picture/FLE/amazon_res_theta.PNG  used on input line 3
 47.
 (pdftex.def)             Requested size: 191.2387pt x 125.19194pt.
-<picture/FLE/amazon_time_theta.PNG, id=683, 289.83281pt x 204.765pt>
+<picture/FLE/amazon_time_theta.PNG, id=688, 289.83281pt x 204.765pt>
 File: picture/FLE/amazon_time_theta.PNG Graphic file (type png)
 <use picture/FLE/amazon_time_theta.PNG>
 Package pdftex.def Info: picture/FLE/amazon_time_theta.PNG  used on input line 
 348.
 (pdftex.def)             Requested size: 177.20462pt x 125.19194pt.
-<picture/FLE/google_res_theta.PNG, id=684, 292.09125pt x 201.75375pt>
+<picture/FLE/google_res_theta.PNG, id=689, 292.09125pt x 201.75375pt>
 File: picture/FLE/google_res_theta.PNG Graphic file (type png)
 <use picture/FLE/google_res_theta.PNG>
 Package pdftex.def Info: picture/FLE/google_res_theta.PNG  used on input line 3
 50.
 (pdftex.def)             Requested size: 181.25067pt x 125.19194pt.
-<picture/FLE/google_time_theta.PNG, id=685, 292.09125pt x 201.00093pt>
+<picture/FLE/google_time_theta.PNG, id=690, 292.09125pt x 201.00093pt>
 File: picture/FLE/google_time_theta.PNG Graphic file (type png)
 <use picture/FLE/google_time_theta.PNG>
 Package pdftex.def Info: picture/FLE/google_time_theta.PNG  used on input line 
@@ -1980,12 +1980,12 @@ Package pdftex.def Info: picture/FLE/google_time_theta.PNG  used on input line
 ki_res.PNG> <./picture/FLE/wiki_time.PNG> <./picture/FLE/amazon_res.PNG> <./pic
 ture/FLE/amazon_time.PNG> <./picture/FLE/google_res.PNG> <./picture/FLE/google_
 time.PNG>]
-<picture/FLE/gnu_res_d.PNG, id=699, 292.09125pt x 207.02344pt>
+<picture/FLE/gnu_res_d.PNG, id=704, 292.09125pt x 207.02344pt>
 File: picture/FLE/gnu_res_d.PNG Graphic file (type png)
 <use picture/FLE/gnu_res_d.PNG>
 Package pdftex.def Info: picture/FLE/gnu_res_d.PNG  used on input line 359.
 (pdftex.def)             Requested size: 176.63774pt x 125.19194pt.
-<picture/FLE/gnu_time_d.PNG, id=700, 286.82156pt x 201.75375pt>
+<picture/FLE/gnu_time_d.PNG, id=705, 286.82156pt x 201.75375pt>
 File: picture/FLE/gnu_time_d.PNG Graphic file (type png)
 <use picture/FLE/gnu_time_d.PNG>
 Package pdftex.def Info: picture/FLE/gnu_time_d.PNG  used on input line 360.
@@ -2129,7 +2129,7 @@ Package hyperref Warning: Composite letter `\textdotbelow+a'
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\h' on input line 429.
 
-<picture/reduce.pdf, id=749, 456.70625pt x 182.6825pt>
+<picture/reduce.pdf, id=754, 456.70625pt x 182.6825pt>
 File: picture/reduce.pdf Graphic file (type pdf)
 <use picture/reduce.pdf>
 Package pdftex.def Info: picture/reduce.pdf  used on input line 441.
@@ -2176,7 +2176,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 482--499
  []
 
 [45] [46]
-<picture/1.pdf, id=838, 261.97874pt x 211.79124pt>
+<picture/1.pdf, id=844, 261.97874pt x 211.79124pt>
 File: picture/1.pdf Graphic file (type pdf)
 <use picture/1.pdf>
 Package pdftex.def Info: picture/1.pdf  used on input line 574.
@@ -2216,12 +2216,12 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <7.58339> not available
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <5.41673> not available
 (Font)              size <5> substituted on input line 574.
 
-<picture/2.pdf, id=839, 261.97874pt x 211.79124pt>
+<picture/2.pdf, id=845, 261.97874pt x 211.79124pt>
 File: picture/2.pdf Graphic file (type pdf)
 <use picture/2.pdf>
 Package pdftex.def Info: picture/2.pdf  used on input line 576.
 (pdftex.def)             Requested size: 136.57462pt x 110.41322pt.
-<picture/3.pdf, id=840, 261.97874pt x 146.5475pt>
+<picture/3.pdf, id=846, 261.97874pt x 146.5475pt>
 File: picture/3.pdf Graphic file (type pdf)
 <use picture/3.pdf>
 Package pdftex.def Info: picture/3.pdf  used on input line 578.
@@ -2371,32 +2371,32 @@ LaTeX Font Info:    Try loading font information for T5+pcr on input line 697.
  (c:/texlive/2018/texmf-dist/tex/latex/vntex/t5pcr.fd
 File: t5ucr.fd 2005/08/24 Fontinst v1.929 font definitions for T5/pcr.
 ) [50]
-<picture/NetS.pdf, id=1010, 351.3125pt x 250.9375pt>
+<picture/NetS.pdf, id=1015, 351.3125pt x 250.9375pt>
 File: picture/NetS.pdf Graphic file (type pdf)
 <use picture/NetS.pdf>
 Package pdftex.def Info: picture/NetS.pdf  used on input line 720.
 (pdftex.def)             Requested size: 127.46947pt x 91.04872pt.
-<picture/AS.pdf, id=1011, 351.3125pt x 250.9375pt>
+<picture/AS.pdf, id=1016, 351.3125pt x 250.9375pt>
 File: picture/AS.pdf Graphic file (type pdf)
 <use picture/AS.pdf>
 Package pdftex.def Info: picture/AS.pdf  used on input line 721.
 (pdftex.def)             Requested size: 127.46947pt x 91.04872pt.
-<picture/NetHEPT.pdf, id=1012, 351.3125pt x 250.9375pt>
+<picture/NetHEPT.pdf, id=1017, 351.3125pt x 250.9375pt>
 File: picture/NetHEPT.pdf Graphic file (type pdf)
 <use picture/NetHEPT.pdf>
 Package pdftex.def Info: picture/NetHEPT.pdf  used on input line 722.
 (pdftex.def)             Requested size: 127.46947pt x 91.04872pt.
-<picture/TimeNetS.pdf, id=1013, 361.35pt x 216.81pt>
+<picture/TimeNetS.pdf, id=1018, 361.35pt x 216.81pt>
 File: picture/TimeNetS.pdf Graphic file (type pdf)
 <use picture/TimeNetS.pdf>
 Package pdftex.def Info: picture/TimeNetS.pdf  used on input line 724.
 (pdftex.def)             Requested size: 151.74942pt x 91.04872pt.
-<picture/TimeAS.pdf, id=1014, 361.35pt x 216.81pt>
+<picture/TimeAS.pdf, id=1019, 361.35pt x 216.81pt>
 File: picture/TimeAS.pdf Graphic file (type pdf)
 <use picture/TimeAS.pdf>
 Package pdftex.def Info: picture/TimeAS.pdf  used on input line 725.
 (pdftex.def)             Requested size: 151.74942pt x 91.04872pt.
-<picture/TimeNetHEPT.pdf, id=1015, 361.35pt x 216.81pt>
+<picture/TimeNetHEPT.pdf, id=1020, 361.35pt x 216.81pt>
 File: picture/TimeNetHEPT.pdf Graphic file (type pdf)
 <use picture/TimeNetHEPT.pdf>
 Package pdftex.def Info: picture/TimeNetHEPT.pdf  used on input line 726.
@@ -2406,17 +2406,17 @@ Overfull \hbox (36.0042pt too wide) in paragraph at lines 719--728
 [][] 
  []
 
-<picture/CheckNetS.pdf, id=1016, 361.35pt x 216.81pt>
+<picture/CheckNetS.pdf, id=1021, 361.35pt x 216.81pt>
 File: picture/CheckNetS.pdf Graphic file (type pdf)
 <use picture/CheckNetS.pdf>
 Package pdftex.def Info: picture/CheckNetS.pdf  used on input line 733.
 (pdftex.def)             Requested size: 151.74942pt x 91.04872pt.
-<picture/CheckAS.pdf, id=1017, 361.35pt x 216.81pt>
+<picture/CheckAS.pdf, id=1022, 361.35pt x 216.81pt>
 File: picture/CheckAS.pdf Graphic file (type pdf)
 <use picture/CheckAS.pdf>
 Package pdftex.def Info: picture/CheckAS.pdf  used on input line 734.
 (pdftex.def)             Requested size: 151.74942pt x 91.04872pt.
-<picture/CheckNetHEPT.pdf, id=1018, 361.35pt x 216.81pt>
+<picture/CheckNetHEPT.pdf, id=1023, 361.35pt x 216.81pt>
 File: picture/CheckNetHEPT.pdf Graphic file (type pdf)
 <use picture/CheckNetHEPT.pdf>
 Package pdftex.def Info: picture/CheckNetHEPT.pdf  used on input line 735.
@@ -2525,7 +2525,7 @@ Package hyperref Warning: Composite letter `\textdotbelow+\UHORN'
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\UHORN' on input line 1.
 
-<picture/TongTheGiaiPhap.png, id=1137, 1028.34187pt x 578.16pt>
+<picture/TongTheGiaiPhap.png, id=1142, 1028.34187pt x 578.16pt>
 File: picture/TongTheGiaiPhap.png Graphic file (type png)
 <use picture/TongTheGiaiPhap.png>
 Package pdftex.def Info: picture/TongTheGiaiPhap.png  used on input line 16.
@@ -2692,7 +2692,7 @@ Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\ohorn' on input line 90.
 
 [57]
-<picture/Net.pdf, id=1165, 602.25pt x 602.25pt>
+<picture/Net.pdf, id=1170, 602.25pt x 602.25pt>
 File: picture/Net.pdf Graphic file (type pdf)
 <use picture/Net.pdf>
 Package pdftex.def Info: picture/Net.pdf  used on input line 166.
@@ -2729,7 +2729,7 @@ Package hyperref Warning: Composite letter `\textdotbelow+\abreve'
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\abreve' on input line 277.
 
-<picture/FLE/FB_res.PNG, id=1197, 396.7322pt x 212.29312pt>
+<picture/FLE/FB_res.PNG, id=1202, 396.7322pt x 212.29312pt>
 File: picture/FLE/FB_res.PNG Graphic file (type png)
 <use picture/FLE/FB_res.PNG>
 Package pdftex.def Info: picture/FLE/FB_res.PNG  used on input line 320.
@@ -2740,19 +2740,19 @@ Overfull \hbox (20.83214pt too wide) in paragraph at lines 320--321
  []
 
 [61] [62 <./picture/FLE/FB_res.PNG>]
-<picture/PartMH.png, id=1212, 481.04718pt x 536.0025pt>
+<picture/PartMH.png, id=1217, 481.04718pt x 536.0025pt>
 File: picture/PartMH.png Graphic file (type png)
 <use picture/PartMH.png>
 Package pdftex.def Info: picture/PartMH.png  used on input line 333.
 (pdftex.def)             Requested size: 336.73073pt x 375.19919pt.
  [63 <./picture/PartMH.png>]
-<picture/Facebook.pdf, id=1222, 361.35pt x 216.81pt>
+<picture/Facebook.pdf, id=1227, 361.35pt x 216.81pt>
 File: picture/Facebook.pdf Graphic file (type pdf)
 <use picture/Facebook.pdf>
 Package pdftex.def Info: picture/Facebook.pdf  used on input line 388.
 (pdftex.def)             Requested size: 361.34912pt x 216.80946pt.
  [64]
-<picture/TimeFacebook.pdf, id=1229, 361.35pt x 216.81pt>
+<picture/TimeFacebook.pdf, id=1234, 361.35pt x 216.81pt>
 File: picture/TimeFacebook.pdf Graphic file (type pdf)
 <use picture/TimeFacebook.pdf>
 Package pdftex.def Info: picture/TimeFacebook.pdf  used on input line 401.
@@ -2762,7 +2762,7 @@ Package pdftex.def Info: picture/TimeFacebook.pdf  used on input line 401.
 pdfTeX warning: pdflatex.exe (file ./picture/TimeFacebook.pdf): PDF inclusion: 
 multiple pdfs with page group included in a single page
 >]
-<picture/PartPVQ.png, id=1262, 481.8pt x 511.9125pt>
+<picture/PartPVQ.png, id=1267, 481.8pt x 511.9125pt>
 File: picture/PartPVQ.png Graphic file (type png)
 <use picture/PartPVQ.png>
 Package pdftex.def Info: picture/PartPVQ.png  used on input line 413.
@@ -2813,7 +2813,7 @@ Package hyperref Warning: Composite letter `\textdotbelow+\abreve'
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\abreve' on input line 483.
 
-) [67] [68]
+[67]) [68]
 \openout2 = `TLTK/TLTK.aux'.
 
  (./TLTK/TLTK.tex
@@ -2911,15 +2911,9 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 67.
 (./TLTK/TLTK.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 67.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 67.
+Package rerunfilecheck Info: File `Chuyende1.out' has not changed.
+(rerunfilecheck)             Checksum: 4700B4F597E96173F72D6871B5695757;3754.
 
-
-Package rerunfilecheck Warning: File `Chuyende1.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Chuyende1.out':
-(rerunfilecheck)             Before: D0C32F976707909F5B4D4AA61600278B;3686
-(rerunfilecheck)             After:  4700B4F597E96173F72D6871B5695757;3754.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.75pt have occurred.
@@ -2927,10 +2921,10 @@ LaTeX Font Warning: Size substitutions with differences
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 67.
  ) 
 Here is how much of TeX's memory you used:
- 12089 strings out of 492649
- 179292 string characters out of 6133384
- 320498 words of memory out of 5000000
- 15243 multiletter control sequences out of 15000+600000
+ 12094 strings out of 492649
+ 179379 string characters out of 6133384
+ 320574 words of memory out of 5000000
+ 15246 multiletter control sequences out of 15000+600000
  51436 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  65i,24n,98p,2557b,741s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2955,10 +2949,10 @@ helvetic/uhvr8a.pfb><c:/texlive/2018/texmf-dist/fonts/type1/vntex/urwvn/utmb8v.
 pfb><c:/texlive/2018/texmf-dist/fonts/type1/vntex/urwvn/utmbi8v.pfb><c:/texlive
 /2018/texmf-dist/fonts/type1/vntex/urwvn/utmr8v.pfb><c:/texlive/2018/texmf-dist
 /fonts/type1/vntex/urwvn/utmri8v.pfb>
-Output written on Chuyende1.pdf (78 pages, 2427901 bytes).
+Output written on Chuyende1.pdf (78 pages, 2430278 bytes).
 PDF statistics:
- 1474 PDF objects out of 1728 (max. 8388607)
- 1230 compressed objects within 13 object streams
- 421 named destinations out of 1000 (max. 500000)
- 518 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1483 PDF objects out of 1728 (max. 8388607)
+ 1239 compressed objects within 13 object streams
+ 423 named destinations out of 1000 (max. 500000)
+ 526 words of extra memory for PDF output out of 10000 (max. 10000000)
 
