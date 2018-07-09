@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.6.26)  9 JUL 2018 20:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.6.26)  9 JUL 2018 20:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -677,7 +677,8 @@ LaTeX Warning: Command \@footnotemark  has changed.
 ) (./Chuyende1.aux (./Chapter/Viettat/viettat.aux) (./Chapter/Modau/Modau.aux)
 (./Chapter/Chapter1/Chapter1.aux) (./Chapter/Chapter2/Chapter2.aux)
 (./Chapter/Chapter3/Chapter3.aux) (./Chapter/Chapter4/Chapter4.aux)
-(./Chapter/Ketluan/Ketluan.aux) (./TLTK/TLTK.aux))
+(./Chapter/Ketluan/Ketluan.aux) (./Chapter/DMCTCB/Congbo.aux) (./TLTK/TLTK.aux)
+)
 \openout1 = `Chuyende1.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
@@ -697,8 +698,7 @@ LaTeX Font Info:    ... okay on input line 15.
 LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 15.
 LaTeX Font Info:    ... okay on input line 15.
 LaTeX Font Info:    Try loading font information for T5+ptm on input line 15.
-
-(c:/texlive/2018/texmf-dist/tex/latex/vntex/t5ptm.fd
+ (c:/texlive/2018/texmf-dist/tex/latex/vntex/t5ptm.fd
 File: t5utm.fd 2005/08/24 Fontinst v1.929 font definitions for T5/ptm.
 )
 Package caption Info: Begin \AtBeginDocument code.
@@ -2823,6 +2823,15 @@ Package hyperref Warning: Glyph not defined in PD1 encoding,
 
 
 ]) [70]
+\openout2 = `Chapter/DMCTCB/Congbo.aux'.
+
+
+(./Chapter/DMCTCB/CongBo.tex) [71
+
+
+
+
+]
 \openout2 = `TLTK/TLTK.aux'.
 
  (./TLTK/TLTK.tex
@@ -2869,7 +2878,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--16
 ama-carney-
  []
 
-[71
+[72
 
 
 
@@ -2892,13 +2901,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--19
 -don-formosa-
  []
 
-[72]
+[73]
 Underfull \hbox (badness 1270) in paragraph at lines 44--45
 []\T5/ptm/m/n/13 Kottasov I (2017) Face-book tar-gets 30,000 fake ac-counts in 
 France. CNN
  []
 
-[73] [74]
+[74] [75]
 Underfull \hbox (badness 3769) in paragraph at lines 74--75
 []\T5/ptm/m/n/13 J. Leskovec, L. A. Adamic, and B. A. Hu-ber-man. 2007. The dy-
 nam-
@@ -2910,30 +2919,31 @@ Underfull \hbox (badness 2608) in paragraph at lines 74--75
 y 2007).
  []
 
-) [75]
+) [76]
 No file Chuyende1.ind.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 69.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 69.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 71.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 71.
 (./Chuyende1.aux (./Chapter/Viettat/viettat.aux) (./Chapter/Modau/Modau.aux)
 (./Chapter/Chapter1/Chapter1.aux) (./Chapter/Chapter2/Chapter2.aux)
 (./Chapter/Chapter3/Chapter3.aux) (./Chapter/Chapter4/Chapter4.aux)
-(./Chapter/Ketluan/Ketluan.aux) (./TLTK/TLTK.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 69.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 69.
+(./Chapter/Ketluan/Ketluan.aux) (./Chapter/DMCTCB/Congbo.aux) (./TLTK/TLTK.aux)
+)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 71.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 71.
 Package rerunfilecheck Info: File `Chuyende1.out' has not changed.
-(rerunfilecheck)             Checksum: F03BA82D3DC82A4C7E6660B28CADEEFB;3754.
+(rerunfilecheck)             Checksum: 714937E946D05799A9223ACBEBA0E95E;3754.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.75pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 69.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 71.
  ) 
 Here is how much of TeX's memory you used:
- 12107 strings out of 492649
- 179655 string characters out of 6133384
- 321266 words of memory out of 5000000
- 15248 multiletter control sequences out of 15000+600000
+ 12120 strings out of 492649
+ 179912 string characters out of 6133384
+ 321958 words of memory out of 5000000
+ 15250 multiletter control sequences out of 15000+600000
  51436 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  65i,24n,98p,2557b,741s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2958,10 +2968,10 @@ helvetic/uhvr8a.pfb><c:/texlive/2018/texmf-dist/fonts/type1/vntex/urwvn/utmb8v.
 pfb><c:/texlive/2018/texmf-dist/fonts/type1/vntex/urwvn/utmbi8v.pfb><c:/texlive
 /2018/texmf-dist/fonts/type1/vntex/urwvn/utmr8v.pfb><c:/texlive/2018/texmf-dist
 /fonts/type1/vntex/urwvn/utmri8v.pfb>
-Output written on Chuyende1.pdf (80 pages, 2433760 bytes).
+Output written on Chuyende1.pdf (81 pages, 2434776 bytes).
 PDF statistics:
- 1493 PDF objects out of 1728 (max. 8388607)
- 1247 compressed objects within 13 object streams
- 426 named destinations out of 1000 (max. 500000)
+ 1499 PDF objects out of 1728 (max. 8388607)
+ 1252 compressed objects within 13 object streams
+ 428 named destinations out of 1000 (max. 500000)
  526 words of extra memory for PDF output out of 10000 (max. 10000000)
 
