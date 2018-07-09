@@ -275,6 +275,7 @@ Tiếp theo, ứng với mỗi kịch bản ngăn chặn, mô hình phát tán t
 	\end{itemize}
 	
 \section{Áp dụng kịch bản và giải pháp ngăn chặn}
+\label{C4_buoc3}
 
 Trong bước này, nhóm tác giả tiến hành áp dụng hai giải pháp ngăn chặn tương ứng với hai kịch bản đã đề xuất đối với các dữ liệu thực đã thu thập từ mạng xã hội Facebook và đã được mô hình hóa. Kết quả thu được đối với từng giải pháp như sau:
 
@@ -420,6 +421,37 @@ Trong bước này, nhóm tác giả tiến hành áp dụng hai giải pháp ng
 \end{itemize}
 
 Từ những kết quả trên, kết hợp với những kết quả đã được chứng minh về mặt lý thuyết, có thể thấy được hiệu quả của hai giải pháp nhóm tác giả đề xuất. Việc kiểm chứng dựa trên cả các bộ dữ liệu thực, và các dữ liệu thu thập trực tiếp từ mạng xã hội Facebook đảm bảo các giải pháp đưa ra vừa thỏa mãn được tính chất học thuật cao, vừa thỏa mãn được khả năng ứng dụng thực tế ngay tại Việt Nam.
+
+\section{Ánh xạ người dùng thực}
+
+Với kết quả thu được của mỗi giải pháp tương ứng với từng kịch bản là danh sách các đỉnh có vai trò quang trọng đối với quá trình phát tán thông tin sai lệch, nhóm tác giả tiến hành ánh xạ ngược để tìm được tài khoản Facebook những người dùng đóng vai trò quan trọng đấy.
+
+\begin{itemize}
+	\item Đối với giải pháp FLE, kết quả thu được thể hiện trong bảng \ref{anhxafle}
+	\begin{table} [H]
+		\centering
+		\begin{tabular}{|c|c|c|}
+			\hline
+			ID & Tên tài khoản & Số lượng người theo dõi\\
+			\hline
+			100002788524244 & Chú Tễu & 43.974\\
+			\hline
+			634032152 & Đinh Công Bằng & \\
+			\hline
+			100000315904157 & Trịnh Anh Tuấn & 13.611\\
+			\hline
+			1849592060 & Thoai Huu Dinh & 20.719\\
+			\hline
+			100004460193964 & Nguyễn Duy Cương & 64.779\\
+			\hline
+			100003888766757 & Trương Thị Hà & 11.320\\
+			\hline 
+		\end{tabular}
+		\caption{Mô tả cụ thể của đồ thị MXH thu được - Network.txt}
+		\label{anhxafle} 
+	\end{table}
+	
+\end{itemize}
 	
 
 
