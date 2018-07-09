@@ -64,4 +64,4 @@
 \contentsline {section}{\numberline {\bfseries 3.}\IeC {\'A}p d\IeC {\d u}ng k\IeC {\d i}ch b\IeC {\h a}n v\IeC {\`a} gi\IeC {\h a}i ph\IeC {\'a}p ng\IeC {\u a}n ch\IeC {\d \abreve }n}{61}{section.4.3}
 \contentsline {section}{\numberline {\bfseries 4.}\IeC {\'A}nh x\IeC {\d a} ng\IeC {\uhorn }\IeC {\`\ohorn }i d\IeC {\`u}ng th\IeC {\d \uhorn }c}{66}{section.4.4}
 \contentsline {section}{\numberline {\bfseries 5.}Gi\IeC {\h a}i ph\IeC {\'a}p ng\IeC {\u a}n ch\IeC {\d \abreve }n}{67}{section.4.5}
-\contentsline {chapter}{T\`ai li\d \ecircumflex u tham kh\h {a}o}{69}{chapter*.38}
+\contentsline {chapter}{T\`ai li\d \ecircumflex u tham kh\h {a}o}{71}{chapter*.39}
