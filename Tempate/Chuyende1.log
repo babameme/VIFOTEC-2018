@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.6.24)  9 JUL 2018 23:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.6.24)  9 JUL 2018 23:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2990,7 +2990,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 72.
 Here is how much of TeX's memory you used:
  12105 strings out of 492649
  179829 string characters out of 6133384
- 321905 words of memory out of 5000000
+ 321903 words of memory out of 5000000
  15242 multiletter control sequences out of 15000+600000
  51436 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -3016,7 +3016,7 @@ helvetic/uhvr8a.pfb><c:/texlive/2018/texmf-dist/fonts/type1/vntex/urwvn/utmb8v.
 pfb><c:/texlive/2018/texmf-dist/fonts/type1/vntex/urwvn/utmbi8v.pfb><c:/texlive
 /2018/texmf-dist/fonts/type1/vntex/urwvn/utmr8v.pfb><c:/texlive/2018/texmf-dist
 /fonts/type1/vntex/urwvn/utmri8v.pfb>
-Output written on Chuyende1.pdf (81 pages, 2435266 bytes).
+Output written on Chuyende1.pdf (81 pages, 2432612 bytes).
 PDF statistics:
  1500 PDF objects out of 1728 (max. 8388607)
  1253 compressed objects within 13 object streams
