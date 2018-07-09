@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.6.24)  10 JUL 2018 01:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.7.3)  10 JUL 2018 01:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -160,11 +160,6 @@ Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
 (c:/texlive/2018/texmf-dist/tex/latex/relsize/relsize.sty
 Package: relsize 2013/03/29 ver 4.1
-
-
-Package relsize Warning: Failed to get list of defined font sizes.
-(relsize)                Size scaling will attempt arbitrary sizes..
-
 )
 \skiptotal=\skip53
 \skiplinenumber=\skip54
@@ -201,7 +196,8 @@ Package relsize Warning: Failed to get list of defined font sizes.
 \c@algocf=\count112
 \algocf@algoframe=\box37
 \algocf@algobox=\box38
-) (c:/texlive/2018/texmf-dist/tex/latex/subfig/subfig.sty
+)
+(c:/texlive/2018/texmf-dist/tex/latex/subfig/subfig.sty
 Package: subfig 2005/06/28 ver: 1.3 subfig package
 
 (c:/texlive/2018/texmf-dist/tex/latex/caption/caption.sty
@@ -1432,7 +1428,7 @@ Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\acircumflex' on input line 40.
 
 [20]
-<picture/Hinh2_1.png, id=488, 373.395pt x 365.86688pt>
+<picture/Hinh2_1.png, id=487, 373.395pt x 365.86688pt>
 File: picture/Hinh2_1.png Graphic file (type png)
 <use picture/Hinh2_1.png>
 Package pdftex.def Info: picture/Hinh2_1.png  used on input line 55.
@@ -1461,7 +1457,7 @@ Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\ecircumflex' on input line 65.
 
 [21 <./picture/Hinh2_1.png>]
-<picture/Hinh2_2.png, id=495, 430.60875pt x 160.34906pt>
+<picture/Hinh2_2.png, id=494, 430.60875pt x 160.34906pt>
 File: picture/Hinh2_2.png Graphic file (type png)
 <use picture/Hinh2_2.png>
 Package pdftex.def Info: picture/Hinh2_2.png  used on input line 83.
@@ -1485,55 +1481,17 @@ Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\h' on input line 1.
 
 
-Package hyperref Warning: Composite letter `\textdotbelow+a'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 1.
-
-
-Package hyperref Warning: Composite letter `\textacute+\ecircumflex'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 1.
-
-
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 1.
+(hyperref)                removing `\u' on input line 1.
 
 
-Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
+Package hyperref Warning: Composite letter `\textdotbelow+\abreve'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textdotbelow' on input line 1.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 1.
-
-
-Package hyperref Warning: Composite letter `\textdotbelow+a'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 1.
-
-
-Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 1.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 1.
-
-
-Package hyperref Warning: Composite letter `\textdotbelow+a'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 1.
-
-
-Package hyperref Warning: Composite letter `\textdotbelow+\ocircumflex'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 1.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ocircumflex' on input line 1.
+(hyperref)                removing `\abreve' on input line 1.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\uhorn'
@@ -1545,13 +1503,8 @@ Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\uhorn' on input line 1.
 
 
-Package hyperref Warning: Composite letter `\textacute+\ecircumflex'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 1.
-
-
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 1.
+(hyperref)                removing `\h' on input line 1.
 
 [24
 
@@ -1616,602 +1569,586 @@ Package hyperref Warning: Glyph not defined in PD1 encoding,
 
 Package hyperref Warning: Composite letter `\textasciigrave+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciigrave' on input line 25.
+(hyperref)                removing `\textasciigrave' on input line 26.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 25.
+(hyperref)                removing `\ecircumflex' on input line 26.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 25.
+(hyperref)                removing `\uhorn' on input line 26.
 
 
 Package hyperref Warning: Composite letter `\texttilde+\ohorn'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\texttilde' on input line 25.
+(hyperref)                removing `\texttilde' on input line 26.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ohorn' on input line 25.
+(hyperref)                removing `\ohorn' on input line 26.
 
 
 Package hyperref Warning: Composite letter `\textacute+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 25.
+(hyperref)                removing `\textacute' on input line 26.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 25.
+(hyperref)                removing `\ecircumflex' on input line 26.
 
 
 Package hyperref Warning: Composite letter `\textacute+\ohorn'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 25.
+(hyperref)                removing `\textacute' on input line 26.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ohorn' on input line 25.
+(hyperref)                removing `\ohorn' on input line 26.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 25.
+(hyperref)                removing `\uhorn' on input line 26.
 
 
 Package hyperref Warning: Composite letter `\textacute+\ohorn'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 25.
+(hyperref)                removing `\textacute' on input line 26.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ohorn' on input line 25.
+(hyperref)                removing `\ohorn' on input line 26.
 
 
 Package hyperref Warning: Composite letter `\textasciigrave+\ohorn'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciigrave' on input line 25.
+(hyperref)                removing `\textasciigrave' on input line 26.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ohorn' on input line 25.
+(hyperref)                removing `\ohorn' on input line 26.
 
 
 Package hyperref Warning: Composite letter `\textasciigrave+\ohorn'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciigrave' on input line 25.
+(hyperref)                removing `\textasciigrave' on input line 26.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ohorn' on input line 25.
+(hyperref)                removing `\ohorn' on input line 26.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+a'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 25.
+(hyperref)                removing `\textdotbelow' on input line 26.
 
 [26]
 
-LaTeX Warning: Command \textellipsis invalid in math mode on input line 30.
+LaTeX Warning: Command \textellipsis invalid in math mode on input line 31.
 
 
-LaTeX Warning: Command \textellipsis invalid in math mode on input line 34.
+LaTeX Warning: Command \textellipsis invalid in math mode on input line 35.
 
 
 LaTeX Warning: The counter will not be printed.
-             The label is: + on input line 35.
+             The label is: + on input line 36.
 
+[27]
 
 Package hyperref Warning: Composite letter `\textdotbelow+i'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 45.
+(hyperref)                removing `\textdotbelow' on input line 48.
 
 
 Package hyperref Warning: Composite letter `\texttilde+\i'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\texttilde' on input line 45.
+(hyperref)                removing `\texttilde' on input line 48.
 
-[27] [28]
+[28]
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ocircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 56.
+(hyperref)                removing `\textdotbelow' on input line 61.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ocircumflex' on input line 56.
+(hyperref)                removing `\ocircumflex' on input line 61.
 
 
 Package hyperref Warning: Composite letter `\textacute+\uhorn'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 56.
+(hyperref)                removing `\textacute' on input line 61.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 56.
+(hyperref)                removing `\uhorn' on input line 61.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+a'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 56.
-
-
-Package hyperref Warning: Composite letter `\textacute+\acircumflex'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 56.
+(hyperref)                removing `\textdotbelow' on input line 61.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\acircumflex' on input line 56.
+(hyperref)                removing `\h' on input line 61.
 
 
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\h' on input line 56.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\h' on input line 56.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 71--72
+Underfull \hbox (badness 10000) in paragraph at lines 79--80
 []\T5/ptm/m/it/13 Ng÷ïng l¥y nhi¹m v  trång sè\T5/ptm/m/n/13 : ta ^^_°t $\OML/c
 mm/m/it/12 w\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 u; v\OT1/cmr/m/n/12 ) = 1$\T5/ptm
 /m/n/13 ,
  []
 
-<picture/Hinh3_3.png, id=540, 430.60875pt x 222.8325pt>
+<picture/Hinh3_3.png, id=539, 430.60875pt x 222.8325pt>
 File: picture/Hinh3_3.png Graphic file (type png)
 <use picture/Hinh3_3.png>
-Package pdftex.def Info: picture/Hinh3_3.png  used on input line 78.
-(pdftex.def)             Requested size: 430.60768pt x 222.83195pt.
-[29] [30 <./picture/Hinh3_3.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 106--107
-
- []
-
-[31]
+Package pdftex.def Info: picture/Hinh3_3.png  used on input line 85.
+(pdftex.def)             Requested size: 344.48746pt x 178.26624pt.
+[29]
 
 Package hyperref Warning: Composite letter `\textdotbelow+\acircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 134.
+(hyperref)                removing `\textdotbelow' on input line 103.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\acircumflex' on input line 134.
+(hyperref)                removing `\acircumflex' on input line 103.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\dj' on input line 134.
+(hyperref)                removing `\dj' on input line 103.
 
 
 Package hyperref Warning: Composite letter `\textasciigrave+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciigrave' on input line 134.
+(hyperref)                removing `\textasciigrave' on input line 103.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 134.
+(hyperref)                removing `\ecircumflex' on input line 103.
 
 
 Package hyperref Warning: Composite letter `\textacute+\acircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 134.
+(hyperref)                removing `\textacute' on input line 103.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\acircumflex' on input line 134.
+(hyperref)                removing `\acircumflex' on input line 103.
 
-LaTeX Font Info:    Font shape `T5/ptm/bx/n' in size <9.02782> not available
-(Font)              Font shape `T5/ptm/b/n' tried instead on input line 152.
-[32]
+[30 <./picture/Hinh3_3.png>]
+LaTeX Font Info:    Font shape `T5/ptm/bx/n' in size <8.66673> not available
+(Font)              Font shape `T5/ptm/b/n' tried instead on input line 121.
+ [31] [32]
 
 Package hyperref Warning: Composite letter `\textacute+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 248.
+(hyperref)                removing `\textacute' on input line 217.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 248.
+(hyperref)                removing `\ecircumflex' on input line 217.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\h' on input line 248.
+(hyperref)                removing `\h' on input line 217.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\uhorn'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 248.
+(hyperref)                removing `\textdotbelow' on input line 217.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 248.
+(hyperref)                removing `\uhorn' on input line 217.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 248.
+(hyperref)                removing `\textdotbelow' on input line 217.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 248.
+(hyperref)                removing `\ecircumflex' on input line 217.
 
 
 Package hyperref Warning: Composite letter `\textacute+\ohorn'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 248.
+(hyperref)                removing `\textacute' on input line 217.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ohorn' on input line 248.
+(hyperref)                removing `\ohorn' on input line 217.
 
 
 Package hyperref Warning: Composite letter `\texttilde+\uhorn'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\texttilde' on input line 248.
+(hyperref)                removing `\texttilde' on input line 217.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 248.
+(hyperref)                removing `\uhorn' on input line 217.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 248.
+(hyperref)                removing `\textdotbelow' on input line 217.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 248.
+(hyperref)                removing `\ecircumflex' on input line 217.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\dj' on input line 248.
+(hyperref)                removing `\dj' on input line 217.
 
 
 Package hyperref Warning: Composite letter `\textacute+\ocircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 248.
+(hyperref)                removing `\textacute' on input line 217.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ocircumflex' on input line 248.
+(hyperref)                removing `\ocircumflex' on input line 217.
 
-[33] [34] [35] [36] [37]
-<picture/FLE/gnu_res.png, id=672, 252.19218pt x 178.41656pt>
+[33] [34] [35]
+<picture/FLE/gnu_res.png, id=663, 252.19218pt x 178.41656pt>
 File: picture/FLE/gnu_res.png Graphic file (type png)
 <use picture/FLE/gnu_res.png>
-Package pdftex.def Info: picture/FLE/gnu_res.png  used on input line 323.
+Package pdftex.def Info: picture/FLE/gnu_res.png  used on input line 292.
 (pdftex.def)             Requested size: 176.96046pt x 125.19194pt.
-<picture/FLE/gnu_time.png, id=674, 250.68657pt x 180.675pt>
+<picture/FLE/gnu_time.png, id=665, 250.68657pt x 180.675pt>
 File: picture/FLE/gnu_time.png Graphic file (type png)
 <use picture/FLE/gnu_time.png>
-Package pdftex.def Info: picture/FLE/gnu_time.png  used on input line 324.
+Package pdftex.def Info: picture/FLE/gnu_time.png  used on input line 293.
 (pdftex.def)             Requested size: 173.70451pt x 125.19194pt.
-<picture/FLE/wiki_res.png, id=675, 258.21469pt x 175.40532pt>
+<picture/FLE/wiki_res.png, id=666, 258.21469pt x 175.40532pt>
 File: picture/FLE/wiki_res.png Graphic file (type png)
 <use picture/FLE/wiki_res.png>
-Package pdftex.def Info: picture/FLE/wiki_res.png  used on input line 326.
+Package pdftex.def Info: picture/FLE/wiki_res.png  used on input line 295.
 (pdftex.def)             Requested size: 184.29901pt x 125.19194pt.
-<picture/FLE/wiki_time.png, id=676, 251.43938pt x 179.16937pt>
+<picture/FLE/wiki_time.png, id=667, 251.43938pt x 179.16937pt>
 File: picture/FLE/wiki_time.png Graphic file (type png)
 <use picture/FLE/wiki_time.png>
-Package pdftex.def Info: picture/FLE/wiki_time.png  used on input line 327.
+Package pdftex.def Info: picture/FLE/wiki_time.png  used on input line 296.
 (pdftex.def)             Requested size: 175.69174pt x 125.19194pt.
-<picture/FLE/amazon_res.png, id=677, 249.18094pt x 178.41656pt>
+<picture/FLE/amazon_res.png, id=668, 249.18094pt x 178.41656pt>
 File: picture/FLE/amazon_res.png Graphic file (type png)
 <use picture/FLE/amazon_res.png>
-Package pdftex.def Info: picture/FLE/amazon_res.png  used on input line 329.
+Package pdftex.def Info: picture/FLE/amazon_res.png  used on input line 298.
 (pdftex.def)             Requested size: 174.84749pt x 125.19194pt.
-<picture/FLE/amazon_time.png, id=678, 250.68657pt x 174.6525pt>
+<picture/FLE/amazon_time.png, id=669, 250.68657pt x 174.6525pt>
 File: picture/FLE/amazon_time.png Graphic file (type png)
 <use picture/FLE/amazon_time.png>
-Package pdftex.def Info: picture/FLE/amazon_time.png  used on input line 330.
+Package pdftex.def Info: picture/FLE/amazon_time.png  used on input line 299.
 (pdftex.def)             Requested size: 179.69472pt x 125.19194pt.
-<picture/FLE/google_res.png, id=679, 251.43938pt x 180.675pt>
+<picture/FLE/google_res.png, id=670, 251.43938pt x 180.675pt>
 File: picture/FLE/google_res.png Graphic file (type png)
 <use picture/FLE/google_res.png>
-Package pdftex.def Info: picture/FLE/google_res.png  used on input line 332.
+Package pdftex.def Info: picture/FLE/google_res.png  used on input line 301.
 (pdftex.def)             Requested size: 174.22615pt x 125.19194pt.
-<picture/FLE/google_time.png, id=680, 253.69781pt x 172.39406pt>
+<picture/FLE/google_time.png, id=671, 253.69781pt x 172.39406pt>
 File: picture/FLE/google_time.png Graphic file (type png)
 <use picture/FLE/google_time.png>
-Package pdftex.def Info: picture/FLE/google_time.png  used on input line 333.
+Package pdftex.def Info: picture/FLE/google_time.png  used on input line 302.
 (pdftex.def)             Requested size: 184.23395pt x 125.19194pt.
-<picture/FLE/gnu_res_theta.png, id=681, 292.84406pt x 204.01219pt>
+<picture/FLE/gnu_res_theta.png, id=672, 292.84406pt x 204.01219pt>
 File: picture/FLE/gnu_res_theta.png Graphic file (type png)
 <use picture/FLE/gnu_res_theta.png>
-Package pdftex.def Info: picture/FLE/gnu_res_theta.png  used on input line 341.
+Package pdftex.def Info: picture/FLE/gnu_res_theta.png  used on input line 310.
 
 (pdftex.def)             Requested size: 179.70256pt x 125.19194pt.
-<picture/FLE/gnu_time_theta.png, id=682, 283.81032pt x 203.25937pt>
+<picture/FLE/gnu_time_theta.png, id=673, 283.81032pt x 203.25937pt>
 File: picture/FLE/gnu_time_theta.png Graphic file (type png)
 <use picture/FLE/gnu_time_theta.png>
-Package pdftex.def Info: picture/FLE/gnu_time_theta.png  used on input line 342
+Package pdftex.def Info: picture/FLE/gnu_time_theta.png  used on input line 311
 .
 (pdftex.def)             Requested size: 174.8043pt x 125.19194pt.
-<picture/FLE/wiki_res_theta.png, id=683, 288.3272pt x 206.27063pt>
+<picture/FLE/wiki_res_theta.png, id=674, 288.3272pt x 206.27063pt>
 File: picture/FLE/wiki_res_theta.png Graphic file (type png)
 <use picture/FLE/wiki_res_theta.png>
-Package pdftex.def Info: picture/FLE/wiki_res_theta.png  used on input line 344
+Package pdftex.def Info: picture/FLE/wiki_res_theta.png  used on input line 313
 .
 (pdftex.def)             Requested size: 174.99501pt x 125.19194pt.
-<picture/FLE/wiki_time_theta.png, id=684, 295.85532pt x 200.24812pt>
+<picture/FLE/wiki_time_theta.png, id=675, 295.85532pt x 200.24812pt>
 File: picture/FLE/wiki_time_theta.png Graphic file (type png)
 <use picture/FLE/wiki_time_theta.png>
-Package pdftex.def Info: picture/FLE/wiki_time_theta.png  used on input line 34
-5.
+Package pdftex.def Info: picture/FLE/wiki_time_theta.png  used on input line 31
+4.
 (pdftex.def)             Requested size: 184.96779pt x 125.19194pt.
-<picture/FLE/amazon_res_theta.png, id=685, 292.09125pt x 191.21437pt>
+<picture/FLE/amazon_res_theta.png, id=676, 292.09125pt x 191.21437pt>
 File: picture/FLE/amazon_res_theta.png Graphic file (type png)
 <use picture/FLE/amazon_res_theta.png>
 Package pdftex.def Info: picture/FLE/amazon_res_theta.png  used on input line 3
-47.
+16.
 (pdftex.def)             Requested size: 191.2387pt x 125.19194pt.
-<picture/FLE/amazon_time_theta.png, id=686, 289.83281pt x 204.765pt>
+<picture/FLE/amazon_time_theta.png, id=677, 289.83281pt x 204.765pt>
 File: picture/FLE/amazon_time_theta.png Graphic file (type png)
 <use picture/FLE/amazon_time_theta.png>
 Package pdftex.def Info: picture/FLE/amazon_time_theta.png  used on input line 
-348.
+317.
 (pdftex.def)             Requested size: 177.20462pt x 125.19194pt.
-<picture/FLE/google_res_theta.png, id=687, 292.09125pt x 201.75375pt>
+<picture/FLE/google_res_theta.png, id=678, 292.09125pt x 201.75375pt>
 File: picture/FLE/google_res_theta.png Graphic file (type png)
 <use picture/FLE/google_res_theta.png>
 Package pdftex.def Info: picture/FLE/google_res_theta.png  used on input line 3
-50.
+19.
 (pdftex.def)             Requested size: 181.25067pt x 125.19194pt.
-<picture/FLE/google_time_theta.png, id=688, 292.09125pt x 201.00093pt>
+<picture/FLE/google_time_theta.png, id=679, 292.09125pt x 201.00093pt>
 File: picture/FLE/google_time_theta.png Graphic file (type png)
 <use picture/FLE/google_time_theta.png>
 Package pdftex.def Info: picture/FLE/google_time_theta.png  used on input line 
-351.
+320.
 (pdftex.def)             Requested size: 181.92368pt x 125.19194pt.
- [38 <./picture/FLE/gnu_res.PNG> <./picture/FLE/gnu_time.PNG> <./picture/FLE/wi
+ [36 <./picture/FLE/gnu_res.PNG> <./picture/FLE/gnu_time.PNG> <./picture/FLE/wi
 ki_res.PNG> <./picture/FLE/wiki_time.PNG> <./picture/FLE/amazon_res.PNG> <./pic
 ture/FLE/amazon_time.PNG> <./picture/FLE/google_res.PNG> <./picture/FLE/google_
 time.PNG>]
-<picture/FLE/gnu_res_d.png, id=702, 292.09125pt x 207.02344pt>
+<picture/FLE/gnu_res_d.png, id=692, 292.09125pt x 207.02344pt>
 File: picture/FLE/gnu_res_d.png Graphic file (type png)
 <use picture/FLE/gnu_res_d.png>
-Package pdftex.def Info: picture/FLE/gnu_res_d.png  used on input line 359.
+Package pdftex.def Info: picture/FLE/gnu_res_d.png  used on input line 328.
 (pdftex.def)             Requested size: 176.63774pt x 125.19194pt.
-<picture/FLE/gnu_time_d.png, id=703, 286.82156pt x 201.75375pt>
+<picture/FLE/gnu_time_d.png, id=693, 286.82156pt x 201.75375pt>
 File: picture/FLE/gnu_time_d.png Graphic file (type png)
 <use picture/FLE/gnu_time_d.png>
-Package pdftex.def Info: picture/FLE/gnu_time_d.png  used on input line 360.
+Package pdftex.def Info: picture/FLE/gnu_time_d.png  used on input line 329.
 (pdftex.def)             Requested size: 177.9807pt x 125.19194pt.
- [39 <./picture/FLE/gnu_res_theta.PNG> <./picture/FLE/gnu_time_theta.PNG> <./pi
+ [37 <./picture/FLE/gnu_res_theta.PNG> <./picture/FLE/gnu_time_theta.PNG> <./pi
 cture/FLE/wiki_res_theta.PNG> <./picture/FLE/wiki_time_theta.PNG> <./picture/FL
 E/amazon_res_theta.PNG> <./picture/FLE/amazon_time_theta.PNG> <./picture/FLE/go
 ogle_res_theta.PNG> <./picture/FLE/google_time_theta.PNG>]
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\h' on input line 366.
+(hyperref)                removing `\h' on input line 341.
 
 
 Package hyperref Warning: Composite letter `\textacute+\acircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 366.
+(hyperref)                removing `\textacute' on input line 341.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\acircumflex' on input line 366.
+(hyperref)                removing `\acircumflex' on input line 341.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\dj' on input line 366.
+(hyperref)                removing `\dj' on input line 341.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\h' on input line 366.
+(hyperref)                removing `\h' on input line 341.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 366.
+(hyperref)                removing `\ecircumflex' on input line 341.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\u' on input line 366.
+(hyperref)                removing `\u' on input line 341.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\abreve'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 366.
+(hyperref)                removing `\textdotbelow' on input line 341.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\abreve' on input line 366.
+(hyperref)                removing `\abreve' on input line 341.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 366.
+(hyperref)                removing `\textdotbelow' on input line 341.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 366.
+(hyperref)                removing `\ecircumflex' on input line 341.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\h' on input line 370.
+(hyperref)                removing `\h' on input line 345.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ocircumflex' on input line 370.
+(hyperref)                removing `\ocircumflex' on input line 345.
 
-[40 <./picture/FLE/gnu_res_d.PNG> <./picture/FLE/gnu_time_d.PNG>]
+[38 <./picture/FLE/gnu_res_d.PNG> <./picture/FLE/gnu_time_d.PNG>]
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <13> not available
-(Font)              size <12> substituted on input line 374.
+(Font)              size <12> substituted on input line 349.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <6.5> not available
-(Font)              size <6> substituted on input line 374.
+(Font)              size <6> substituted on input line 349.
 
 
 Package hyperref Warning: Composite letter `\textasciigrave+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciigrave' on input line 378.
+(hyperref)                removing `\textasciigrave' on input line 353.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 378.
+(hyperref)                removing `\ecircumflex' on input line 353.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 378.
+(hyperref)                removing `\uhorn' on input line 353.
 
 
 Package hyperref Warning: Composite letter `\texttilde+\ohorn'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\texttilde' on input line 378.
+(hyperref)                removing `\texttilde' on input line 353.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ohorn' on input line 378.
+(hyperref)                removing `\ohorn' on input line 353.
 
 
 Package hyperref Warning: Composite letter `\textacute+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 378.
+(hyperref)                removing `\textacute' on input line 353.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 378.
+(hyperref)                removing `\ecircumflex' on input line 353.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+i'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 390.
+(hyperref)                removing `\textdotbelow' on input line 365.
 
 
 Package hyperref Warning: Composite letter `\texttilde+\i'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\texttilde' on input line 390.
+(hyperref)                removing `\texttilde' on input line 365.
 
-[41] [42]
+[39] [40]
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ocircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 429.
+(hyperref)                removing `\textdotbelow' on input line 404.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ocircumflex' on input line 429.
+(hyperref)                removing `\ocircumflex' on input line 404.
 
 
 Package hyperref Warning: Composite letter `\textacute+\uhorn'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 429.
+(hyperref)                removing `\textacute' on input line 404.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 429.
+(hyperref)                removing `\uhorn' on input line 404.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+a'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 429.
+(hyperref)                removing `\textdotbelow' on input line 404.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\h' on input line 429.
+(hyperref)                removing `\h' on input line 404.
 
-<picture/reduce.pdf, id=752, 456.70625pt x 182.6825pt>
+<picture/reduce.pdf, id=743, 456.70625pt x 182.6825pt>
 File: picture/reduce.pdf Graphic file (type pdf)
 <use picture/reduce.pdf>
-Package pdftex.def Info: picture/reduce.pdf  used on input line 441.
+Package pdftex.def Info: picture/reduce.pdf  used on input line 416.
 (pdftex.def)             Requested size: 213.39758pt x 85.35826pt.
-[43 <./picture/reduce.pdf
+[41 <./picture/reduce.pdf
 
 pdfTeX warning: pdflatex.exe (file ./picture/reduce.pdf): PDF inclusion: invali
 d other resource which is no dict (key 'ProcSets', type <array>); ignored.
->] [44]
+>] [42]
 
 Package hyperref Warning: Composite letter `\textdotbelow+\acircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 480.
+(hyperref)                removing `\textdotbelow' on input line 455.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\acircumflex' on input line 480.
+(hyperref)                removing `\acircumflex' on input line 455.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\dj' on input line 480.
+(hyperref)                removing `\dj' on input line 455.
 
 
 Package hyperref Warning: Composite letter `\textasciigrave+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciigrave' on input line 480.
+(hyperref)                removing `\textasciigrave' on input line 455.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 480.
+(hyperref)                removing `\ecircumflex' on input line 455.
 
 
 Package hyperref Warning: Composite letter `\textacute+\acircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 480.
+(hyperref)                removing `\textacute' on input line 455.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\acircumflex' on input line 480.
+(hyperref)                removing `\acircumflex' on input line 455.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 482--499
+Underfull \hbox (badness 10000) in paragraph at lines 457--474
 
  []
 
-[45] [46]
-<picture/1.pdf, id=841, 261.97874pt x 211.79124pt>
+[43] [44]
+<picture/1.pdf, id=832, 261.97874pt x 211.79124pt>
 File: picture/1.pdf Graphic file (type pdf)
 <use picture/1.pdf>
-Package pdftex.def Info: picture/1.pdf  used on input line 574.
+Package pdftex.def Info: picture/1.pdf  used on input line 549.
 (pdftex.def)             Requested size: 136.57462pt x 110.41322pt.
-LaTeX Font Info:    Calculating math sizes for size <10.83347> on input line 57
-4.
+LaTeX Font Info:    Calculating math sizes for size <10.83347> on input line 54
+9.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <7.58339> not available
-(Font)              size <8> substituted on input line 574.
+(Font)              size <8> substituted on input line 549.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.41673> not available
-(Font)              size <5> substituted on input line 574.
+(Font)              size <5> substituted on input line 549.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <7.58339> not available
-(Font)              size <8> substituted on input line 574.
+(Font)              size <8> substituted on input line 549.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <5.41673> not available
-(Font)              size <5> substituted on input line 574.
+(Font)              size <5> substituted on input line 549.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <7.58339> not available
-(Font)              size <8> substituted on input line 574.
+(Font)              size <8> substituted on input line 549.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <5.41673> not available
-(Font)              size <5> substituted on input line 574.
+(Font)              size <5> substituted on input line 549.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <7.58339> not available
-(Font)              size <8> substituted on input line 574.
+(Font)              size <8> substituted on input line 549.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <5.41673> not available
-(Font)              size <5> substituted on input line 574.
+(Font)              size <5> substituted on input line 549.
 
-<picture/2.pdf, id=842, 261.97874pt x 211.79124pt>
+<picture/2.pdf, id=833, 261.97874pt x 211.79124pt>
 File: picture/2.pdf Graphic file (type pdf)
 <use picture/2.pdf>
-Package pdftex.def Info: picture/2.pdf  used on input line 576.
+Package pdftex.def Info: picture/2.pdf  used on input line 551.
 (pdftex.def)             Requested size: 136.57462pt x 110.41322pt.
-<picture/3.pdf, id=843, 261.97874pt x 146.5475pt>
+<picture/3.pdf, id=834, 261.97874pt x 146.5475pt>
 File: picture/3.pdf Graphic file (type pdf)
 <use picture/3.pdf>
-Package pdftex.def Info: picture/3.pdf  used on input line 578.
+Package pdftex.def Info: picture/3.pdf  used on input line 553.
 (pdftex.def)             Requested size: 136.57462pt x 76.39966pt.
-[47 <./picture/1.pdf
+[45 <./picture/1.pdf
 
 pdfTeX warning: pdflatex.exe (file ./picture/1.pdf): PDF inclusion: invalid oth
 er resource which is no dict (key 'ProcSets', type <array>); ignored.
@@ -2226,196 +2163,196 @@ er resource which is no dict (key 'ProcSets', type <array>); ignored.
 >]
 
 LaTeX Font Warning: Font shape `OT1/cmtt/m/n' in size <13> not available
-(Font)              size <12> substituted on input line 618.
+(Font)              size <12> substituted on input line 593.
 
 
 LaTeX Font Warning: Font shape `OT1/cmtt/m/n' in size <6.5> not available
-(Font)              size <6> substituted on input line 618.
+(Font)              size <6> substituted on input line 593.
 
-[48]
+[46]
 
 Package hyperref Warning: Composite letter `\textacute+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 672.
+(hyperref)                removing `\textacute' on input line 647.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 672.
+(hyperref)                removing `\ecircumflex' on input line 647.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\h' on input line 672.
+(hyperref)                removing `\h' on input line 647.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\uhorn'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 672.
+(hyperref)                removing `\textdotbelow' on input line 647.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 672.
+(hyperref)                removing `\uhorn' on input line 647.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 672.
+(hyperref)                removing `\textdotbelow' on input line 647.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 672.
+(hyperref)                removing `\ecircumflex' on input line 647.
 
 
 Package hyperref Warning: Composite letter `\textacute+\ohorn'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 672.
+(hyperref)                removing `\textacute' on input line 647.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ohorn' on input line 672.
+(hyperref)                removing `\ohorn' on input line 647.
 
 
 Package hyperref Warning: Composite letter `\texttilde+\uhorn'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\texttilde' on input line 672.
+(hyperref)                removing `\texttilde' on input line 647.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 672.
+(hyperref)                removing `\uhorn' on input line 647.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 672.
+(hyperref)                removing `\textdotbelow' on input line 647.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 672.
+(hyperref)                removing `\ecircumflex' on input line 647.
 
 
 Package hyperref Warning: Composite letter `\textacute+\ohorn'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 672.
+(hyperref)                removing `\textacute' on input line 647.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ohorn' on input line 672.
+(hyperref)                removing `\ohorn' on input line 647.
 
 
 Package hyperref Warning: Composite letter `\texttilde+\uhorn'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\texttilde' on input line 672.
+(hyperref)                removing `\texttilde' on input line 647.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 672.
+(hyperref)                removing `\uhorn' on input line 647.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 672.
+(hyperref)                removing `\textdotbelow' on input line 647.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 672.
+(hyperref)                removing `\ecircumflex' on input line 647.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\dj' on input line 672.
+(hyperref)                removing `\dj' on input line 647.
 
 
 Package hyperref Warning: Composite letter `\textacute+\ocircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 672.
+(hyperref)                removing `\textacute' on input line 647.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ocircumflex' on input line 672.
+(hyperref)                removing `\ocircumflex' on input line 647.
 
 
 LaTeX Font Warning: Font shape `OT1/cmtt/m/n' in size <7.58339> not available
-(Font)              size <8> substituted on input line 675.
+(Font)              size <8> substituted on input line 650.
 
 
 LaTeX Font Warning: Font shape `OT1/cmtt/m/n' in size <5.41673> not available
-(Font)              size <5> substituted on input line 675.
+(Font)              size <5> substituted on input line 650.
 
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 675.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 650.
 
 (c:/texlive/2018/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <9.09996> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 675.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 650.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4.54997> not available
-(Font)              size <5> substituted on input line 675.
+(Font)              size <5> substituted on input line 650.
 
 
 LaTeX Font Warning: Font shape `OT1/cmtt/m/n' in size <4.54997> not available
-(Font)              size <5> substituted on input line 675.
+(Font)              size <5> substituted on input line 650.
 
-[49]
-LaTeX Font Info:    Try loading font information for T5+pcr on input line 697.
+[47]
+LaTeX Font Info:    Try loading font information for T5+pcr on input line 672.
  (c:/texlive/2018/texmf-dist/tex/latex/vntex/t5pcr.fd
 File: t5ucr.fd 2005/08/24 Fontinst v1.929 font definitions for T5/pcr.
-) [50]
-<picture/NetS.pdf, id=1013, 351.3125pt x 250.9375pt>
+) [48]
+<picture/NetS.pdf, id=1003, 351.3125pt x 250.9375pt>
 File: picture/NetS.pdf Graphic file (type pdf)
 <use picture/NetS.pdf>
-Package pdftex.def Info: picture/NetS.pdf  used on input line 720.
+Package pdftex.def Info: picture/NetS.pdf  used on input line 695.
 (pdftex.def)             Requested size: 127.46947pt x 91.04872pt.
-<picture/AS.pdf, id=1014, 351.3125pt x 250.9375pt>
+<picture/AS.pdf, id=1004, 351.3125pt x 250.9375pt>
 File: picture/AS.pdf Graphic file (type pdf)
 <use picture/AS.pdf>
-Package pdftex.def Info: picture/AS.pdf  used on input line 721.
+Package pdftex.def Info: picture/AS.pdf  used on input line 696.
 (pdftex.def)             Requested size: 127.46947pt x 91.04872pt.
-<picture/NetHEPT.pdf, id=1015, 351.3125pt x 250.9375pt>
+<picture/NetHEPT.pdf, id=1005, 351.3125pt x 250.9375pt>
 File: picture/NetHEPT.pdf Graphic file (type pdf)
 <use picture/NetHEPT.pdf>
-Package pdftex.def Info: picture/NetHEPT.pdf  used on input line 722.
+Package pdftex.def Info: picture/NetHEPT.pdf  used on input line 697.
 (pdftex.def)             Requested size: 127.46947pt x 91.04872pt.
-<picture/TimeNetS.pdf, id=1016, 361.35pt x 216.81pt>
+<picture/TimeNetS.pdf, id=1006, 361.35pt x 216.81pt>
 File: picture/TimeNetS.pdf Graphic file (type pdf)
 <use picture/TimeNetS.pdf>
-Package pdftex.def Info: picture/TimeNetS.pdf  used on input line 724.
+Package pdftex.def Info: picture/TimeNetS.pdf  used on input line 699.
 (pdftex.def)             Requested size: 151.74942pt x 91.04872pt.
-<picture/TimeAS.pdf, id=1017, 361.35pt x 216.81pt>
+<picture/TimeAS.pdf, id=1007, 361.35pt x 216.81pt>
 File: picture/TimeAS.pdf Graphic file (type pdf)
 <use picture/TimeAS.pdf>
-Package pdftex.def Info: picture/TimeAS.pdf  used on input line 725.
+Package pdftex.def Info: picture/TimeAS.pdf  used on input line 700.
 (pdftex.def)             Requested size: 151.74942pt x 91.04872pt.
-<picture/TimeNetHEPT.pdf, id=1018, 361.35pt x 216.81pt>
+<picture/TimeNetHEPT.pdf, id=1008, 361.35pt x 216.81pt>
 File: picture/TimeNetHEPT.pdf Graphic file (type pdf)
 <use picture/TimeNetHEPT.pdf>
-Package pdftex.def Info: picture/TimeNetHEPT.pdf  used on input line 726.
+Package pdftex.def Info: picture/TimeNetHEPT.pdf  used on input line 701.
 (pdftex.def)             Requested size: 151.74942pt x 91.04872pt.
 
-Overfull \hbox (36.0042pt too wide) in paragraph at lines 719--728
+Overfull \hbox (36.0042pt too wide) in paragraph at lines 694--703
 [][] 
  []
 
-<picture/CheckNetS.pdf, id=1019, 361.35pt x 216.81pt>
+<picture/CheckNetS.pdf, id=1009, 361.35pt x 216.81pt>
 File: picture/CheckNetS.pdf Graphic file (type pdf)
 <use picture/CheckNetS.pdf>
-Package pdftex.def Info: picture/CheckNetS.pdf  used on input line 733.
+Package pdftex.def Info: picture/CheckNetS.pdf  used on input line 708.
 (pdftex.def)             Requested size: 151.74942pt x 91.04872pt.
-<picture/CheckAS.pdf, id=1020, 361.35pt x 216.81pt>
+<picture/CheckAS.pdf, id=1010, 361.35pt x 216.81pt>
 File: picture/CheckAS.pdf Graphic file (type pdf)
 <use picture/CheckAS.pdf>
-Package pdftex.def Info: picture/CheckAS.pdf  used on input line 734.
+Package pdftex.def Info: picture/CheckAS.pdf  used on input line 709.
 (pdftex.def)             Requested size: 151.74942pt x 91.04872pt.
-<picture/CheckNetHEPT.pdf, id=1021, 361.35pt x 216.81pt>
+<picture/CheckNetHEPT.pdf, id=1011, 361.35pt x 216.81pt>
 File: picture/CheckNetHEPT.pdf Graphic file (type pdf)
 <use picture/CheckNetHEPT.pdf>
-Package pdftex.def Info: picture/CheckNetHEPT.pdf  used on input line 735.
+Package pdftex.def Info: picture/CheckNetHEPT.pdf  used on input line 710.
 (pdftex.def)             Requested size: 151.74942pt x 91.04872pt.
 
-Overfull \hbox (36.00415pt too wide) in paragraph at lines 732--737
+Overfull \hbox (36.00415pt too wide) in paragraph at lines 707--712
 [][] 
  []
 
-[51]) [52 <./picture/NetS.pdf> <./picture/AS.pdf
+[49]) [50 <./picture/NetS.pdf> <./picture/AS.pdf
 
 pdfTeX warning: pdflatex.exe (file ./picture/AS.pdf): PDF inclusion: multiple p
 dfs with page group included in a single page
@@ -2514,7 +2451,7 @@ Package hyperref Warning: Composite letter `\textdotbelow+\UHORN'
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\UHORN' on input line 1.
 
-<picture/TongTheGiaiPhap.png, id=1140, 1028.34187pt x 578.16pt>
+<picture/TongTheGiaiPhap.png, id=1131, 1028.34187pt x 578.16pt>
 File: picture/TongTheGiaiPhap.png Graphic file (type png)
 <use picture/TongTheGiaiPhap.png>
 Package pdftex.def Info: picture/TongTheGiaiPhap.png  used on input line 16.
@@ -2573,12 +2510,12 @@ Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\ecircumflex' on input line 25.
 
-[53
+[51
 
 
 
 
- <./picture/TongTheGiaiPhap.png>] [54]
+ <./picture/TongTheGiaiPhap.png>] [52]
 Overfull \hbox (9.63177pt too wide) in paragraph at lines 41--42
 []\T5/ptm/m/n/13 https://www.facebook.com/profile.php?id=100015485029386: Nguy¹
 n Trång ^^_ang
@@ -2639,7 +2576,7 @@ Package hyperref Warning: Composite letter `\textdotbelow+\ocircumflex'
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\ocircumflex' on input line 44.
 
-[55] [56]
+[53] [54]
 Overfull \hbox (73.48622pt too wide) in paragraph at lines 80--81
 []\T5/ptm/m/n/13 Ti¸p theo, nhâm t¡c gi£ tü ^^_ëng trup cªp v o trang web câ ^^
 _àa ch¿ www.facebook.com/ID/friends
@@ -2680,8 +2617,8 @@ Package hyperref Warning: Composite letter `\textdotbelow+\ohorn'
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\ohorn' on input line 90.
 
-[57]
-<picture/Net.pdf, id=1168, 602.25pt x 602.25pt>
+[55]
+<picture/Net.pdf, id=1158, 602.25pt x 602.25pt>
 File: picture/Net.pdf Graphic file (type pdf)
 <use picture/Net.pdf>
 Package pdftex.def Info: picture/Net.pdf  used on input line 166.
@@ -2691,12 +2628,12 @@ Package pdftex.def Info: picture/Net.pdf  used on input line 166.
 LaTeX Warning: The counter will not be printed.
              The label is: + on input line 179.
 
-[58] [59 <./picture/Net.pdf>]
+[56] [57 <./picture/Net.pdf>]
 
 LaTeX Warning: The counter will not be printed.
              The label is: + on input line 224.
 
-[60]
+[58]
 
 Package hyperref Warning: Composite letter `\textdotbelow+u'
 (hyperref)                not defined in PD1 encoding,
@@ -2728,7 +2665,7 @@ Package hyperref Warning: Composite letter `\textdotbelow+\abreve'
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\abreve' on input line 277.
 
-<picture/FLE/FB_res.png, id=1200, 396.7322pt x 212.29312pt>
+<picture/FLE/FB_res.png, id=1191, 396.7322pt x 212.29312pt>
 File: picture/FLE/FB_res.png Graphic file (type png)
 <use picture/FLE/FB_res.png>
 Package pdftex.def Info: picture/FLE/FB_res.png  used on input line 320.
@@ -2738,30 +2675,30 @@ Overfull \hbox (20.83214pt too wide) in paragraph at lines 320--321
  [] 
  []
 
-[61] [62 <./picture/FLE/FB_res.PNG>]
-<picture/PartMH.png, id=1215, 481.04718pt x 536.0025pt>
+[59] [60 <./picture/FLE/FB_res.PNG>]
+<picture/PartMH.png, id=1205, 481.04718pt x 536.0025pt>
 File: picture/PartMH.png Graphic file (type png)
 <use picture/PartMH.png>
 Package pdftex.def Info: picture/PartMH.png  used on input line 333.
 (pdftex.def)             Requested size: 336.73073pt x 375.19919pt.
- [63 <./picture/PartMH.png>]
-<picture/Facebook.pdf, id=1225, 361.35pt x 216.81pt>
+ [61 <./picture/PartMH.png>]
+<picture/Facebook.pdf, id=1214, 361.35pt x 216.81pt>
 File: picture/Facebook.pdf Graphic file (type pdf)
 <use picture/Facebook.pdf>
 Package pdftex.def Info: picture/Facebook.pdf  used on input line 388.
 (pdftex.def)             Requested size: 361.34912pt x 216.80946pt.
- [64]
-<picture/TimeFacebook.pdf, id=1232, 361.35pt x 216.81pt>
+ [62]
+<picture/TimeFacebook.pdf, id=1223, 361.35pt x 216.81pt>
 File: picture/TimeFacebook.pdf Graphic file (type pdf)
 <use picture/TimeFacebook.pdf>
 Package pdftex.def Info: picture/TimeFacebook.pdf  used on input line 401.
 (pdftex.def)             Requested size: 361.34912pt x 216.80946pt.
- [65 <./picture/Facebook.pdf> <./picture/TimeFacebook.pdf
+ [63 <./picture/Facebook.pdf> <./picture/TimeFacebook.pdf
 
 pdfTeX warning: pdflatex.exe (file ./picture/TimeFacebook.pdf): PDF inclusion: 
 multiple pdfs with page group included in a single page
 >]
-<picture/PartPVQ.png, id=1265, 481.8pt x 511.9125pt>
+<picture/PartPVQ.png, id=1256, 481.8pt x 511.9125pt>
 File: picture/PartPVQ.png Graphic file (type png)
 <use picture/PartPVQ.png>
 Package pdftex.def Info: picture/PartPVQ.png  used on input line 413.
@@ -2794,7 +2731,7 @@ Package hyperref Warning: Composite letter `\textdotbelow+\uhorn'
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\uhorn' on input line 425.
 
-[66 <./picture/PartPVQ.png>]
+[64 <./picture/PartPVQ.png>]
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\h' on input line 483.
@@ -2812,19 +2749,19 @@ Package hyperref Warning: Composite letter `\textdotbelow+\abreve'
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\abreve' on input line 483.
 
-[67]) [68]
+[65]) [66]
 \openout2 = `Chapter/Ketluan/Ketluan.aux'.
 
- (./Chapter/Ketluan/Ketluan.tex [69
+ (./Chapter/Ketluan/Ketluan.tex [67
 
 
 
 
-]) [70]
+]) [68]
 \openout2 = `Chapter/DMCTCB/Congbo.aux'.
 
 
-(./Chapter/DMCTCB/CongBo.tex) [71
+(./Chapter/DMCTCB/CongBo.tex) [69
 
 
 
@@ -2876,7 +2813,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--16
 ama-carney-
  []
 
-[72
+[70
 
 
 
@@ -2899,13 +2836,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--19
 -don-formosa-
  []
 
-[73]
+[71]
 Underfull \hbox (badness 1270) in paragraph at lines 44--45
 []\T5/ptm/m/n/13 Kottasov I (2017) Face-book tar-gets 30,000 fake ac-counts in 
 France. CNN
  []
 
-[74] [75]
+[72] [73]
 Underfull \hbox (badness 3769) in paragraph at lines 74--75
 []\T5/ptm/m/n/13 J. Leskovec, L. A. Adamic, and B. A. Hu-ber-man. 2007. The dy-
 nam-
@@ -2917,7 +2854,7 @@ Underfull \hbox (badness 2608) in paragraph at lines 74--75
 y 2007).
  []
 
-) [76]
+) [74]
 No file Chuyende1.ind.
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 72.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 72.
@@ -2929,7 +2866,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 72.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 72.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 72.
 Package rerunfilecheck Info: File `Chuyende1.out' has not changed.
-(rerunfilecheck)             Checksum: 295B5A2F822A8288D8806E61E263A4A3;3711.
+(rerunfilecheck)             Checksum: 9938F4EBA298950FCA26D598F7B57D92;3645.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -2938,13 +2875,13 @@ LaTeX Font Warning: Size substitutions with differences
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 72.
  ) 
 Here is how much of TeX's memory you used:
- 12105 strings out of 492649
- 179834 string characters out of 6133384
- 321903 words of memory out of 5000000
- 15242 multiletter control sequences out of 15000+600000
+ 12111 strings out of 492649
+ 179866 string characters out of 6133385
+ 318993 words of memory out of 5000000
+ 15248 multiletter control sequences out of 15000+600000
  51436 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 65i,24n,98p,2542b,739s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 65i,24n,98p,2542b,741s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2018/texmf-dist/fonts/enc/dvips/vntex/t5.enc}<c:/texlive/2018/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2018/texmf-dist/f
 onts/type1/public/amsfonts/cmextra/cmex9.pfb><c:/texlive/2018/texmf-dist/fonts/
@@ -2966,10 +2903,10 @@ helvetic/uhvr8a.pfb><c:/texlive/2018/texmf-dist/fonts/type1/vntex/urwvn/utmb8v.
 pfb><c:/texlive/2018/texmf-dist/fonts/type1/vntex/urwvn/utmbi8v.pfb><c:/texlive
 /2018/texmf-dist/fonts/type1/vntex/urwvn/utmr8v.pfb><c:/texlive/2018/texmf-dist
 /fonts/type1/vntex/urwvn/utmri8v.pfb>
-Output written on Chuyende1.pdf (81 pages, 2433546 bytes).
+Output written on Chuyende1.pdf (79 pages, 2427503 bytes).
 PDF statistics:
- 1497 PDF objects out of 1728 (max. 8388607)
- 1250 compressed objects within 13 object streams
+ 1489 PDF objects out of 1728 (max. 8388607)
+ 1244 compressed objects within 13 object streams
  428 named destinations out of 1000 (max. 500000)
  526 words of extra memory for PDF output out of 10000 (max. 10000000)
 
