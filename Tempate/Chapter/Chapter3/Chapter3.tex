@@ -368,7 +368,7 @@ Chúng tôi cũng xem xét ảnh hưởng của tham số $\theta$ đối với 
 Với cách tiếp cận như cách Twitter đã làm năm 2016 là loại bỏ 125.000 tài khoản được nghi ngờ có liên quan đến các hoạt động khủng bố, hay cách tiếp cận như Facebook đã xóa 30.000 tài khoản giả mạo lan truyền các tin đồn trước cuộc bầu cử tổng thống Pháp năm 2017, kịch bản Targeted Misinformation Blocking được đưa ra nghiên cứu nhằm mục đích tìm giải pháp xác định được những tài khoản cần loại bỏ khỏi mạng để hạn chế sự phát tán thông tin sai lệch một cách tối ưu nhất.
 
 \subsection{Tổng quan kịch bản}
-Nguồn phát tán thông tin sai lệch có thể được phát hiện qua các phương pháp khảo sát, khai phá dữ liệu \ref{} và được biểu diễn dưới dạng là tập hợp các đỉnh. Theo các nghiên cứu mới đây \ref{}, chiến thuật hiệu quả trong việc ngăn chặn phát tán thông tin sai lệch là xóa bỏ đỉnh hoặc cạnh có vai trò quan trọng trong việc lan truyền thông tin sai lệch. Song tính khả thi của các nghiên cứu trước đây lại bị hạn chế bởi một số khía cạnh sau đây. Thứ nhất họ tập trung vào việc ngăn ngừa thông tin sai lệch bằng nguồn ngân sách hạn chế. Điều này rõ ràng là không thực tế bởi chúng ta khó có thể xác định được bao nhiêu ngân sách cho đủ để ngăn chặn sự lây lan sao cho hiệu quả. Thứ hai, để đảm bảo độ tin cậy của mạng xã hội, chúng ta cần có một biện pháp khử nhiễm thông tin sai lệch với một ngưỡng cho trước, như tỉ lệ giữa người dùng bị nhiễm và người dùng được khử nhiễm. Do đó kịch bản này được đưa ra với tính thực tế cao hơn đó là: Dùng ít ngân sách nhất sao cho số lượng người dùng được khử nhiễm lớn hơn một ngưỡng cho trước. Giải pháp đưa ra nhằm tìm một tập đỉnh có ít phần tử nhất để loại bỏ khỏi đồ thị để sao cho nguồn phát tán thông tin sai lêch không thể lan truyền tới được ít nhất ngưỡng $\gamma$ đỉnh yêu cầu. Tổng quan về giải pháp chúng tôi được tóm lược như sau:
+Nguồn phát tán thông tin sai lệch có thể được phát hiện qua các phương pháp khảo sát, khai phá dữ liệu \cite{qazvin, kwon} và được biểu diễn dưới dạng là tập hợp các đỉnh. Theo các nghiên cứu mới đây \cite{khali, tong, pra}, chiến thuật hiệu quả trong việc ngăn chặn phát tán thông tin sai lệch là xóa bỏ đỉnh hoặc cạnh có vai trò quan trọng trong việc lan truyền thông tin sai lệch. Song tính khả thi của các nghiên cứu trước đây lại bị hạn chế bởi một số khía cạnh sau đây. Thứ nhất họ tập trung vào việc ngăn ngừa thông tin sai lệch bằng nguồn ngân sách hạn chế. Điều này rõ ràng là không thực tế bởi chúng ta khó có thể xác định được bao nhiêu ngân sách cho đủ để ngăn chặn sự lây lan sao cho hiệu quả. Thứ hai, để đảm bảo độ tin cậy của mạng xã hội, chúng ta cần có một biện pháp khử nhiễm thông tin sai lệch với một ngưỡng cho trước, như tỉ lệ giữa người dùng bị nhiễm và người dùng được khử nhiễm. Do đó kịch bản này được đưa ra với tính thực tế cao hơn đó là: Dùng ít ngân sách nhất sao cho số lượng người dùng được khử nhiễm lớn hơn một ngưỡng cho trước. Giải pháp đưa ra nhằm tìm một tập đỉnh có ít phần tử nhất để loại bỏ khỏi đồ thị để sao cho nguồn phát tán thông tin sai lêch không thể lan truyền tới được ít nhất ngưỡng $\gamma$ đỉnh yêu cầu. Tổng quan về giải pháp chúng tôi được tóm lược như sau:
 \begin{itemize}
 	\item Đầu tiên chúng tôi định nghĩa bài toán Xác định và ngăn chặn thông tin sai lệch (Targeted Misinformation Blocking - TMB). Và sau đó chứng minh bài toán TMB có độ khó là $\#P-\text{khó}$.
 	\item Với hàm mục tiêu chúng tôi chứng minh nó là hàm submodular và monotone. Trên cơ sở đó, đề xuất một thuật toán tham lam với với tỉ lệ $1+ln(\gamma/\epsilon)$. Song do những hạn chế của thuật toán tham lam, chúng tôi xây dựng thuật toán Scalable $\mathsf{TMB}$ for LT model Algorithm ($\mathsf{STMB}$) để giải quyết cho bài toán TMB với những dữ liệu lớn hơn. 
@@ -480,7 +480,8 @@ Trong mục này chúng tôi chỉ ra một số kết quả về độ khó c�
 \subsection{Thuật toán đề xuất}
 \subsubsection{Thuật toán tham lam (Greedy algorithm)}
 Trong phần này chúng tôi giới thiệu một thuật toán xấp xỉ đảm bảo tỉ lệ 1 + ln($\gamma / \varepsilon$) dựa vào tính chất submodular và tính monotone của hàm h($\cdot$). Hàm $f(x)$ được gọi là hàm submodular nếu $A \subset T, v \notin T$ $ f(A+ \{v\})- f(A) \geq f(T+ \{v\})- f(T)$. Còn $f(x)$ được gọi là monotone nếu $\forall T \subseteq S$ chúng ta có $f(T) \leq f(S)$.
-
+\\
+\\
 \begin{algorithm}[H]			
 	\KwData{Graph $G=(V,E, w)$,  $S=\{s_1, s_2, .., s_k\}$, threshold $\gamma < |V|$, parameter $\epsilon \in (0, \gamma)$} 
 	\KwResult{set of nodes $A$}
@@ -496,9 +497,6 @@ Trong phần này chúng tôi giới thiệu một thuật toán xấp xỉ đ�
 	\caption{Greedy Algorithm (GA)}
 	\label{GA}
 \end{algorithm}
-
-\newpage
-
 \begin{theo}					
 	Hàm $h(\cdot)$ là hàm submodular và monotone. 
 	\label{sub}
@@ -532,129 +530,131 @@ Trong phần này chúng tôi giới thiệu một thuật toán xấp xỉ đ�
 \begin{proof}
 	Chi tiết cách chứng minh định lý \ref{app} được chỉ ra trong \cite{snam}. 
 \end{proof}
-Thuật toán tham lam có cách tiếp cận khá đơn giản là mỗi bước tìm đỉnh $u$ sao cho hàm $h(A)$ tăng nhiều nhất. Song vấn đề khó khăn nhất gặp phải là tính giá trị hàm $\sigma(\cdot)$ có độ khó là $\#P-\text{khó}$, chứng minh trong \ref{}. Vì vậy chúng tôi đưa ra một thuật toán hiệu quả trong phần sau.
- 
+Thuật toán tham lam có cách tiếp cận khá đơn giản là mỗi bước tìm đỉnh $u$ sao cho hàm $h(A)$ tăng nhiều nhất. Song vấn đề khó khăn nhất gặp phải là tính giá trị hàm $\sigma(\cdot)$ có độ khó là $\#P-\text{khó}$, chứng minh trong \cite{vali}. Vì vậy chúng tôi đưa ra một thuật toán hiệu quả trong phần sau.
+
 \subsubsection{Thuật toán STMB (STMB algorithm)}
 Thuật toán tham lam đưa ra một lời giải tốt xong lại không đảm bảo yêu cầu về thời gian với dữ liệu lớn do đó trong phần này chúng tôi đưa ra một giải pháp đảm bảo yêu cầu cả về chất lượng lời giải cũng như thời gian tính toán. Dưới đây là các bước chính trong thuật toán chúng tôi đề xuất:
 \begin {itemize}
-\item Đầu tiên sáp nhập các đỉnh trong tập nguồn S thành một nút I bằng cách áp dụng thuật toán \ref{MERGE} được đề xuất bởi Zhang \cite{zhang39}. Chúng ta thu được một đồ thị mới và nguồn phát tán thông tin sai lệch bây giờ chỉ còn là một đỉnh I duy nhất.
+\item Đầu tiên sáp nhập các đỉnh trong tập nguồn S thành một nút I bằng cách áp dụng thuật toán \ref{MERGE} được đề xuất bởi Zhang \cite{yao16}. Chúng ta thu được một đồ thị mới và nguồn phát tán thông tin sai lệch bây giờ chỉ còn là một đỉnh I duy nhất.
+\end{itemize}
 \begin{algorithm}[H]			
-	\KwData{Graph $G=(V,E, w)$,  $S=\{s_1, s_2, .., s_k\}$} 
-	\KwResult{Graph $G'=(V', E', w')$, I}
-	$G' \leftarrow G$;
-	\\
-	Add node I to G'			
-	\\
-	\ForEach{s $\in$ S}
+\KwData{Graph $G=(V,E, w)$,  $S=\{s_1, s_2, .., s_k\}$} 
+\KwResult{Graph $G'=(V', E', w')$, I}
+$G' \leftarrow G$;
+\\
+Add node I to G'			
+\\
+\ForEach{s $\in$ S}
+{
+	\If{$\exists$ (s, v) }
 	{
-		\If{$\exists$ (s, v) }
+		\eIf{(I, v) $\notin$ G'}
 		{
-			\eIf{(I, v) $\notin$ G'}
-			{
-				Add edge (I, v) to G'
-				\\
-				w'(I, v) = w(s, v)
-			}
-			{
-				w'(I, v) = w'(I, v) + w(s, v)
-			}
-			Remove (s,v) from G'
+			Add edge (I, v) to G'
+			\\
+			w'(I, v) = w(s, v)
 		}
+		{
+			w'(I, v) = w'(I, v) + w(s, v)
+		}
+		Remove (s,v) from G'
 	}
-	Remove all node in S from G'
-	\\
-	\Return G', I;
-	\caption{MERGE Algorithm(MERGE)}
-	\label{MERGE}
-\end{algorithm}				
+}
+Remove all node in S from G'
+\\
+\Return G', I;
+\caption{MERGE Algorithm(MERGE)}
+\label{MERGE}
+\end{algorithm}	
+\begin {itemize}			
 \item Tiếp đến chúng tôi tạo ra $\mu(\mu \in N*)$ đồ thị mẫu g từ G bằng cách: mỗi đỉnh v $\in$ V chọn nhiều nhất một đỉnh kề đi đến nó một cách ngẫu nhiên sao cho xác suất chọn cạnh (u, v) là w(u, v) và xác suất không chọn cạnh nào là 1 - $\sum_{u} w(u, v)$. Những cạnh được chọn được gọi là cạnh sống  (live - edge) và tất cả các cạnh còn lại được gọi là cạnh bị chặn (blocked-edge). Chi tiết cách lấy đồ thị mẫu được mô tả trong thuật toán \ref{GSGLT} và trong hình \ref{example}: 
+\end {itemize}
 \begin{figure}[H]
-	\subfloat[Đồ thị $G'$ sau khi hợp nhất các đỉnh trong nguồn S\label{fig:test1}]
-	{\includegraphics[width=.3\linewidth]{picture/1}}\hfill
-	\subfloat[Đồ thị mẫu $g$\label{fig:test2}]
-	{\includegraphics[width=.3\linewidth]{picture/2}}\hfill
-	\subfloat[Cây gốc $I$ tạo ra từ $g$ \label{fig:test3}]
-	{\includegraphics[width=.3\linewidth]{picture/3}}
-	\caption{Ví dụ tạo ra một cây gốc $I$ từ $G$ trên mô hình LT}
-	\label{example}
+\subfloat[Đồ thị $G'$ sau khi hợp nhất các đỉnh trong nguồn S\label{fig:test1}]
+{\includegraphics[width=.3\linewidth]{picture/1}}\hfill
+\subfloat[Đồ thị mẫu $g$\label{fig:test2}]
+{\includegraphics[width=.3\linewidth]{picture/2}}\hfill
+\subfloat[Cây gốc $I$ tạo ra từ $g$ \label{fig:test3}]
+{\includegraphics[width=.3\linewidth]{picture/3}}
+\caption{Ví dụ tạo ra một cây gốc $I$ từ $G$ trên mô hình LT}
+\label{example}
 \end{figure}	
 \begin{algorithm}[H]
-	\KwData{Graph G=(V,E, w), I} 
-	\KwResult{Tree g root at I}			
-	g $\Leftarrow \emptyset$
+\KwData{Graph G=(V,E, w), I} 
+\KwResult{Tree g root at I}			
+g $\Leftarrow \emptyset$
+\\
+\For{$v \in V_G$}
+{	
+	$\gamma_{active} \leftarrow$ random(0, 1)
 	\\
-	\For{$v \in V_G$}
-	{	
-		$\gamma_{active} \leftarrow$ random(0, 1)
+	sum\_weight $\leftarrow$ 0
+	\\
+	\For{u $\in$ in\_neighbors(v)}
+	{
+		sum\_weight += w(u, v)
 		\\
-		sum\_weight $\leftarrow$ 0
-		\\
-		\For{u $\in$ in\_neighbors(v)}
+		\If{sum\_weight $\geq \gamma_{active}$}
 		{
-			sum\_weight += w(u, v)
+			Add edge (u, v) to g
 			\\
-			\If{sum\_weight $\geq \gamma_{active}$}
-			{
-				Add edge (u, v) to g
-				\\
-				Break
-			}
+			Break
 		}
-	}		
-	g $\leftarrow$ DFS$_{tree}$(I,g)
-	\\
-	\Return g
-	\caption{Get Sample Graph LT Algorithm (GSG\_{LT})}
-	\label{GSGLT}
+	}
+}		
+g $\leftarrow$ DFS$_{tree}$(I,g)
+\\
+\Return g
+\caption{Get Sample Graph LT Algorithm (GSG\_{LT})}
+\label{GSGLT}
 \end{algorithm}	
+\begin {itemize}
 \item Trên cây T$_{I}^i$, ảnh hưởng địa phương của nút v là số nút con của cây gốc v kể cả v trên cây T$_{I}^i$. Áp dụng thuật toán DFS dễ dàng tìm được số nút con của v. Ảnh hưởng giảm của nguồn S khi loại đỉnh u khỏi G bằng lượng ảnh hưởng giảm trung bình khi loại u trên tất cả các cây T$_{I}^i$. Kí hiệu h(u, $T_I^i$) là lượng ảnh hưởng giảm trên cây $T_I^i$ sau khi loại bỏ đỉnh u khỏi $T_I^i$. Áp dụng phương pháp Lazy forward của Leskovec \cite{krause} để tìm kiếm lời giải. 
-
-\begin{algorithm}[H]
-	%\SetAlgoNlRelativeSize{0}
-	\KwData{Graph $G=(V,E, w)$,  $\mathcal{S}=\{s_1, s_2, .., s_q\}$, threshold $\gamma>0$} 
-	\KwResult{set of nodes $A$}
-	$A \leftarrow \emptyset$;	$(G', I) \leftarrow \mathtt{Merge}(G, \mathcal{S})$.
-	\\
-	Remove all node, $I$ can't reach in $G$.
-	\\
-	Generate $\eta$ sample graphs and set $\eta$ trees $\mathcal{L}=\{T_{I}^1, T_{I}^2, \ldots, T_{I}^{|\mathcal{\eta}|}\}$
-	\\
-	For each $ T_{I} \in \mathcal{L}$, calculate $h(u, T_{I})$ for all $u \in T_{I}$ (by using DFS algorithm).
-	\\
-	\For{$u \in V$}
-	{
-		$u.\delta(u) \leftarrow \frac{1}{\eta}\sum_{T_{I} \in \mathcal{L}} h(u, T_{I})$; $u. cur \leftarrow 1$
-		\\
-		Insert element $u$ into $Q$ with $u.\delta(u)$ as the key
-	}
-	$ h_{max} \leftarrow 0$; $iteration \leftarrow 1$
-	\\
-	\While{$ h_{max} <\gamma-\epsilon $}
-	{
-		$u_{max} \leftarrow  dequence \  Q$
-		\\
-		\eIf{$u_{max}.cur =iteration$}
-		{
-			$A \leftarrow A \cup \{u_{max}\}$ ; $iteration \leftarrow iteration+1 $
-			\\
-			\ForEach{$T_{I} \in \mathcal{L}_c $}
-			{
-				If $u_{max} \in T_{I}$, remove node $u_{max}$ and update $h(v, T_{I})$, $ \forall v \in T_{I}$.
-			}
-			$h_{max} \leftarrow h_{max}+ u_{max}.\delta(u_{max})$
-		}
-		{
-			$u_{max}. \delta(u_{max}) \leftarrow  \frac{1}{\eta}\big(\sum_{T_{I} \in \mathcal{L}}h(I, T_{I}) - \sum_{T_{I} \in \mathcal{L}} h(I, T_{I} \setminus u_{max})\big)$
-			\\
-			$u_{max}. cur =iteration$; re-insert $u_{max}$ into $Q$
-		}
-	}
-	\Return $A$;
-	\caption{Scalable $\mathsf{TMB}$ for LT model ($\mathsf{TMB}$) Algorithm}
-	\label{STMB}
-\end{algorithm}				
 \end {itemize}
-
+\begin{algorithm}[H]
+%\SetAlgoNlRelativeSize{0}
+\KwData{Graph $G=(V,E, w)$,  $\mathcal{S}=\{s_1, s_2, .., s_q\}$, threshold $\gamma>0$} 
+\KwResult{set of nodes $A$}
+$A \leftarrow \emptyset$;	$(G', I) \leftarrow \mathtt{Merge}(G, \mathcal{S})$.
+\\
+Remove all node, $I$ can't reach in $G$.
+\\
+Generate $\eta$ sample graphs and set $\eta$ trees $\mathcal{L}=\{T_{I}^1, T_{I}^2, \ldots, T_{I}^{|\mathcal{\eta}|}\}$
+\\
+For each $ T_{I} \in \mathcal{L}$, calculate $h(u, T_{I})$ for all $u \in T_{I}$ (by using DFS algorithm).
+\\
+\For{$u \in V$}
+{
+	$u.\delta(u) \leftarrow \frac{1}{\eta}\sum_{T_{I} \in \mathcal{L}} h(u, T_{I})$; $u. cur \leftarrow 1$
+	\\
+	Insert element $u$ into $Q$ with $u.\delta(u)$ as the key
+}
+$ h_{max} \leftarrow 0$; $iteration \leftarrow 1$
+\\
+\While{$ h_{max} <\gamma-\epsilon $}
+{
+	$u_{max} \leftarrow  dequence \  Q$
+	\\
+	\eIf{$u_{max}.cur =iteration$}
+	{
+		$A \leftarrow A \cup \{u_{max}\}$ ; $iteration \leftarrow iteration+1 $
+		\\
+		\ForEach{$T_{I} \in \mathcal{L}_c $}
+		{
+			If $u_{max} \in T_{I}$, remove node $u_{max}$ and update $h(v, T_{I})$, $ \forall v \in T_{I}$.
+		}
+		$h_{max} \leftarrow h_{max}+ u_{max}.\delta(u_{max})$
+	}
+	{
+		$u_{max}. \delta(u_{max}) \leftarrow  \frac{1}{\eta}\big(\sum_{T_{I} \in \mathcal{L}}h(I, T_{I}) - \sum_{T_{I} \in \mathcal{L}} h(I, T_{I} \setminus u_{max})\big)$
+		\\
+		$u_{max}. cur =iteration$; re-insert $u_{max}$ into $Q$
+	}
+}
+\Return $A$;
+\caption{Scalable $\mathsf{TMB}$ for LT model ($\mathsf{TMB}$) Algorithm}
+\label{STMB}
+\end{algorithm}				
 {\itshape Độ phức tạp của thuật toán: }		
 Để đánh giá độ phức tạp của thuật toán trước tiên chúng ta đi phân tích độ phức tạp của các thuật toán con trong nó.
 \begin {itemize}
