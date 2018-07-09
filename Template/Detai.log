@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.6.26)  10 JUL 2018 06:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.6.26)  10 JUL 2018 06:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2653,30 +2653,25 @@ Overfull \hbox (20.83214pt too wide) in paragraph at lines 300--301
 File: picture/PartMH.png Graphic file (type png)
 <use picture/PartMH.png>
 Package pdftex.def Info: picture/PartMH.png  used on input line 313.
-(pdftex.def)             Requested size: 336.73073pt x 375.19919pt.
-[60 <./picture/FLE/FB_res.PNG>] [61 <./picture/PartMH.png>]
-<picture/Facebook.pdf, id=1211, 361.35pt x 216.81pt>
+(pdftex.def)             Requested size: 288.63054pt x 321.60397pt.
+[60 <./picture/FLE/FB_res.PNG>]
+<picture/Facebook.pdf, id=1206, 361.35pt x 216.81pt>
 File: picture/Facebook.pdf Graphic file (type pdf)
 <use picture/Facebook.pdf>
 Package pdftex.def Info: picture/Facebook.pdf  used on input line 368.
 (pdftex.def)             Requested size: 361.34912pt x 216.80946pt.
- [62]
-<picture/TimeFacebook.pdf, id=1220, 361.35pt x 216.81pt>
+ [61 <./picture/PartMH.png>] [62 <./picture/Facebook.pdf>]
+<picture/TimeFacebook.pdf, id=1234, 361.35pt x 216.81pt>
 File: picture/TimeFacebook.pdf Graphic file (type pdf)
 <use picture/TimeFacebook.pdf>
 Package pdftex.def Info: picture/TimeFacebook.pdf  used on input line 381.
 (pdftex.def)             Requested size: 361.34912pt x 216.80946pt.
- [63 <./picture/Facebook.pdf> <./picture/TimeFacebook.pdf
-
-pdfTeX warning: pdflatex.exe (file ./picture/TimeFacebook.pdf): PDF inclusion: 
-multiple pdfs with page group included in a single page
->]
-<picture/PartPVQ.png, id=1253, 481.8pt x 511.9125pt>
+<picture/PartPVQ.png, id=1236, 481.8pt x 511.9125pt>
 File: picture/PartPVQ.png Graphic file (type png)
 <use picture/PartPVQ.png>
 Package pdftex.def Info: picture/PartPVQ.png  used on input line 393.
 (pdftex.def)             Requested size: 337.25769pt x 358.3363pt.
-
+ [63 <./picture/TimeFacebook.pdf>]
 
 Package hyperref Warning: Composite letter `\textdotbelow+a'
 (hyperref)                not defined in PD1 encoding,
@@ -2876,10 +2871,10 @@ helvetic/uhvr8a.pfb><c:/texlive/2018/texmf-dist/fonts/type1/vntex/urwvn/utmb8v.
 pfb><c:/texlive/2018/texmf-dist/fonts/type1/vntex/urwvn/utmbi8v.pfb><c:/texlive
 /2018/texmf-dist/fonts/type1/vntex/urwvn/utmr8v.pfb><c:/texlive/2018/texmf-dist
 /fonts/type1/vntex/urwvn/utmri8v.pfb>
-Output written on Detai.pdf (79 pages, 2427235 bytes).
+Output written on Detai.pdf (79 pages, 2427372 bytes).
 PDF statistics:
- 1486 PDF objects out of 1728 (max. 8388607)
- 1241 compressed objects within 13 object streams
+ 1487 PDF objects out of 1728 (max. 8388607)
+ 1242 compressed objects within 13 object streams
  427 named destinations out of 1000 (max. 500000)
  526 words of extra memory for PDF output out of 10000 (max. 10000000)
 
