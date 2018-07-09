@@ -310,8 +310,36 @@ Trong bước này, nhóm tác giả tiến hành áp dụng hai giải pháp ng
 		\caption{Kết quả thực hiện giải pháp FLE với dữ liệu thu thập - Output.txt}
 		\label{bang4_6} 
 	\end{table}
+	
+	So sánh kết quả thực nghiệm này đối với các thuật toán MaxDegree và Random về mặt số lượng đỉnh được cứu, thu được kết quả như hình \ref{fig:FLE_FB}:
+	
+	\begin{center}
+		\begin{figure}[htp]
+			\begin{center}
+				\includegraphics [scale = 1.2]{picture/FLE/FB_res}
+			\end{center}
+			\caption{So sánh chất lượng lời giải của các thuật toán với dữ liệu Facebook}
+			\label{fig:FLE_FB}
+		\end{figure}
+	\end{center}	
+	Trong hình \ref{fig:FLE_FB}, ta có thể thấy rằng FLE, với cùng một ngưỡng số đỉnh tối đa cứu được chặn là $k$, luôn đạt được kết quả tốt hơn so với hai thuật toán còn lại. Đặc biệt, với $k>=80$, thuật toán FLE chỉ ra được phương pháp chặn bắt để số đỉnh cứu được là tối đa, điều mà hai thuật toán Random và MaxDegree dù với $k=100$ cũng không thể làm được.
+	
+	Vì số đỉnh của đồ thị thu được là khá nhiều cho việc mô tả chỉ tiết nên chúng tôi lựa chọn một phần của đồ thị để mô phỏng, mà cụ thể là phần trung tâm của đồ thị (phần tập trung nguồn phát tán thông tin sai lệch). Sử dụng công cụ graph\_tool\footnote{https://graph-tool.skewed.de/}, chúng tôi cỏ thể mô tả lại một phần mạng dữ liệu được sử dụng như hình \ref{fig:FLE_MP}:
+	
+	\begin{center}
+		\begin{figure}[htp]
+			\begin{center}
+				\includegraphics[scale=.7]{picture/PartMH}
+			\end{center}
+			\caption{Kết quả mô phỏng với dữ liệu thu thập được trên Facebook của thuật toán FLE}
+			\label{fig:FLE_MP}
+		\end{figure}
+	\end{center}
+	
+	Các đỉnh được tô màu đỏ thể hiện nguồn phát tán thông tin sai lệch, các đỉnh được tô màu xám là tập đỉnh được lụa chọn để loại ra đồ thị theo kết quả thuật toán, các đỉnh còn lại sẽ được tô màu xanh.
 
-	\item Áp dụng giải pháp STMB đối với kịch bản TMB. Kết quả được lưu lại trong các tệp tin có cấu trúc tên là $Seed_STMB_Facebook_x.y.txt$ chứa thông tin về các chỉ số đỉnh tìm được, mỗi đỉnh một dòng, trong đó $x$ là số lần lấy mẫu, $y$ là ngưỡng của bài toán đặt ra.
+
+	\item Áp dụng giải pháp STMB đối với kịch bản TMB. Kết quả được lưu lại trong các tệp tin có cấu trúc tên là Seed\_STMB\_Facebook\_x$\cdot$y$\cdot$txt chứa thông tin về các chỉ số đỉnh tìm được, mỗi đỉnh một dòng, trong đó $x$ là số lần lấy mẫu, $y$ là ngưỡng của bài toán đặt ra.
 	Ngoài ra kết quả tổng hợp được lưu trong tệp tin Result.txt, được mô tả cụ thể trên bảng \ref{bang4_7}.
 	
 	\begin{table} [!htp]
@@ -352,41 +380,53 @@ Trong bước này, nhóm tác giả tiến hành áp dụng hai giải pháp ng
 		\caption{Kết quả thực hiện giải pháp SMTB với dữ liệu thu thập - Result.txt}
 		\label{bang4_7} 
 	\end{table}
+	So sánh kết quả thực nghiệm của các thuật toán STMB, Greedy, PageRank, High-Degree về mặt số lượng đỉnh tìm được thỏa mãn yêu cầu (càng ít đỉnh càng tốt), ta thu được hình \ref{realData_TMB}
+	\begin{center}
+		\begin{figure}[H]
+			\begin{center}
+				\includegraphics [scale=1]{picture/Facebook}
+			\end{center}
+			\caption{So sánh chất lượng lời giải của các thuật toán với dữ liệu thu thập được cho bài toán TMB}
+			\label{realData_TMB}
+		\end{figure}
+	\end{center}
+
+	Trong hình \ref{realData_TMB}, ta có thể thấy rằng số đỉnh tìm được để thỏa mãn yêu cầu của STMB luôn là nhỏ nhất trong 4 thuật toán. 
+	
+	Về mặt thời gian thực hiện, STMB cũng thể hiện tốc độ vượt trội của mình so với các thuật toán được đánh giá là thời gian thực thi thấp như Page Rank hay High-Degree. Do thời gian thực hiện của thuật toán Greedy với dữ liệu thu thập được trung bình hơn 400(s) lâu hơn rất nhiều so với các thuật toán khác nên chúng tôi không đưa ra trong hình \ref{timeface}.
+	\begin{center}
+		\begin{figure}[H]
+			\begin{center}
+				\includegraphics [scale=1]{picture/TimeFacebook}
+			\end{center}
+			\caption{So sánh thời gian thực hiện của các thuật toán với dữ liệu thu thập được cho bài toán TMB}
+			\label{timeface}
+		\end{figure}
+	\end{center}
+	
+	Tiếp tục sử dụng công cụ graph\_tool chúng tôi mô phỏng lại phần trung tâm của đồ thị  và thu được kết quả như trong hình \ref{mophong}.
+	
+	\begin{center}
+		\begin{figure}[H]
+			\begin{center}
+				\includegraphics [scale=.7]{picture/PartPVQ}
+			\end{center}
+			\caption{Kết quả mô phỏng với dữ liệu thu thập được trong trường hợp $\gamma = 15$ của thuật toán STMB}
+			\label{mophong}
+		\end{figure}
+	\end{center}
+	
+	Với các đỉnh được tô màu đỏ thể hiện nguồn phát tán thông tin sai lệch, các đỉnh được tô màu xám là tập đỉnh cần loại bỏ ra khỏi đồ thị, các đỉnh còn lại được tô màu xanh.
 \end{itemize}
 	
-	Trong chương này, nhóm tác giả đưa ra các kết quả thực nghiệm của hai giải pháp đã được đưa ra trong chương trước trên dữ liệu có sẵn và dữ liệu thu thập được, từ đó để thấy được hiệu quả của phương pháp nhóm đề xuất. Dữ liệu có sẵn là các bộ dữ liệu được lấy từ những nguồn uy tín hàng đầu, được các bài báo có chung mục tiêu nghiên cứu khác sử dụng và được các hội nghị, hội thảo thế giới công nhận. Dữ liệu thực là dữ liệu được thu thập trực tiếp trên mạng xã hội Facebook bằng các công cụ thích hợp. Việc sử dụng cả hai loại dữ liệu đảm bảo được rằng các giải pháp đưa ra vừa thỏa mãn được tính chất học thuật cao, vừa thỏa mãn được khả năng ứng dụng thực tế ngay tại Việt Nam.
+
 	
-	\section{Giải pháp Limiting the spread of epidemics within time constraint on online social network}
+\section{Giải pháp Limiting the spread of epidemics within time constraint on online social network}
 
 \subsection{Dữ liệu thu thập được}
 
 Với dữ liệu thu thập được từ phần \ref{data}, chúng tôi chuẩn hóa dữ liệu theo mô hình T-DLT, sau đó thực nghiệm với các thuật toán MaxDegree, Random và FLE như được trình bày ở trên và thu được kết quả như hình \ref{fig:FLE_FB}:
 
-\begin{center}
-	\begin{figure}[htp]
-		\begin{center}
-			\includegraphics {picture/FLE/FB_res}
-		\end{center}
-		\caption{So sánh chất lượng lời giải của các thuật toán với dữ liệu Facebook}
-		\label{fig:FLE_FB}
-	\end{figure}
-\end{center}
-
-Trong hình \ref{fig:FLE_FB}, ta có thể thấy rằng FLE, với cùng một ngưỡng số đỉnh tối đa cứu được chặn là $k$, luôn đạt được kết quả tốt hơn so với hai thuật toán còn lại. Đặc biệt, với $k>=80$, thuật toán FLE chỉ ra được phương pháp chặn bắt để số đỉnh cứu được là tối đa, điều mà hai thuật toán Random và MaxDegree dù với $k=100$ cũng không thể làm được.
-
-Vì số đỉnh của đồ thị thu được là khá nhiều cho việc mô tả chỉ tiết nên chúng tôi lựa chọn một phần của đồ thị để mô phỏng, mà cụ thể là phần trung tâm của đồ thị (phần tập trung nguồn phát tán thông tin sai lệch). Sử dụng công cụ graph\_tool\footnote{https://graph-tool.skewed.de/}, chúng tôi cỏ thể mô tả lại một phần mạng dữ liệu được sử dụng như hình \ref{fig:FLE_MP}:
-
-\begin{center}
-	\begin{figure}[htp]
-		\begin{center}
-			\includegraphics[scale=.7]{picture/PartMH}
-		\end{center}
-		\caption{Kết quả mô phỏng với dữ liệu thu thập được trên Facebook.}
-		\label{fig:FLE_MP}
-	\end{figure}
-\end{center}
-
-Các đỉnh được tô màu đỏ thể hiện nguồn phát tán thông tin sai lệch, các đỉnh được tô màu xám là tập đỉnh được lụa chọn để loại ra đồ thị theo kết quả thuật toán, các đỉnh còn lại sẽ được tô màu xanh.
 
 
 \section{Giải pháp Targeted Misinformation Blocking (Xác định và ngăn chặn thông tin sai lệch trên mạng xã hội)}
@@ -394,35 +434,6 @@ Các đỉnh được tô màu đỏ thể hiện nguồn phát tán thông tin 
 
 \subsection{Dữ liệu thu thập được}	
 Với dữ liệu thu được ở phần \ref{data} trong chương 4, chúng tôi chuẩn hóa dữ liệu theo mô hình LT, sau đó thực nghiệm với các thuật toán được nêu trong phần trước. Kết quả thu được như sau:
-\begin{center}
-	\begin{figure}[htp]
-		\begin{center}
-			\includegraphics [scale=1]{picture/Facebook}
-		\end{center}
-		\caption{So sánh chất lượng lời giải của các thuật toán với dữ liệu thu thập được cho bài toán TMB}
-		\label{realData}
-	\end{figure}
-\end{center}
-\begin{center}
-	\begin{figure}[htp]
-		\begin{center}
-			\includegraphics [scale=1]{picture/TimeFacebook}
-		\end{center}
-		\caption{So sánh thời gian thực hiện của các thuật toán với dữ liệu thu thập được cho bài toán TMB}
-		\label{timeface}
-	\end{figure}
-\end{center}
-Do thời gian thực hiện của thuật toán Greedy với dữ liệu thu thập được trung bình hơn 400(s) lâu hơn rất nhiều so với các thuật toán khác nên chúng tôi không đưa ra trong hình \ref{timeface}
 
-Sử dụng công cụ graph\_tool\footnote{https://graph-tool.skewed.de/} chúng tôi mô phỏng lại phần trung tâm của đồ thị (phần tập trung nguồn phát tán thông tin sai lệch) và thu được kết quả như trong hình \ref{mophong}.
-\begin{center}
-	\begin{figure}[htp]
-		\begin{center}
-			\includegraphics [scale=.7]{picture/PartPVQ}
-		\end{center}
-		\caption{Kết quả mô phỏng với dữ liệu thu thập được trong trường hợp $\gamma = 15$}
-		\label{mophong}
-	\end{figure}
-\end{center}
 
-Với các đỉnh được tô màu đỏ thể hiện nguồn phát tán thông tin sai lệch, các đỉnh được tô màu xám là tập đỉnh cần loại bỏ ra khỏi đồ thị, các đỉnh còn lại được tô màu xanh.
+
