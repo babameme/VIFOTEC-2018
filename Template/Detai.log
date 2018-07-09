@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.6.24)  10 JUL 2018 01:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.6.26)  10 JUL 2018 05:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**Chuyende1.tex
-(./Chuyende1.tex
+**Detai.tex
+(./Detai.tex
 LaTeX2e <2018-04-01> patch level 2
 Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 \@input{MyTemplate.aux}
@@ -160,11 +160,6 @@ Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
 (c:/texlive/2018/texmf-dist/tex/latex/relsize/relsize.sty
 Package: relsize 2013/03/29 ver 4.1
-
-
-Package relsize Warning: Failed to get list of defined font sizes.
-(relsize)                Size scaling will attempt arbitrary sizes..
-
 )
 \skiptotal=\skip53
 \skiplinenumber=\skip54
@@ -201,7 +196,8 @@ Package relsize Warning: Failed to get list of defined font sizes.
 \c@algocf=\count112
 \algocf@algoframe=\box37
 \algocf@algobox=\box38
-) (c:/texlive/2018/texmf-dist/tex/latex/subfig/subfig.sty
+)
+(c:/texlive/2018/texmf-dist/tex/latex/subfig/subfig.sty
 Package: subfig 2005/06/28 ver: 1.3 subfig package
 
 (c:/texlive/2018/texmf-dist/tex/latex/caption/caption.sty
@@ -655,10 +651,10 @@ s
 \c@example=\count142
 )
 \@indexfile=\write3
-\openout3 = `Chuyende1.idx'.
+\openout3 = `Detai.idx'.
 
 
-Writing index file Chuyende1.idx
+Writing index file Detai.idx
 (c:/texlive/2018/texmf-dist/tex/latex/koma-script/scrextend.sty
 Package: scrextend 2018/03/30 v3.25 KOMA-Script package (extend other classes w
 ith features of KOMA-Script classes)
@@ -678,12 +674,12 @@ Package: scrlfile 2018/03/30 v3.25 KOMA-Script package (loading files)
 LaTeX Warning: Command \@footnotemark  has changed.
                Check if current package is valid.
 
-) (./Chuyende1.aux (./Chapter/Viettat/viettat.aux) (./Chapter/Modau/Modau.aux)
+) (./Detai.aux (./Chapter/Viettat/viettat.aux) (./Chapter/Modau/Modau.aux)
 (./Chapter/Chapter1/Chapter1.aux) (./Chapter/Chapter2/Chapter2.aux)
 (./Chapter/Chapter3/Chapter3.aux) (./Chapter/Chapter4/Chapter4.aux)
 (./Chapter/Ketluan/Ketluan.aux) (./Chapter/DMCTCB/Congbo.aux) (./TLTK/TLTK.aux)
 )
-\openout1 = `Chuyende1.aux'.
+\openout1 = `Detai.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
 LaTeX Font Info:    ... okay on input line 15.
@@ -724,9 +720,9 @@ LaTeX Info: Redefining \ref on input line 15.
 LaTeX Info: Redefining \pageref on input line 15.
 LaTeX Info: Redefining \nameref on input line 15.
 
-(./Chuyende1.out) (./Chuyende1.out)
+(./Detai.out) (./Detai.out)
 \@outlinefile=\write4
-\openout4 = `Chuyende1.out'.
+\openout4 = `Detai.out'.
 
 
 *geometry* driver: auto-detecting
@@ -796,7 +792,7 @@ e
 LaTeX Font Info:    Font shape `T5/ptm/bx/n' in size <13> not available
 (Font)              Font shape `T5/ptm/b/n' tried instead on input line 20.
 
-(./Chuyende1.toc
+(./Detai.toc
 LaTeX Font Info:    Calculating math sizes for size <13> on input line 5.
 
 
@@ -837,7 +833,7 @@ LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <13> not available
 
 {c:/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
 \tf@toc=\write5
-\openout5 = `Chuyende1.toc'.
+\openout5 = `Detai.toc'.
 
 
 
@@ -857,9 +853,9 @@ Package hyperref Warning: Composite letter `\texttilde+e'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\texttilde' on input line 21.
 
-(./Chuyende1.lof)
+(./Detai.lof)
 \tf@lof=\write6
-\openout6 = `Chuyende1.lof'.
+\openout6 = `Detai.lof'.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
@@ -874,9 +870,9 @@ l.22 \listoftables
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\h' on input line 22.
 
-(./Chuyende1.lot)
+(./Detai.lot)
 \tf@lot=\write7
-\openout7 = `Chuyende1.lot'.
+\openout7 = `Detai.lot'.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
@@ -1741,7 +1737,7 @@ Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\acircumflex' on input line 103.
 
 [30 <./picture/Hinh3_3.png>]
-LaTeX Font Info:    Font shape `T5/ptm/bx/n' in size <9.02782> not available
+LaTeX Font Info:    Font shape `T5/ptm/bx/n' in size <8.66673> not available
 (Font)              Font shape `T5/ptm/b/n' tried instead on input line 121.
  [31] [32]
 
@@ -1816,107 +1812,107 @@ Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\ocircumflex' on input line 217.
 
 [33] [34] [35]
-<picture/FLE/gnu_res.png, id=663, 252.19218pt x 178.41656pt>
-File: picture/FLE/gnu_res.png Graphic file (type png)
-<use picture/FLE/gnu_res.png>
-Package pdftex.def Info: picture/FLE/gnu_res.png  used on input line 292.
+<picture/FLE/gnu_res.PNG, id=663, 252.19218pt x 178.41656pt>
+File: picture/FLE/gnu_res.PNG Graphic file (type png)
+<use picture/FLE/gnu_res.PNG>
+Package pdftex.def Info: picture/FLE/gnu_res.PNG  used on input line 292.
 (pdftex.def)             Requested size: 176.96046pt x 125.19194pt.
-<picture/FLE/gnu_time.png, id=665, 250.68657pt x 180.675pt>
-File: picture/FLE/gnu_time.png Graphic file (type png)
-<use picture/FLE/gnu_time.png>
-Package pdftex.def Info: picture/FLE/gnu_time.png  used on input line 293.
+<picture/FLE/gnu_time.PNG, id=665, 250.68657pt x 180.675pt>
+File: picture/FLE/gnu_time.PNG Graphic file (type png)
+<use picture/FLE/gnu_time.PNG>
+Package pdftex.def Info: picture/FLE/gnu_time.PNG  used on input line 293.
 (pdftex.def)             Requested size: 173.70451pt x 125.19194pt.
-<picture/FLE/wiki_res.png, id=666, 258.21469pt x 175.40532pt>
-File: picture/FLE/wiki_res.png Graphic file (type png)
-<use picture/FLE/wiki_res.png>
-Package pdftex.def Info: picture/FLE/wiki_res.png  used on input line 295.
+<picture/FLE/wiki_res.PNG, id=666, 258.21469pt x 175.40532pt>
+File: picture/FLE/wiki_res.PNG Graphic file (type png)
+<use picture/FLE/wiki_res.PNG>
+Package pdftex.def Info: picture/FLE/wiki_res.PNG  used on input line 295.
 (pdftex.def)             Requested size: 184.29901pt x 125.19194pt.
-<picture/FLE/wiki_time.png, id=667, 251.43938pt x 179.16937pt>
-File: picture/FLE/wiki_time.png Graphic file (type png)
-<use picture/FLE/wiki_time.png>
-Package pdftex.def Info: picture/FLE/wiki_time.png  used on input line 296.
+<picture/FLE/wiki_time.PNG, id=667, 251.43938pt x 179.16937pt>
+File: picture/FLE/wiki_time.PNG Graphic file (type png)
+<use picture/FLE/wiki_time.PNG>
+Package pdftex.def Info: picture/FLE/wiki_time.PNG  used on input line 296.
 (pdftex.def)             Requested size: 175.69174pt x 125.19194pt.
-<picture/FLE/amazon_res.png, id=668, 249.18094pt x 178.41656pt>
-File: picture/FLE/amazon_res.png Graphic file (type png)
-<use picture/FLE/amazon_res.png>
-Package pdftex.def Info: picture/FLE/amazon_res.png  used on input line 298.
+<picture/FLE/amazon_res.PNG, id=668, 249.18094pt x 178.41656pt>
+File: picture/FLE/amazon_res.PNG Graphic file (type png)
+<use picture/FLE/amazon_res.PNG>
+Package pdftex.def Info: picture/FLE/amazon_res.PNG  used on input line 298.
 (pdftex.def)             Requested size: 174.84749pt x 125.19194pt.
-<picture/FLE/amazon_time.png, id=669, 250.68657pt x 174.6525pt>
-File: picture/FLE/amazon_time.png Graphic file (type png)
-<use picture/FLE/amazon_time.png>
-Package pdftex.def Info: picture/FLE/amazon_time.png  used on input line 299.
+<picture/FLE/amazon_time.PNG, id=669, 250.68657pt x 174.6525pt>
+File: picture/FLE/amazon_time.PNG Graphic file (type png)
+<use picture/FLE/amazon_time.PNG>
+Package pdftex.def Info: picture/FLE/amazon_time.PNG  used on input line 299.
 (pdftex.def)             Requested size: 179.69472pt x 125.19194pt.
-<picture/FLE/google_res.png, id=670, 251.43938pt x 180.675pt>
-File: picture/FLE/google_res.png Graphic file (type png)
-<use picture/FLE/google_res.png>
-Package pdftex.def Info: picture/FLE/google_res.png  used on input line 301.
+<picture/FLE/google_res.PNG, id=670, 251.43938pt x 180.675pt>
+File: picture/FLE/google_res.PNG Graphic file (type png)
+<use picture/FLE/google_res.PNG>
+Package pdftex.def Info: picture/FLE/google_res.PNG  used on input line 301.
 (pdftex.def)             Requested size: 174.22615pt x 125.19194pt.
-<picture/FLE/google_time.png, id=671, 253.69781pt x 172.39406pt>
-File: picture/FLE/google_time.png Graphic file (type png)
-<use picture/FLE/google_time.png>
-Package pdftex.def Info: picture/FLE/google_time.png  used on input line 302.
+<picture/FLE/google_time.PNG, id=671, 253.69781pt x 172.39406pt>
+File: picture/FLE/google_time.PNG Graphic file (type png)
+<use picture/FLE/google_time.PNG>
+Package pdftex.def Info: picture/FLE/google_time.PNG  used on input line 302.
 (pdftex.def)             Requested size: 184.23395pt x 125.19194pt.
-<picture/FLE/gnu_res_theta.png, id=672, 292.84406pt x 204.01219pt>
-File: picture/FLE/gnu_res_theta.png Graphic file (type png)
-<use picture/FLE/gnu_res_theta.png>
-Package pdftex.def Info: picture/FLE/gnu_res_theta.png  used on input line 310.
+<picture/FLE/gnu_res_theta.PNG, id=672, 292.84406pt x 204.01219pt>
+File: picture/FLE/gnu_res_theta.PNG Graphic file (type png)
+<use picture/FLE/gnu_res_theta.PNG>
+Package pdftex.def Info: picture/FLE/gnu_res_theta.PNG  used on input line 310.
 
 (pdftex.def)             Requested size: 179.70256pt x 125.19194pt.
-<picture/FLE/gnu_time_theta.png, id=673, 283.81032pt x 203.25937pt>
-File: picture/FLE/gnu_time_theta.png Graphic file (type png)
-<use picture/FLE/gnu_time_theta.png>
-Package pdftex.def Info: picture/FLE/gnu_time_theta.png  used on input line 311
+<picture/FLE/gnu_time_theta.PNG, id=673, 283.81032pt x 203.25937pt>
+File: picture/FLE/gnu_time_theta.PNG Graphic file (type png)
+<use picture/FLE/gnu_time_theta.PNG>
+Package pdftex.def Info: picture/FLE/gnu_time_theta.PNG  used on input line 311
 .
 (pdftex.def)             Requested size: 174.8043pt x 125.19194pt.
-<picture/FLE/wiki_res_theta.png, id=674, 288.3272pt x 206.27063pt>
-File: picture/FLE/wiki_res_theta.png Graphic file (type png)
-<use picture/FLE/wiki_res_theta.png>
-Package pdftex.def Info: picture/FLE/wiki_res_theta.png  used on input line 313
+<picture/FLE/wiki_res_theta.PNG, id=674, 288.3272pt x 206.27063pt>
+File: picture/FLE/wiki_res_theta.PNG Graphic file (type png)
+<use picture/FLE/wiki_res_theta.PNG>
+Package pdftex.def Info: picture/FLE/wiki_res_theta.PNG  used on input line 313
 .
 (pdftex.def)             Requested size: 174.99501pt x 125.19194pt.
-<picture/FLE/wiki_time_theta.png, id=675, 295.85532pt x 200.24812pt>
-File: picture/FLE/wiki_time_theta.png Graphic file (type png)
-<use picture/FLE/wiki_time_theta.png>
-Package pdftex.def Info: picture/FLE/wiki_time_theta.png  used on input line 31
+<picture/FLE/wiki_time_theta.PNG, id=675, 295.85532pt x 200.24812pt>
+File: picture/FLE/wiki_time_theta.PNG Graphic file (type png)
+<use picture/FLE/wiki_time_theta.PNG>
+Package pdftex.def Info: picture/FLE/wiki_time_theta.PNG  used on input line 31
 4.
 (pdftex.def)             Requested size: 184.96779pt x 125.19194pt.
-<picture/FLE/amazon_res_theta.png, id=676, 292.09125pt x 191.21437pt>
-File: picture/FLE/amazon_res_theta.png Graphic file (type png)
-<use picture/FLE/amazon_res_theta.png>
-Package pdftex.def Info: picture/FLE/amazon_res_theta.png  used on input line 3
+<picture/FLE/amazon_res_theta.PNG, id=676, 292.09125pt x 191.21437pt>
+File: picture/FLE/amazon_res_theta.PNG Graphic file (type png)
+<use picture/FLE/amazon_res_theta.PNG>
+Package pdftex.def Info: picture/FLE/amazon_res_theta.PNG  used on input line 3
 16.
 (pdftex.def)             Requested size: 191.2387pt x 125.19194pt.
-<picture/FLE/amazon_time_theta.png, id=677, 289.83281pt x 204.765pt>
-File: picture/FLE/amazon_time_theta.png Graphic file (type png)
-<use picture/FLE/amazon_time_theta.png>
-Package pdftex.def Info: picture/FLE/amazon_time_theta.png  used on input line 
+<picture/FLE/amazon_time_theta.PNG, id=677, 289.83281pt x 204.765pt>
+File: picture/FLE/amazon_time_theta.PNG Graphic file (type png)
+<use picture/FLE/amazon_time_theta.PNG>
+Package pdftex.def Info: picture/FLE/amazon_time_theta.PNG  used on input line 
 317.
 (pdftex.def)             Requested size: 177.20462pt x 125.19194pt.
-<picture/FLE/google_res_theta.png, id=678, 292.09125pt x 201.75375pt>
-File: picture/FLE/google_res_theta.png Graphic file (type png)
-<use picture/FLE/google_res_theta.png>
-Package pdftex.def Info: picture/FLE/google_res_theta.png  used on input line 3
+<picture/FLE/google_res_theta.PNG, id=678, 292.09125pt x 201.75375pt>
+File: picture/FLE/google_res_theta.PNG Graphic file (type png)
+<use picture/FLE/google_res_theta.PNG>
+Package pdftex.def Info: picture/FLE/google_res_theta.PNG  used on input line 3
 19.
 (pdftex.def)             Requested size: 181.25067pt x 125.19194pt.
-<picture/FLE/google_time_theta.png, id=679, 292.09125pt x 201.00093pt>
-File: picture/FLE/google_time_theta.png Graphic file (type png)
-<use picture/FLE/google_time_theta.png>
-Package pdftex.def Info: picture/FLE/google_time_theta.png  used on input line 
+<picture/FLE/google_time_theta.PNG, id=679, 292.09125pt x 201.00093pt>
+File: picture/FLE/google_time_theta.PNG Graphic file (type png)
+<use picture/FLE/google_time_theta.PNG>
+Package pdftex.def Info: picture/FLE/google_time_theta.PNG  used on input line 
 320.
 (pdftex.def)             Requested size: 181.92368pt x 125.19194pt.
  [36 <./picture/FLE/gnu_res.PNG> <./picture/FLE/gnu_time.PNG> <./picture/FLE/wi
 ki_res.PNG> <./picture/FLE/wiki_time.PNG> <./picture/FLE/amazon_res.PNG> <./pic
 ture/FLE/amazon_time.PNG> <./picture/FLE/google_res.PNG> <./picture/FLE/google_
 time.PNG>]
-<picture/FLE/gnu_res_d.png, id=692, 292.09125pt x 207.02344pt>
-File: picture/FLE/gnu_res_d.png Graphic file (type png)
-<use picture/FLE/gnu_res_d.png>
-Package pdftex.def Info: picture/FLE/gnu_res_d.png  used on input line 328.
+<picture/FLE/gnu_res_d.PNG, id=692, 292.09125pt x 207.02344pt>
+File: picture/FLE/gnu_res_d.PNG Graphic file (type png)
+<use picture/FLE/gnu_res_d.PNG>
+Package pdftex.def Info: picture/FLE/gnu_res_d.PNG  used on input line 328.
 (pdftex.def)             Requested size: 176.63774pt x 125.19194pt.
-<picture/FLE/gnu_time_d.png, id=693, 286.82156pt x 201.75375pt>
-File: picture/FLE/gnu_time_d.png Graphic file (type png)
-<use picture/FLE/gnu_time_d.png>
-Package pdftex.def Info: picture/FLE/gnu_time_d.png  used on input line 329.
+<picture/FLE/gnu_time_d.PNG, id=693, 286.82156pt x 201.75375pt>
+File: picture/FLE/gnu_time_d.PNG Graphic file (type png)
+<use picture/FLE/gnu_time_d.PNG>
+Package pdftex.def Info: picture/FLE/gnu_time_d.PNG  used on input line 329.
 (pdftex.def)             Requested size: 177.9807pt x 125.19194pt.
  [37 <./picture/FLE/gnu_res_theta.PNG> <./picture/FLE/gnu_time_theta.PNG> <./pi
 cture/FLE/wiki_res_theta.PNG> <./picture/FLE/wiki_time_theta.PNG> <./picture/FL
@@ -2669,10 +2665,10 @@ Package hyperref Warning: Composite letter `\textdotbelow+\abreve'
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\abreve' on input line 277.
 
-<picture/FLE/FB_res.png, id=1191, 396.7322pt x 212.29312pt>
-File: picture/FLE/FB_res.png Graphic file (type png)
-<use picture/FLE/FB_res.png>
-Package pdftex.def Info: picture/FLE/FB_res.png  used on input line 320.
+<picture/FLE/FB_res.PNG, id=1191, 396.7322pt x 212.29312pt>
+File: picture/FLE/FB_res.PNG Graphic file (type png)
+<use picture/FLE/FB_res.PNG>
+Package pdftex.def Info: picture/FLE/FB_res.PNG  used on input line 320.
 (pdftex.def)             Requested size: 476.07625pt x 254.75047pt.
 
 Overfull \hbox (20.83214pt too wide) in paragraph at lines 320--321
@@ -2765,7 +2761,7 @@ Package hyperref Warning: Glyph not defined in PD1 encoding,
 \openout2 = `Chapter/DMCTCB/Congbo.aux'.
 
 
-(./Chapter/DMCTCB/CongBo.tex) [69
+(./Chapter/DMCTCB/Congbo.tex) [69
 
 
 
@@ -2859,25 +2855,19 @@ y 2007).
  []
 
 ) [74]
-No file Chuyende1.ind.
+No file Detai.ind.
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 72.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 72.
-(./Chuyende1.aux (./Chapter/Viettat/viettat.aux) (./Chapter/Modau/Modau.aux)
+(./Detai.aux (./Chapter/Viettat/viettat.aux) (./Chapter/Modau/Modau.aux)
 (./Chapter/Chapter1/Chapter1.aux) (./Chapter/Chapter2/Chapter2.aux)
 (./Chapter/Chapter3/Chapter3.aux) (./Chapter/Chapter4/Chapter4.aux)
 (./Chapter/Ketluan/Ketluan.aux) (./Chapter/DMCTCB/Congbo.aux) (./TLTK/TLTK.aux)
 )
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 72.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 72.
+Package rerunfilecheck Info: File `Detai.out' has not changed.
+(rerunfilecheck)             Checksum: 9938F4EBA298950FCA26D598F7B57D92;3645.
 
-
-Package rerunfilecheck Warning: File `Chuyende1.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Chuyende1.out':
-(rerunfilecheck)             Before: DC0B112A156E861593F5728BD3000C2E;3685
-(rerunfilecheck)             After:  9938F4EBA298950FCA26D598F7B57D92;3645.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.75pt have occurred.
@@ -2885,13 +2875,13 @@ LaTeX Font Warning: Size substitutions with differences
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 72.
  ) 
 Here is how much of TeX's memory you used:
- 12105 strings out of 492649
- 179838 string characters out of 6133384
- 318914 words of memory out of 5000000
- 15242 multiletter control sequences out of 15000+600000
+ 12117 strings out of 492649
+ 179807 string characters out of 6133384
+ 318977 words of memory out of 5000000
+ 15248 multiletter control sequences out of 15000+600000
  51436 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 65i,24n,98p,2542b,739s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 65i,24n,98p,2538b,741s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2018/texmf-dist/fonts/enc/dvips/vntex/t5.enc}<c:/texlive/2018/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2018/texmf-dist/f
 onts/type1/public/amsfonts/cmextra/cmex9.pfb><c:/texlive/2018/texmf-dist/fonts/
@@ -2913,7 +2903,7 @@ helvetic/uhvr8a.pfb><c:/texlive/2018/texmf-dist/fonts/type1/vntex/urwvn/utmb8v.
 pfb><c:/texlive/2018/texmf-dist/fonts/type1/vntex/urwvn/utmbi8v.pfb><c:/texlive
 /2018/texmf-dist/fonts/type1/vntex/urwvn/utmr8v.pfb><c:/texlive/2018/texmf-dist
 /fonts/type1/vntex/urwvn/utmri8v.pfb>
-Output written on Chuyende1.pdf (79 pages, 2427528 bytes).
+Output written on Detai.pdf (79 pages, 2427502 bytes).
 PDF statistics:
  1489 PDF objects out of 1728 (max. 8388607)
  1244 compressed objects within 13 object streams
