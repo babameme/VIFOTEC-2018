@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.6.26)  10 JUL 2018 06:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.6.26)  10 JUL 2018 06:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2845,7 +2845,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 72.
 Here is how much of TeX's memory you used:
  12115 strings out of 492649
  179782 string characters out of 6133384
- 317865 words of memory out of 5000000
+ 317866 words of memory out of 5000000
  15247 multiletter control sequences out of 15000+600000
  51436 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2871,7 +2871,7 @@ helvetic/uhvr8a.pfb><c:/texlive/2018/texmf-dist/fonts/type1/vntex/urwvn/utmb8v.
 pfb><c:/texlive/2018/texmf-dist/fonts/type1/vntex/urwvn/utmbi8v.pfb><c:/texlive
 /2018/texmf-dist/fonts/type1/vntex/urwvn/utmr8v.pfb><c:/texlive/2018/texmf-dist
 /fonts/type1/vntex/urwvn/utmri8v.pfb>
-Output written on Detai.pdf (79 pages, 2427372 bytes).
+Output written on Detai.pdf (79 pages, 2427358 bytes).
 PDF statistics:
  1487 PDF objects out of 1728 (max. 8388607)
  1242 compressed objects within 13 object streams
