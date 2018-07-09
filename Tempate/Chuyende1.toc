@@ -63,8 +63,4 @@
 \contentsline {section}{\numberline {\bfseries 2.}M\IeC {\^o} h\IeC {\`\i }nh h\IeC {\'o}a d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u thu \IeC {\dj }\IeC {\uhorn }\IeC {\d \ohorn }c}{58}{section.4.2}
 \contentsline {section}{\numberline {\bfseries 3.}\IeC {\'A}p d\IeC {\d u}ng k\IeC {\d i}ch b\IeC {\h a}n v\IeC {\`a} gi\IeC {\h a}i ph\IeC {\'a}p ng\IeC {\u a}n ch\IeC {\d \abreve }n}{61}{section.4.3}
 \contentsline {section}{\numberline {\bfseries 4.}\IeC {\'A}nh x\IeC {\d a} ng\IeC {\uhorn }\IeC {\`\ohorn }i d\IeC {\`u}ng th\IeC {\d \uhorn }c}{66}{section.4.4}
-\contentsline {section}{\numberline {\bfseries 5.}Gi\IeC {\h a}i ph\IeC {\'a}p Limiting the spread of epidemics within time constraint on online social network}{67}{section.4.5}
-\contentsline {subsection}{\numberline {5.1.}D\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u thu th\IeC {\d \acircumflex }p \IeC {\dj }\IeC {\uhorn }\IeC {\d \ohorn }c}{67}{subsection.4.5.1}
-\contentsline {section}{\numberline {\bfseries 6.}Gi\IeC {\h a}i ph\IeC {\'a}p Targeted Misinformation Blocking (X\IeC {\'a}c \IeC {\dj }\IeC {\d i}nh v\IeC {\`a} ng\IeC {\u a}n ch\IeC {\d \abreve }n th\IeC {\^o}ng tin sai l\IeC {\d \ecircumflex }ch tr\IeC {\^e}n m\IeC {\d a}ng x\IeC {\~a} h\IeC {\d \ocircumflex }i)}{67}{section.4.6}
-\contentsline {subsection}{\numberline {6.1.}D\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u thu th\IeC {\d \acircumflex }p \IeC {\dj }\IeC {\uhorn }\IeC {\d \ohorn }c}{67}{subsection.4.6.1}
 \contentsline {chapter}{T\`ai li\d \ecircumflex u tham kh\h {a}o}{68}{chapter*.37}
