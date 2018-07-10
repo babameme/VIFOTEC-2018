@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.6.26)  10 JUL 2018 13:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.6.26)  10 JUL 2018 14:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2562,172 +2562,172 @@ Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\ocircumflex' on input line 46.
 
 [53] [54]
-Overfull \hbox (73.48622pt too wide) in paragraph at lines 82--83
-[]\T5/ptm/m/n/13 Ti¸p theo, nhâm t¡c gi£ tü ^^_ëng trup cªp v o trang web câ ^^
-_àa ch¿ www.facebook.com/ID/friends
+Overfull \hbox (0.29546pt too wide) in paragraph at lines 82--84
+\T5/ptm/m/n/13 .com/ID/friends ho°c www.facebook.com/name/friends l  trang b¤n 
+b± cõa nhúng
  []
 
 
 Package hyperref Warning: Composite letter `\texttilde+\uhorn'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\texttilde' on input line 92.
+(hyperref)                removing `\texttilde' on input line 93.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 92.
+(hyperref)                removing `\uhorn' on input line 93.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 92.
+(hyperref)                removing `\textdotbelow' on input line 93.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 92.
+(hyperref)                removing `\ecircumflex' on input line 93.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\dj' on input line 92.
+(hyperref)                removing `\dj' on input line 93.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 92.
+(hyperref)                removing `\uhorn' on input line 93.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ohorn'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 92.
+(hyperref)                removing `\textdotbelow' on input line 93.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ohorn' on input line 92.
+(hyperref)                removing `\ohorn' on input line 93.
 
 [55]
 <picture/Net.pdf, id=1157, 602.25pt x 602.25pt>
 File: picture/Net.pdf Graphic file (type pdf)
 <use picture/Net.pdf>
-Package pdftex.def Info: picture/Net.pdf  used on input line 168.
+Package pdftex.def Info: picture/Net.pdf  used on input line 169.
 (pdftex.def)             Requested size: 361.35278pt x 361.35278pt.
 
 
 LaTeX Warning: The counter will not be printed.
-             The label is: + on input line 181.
+             The label is: + on input line 182.
 
 [56] [57 <./picture/Net.pdf>]
 
 LaTeX Warning: The counter will not be printed.
-             The label is: + on input line 226.
+             The label is: + on input line 227.
 
 [58]
 
 Package hyperref Warning: Composite letter `\textdotbelow+u'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 259.
+(hyperref)                removing `\textdotbelow' on input line 260.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+i'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 259.
+(hyperref)                removing `\textdotbelow' on input line 260.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\h' on input line 259.
+(hyperref)                removing `\h' on input line 260.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\h' on input line 259.
+(hyperref)                removing `\h' on input line 260.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\u' on input line 259.
+(hyperref)                removing `\u' on input line 260.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\abreve'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 259.
+(hyperref)                removing `\textdotbelow' on input line 260.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\abreve' on input line 259.
+(hyperref)                removing `\abreve' on input line 260.
 
 [59]
 <picture/FLE/FB_res.PNG, id=1194, 396.7322pt x 212.29312pt>
 File: picture/FLE/FB_res.PNG Graphic file (type png)
 <use picture/FLE/FB_res.PNG>
-Package pdftex.def Info: picture/FLE/FB_res.PNG  used on input line 302.
+Package pdftex.def Info: picture/FLE/FB_res.PNG  used on input line 303.
 (pdftex.def)             Requested size: 476.07625pt x 254.75047pt.
 
-Overfull \hbox (20.83214pt too wide) in paragraph at lines 302--303
+Overfull \hbox (20.83214pt too wide) in paragraph at lines 303--304
  [] 
  []
 
 <picture/PartMH.png, id=1198, 481.04718pt x 536.0025pt>
 File: picture/PartMH.png Graphic file (type png)
 <use picture/PartMH.png>
-Package pdftex.def Info: picture/PartMH.png  used on input line 315.
+Package pdftex.def Info: picture/PartMH.png  used on input line 316.
 (pdftex.def)             Requested size: 288.63054pt x 321.60397pt.
 [60 <./picture/FLE/FB_res.PNG>]
 <picture/Facebook.pdf, id=1207, 361.35pt x 216.81pt>
 File: picture/Facebook.pdf Graphic file (type pdf)
 <use picture/Facebook.pdf>
-Package pdftex.def Info: picture/Facebook.pdf  used on input line 370.
+Package pdftex.def Info: picture/Facebook.pdf  used on input line 371.
 (pdftex.def)             Requested size: 361.34912pt x 216.80946pt.
  [61 <./picture/PartMH.png>] [62 <./picture/Facebook.pdf>]
 <picture/TimeFacebook.pdf, id=1235, 361.35pt x 216.81pt>
 File: picture/TimeFacebook.pdf Graphic file (type pdf)
 <use picture/TimeFacebook.pdf>
-Package pdftex.def Info: picture/TimeFacebook.pdf  used on input line 383.
+Package pdftex.def Info: picture/TimeFacebook.pdf  used on input line 384.
 (pdftex.def)             Requested size: 361.34912pt x 216.80946pt.
 <picture/PartPVQ.png, id=1237, 481.8pt x 511.9125pt>
 File: picture/PartPVQ.png Graphic file (type png)
 <use picture/PartPVQ.png>
-Package pdftex.def Info: picture/PartPVQ.png  used on input line 395.
+Package pdftex.def Info: picture/PartPVQ.png  used on input line 396.
 (pdftex.def)             Requested size: 337.25769pt x 358.3363pt.
  [63 <./picture/TimeFacebook.pdf>]
 
 Package hyperref Warning: Composite letter `\textdotbelow+a'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 407.
+(hyperref)                removing `\textdotbelow' on input line 408.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 407.
+(hyperref)                removing `\uhorn' on input line 408.
 
 
 Package hyperref Warning: Composite letter `\textasciigrave+\ohorn'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciigrave' on input line 407.
+(hyperref)                removing `\textasciigrave' on input line 408.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ohorn' on input line 407.
+(hyperref)                removing `\ohorn' on input line 408.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\uhorn'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 407.
+(hyperref)                removing `\textdotbelow' on input line 408.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 407.
+(hyperref)                removing `\uhorn' on input line 408.
 
 [64 <./picture/PartPVQ.png>]
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\h' on input line 465.
+(hyperref)                removing `\h' on input line 466.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\u' on input line 465.
+(hyperref)                removing `\u' on input line 466.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\abreve'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 465.
+(hyperref)                removing `\textdotbelow' on input line 466.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\abreve' on input line 465.
+(hyperref)                removing `\abreve' on input line 466.
 
 [65]) [66]
 \openout2 = `Chapter/Ketluan/Ketluan.aux'.
@@ -2873,7 +2873,7 @@ helvetic/uhvr8a.pfb><c:/texlive/2018/texmf-dist/fonts/type1/vntex/urwvn/utmb8v.
 pfb><c:/texlive/2018/texmf-dist/fonts/type1/vntex/urwvn/utmbi8v.pfb><c:/texlive
 /2018/texmf-dist/fonts/type1/vntex/urwvn/utmr8v.pfb><c:/texlive/2018/texmf-dist
 /fonts/type1/vntex/urwvn/utmri8v.pfb>
-Output written on Detai.pdf (78 pages, 2425881 bytes).
+Output written on Detai.pdf (78 pages, 2425877 bytes).
 PDF statistics:
  1481 PDF objects out of 1728 (max. 8388607)
  1237 compressed objects within 13 object streams
