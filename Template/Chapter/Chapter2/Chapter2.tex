@@ -43,9 +43,9 @@ Trong nghiên cứu này, các tác giả đã tìm hiểu các mô hình trên 
 	
 	Quá trình lan truyền thông tin trên mô hình IC diễn ra theo bước thời gian rời rạc, tạo ra tập các đỉnh {\itshape kích hoạt} theo quy tắc sau:
 	\begin {itemize}
-		\item Tại thời điểm $t$ $=$ $0$, tập đỉnh ở trạng thái kích hoạt chính là tập nguồn phát thông tin sai lệch $S$ $_{0}$
+		\item Tại thời điểm $t$ $=$ $0$, tập đỉnh ở trạng thái kích hoạt chính là tập nguồn phát thông tin sai lệch $S_{0}$.
 	
-		\item Tại thời điểm $t = 1$, đầu tiên ta gán $S$$_{t}$ bằng $S$$_{t-1}$ sau đó với mỗi nút $v$ $\notin$ $S$ $_{t-1}$, và với mỗi nút $u$ $\in$ $N$$_{in}$$(v)$ $\cap$ ($S$$_{t-1}$ \ $S$$_{t-2}$), u thực hiện một lần thử kích hoạt bằng cách áp dụng phép thử Bernoulli (Phép tung đồng xu độc lập) với xác suất thành công là $p(u,v)$. Nếu thành công ta thêm $v$ vào tập $S$$_{t}$ và nói rằng $u$ kích hoạt $v$ tại thời điểm $t$. Nếu nhiều nút kích hoạt $v$ tại thời điểm $t$, kết quả tương tự xảy ra, $v$ được thêm vào tập $S$$_{t}$. Nói cách khác, sau khi nút $u$ được kích hoạt tại thời điểm $t-1$, ngay lập tức trong thời điểm $t$,$ u$ có {\bfseries một cơ hội duy nhất} để kích hoạt các hàng xóm chưa được kích hoạt $v$ của nó với xác suất $p(u,v)$, và những sự kích hoạt này là độc lập với nhau. Nếu nút $u$ không kích hoạt $v$ tại thời điểm $t$, nó sẽ không thử kích hoạt $v$ tại các thời điểm sau nữa. Và một khi một nút đã được kích hoạt, nó vẫn giữ trạng thái đó ở các bước sau.
+		\item Tại thời điểm $t = 1$, đầu tiên ta gán $S$$_{t}$ bằng $S$$_{t-1}$ sau đó với mỗi nút $v$ $\notin$ $S$ $_{t-1}$, và với mỗi nút $u$ $\in$ $N$$_{in}$$(v)$ $\cap$ ($S$$_{t-1}$ \ $S$$_{t-2}$), u thực hiện một lần thử kích hoạt bằng cách áp dụng phép thử Bernoulli (Phép tung đồng xu độc lập) với xác suất thành công là $p(u,v)$. Nếu thành công ta thêm $v$ vào tập $S$$_{t}$ và nói rằng $u$ kích hoạt $v$ tại thời điểm $t$. Nếu nhiều nút kích hoạt $v$ tại thời điểm $t$, kết quả tương tự xảy ra, $v$ được thêm vào tập $S$$_{t}$. Nói cách khác, sau khi nút $u$ được kích hoạt tại thời điểm $t-1$, ngay lập tức trong thời điểm $t, u$ có {\bfseries một cơ hội duy nhất} để kích hoạt các hàng xóm chưa được kích hoạt $v$ của nó với xác suất $p(u,v)$, và những sự kích hoạt này là độc lập với nhau. Nếu nút $u$ không kích hoạt $v$ tại thời điểm $t$, nó sẽ không thử kích hoạt $v$ tại các thời điểm sau nữa. Và một khi một nút đã được kích hoạt, nó vẫn giữ trạng thái đó ở các bước sau.
 		
 		\item Nếu tại thời điểm $t$, không có nút nào được kích hoạt thêm nữa, nghĩa là $S$$_{t}$ $=$ $S$$_{t-1}$, tập các nút {\itshape kích hoạt} sẽ không còn thay đổi nữa, và quá trình truyền tin kết thúc với tập các nút bị kích hoạt cuối cùng là $S$$_{t}$
 	\end {itemize}
@@ -72,7 +72,7 @@ Trong nghiên cứu này, các tác giả đã tìm hiểu các mô hình trên 
 	\begin {itemize}
 		\item Tại thời điểm $t$ $=$ $0$, tập đỉnh ở trạng thái kích hoạt chính là tập nguồn phát thông tin sai lệch $S$$_{0}$.
 	
-		\item Tại thời điểm $t$ $\geq$ $1$, đầu tiên ta gán $S$$_{t}$ bằng $S$$_{t-1}$. Sau đó với mỗi đỉnh chưa được kích hoạt $v$ $\in$ $V$ $\ S_{t-1}$, nếu tổng ảnh hưởng từ những đính hàng xóm kích hoạt tới $v$ vượt ngưỡng $\theta$$_{0}$, tức là  $\sum_{u\in S_{t-1} \cap N_{in}(v)}w(u,v) \geq \theta_{v}$ thì đỉnh $v$ được kích hoạt, ta thêm $v$ vào tập $S$$_{t}$.
+		\item Tại thời điểm $t$ $\geq$ $1$, đầu tiên ta gán $S$$_{t}$ bằng $S$$_{t-1}$. Sau đó với mỗi đỉnh chưa được kích hoạt $v \in S_{t-1}$, nếu tổng ảnh hưởng từ những đính hàng xóm kích hoạt tới $v$ vượt ngưỡng $\theta$$_{0}$, tức là  $\sum_{u\in S_{t-1} \cap N_{in}(v)}w(u,v) \geq \theta_{v}$ thì đỉnh $v$ được kích hoạt, ta thêm $v$ vào tập $S$$_{t}$.
 	
 		\item Nếu tại thời điểm $t$, không có nút nào được kích hoạt thêm nữa, nghĩa là $S$$_{t}$ $=$ $S$$_{t-1}$, tập các nút kích hoạt sẽ không còn thay đổi nữa, và quá trình truyền tin kết thúc với tập các nút bị kích hoạt cuối cùng là $S$$_{t}$.
 	\end {itemize}
