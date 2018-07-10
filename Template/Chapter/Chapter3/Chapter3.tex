@@ -1,4 +1,5 @@
 \chapter{GIẢI PHÁP NGĂN CHẶN SỰ PHÁT TÁN CỦA THÔNG TIN SAI LỆCH}
+\thispagestyle{fancy}
 
 Tự do ngôn luận, tự do báo chí là một trong những quyền căn bản của công dân đã được Hiến pháp ghi nhận và đã được Đảng và Nhà nước nhất quán. Tuy nhiên thực tế hiện nay có rất nhiều cá nhân, tổ chức đã và đang lợi dụng các quyền này để xâm phạm lợi ích của Nhà nước và lợi ích chính đáng của công dân. Với sự phát triển mạnh mẽ của Internet và mạng xã hội trực tuyến, việc đăng tải, tuyên truyền các thông tin sai lệch mang tính chất xuyên tạc, chống đối đường lối chính sách của Đảng, pháp luật của Nhà nước, hoạt động của bộ máy chính quyền diễn ra thường xuyên hơn với âm mưu, quy mô và tổ chức ngày càng rộng lớn, chặt chẽ.
 
@@ -18,13 +19,13 @@ Bài toán này được đề xuất và nghiên cứu sau khi xem xét thực 
 Bài toán này được đưa ra nghiên cứu dựa trên những nhận định về việc thông tin lan truyền trên một mạng xã hội trong thực tế từ người dùng này đến người dùng khác có thể được coi như các bước lan truyền thông tin độc lập diễn ra liên tiếp nhau. Nếu ta càng ngăn chặn được sự lan truyền thông tin sai lệch sớm bao nhiêu, thì hậu quả mà thông tin sai lệch để lại sẽ càng được hạn chế bấy nhiêu. Không chỉ thế, các nghiên cứu gần đây cũng đã chỉ ra rằng số các bước lan truyền thường nhỏ, ví dụ như trong \cite{cha23} đã chỉ ra rằng số các bước lan truyền liên tiếp nhau thông thường chỉ nhỏ hơn 4, và trong \cite{lesk16} một bước lan truyền xảy ra thường là giữa hai người dùng có liên kết trực tiếp với nhau.
 Giải pháp tập trung vào việc tìm ra tập đỉnh $A$ có tối đa $k$ đỉnh để loại bỏ khỏi đồ thị để có thể tối thiểu hóa tác hại của lan truyền thông tin sai lệch. Những khía cạnh mới mà giải pháp của nhóm tác giả đề ra so với các công trình trước đó là: quá trình lan truyền được giới hạn trong khoảng $d \geq 1$ bước lan truyền bắt đầu từ nguồn phát tán thông tin sai lệch, và giải pháp được thực hiện trên một mô hình lan truyền xác định bởi thực tế cho thấy thông tin cá nhân của người dùng có thể được thu thập qua khảo sát và các phương pháp khai phá dữ liệu \cite{zaixin}. Cụ thể, giải pháp này của nhóm tác giả có thể được tóm tắt lại như sau:
 \begin{itemize}
-	\item nhóm tác giả đưa ra một mô hình lan truyền thông tin với giới hạn về thời gian lan truyền thông tin, được mở rộng từ mô hình Ngưỡng tuyến tính xác định (Deterministic Linear-Threshold), gọi là mô hình Ngưỡng tuyến tính với bước thời gian rời rạc (Time Constraint Deterministic Linear-Threshold). Sau đó, nhóm tác giả định nghĩa bài toán Hạn chế sự lây lan của thông tin sai lệch (Limiting the Spread of Epidemics - LSE) với mục tiêu tìm kiếm tập đỉnh $A$ có kích thước tối đa $k$ để loại ra khỏi đồ thị sao cho số đỉnh cứu được là tối đa trong một ràng buộc thời gian. Nhóm tác giả chỉ ra bài toán này là bài toán NP-Khó.
+	\item Nhóm tác giả đưa ra một mô hình lan truyền thông tin với giới hạn về thời gian lan truyền thông tin, được mở rộng từ mô hình Ngưỡng tuyến tính xác định (Deterministic Linear-Threshold), gọi là mô hình Ngưỡng tuyến tính với bước thời gian rời rạc (Time Constraint Deterministic Linear-Threshold). Sau đó, nhóm tác giả định nghĩa bài toán Hạn chế sự lây lan của thông tin sai lệch (Limiting the Spread of Epidemics - LSE) với mục tiêu tìm kiếm tập đỉnh $A$ có kích thước tối đa $k$ để loại ra khỏi đồ thị sao cho số đỉnh cứu được là tối đa trong một ràng buộc thời gian. Nhóm tác giả chỉ ra bài toán này là bài toán NP-Khó.
 	\item Với lời giải, nhóm tác giả đưa ra Thuật toán nhanh và hiệu quả để giới hạn sự lây nhiễm thông tin (Fast And Effective Limiting Epidemics – FLE).
 	\item Việc kiểm thử được thực hiện trên các bộ dữ liệu thực tế lấy từ các nguồn đáng tin cậy như Gnutella, Wikipedia Vote, Amazon và Google Web, đồng thời nhóm tác giả cũng sử dụng một bộ dữ liệu được thu thập trực tiếp trên Facebook Việt Nam. Thuật toán đã được kiểm nghiệm và cho thấy khả năng ưu việt về cả tốc độ lẫn chất lượng lời giải so với các thuật toán phổ biến được dùng. Chi tiết về kiểm nghiệm sẽ được nêu rõ ở chương sau.
 \end{itemize}  
 
-\subsection{Mô hình lan truyền thông tin Ngưỡng tuyến tính với bước thời gian rời rạc (Time Constraint Deterministic Linear Threshold - T-DLT).}
-Như đã được trình bày ở trên, có hai mô hình phổ biến trong bài toán lan truyền thông tin nói chung là mô hình IC và mô hình LT. Tuy nhiên, ở giải pháp này nhóm tác giả đề xuất một mở rộng mô hình DLT \cite{zaixin}, vốn cũng là một trường hợp biến thể của mô hình LT, được gọi là T-DLT. Sở dĩ nhóm tác giả sử dụng mô hình này thay cho mô hình LT và IC bởi với bài toán này, mô hình T-DLT cho phép nhóm tác giả giảm thiểu tính phức tạp của cơ chế lan truyền, đồng thời vẫn đảm bảo kết quả không bị ảnh hưởng so với hai mô hình điển hình trên. Chi tiết mô hình T-DLT có thể được mô tả như sau:
+\subsection{Mô hình lan truyền thông tin Ngưỡng tuyến tính với bước thời gian rời rạc}
+Như đã được trình bày ở trên, có hai mô hình phổ biến trong bài toán lan truyền thông tin nói chung là mô hình IC và mô hình LT. Tuy nhiên, ở giải pháp này nhóm tác giả đề xuất một mở rộng mô hình DLT \cite{zaixin}, vốn cũng là một trường hợp biến thể của mô hình LT, được gọi là T-DLT (Time Constraint Deterministic Linear Threshold - T-DLT) - mô hình lan truyền thông tin Ngưỡng tuyến tính với bước thời gian rời rạc. Sở dĩ nhóm tác giả sử dụng mô hình này thay cho mô hình LT và IC bởi với bài toán này, mô hình T-DLT cho phép nhóm tác giả giảm thiểu tính phức tạp của cơ chế lan truyền, đồng thời vẫn đảm bảo kết quả không bị ảnh hưởng so với hai mô hình điển hình trên. Chi tiết mô hình T-DLT có thể được mô tả như sau:
 \begin {itemize}
 \item {\itshape Ký pháp đồ thị}: Đặt $G=(V,E,w)$ là biểu diễn của mạng xã hội với tập đỉnh $V$, tập cạnh có hướng $E$, với $|V|=n$ và $|E|=m$. Mỗi đỉnh đại diện cho một người dùng trong mạng xã hội, mỗi cạnh $e=(u,v)$ trong tập $E$ tương ứng đại diện cho mỗi quan hệ giữa người dùng $u$ và người dùng $v$. Nhóm tác giả ký hiệu đỉnh vào liền kề và đỉnh ra liền kề của đỉnh $u$ lần lượt là $N_{\textup{in}}(u)$ và $N_{\textup{out}}(u)$, $d_{\textup{in}}(u)$ và $d_{\textup{out}}(u)$ lần lượt là bậc vào và bậc ra của đỉnh $u$. Đặt $I \subset V$ là tập các đỉnh bị lây nhiễm ban đầu. Mỗi cạnh có hướng $(u,v)$ sẽ có trọng số $w(u,v)$, tượng trưng cho mức độ ảnh hưởng thông tin của $v$ tới $u$, thỏa mãn $\sum_{u} w(u,v) \leq 1$.
 
@@ -67,7 +68,7 @@ Trong mục này, nhóm tác giả chỉ ra tính NP-Khó của bài toán LSE b
 \end{theo}
 
 \begin{proof}
-	Để chứng minh LSE là bài toán NP-Khó, ta sử dụng phép dẫn đa thức từ bài toán Phủ đỉnh (Set Cover) về bài toán LSE. 
+	Để chứng minh LSE là bài toán NP - Khó, ta sử dụng phép dẫn đa thức từ bài toán Phủ đỉnh (Set Cover) về bài toán LSE. 
 	
 	{\bfseries Bài toán Phủ đỉnh (Set Cover - SC):} Cho một số tự nhiên dương $t$, một tập phổ quát $\vartheta = {e_{1}, e_{2}, ... ,e_{M}}$ và tập con $S = {s_{1}, s_{2}, ... , s_{N}}$ ta có thể giả sử rằng $t < M < N$. Bài toán Phủ đỉnh yêu cầu rằng: có tồn tại hay không một lượng $t$ tập con, sao cho hợp của chúng là $\vartheta$.
 	
@@ -102,7 +103,7 @@ Trong mục này, nhóm tác giả chỉ ra tính NP-Khó của bài toán LSE b
 \end{proof}
 
 \subsection{Thuật toán đề xuất}
-Trong phần này, nhóm tác giả thiết kế một thuật toán heuristics có độ phức tạp thấp và kết quả rất khả quan. Tên gọi của thuật toán là Thuật toán nhanh và hiệu quả để giới hạn sự lây nhiễm thông tin(Fast And Effective Limiting Epidemics – FLE). 
+Trong phần này, nhóm tác giả thiết kế một thuật toán heuristics có độ phức tạp thấp và kết quả rất khả quan. Tên gọi của thuật toán là Thuật toán nhanh và hiệu quả để giới hạn sự lây nhiễm dịch bệnh (Fast And Effective Limiting Epidemics – FLE). 
 Trước khi bắt đầu, nhóm tác giả có định nghĩa một vài kí hiệu sẽ được sử dụng trong quá trình đề xuất thuật toán:
 \begin {itemize}
 \item $t(u)$: vòng nhỏ nhất sao cho đỉnh $u$ chuyển từ đỉnh không bị lây nhiễm sang đỉnh bị lây nhiễm.
@@ -213,7 +214,7 @@ Khó khăn trong thuật toán chủ yếu đến từ bước tính toán các 
 	}
 \end{algorithm}
 
-Để đánh giá độ phức tạp của thuật toán này, chúng ta cần đánh giá trước độ phức tạp của thuật toán. Ta dễ thấy rằng việc tính  toán $f_{d}(I)$ (Thuật toán \ref{alg:Algo2}, dòng 7 - 22) có cách thức hoạt đông giống BFS. Do đó, độ phức tạp của nó là $O(m_{d} + n_{d})$. Với bước tính toán $\alpha(u)$ và $\beta(u)$ (Thuật toán \ref{alg:Algo3}, dòng 1 - 11), ta thấy độ phức tạp của nó là $O(m_{d} + n_{d})$. Do đó, độ phức tạp chung của thuật toán là $O(m_{d} + n_{d})$. 
+Để đánh giá độ phức tạp của thuật toán này, chúng ta cần đánh giá trước độ phức tạp của thuật toán. Nhóm tác giả nhận thấy rằng việc tính  toán $f_{d}(I)$ (Thuật toán \ref{alg:Algo2}, dòng 7 - 22) có cách thức hoạt đông giống BFS. Do đó, độ phức tạp của nó là $O(m_{d} + n_{d})$. Với bước tính toán $\alpha(u)$ và $\beta(u)$ (Thuật toán \ref{alg:Algo3}, dòng 1 - 11), ta thấy độ phức tạp của nó là $O(m_{d} + n_{d})$. Do đó, độ phức tạp chung của thuật toán là $O(m_{d} + n_{d})$. 
 
 \subsection{Kết quả thực nghiệm với dữ liệu đã công bố}
 
@@ -351,10 +352,10 @@ Nguồn phát tán thông tin sai lệch có thể được phát hiện qua cá
 	\item Việc thực nghiệm được triển khai trên các bộ dữ liệu đã công bố thu thập từ nguồn uy tín và một bộ dữ liệu được nhóm tác giả thu thập từ mạng xã hội Facebook. 
 \end{itemize}
 
-\subsection{Mô hình lan truyền thông tin Ngưỡng tuyến tính Linear Threshold}
+\subsection{Mô hình lan truyền thông tin Ngưỡng tuyến tính}
 Bài toán này sử dụng mô hình lan truyền thông tin Ngưỡng tuyến tính Linear Threshold. Mô hình lan truyền này là mô hình phổ biến, thường được sử dụng trong các nghiên cứu về mạng xã hội. Chi tiết về mô hình LT đã được trình bày trong chương \ref{chap:2}, ta có thể tóm gọn quá trình lan truyền thông tin trên mô hình LT như sau:
 
-Trong mô hình LT, mỗi đỉnh $v \in V$, có hai trạng thái active và inactive. Quá trình lan truyền trên mô hình LT được diễn tả như sau: Đầu tiên, mỗi đỉnh v được gán một trọng số ngẫu nhiên $\theta_{v} \in [0,1]$ thể hiện giá trị active của đỉnh kề u phải đạt được để có thể active v. Tiếp đến quá trình lan truyền diễn ra trong các vòng t = 1,2,3… như sau: 		
+Trong mô hình LT, mỗi đỉnh $v \in V$, có hai trạng thái active và inactive. Quá trình lan truyền trên mô hình LT được diễn tả như sau: Đầu tiên, mỗi đỉnh $v$ được gán một trọng số ngẫu nhiên $\theta_{v} \in [0,1]$ thể hiện giá trị active của đỉnh kề u phải đạt được để có thể active $v$. Tiếp đến quá trình lan truyền diễn ra trong các vòng $t = 1,2,3…$ như sau: 		
 \begin {itemize}
 \item Ở vòng 1, tất cả các đỉnh $s_{i} \in S$ ở trạng thái active và các đỉnh còn lại ở trạng thái inactive.
 
@@ -368,7 +369,7 @@ Kí hiệu $G = (V, E, w)$ là một đồ thị có hướng biểu diễn cho 
 
 Đưa ra một tập nguồn $S = {s_{1}, s_{2}, ... , s_{n}}$, $s_{i} \in V$ là tập tiềm năng phát tán thông tin sai lệch (tương tự như tập hạt giống trong bài IM \cite{kemple2}).
 
-Kí hiệu $\sigma_{S}(G)$ là ảnh hưởng lan truyền của tập S trên đồ thị G dưới mô hình LT hay là số lượng đỉnh được active bởi nguồn S. Theo nghiên cứu của Kempe và các cộng sự \cite{kemple1} đã chỉ ra rằng mô hình LT là tương đương với khả năng tiếp cận trong một đồ thị ngẫu nhiên g, thường được gọi là đồ thị live-edge hoặc đồ thị mẫu. Trên mô hình LT, đồ thị live-edge được xây dựng như sau:
+Kí hiệu $\sigma_{S}(G)$ là ảnh hưởng lan truyền của tập $S$ trên đồ thị $G$ dưới mô hình LT hay là số lượng đỉnh được active bởi nguồn $S$. Theo nghiên cứu của Kempe và các cộng sự \cite{kemple1} đã chỉ ra rằng mô hình LT là tương đương với khả năng tiếp cận trong một đồ thị ngẫu nhiên $g$, thường được gọi là đồ thị live-edge hoặc đồ thị mẫu. Trên mô hình LT, đồ thị live-edge được xây dựng như sau:
 \begin {itemize}
 \item Với mỗi $v$ $\in$ $V$, chọn tối đa một cạnh đi vào nó một cách ngẫu nhiên, xác suất cạnh $(u, v)$ được chọn là $w(u, v)$.
 
@@ -419,7 +420,7 @@ Trong mục này nhóm tác giả chỉ ra một số kết quả về độ kh�
 			\label{reduce}   
 		\end{center}
 	\end{figure}			
-	Xem xét thể hiện $\mathcal{I}_1$ của bài toán $s$-$t$ paths, với $G = (V, E), s, t$ cho trước. Như minh họa trong hình \ref{reduce}, từ $G$, chúng ta xây dựng $G'$ như sau: Thêm đỉnh $u$ và hai cạnh $(s, u)$, $(t, u)$ với trọng số $w(s, u) = w(t,u) = 1/2$, tiếp đó thêm tập $Q$ gồm 2n đỉnh và kết nối $u$ với chúng với trọng số là $1$. Với các cạnh khác, thiết lập trọng số $w = 1/\Delta$, trong đó $\Delta$ là bậc vào lớn nhất của đồ thị $G$. Chúng ta chia tất cả các đường đi bắt đầu từ $s$ thành 2 nhóm: Nhóm thứ nhất là tập tất cả các đường đi có đỉnh kết thúc thuộc tập $Q$ và nhóm thứ hai là tập còn lại. Từ công thức \eqref{inf_path}, chúng ta có: 
+	Xem xét thể hiện $\mathcal{I}_1$ của bài toán $s$-$t$ paths, với $G = (V, E), s, t$ cho trước. Như minh họa trong hình \ref{reduce}, từ $G$, nhóm tác giả xây dựng $G'$ như sau: Thêm đỉnh $u$ và hai cạnh $(s, u)$, $(t, u)$ với trọng số $w(s, u) = w(t,u) = 1/2$, tiếp đó thêm tập $Q$ gồm 2n đỉnh và kết nối $u$ với chúng với trọng số là $1$. Với các cạnh khác, thiết lập trọng số $w = 1/\Delta$, trong đó $\Delta$ là bậc vào lớn nhất của đồ thị $G$. Nhóm tác giả chia tất cả các đường đi bắt đầu từ $s$ thành 2 nhóm: Nhóm thứ nhất là tập tất cả các đường đi có đỉnh kết thúc thuộc tập $Q$ và nhóm thứ hai là tập còn lại. Từ công thức \eqref{inf_path}, ta có: 
 	\begin{align}
 	\sigma_{S}(G')&=\sum_{x \in \mathsf{P}(G', s)} \prod_{e \in x}w(e)= \sum_{v \in  G' \setminus Q} \left(  \sum_{x \in \mathsf{P}(G', s, v)} \prod_{e \in x}w(e) \right) + \sum_{v \in Q} \left(  \sum_{x \in \mathsf{P}(G', s, v)} \prod_{e \in x}w(e) \right)  \nonumber
 	\\
@@ -481,7 +482,7 @@ Trong phần này nhóm tác giả giới thiệu một thuật toán xấp xỉ
 \begin{proof}	
 	Theo định lý 5 trong \cite{khali}, cho $A \subseteq T$ chúng ta có $h(T)-h(A)=\sigma_S(G) - \sigma_S(G \setminus T) -(\sigma_S(G) - \sigma_S(G \setminus A))  =\sigma_{S}(G \setminus A)- \sigma_{S}(G \setminus T) \geq 0$. Do đó $h(\cdot)$ là một hàm monotone. 
 	
-	Tiếp đến chúng ta chỉ ra rằng $\sigma_S(G \setminus A)$ là một hàm submodular với $A$ là biến số. Kí hiệu $N_E(A)$ là tập tất cả các cạnh $(u, v) \in E$ với $u$, $v$ $\in$ $A$. Đặt $E_{T, v}=N_E(T+\{v\})\setminus N_E(T), E_{A, v}= N_E(A+\{v\}) \setminus N_E(A)$ dễ thấy $E_{T, v} \subseteq E_{A, v}$  nếu $A \subseteq T$ $\Rightarrow$ $N_E(A)\cup E_{T, v} \subseteq N_E(A+ \{v\})$. Lấy $\sigma_S(G \setminus N_E(X))$ là ảnh hưởng lan truyền của tập $S$ trên đồ thị $G$ sau khi loại bỏ tập cạnh $N_E(X) \subset E$, chúng ta nhận thấy $\sigma_{S}(G \setminus X)=\sigma_{S}(G \setminus N_E(X)$. Theo định lý 6 trong \cite{khali}, $\forall N_E(X) \subseteq N_E(Y), e \in N_E(Y)\setminus N_E(X)$, chúng ta có: 
+	Tiếp đến nhóm tác giả chỉ ra rằng $\sigma_S(G \setminus A)$ là một hàm submodular với $A$ là biến số. Kí hiệu $N_E(A)$ là tập tất cả các cạnh $(u, v) \in E$ với $u$, $v$ $\in$ $A$. Đặt $E_{T, v}=N_E(T+\{v\})\setminus N_E(T), E_{A, v}= N_E(A+\{v\}) \setminus N_E(A)$ dễ thấy $E_{T, v} \subseteq E_{A, v}$  nếu $A \subseteq T$ $\Rightarrow$ $N_E(A)\cup E_{T, v} \subseteq N_E(A+ \{v\})$. Lấy $\sigma_S(G \setminus N_E(X))$ là ảnh hưởng lan truyền của tập $S$ trên đồ thị $G$ sau khi loại bỏ tập cạnh $N_E(X) \subset E$, nhận thấy $\sigma_{S}(G \setminus X)=\sigma_{S}(G \setminus N_E(X)$. Theo định lý 6 trong \cite{khali}, $\forall N_E(X) \subseteq N_E(Y), e \in N_E(Y)\setminus N_E(X)$, chúng ta có: 
 	\begin{align}
 	\sigma_{S}(G \setminus (N_E(X) \cup \{e\}) - \sigma_{S}(G \setminus X) 
 	\leq \sigma_{S}(G \setminus (N_E(Y) \cup \{e\})) - \sigma_{S}(G \setminus Y)
@@ -632,15 +633,15 @@ $ h_{max} \leftarrow 0$; $iteration \leftarrow 1$
 \label{STMB}
 \end{algorithm}				
 {\itshape Độ phức tạp của thuật toán: }		
-Để đánh giá độ phức tạp của thuật toán trước tiên chúng ta đi phân tích độ phức tạp của các thuật toán con trong nó.
+Để đánh giá độ phức tạp của thuật toán trước tiên nhóm tác giả đi phân tích độ phức tạp của các thuật toán con trong nó.
 \begin {itemize}
-\item Thuật toán MERGE có độ phức tạp là O(k + | N$_{in}(S)$ |).
+\item Thuật toán MERGE có độ phức tạp là O($k$ + | N$_{in}(S)$ |).
 
 \item Quá trình tạo ra $\mu$ đồ thị mẫu dòng 3 có độ phức tạp O($\mu(m + n)$).
 
 \item Do T$_{I}^i$ là một cây nên việc tính toán h($u$, T$_{I}^i$) $\forall u \in \text{T}_{I}^i$ mất O$(\mu n)$ 
 
-\item Phần Lazy Forward có độ phức tạp là O(qmn) với q là số vòng lặp từ dòng 10 đến 23.
+\item Phần Lazy Forward có độ phức tạp là O($qmn$) với q là số vòng lặp từ dòng 10 đến 23.
 \end {itemize}
 
 Vậy nên toàn bộ thuật toán TMB có độ phức tạp là O($\mu$(m+qn)).
@@ -650,7 +651,7 @@ Vậy nên toàn bộ thuật toán TMB có độ phức tạp là O($\mu$(m+qn)
 Trong mục này nhóm tác giả đưa ra kết quả thực nghiệm của thuật toán STMB với 3 bộ dữ liệu đã công bố của các mạng xã hội và so sánh về chất lượng lời giải, tốc độ thực hiện với một số thuật toán cơ bản khác.
 Thuật toán được thực hiện bằng ngôn ngữ Python 2.7, sử dụng thư viện hỗ trợ NetworkX\footnote{Hướng dẫn sử dụng https://networkx.github.io/} và chạy trên máy Linux Server với cấu hình 2.30 GHz Intel\textsuperscript{\textregistered} Xeon\textsuperscript{\textregistered} CPU E5-2697, bộ nhớ 128G of RAM DDR4.
 \subsubsection{Dữ liệu}
-Với mục đích thực nghiệm, nhóm tác giả sử dụng 3 bộ dữ liệu mạng thực tế thu thập trên trang snap.stanford.edu \footnote{https://snap.stanford.edu/data/index.html}, Một vài thông tin cơ bản về chúng được đưa ra trong bảng \ref{TMB:table}. 
+Với mục đích thực nghiệm, nhóm tác giả sử dụng 3 bộ dữ liệu mạng thực tế thu thập trên trang Snap.stanford.edu \footnote{https://snap.stanford.edu/data/index.html}, Một vài thông tin cơ bản về chúng được đưa ra trong bảng \ref{TMB:table}. 
 \begin{table}[h]
 	\centering
 	\begin{tabular}{|c|c|c|c|}
@@ -684,7 +685,7 @@ Theo các nghiên cứu trước \cite{khali, kemple1,chen10LT}, nhóm tác gi�
 \subsubsection{Các thuật toán sử dụng}
 Trong thực nghiệm, nhóm tác giả so sánh thuật toán STMB với một số thuật toán sau, các thuật toán này thường được sử dụng trong các nghiên cứu liên quan về vấn đề nhóm tác giả nghiên cứu:
 \begin {itemize}
-\item PageRank: Tính toán ranking của các đỉnh trong đồ thị $G$ dựa vào cấu trúc các cạnh liên kết với nó. Đây là thuật toán được thiết kế để xếp hạng các trang web từ đó đưa ra kết quả tìm kiếm. Do $h(\cdot)$ là hàm monotone nên sau khi sắp xếp hạng của các đỉnh trong đồ thị, nhóm tác giả sử dụng thuật toán tìm kiếm nhị phân để tìm kiếm tập lời giải A với |A| đỉnh có rank lớn nhất.
+\item PageRank: Tính toán ranking của các đỉnh trong đồ thị $G$ dựa vào cấu trúc các cạnh liên kết với nó. Đây là thuật toán được thiết kế để xếp hạng các trang web từ đó đưa ra kết quả tìm kiếm. Do $h(\cdot)$ là hàm monotone nên sau khi sắp xếp hạng của các đỉnh trong đồ thị, nhóm tác giả sử dụng thuật toán tìm kiếm nhị phân để tìm kiếm tập lời giải $A$ với $|A|$ đỉnh có rank lớn nhất.
 \item High-Degree: Một thuật toán heuristic dựa vào bậc của một đỉnh. Bậc của một đỉnh ở đây là tổng số đỉnh được tính theo công thức $d(v) = N_{in}(v) + N_{out}(v)$. Tương tự như thuật toán PageRank sau khi sắp xếp các đỉnh dựa trên bậc của chúng, nhóm tác giả sử dụng thuật toán tìm kiếm nhị phân để tìm lời giải cho bài toán.
 \item Greedy: Thuật toán Greedy đưa ra trong thuật toán \ref{GA} kết hợp với các tối ưu trong \cite{Jleskovec} giúp tăng tốc độ thuật toán song không làm ảnh hưởng đến chất lượng lời giải.
 \end{itemize} 
