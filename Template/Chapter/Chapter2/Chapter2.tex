@@ -20,8 +20,9 @@ Các mô hình phát tán thông tin là cơ sở cho việc nghiên cứu hạn
 
 	\item $E \subset$ VxV hợp các cạnh của đồ thị, $|E| = m$ gồm $m$ cạnh có hướng, biểu diễn mối quan hệ giữa các cá nhân trong MXH.
 
-	\item $w(u,v)$ là trọng số của cạnh $(u, v)$ là một số thực dương biểu diễn cho các tần số tương tác, trao đổi giữa hai người dùng. $w(u, v) = 0$ nếu giữa hai đỉnh $u$ và $v$ không tồn tại cạnh, $w(u, v) > 0$ nếu giữa $u$ và $v$ tồn tại cạnh nối.
+	\item $w(u,v)$ là trọng số của cạnh $(u, v)$ là một số thực dương biểu diễn cho các tần số tương tác, trao đổi giữa hai người dùng. $w(u, v) = 0$ nếu giữa hai đỉnh $u$ và $v$ không tồn tại cạnh, $w(u, v) > 0$ nếu giữa $u$ và $v$ tồn tại cạnh nối.	
 \end {itemize}
+
 Do $G$ là đồ thị có hướng nên cạnh $(u,v)$ được gọi là cạnh đi ra từ $u$, cạnh $(v,u)$ được gọi là cạnh đi vào đỉnh $u$. Ta ký hiệu $N_{out}(u)$ và $N_{in}(u)$ tương ứng là tập hợp các đỉnh hàng xóm đi ra và đi vào đỉnh $u$.
 
 Quá trình lan truyền thông tin theo các bước thời gian rời rạc, với thời gian $t = 0, 1, 2, ... $Gọi $S_{t}\subset V$ là tập các đỉnh ở trạng thái {\itshape kích hoạt} tại thời điểm $t$. Tập các đỉnh là nguồn phát tán thông tin sai lệch ban đầu hay còn gọi là tập hạt giống, kí hiệu là $S_{0}$
@@ -48,6 +49,7 @@ Trong nghiên cứu này, các tác giả đã tìm hiểu các mô hình trên 
 		
 		\item Nếu tại thời điểm $t$, không có nút nào được kích hoạt thêm nữa, nghĩa là $S$$_{t}$ $=$ $S$$_{t-1}$, tập các nút {\itshape kích hoạt} sẽ không còn thay đổi nữa, và quá trình truyền tin kết thúc với tập các nút bị kích hoạt cuối cùng là $S$$_{t}$
 	\end {itemize}
+	
 	Hình \ref{refhinh2_1} chỉ ra một ví dụ của quá trình lan truyền thông tin trên mô hình IC. Các đỉnh màu da cam và màu xanh tương ứng biểu diễn các đỉnh ở trạng thái kích hoạt, và không kích hoạt. Cạnh liền màu đỏ từ $u$ đến $v$ biểu diễn $u$ kích hoạt thành công $v$, cạnh nét đứt màu xanh từ $u$ đến $v$ biểu diễn $u$ kích hoạt không thành công $v$.
 		\begin{center}
 			\begin{figure}[H]
@@ -58,6 +60,7 @@ Trong nghiên cứu này, các tác giả đã tìm hiểu các mô hình trên 
 				\label{refhinh2_1}
 			\end{figure}
 		\end{center}
+	
 	Tại thời điểm bắt đầu $t=0$, hai đỉnh $v$$_{1}$, $v$$_{2}$ ở trạng thái {\itshape kích hoạt}. Ở thời điểm $t$ $=$ $1$, $v$$_{1}$ kích hoạt thành công $v$$_{5}$ nhưng thất bại với $v$$_{3}$, trong khi đó $v$$_{2}$ kích hoạt thành công $v$$_{3}$ và $v$$_{4}$ nhưng thất bại với $v$$_{6}$. Tại thời điểm $t$ $=$ $2$, $v$$_{3}$ kích hoạt thất bại $v$$_{6}$ trong khi $v$$_{5}$ kích hoạt thành công $v$$_{6}$ nhưng thất bại với $v$$_{9}$. Ở bước $t$ $=$ $3$, $v$$_{6}$ kích hoạt thất bại $v$$_{7}$, đến đây quá trình lan truyền thông tin kết thúc do không có đỉnh nào được kích hoạt thêm.
 	
 	Mô hình IC phù hợp cho quá trình lan truyền thông tin, đó là các môi trường mà việc tiếp xúc với một nguồn là đủ để một cá nhân được kích hoạt.
@@ -73,6 +76,7 @@ Trong nghiên cứu này, các tác giả đã tìm hiểu các mô hình trên 
 	
 		\item Nếu tại thời điểm $t$, không có nút nào được kích hoạt thêm nữa, nghĩa là $S$$_{t}$ $=$ $S$$_{t-1}$, tập các nút kích hoạt sẽ không còn thay đổi nữa, và quá trình truyền tin kết thúc với tập các nút bị kích hoạt cuối cùng là $S$$_{t}$.
 	\end {itemize}
+	
 	Sự ngẫu nhiên trong việc lựa chọn ngưỡng $\theta$$_{0}$ từ $0$ đến $1$ phản ánh sự thiếu thông tin về ngưỡng nội bộ của mỗi cá nhân. Điều này phản ánh khá đúng với thực tế xã hội, bởi vì sự chập nhận thông tin của mỗi người, tại những thời điểm khác nhau là khác nhau, và rất khó để nắm bắt. 
 	
 	Hình \ref{refhinh2_2} chỉ ra một ví dụ quá trình lan truyền thông tin trên mô hình LT. Các đỉnh màu da cam và màu xanh tương ứng biểu diễn các đỉnh ở trạng thái {\itshape kích hoạt}, và {\itshape không kích hoạt}. Các cạnh liền màu đỏ cùng đến đỉnh v biểu diễn các cạnh này đồng thời cố thử kích hoạt đỉnh v và thành công.
@@ -82,9 +86,10 @@ Trong nghiên cứu này, các tác giả đã tìm hiểu các mô hình trên 
 			\begin{center}
 				\includegraphics [scale=1]{picture/Hinh2_2}
 			\end{center}
-			\caption{Ví dụ quá trình lan truyền trên mô hình LT}
+			\caption{Ví dụ quá trình lan truyền thông tin trên mô hình LT}
 			\label{refhinh2_2}
 		\end{figure}
-	\end{center}	
+	\end{center}
+	
 	Tại thời điểm $t$$=$$0$, tất cả các đỉnh được khởi tạo ngẫu nhiên ngưỡng $\theta$$_{0}$ $\in$ $[0,1]$, hai đỉnh $v$$_{1}$ và $v$$_{2}$ là các đỉnh hạt giống. Ở thời điểm $t = 1$, $v$$_{1}$ và $v$$_{2}$ kích hoạt thành công $v$$_{3}$, $v$$_{1}$ cũng phải cách hoạt thành công $v$$_{5}$ và $v$$_{2}$ kích hoạt thành công $v$$_{4}$; tuy nhiên $v$$_{6}$ lại không kích hoạt thành công vì tổng trọng số các cạnh đi đến $v$$_{6}$ là $0.3$, trong khi ngưỡng kích hoạt của $v$$_{6}$ $0.7$. Tại thười điểm $t = 2$, các đỉnh hàng xóm đi đến $v$$_{6}$ là $v$$_{2}$, $v$$_{3}$, $v$$_{5}$ đã được kích hoạt cho nên tổng trọng số các cạnh đi đến là $0.7$ đủ để kích hoạt $v$$_{6}$. Tại bước $t = 3$, quá trình lan truyền thông tin kết thúc do không có đỉnh nào được kích hoạt thêm.
 

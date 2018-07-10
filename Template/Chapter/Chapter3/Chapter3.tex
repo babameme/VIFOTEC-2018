@@ -1,4 +1,4 @@
-\chapter{GIẢI PHÁP NGĂN CHẶN SỰ PHÁT TÁN CỦA TTSL}
+\chapter{GIẢI PHÁP NGĂN CHẶN SỰ PHÁT TÁN CỦA THÔNG TIN SAI LỆCH}
 
 Tự do ngôn luận, tự do báo chí là một trong những quyền căn bản của công dân đã được Hiến pháp ghi nhận và đã được Đảng và Nhà nước nhất quán. Tuy nhiên thực tế hiện nay có rất nhiều cá nhân, tổ chức đã và đang lợi dụng các quyền này để xâm phạm lợi ích của Nhà nước và lợi ích chính đáng của công dân. Với sự phát triển mạnh mẽ của Internet và mạng xã hội trực tuyến, việc đăng tải, tuyên truyền các thông tin sai lệch mang tính chất xuyên tạc, chống đối đường lối chính sách của Đảng, pháp luật của Nhà nước, hoạt động của bộ máy chính quyền diễn ra thường xuyên hơn với âm mưu, quy mô và tổ chức ngày càng rộng lớn, chặt chẽ.
 
@@ -41,6 +41,7 @@ Như đã được trình bày ở trên, có hai mô hình phổ biến trong b
 \item Một đỉnh bị lây nhiễm sẽ giữ nguyên trạng thái bị lây nhiễm cho tới hết quả trình lan truyền. Qúa trình lan truyền chấm dứt khi $t = d$.
 \end {enumerate}
 \end {itemize}
+
 Trong mô hình LT, giá trị của ngưỡng $\theta_{v}$ được đặt một cách ngẫu nhiên trong khoảng $[0,1]$ và sẽ được chỉnh sửa dựa vào thông tin có được thêm trong quá trình lan truyền. Do đó, mô hình này thuộc dạng mô hình ngẫu nhiên. Khác với mô hình LT, trong mô hình T-DLT ngưỡng lây nhiễm $\theta_{v}$ được cho trước. Trường hợp này, giá trị ngưỡng có thể được đặt dựa theo các khảo sát thực tế hoặc các phương pháp khai phá dữ liệu.
 
 Mô hình lan truyền T-DLT được chúng tôi lựa chọn để giải quyết bài toán bởi nó phù hợp với quá trình lan truyền thông tin nói chung trong thực tế. Khi một thông tin phát tán từ một nguồn, nó sẽ lan truyền từng bước thông qua những người có liên kết liền kề với nhau. Điều này được mô phỏng rõ dưới cách hoạt động của mô hình lan truyền T-DLT. Mặt khác, mô hình này có thể sử dung các kết quả khai thác dữ liệu từ trước để thiết lập các thông số một cách linh động hơn hẳn so với các mô hình còn lại.
@@ -82,7 +83,7 @@ Trong mục này, chúng tôi chỉ ra tính NP-Khó của bài toán LSE bằng
 	
 	\begin{figure}[H]
 		\begin{center}
-			\includegraphics [scale=0.8]{picture/Hinh3_3}
+			\includegraphics [scale=0.8]{picture/reduce2}
 			\caption{Phép dẫn đa thức từ bài toán SC về bài toán LSE.}
 			\label{refhinh3_3}
 		\end{center}
@@ -110,7 +111,7 @@ Trước khi bắt đầu, chúng tôi có định nghĩa một vài kí hiệu 
 
 \item $\alpha(u) = \sum_{v \in U^{d}_{i=t(u)+1}} I_{i} \bigcap N(u)$ $w(u,v), i = t(u) + 1, ... , d$: tổng trọng số các cạnh ra từ $u$ tới các đỉnh bị lây nhiễm $v$ tại vòng $i$.
 
-\item $\beta(u): $ : số lượng các đỉnh ra cứu được, sao cho chúng chuyển từ bị lây nhiễm thành không bị lây nhiễm sau khi loại bỏ đỉnh $u$ ra khỏi đồ thị.
+\item $\beta(u)$: số lượng các đỉnh ra cứu được, sao cho chúng chuyển từ bị lây nhiễm thành không bị lây nhiễm sau khi loại bỏ đỉnh $u$ ra khỏi đồ thị.
 \end {itemize}
 \begin{algorithm}[H]
 	\caption{Fast Limit Epidemics (FLE) algorithm.}
@@ -343,7 +344,7 @@ Chúng tôi cũng xem xét ảnh hưởng của tham số $\theta$ đối với 
 Với cách tiếp cận như cách Twitter đã làm năm 2016 là loại bỏ 125.000 tài khoản được nghi ngờ có liên quan đến các hoạt động khủng bố, hay cách tiếp cận như Facebook đã xóa 30.000 tài khoản giả mạo lan truyền các tin đồn trước cuộc bầu cử tổng thống Pháp năm 2017, bài toán Targeted Misinformation Blocking được đưa ra nghiên cứu nhằm mục đích tìm giải pháp xác định được những tài khoản cần loại bỏ khỏi mạng để hạn chế sự phát tán thông tin sai lệch một cách tối ưu nhất.
 
 \subsection{Tổng quan bài toán}
-Nguồn phát tán thông tin sai lệch có thể được phát hiện qua các phương pháp khảo sát, khai phá dữ liệu \cite{qazvin, kwon} và được biểu diễn dưới dạng là tập hợp các đỉnh. Theo các nghiên cứu mới đây \cite{khali, tong, pra}, chiến thuật hiệu quả trong việc ngăn chặn phát tán thông tin sai lệch là xóa bỏ đỉnh hoặc cạnh có vai trò quan trọng trong việc lan truyền thông tin sai lệch. Song tính khả thi của các nghiên cứu trước đây lại bị hạn chế bởi một số khía cạnh sau. Thứ nhất họ tập trung vào việc ngăn ngừa thông tin sai lệch bằng nguồn ngân sách hạn chế. Điều này rõ ràng là không thực tế bởi chúng ta khó có thể xác định được bao nhiêu ngân sách cho đủ để ngăn chặn sự lây lan sao cho hiệu quả. Thứ hai, để đảm bảo độ tin cậy của mạng xã hội, chúng ta cần có một biện pháp khử nhiễm thông tin sai lệch với một ngưỡng cho trước, như tỉ lệ giữa người dùng bị nhiễm và người dùng được khử nhiễm. Do đó bài toán này được đưa ra với tính thực tế cao hơn đó là: Dùng ít ngân sách nhất sao cho số lượng người dùng được khử nhiễm lớn hơn một ngưỡng cho trước. Giải pháp đưa ra nhằm tìm một tập đỉnh có ít phần tử nhất để loại bỏ khỏi đồ thị để sao cho nguồn phát tán thông tin sai lêch không thể lan truyền tới được ít nhất ngưỡng $\gamma$ đỉnh yêu cầu. Tổng quan về giải pháp của chúng tôi được tóm lược như sau:
+Nguồn phát tán thông tin sai lệch có thể được phát hiện qua các phương pháp khảo sát, khai phá dữ liệu \cite{qazvin, kwon} và được biểu diễn dưới dạng là tập hợp các đỉnh. Theo các nghiên cứu mới đây \cite{khali, tong, pra}, chiến thuật hiệu quả trong việc ngăn chặn phát tán thông tin sai lệch là xóa bỏ đỉnh hoặc cạnh có vai trò quan trọng trong việc lan truyền thông tin sai lệch. Song tính khả thi của các nghiên cứu trước đây lại bị hạn chế bởi một số khía cạnh sau. Thứ nhất họ tập trung vào việc ngăn ngừa thông tin sai lệch bằng nguồn ngân sách hạn chế. Điều này rõ ràng là không thực tế bởi chúng ta khó có thể xác định được bao nhiêu ngân sách cho đủ để ngăn chặn sự lây lan sao cho hiệu quả. Thứ hai, để đảm bảo độ tin cậy của mạng xã hội, chúng ta cần có một biện pháp "khử nhiễm" thông tin sai lệch với một ngưỡng cho trước, như tỉ lệ giữa người dùng bị nhiễm và người dùng được khử nhiễm. Do đó bài toán này được đưa ra với tính thực tế cao hơn đó là: dùng ít ngân sách nhất sao cho số lượng người dùng được khử nhiễm lớn hơn một ngưỡng cho trước. Giải pháp đưa ra nhằm tìm một tập đỉnh có ít phần tử nhất để loại bỏ khỏi đồ thị để sao cho nguồn phát tán thông tin sai lêch không thể lan truyền tới được ít nhất ngưỡng $\gamma$ đỉnh yêu cầu. Tổng quan về giải pháp của chúng tôi được tóm lược như sau:
 \begin{itemize}
 	\item Đầu tiên chúng tôi định nghĩa bài toán Xác định và ngăn chặn thông tin sai lệch (Targeted Misinformation Blocking - TMB). Và sau đó chứng minh bài toán TMB thuộc lớp bài toán $\#P-\text{khó}$.
 	\item Với hàm mục tiêu chúng tôi chứng minh nó là hàm submodular và monotone. Trên cơ sở đó, đề xuất một thuật toán tham lam với với tỉ lệ $1+ln(\gamma/\epsilon)$. Song do những hạn chế của thuật toán tham lam, chúng tôi xây dựng thuật toán Scalable $\mathsf{TMB}$ for LT model Algorithm ($\mathsf{STMB}$) để giải quyết cho bài toán TMB với những dữ liệu lớn hơn. 
