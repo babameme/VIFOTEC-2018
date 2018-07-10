@@ -1,7 +1,7 @@
 \contentsline {chapter}{Danh s\'ach h\`inh v\~e}{}{chapter*.2}
 \contentsline {chapter}{Danh s\'ach b\h {a}ng}{}{chapter*.3}
 \contentsline {chapter}{M\IeC {\h \ohorn } \IeC {\dj }\IeC {\`\acircumflex }u}{1}{chapter*.6}
-\contentsline {chapter}{\bf Ch\IeC {\uhorn }\IeC {\ohorn }ng \numberline {1. } GI\IeC {\'\OHORN }I THI\IeC {\d \ECIRCUMFLEX }U V\IeC {\`\ECIRCUMFLEX } M\IeC {\d A}NG X\IeC {\~A} H\IeC {\d \OCIRCUMFLEX }I V\IeC {\`A} T\IeC {\'A}C H\IeC {\d A}I C\IeC {\h U}A TH\IeC {\^O}NG TIN SAI L\IeC {\d \ECIRCUMFLEX }CH }{9}{chapter.1}
+\contentsline {chapter}{\bf Chương \numberline {1. } GI\IeC {\'\OHORN }I THI\IeC {\d \ECIRCUMFLEX }U V\IeC {\`\ECIRCUMFLEX } M\IeC {\d A}NG X\IeC {\~A} H\IeC {\d \OCIRCUMFLEX }I V\IeC {\`A} T\IeC {\'A}C H\IeC {\d A}I C\IeC {\h U}A TH\IeC {\^O}NG TIN SAI L\IeC {\d \ECIRCUMFLEX }CH }{9}{chapter.1}
 \contentsline {section}{\numberline {\bfseries 1.}Gi\IeC {\'\ohorn }i thi\IeC {\d \ecircumflex }u chung v\IeC {\`\ecircumflex } m\IeC {\d a}ng x\IeC {\~a} h\IeC {\d \ocircumflex }i}{9}{section.1.1}
 \contentsline {subsection}{\numberline {1.1.}\IeC {\DJ }\IeC {\d \abreve }c \IeC {\dj }i\IeC {\h \ecircumflex }m c\IeC {\h u}a MXH}{9}{subsection.1.1.1}
 \contentsline {subsubsection}{\numberline {a)}T\IeC {\'\i }nh li\IeC {\^e}n k\IeC {\'\ecircumflex }t c\IeC {\d \ocircumflex }ng \IeC {\dj }\IeC {\`\ocircumflex }ng}{10}{subsubsection.1.1.1.1}
@@ -24,12 +24,12 @@
 \contentsline {subsubsection}{\numberline {a)}Th\IeC {\d \uhorn }c tr\IeC {\d a}ng th\IeC {\'\ecircumflex } gi\IeC {\'\ohorn }i}{15}{subsubsection.1.2.2.1}
 \contentsline {subsubsection}{\numberline {b)}Th\IeC {\d \uhorn }c tr\IeC {\d a}ng t\IeC {\d a}i Vi\IeC {\d \ecircumflex }t Nam}{15}{subsubsection.1.2.2.2}
 \contentsline {subsection}{K\IeC {\'\ecircumflex }t lu\IeC {\d \acircumflex }n ch\IeC {\uhorn }\IeC {\ohorn }ng}{17}{subsubsection.1.2.2.2}
-\contentsline {chapter}{\bf Ch\IeC {\uhorn }\IeC {\ohorn }ng \numberline {2. } TH\IeC {\^O}NG TIN SAI L\IeC {\d \ECIRCUMFLEX }CH V\IeC {\`A} C\IeC {\OHORN } CH\IeC {\'\ECIRCUMFLEX } LAN TRUY\IeC {\`\ECIRCUMFLEX }N TH\IeC {\^O}NG TIN SAI L\IeC {\d \ECIRCUMFLEX }CH}{18}{chapter.2}
+\contentsline {chapter}{\bf Chương \numberline {2. } TH\IeC {\^O}NG TIN SAI L\IeC {\d \ECIRCUMFLEX }CH V\IeC {\`A} C\IeC {\OHORN } CH\IeC {\'\ECIRCUMFLEX } LAN TRUY\IeC {\`\ECIRCUMFLEX }N TH\IeC {\^O}NG TIN SAI L\IeC {\d \ECIRCUMFLEX }CH}{18}{chapter.2}
 \contentsline {section}{\numberline {\bfseries 1.}M\IeC {\^o} h\IeC {\`\i }nh lan truy\IeC {\`\ecircumflex }n th\IeC {\^o}ng tin}{18}{section.2.1}
 \contentsline {section}{\numberline {\bfseries 2.}C\IeC {\ohorn } ch\IeC {\'\ecircumflex } lan truy\IeC {\`\ecircumflex }n th\IeC {\^o}ng tin sai l\IeC {\d \ecircumflex }ch tr\IeC {\^e}n hai m\IeC {\^o} h\IeC {\`\i }nh th\IeC {\^o}ng tin}{20}{section.2.2}
 \contentsline {subsection}{\numberline {2.1.}M\IeC {\^o} h\IeC {\`\i }nh t\IeC {\`\acircumflex }ng \IeC {\dj }\IeC {\d \ocircumflex }c l\IeC {\d \acircumflex }p}{20}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.}M\IeC {\^o} h\IeC {\`\i }nh ng\IeC {\uhorn }\IeC {\~\ohorn }ng tuy\IeC {\'\ecircumflex }n t\IeC {\'\i }nh}{21}{subsection.2.2.2}
-\contentsline {chapter}{\bf Ch\IeC {\uhorn }\IeC {\ohorn }ng \numberline {3. } Gi\IeC {\h a}i ph\IeC {\'a}p ng\IeC {\u a}n ch\IeC {\d \abreve }n s\IeC {\d \uhorn } ph\IeC {\'a}t t\IeC {\'a}n c\IeC {\h u}a TTSL}{24}{chapter.3}
+\contentsline {chapter}{\bf Chương \numberline {3. } GI\IeC {\h A}I PH\IeC {\'A}P NG\IeC {\u A}N CH\IeC {\d \ABREVE }N S\IeC {\d \UHORN } PH\IeC {\'A}T T\IeC {\'A}N C\IeC {\h U}A TTSL}{24}{chapter.3}
 \contentsline {section}{\numberline {\bfseries 1.}B\IeC {\`a}i to\IeC {\'a}n 1: Ng\IeC {\u a}n ch\IeC {\d \abreve }n th\IeC {\^o}ng tin sai l\IeC {\d \ecircumflex }ch v\IeC {\'\ohorn }i ng\IeC {\^a}n s\IeC {\'a}ch gi\IeC {\'\ohorn }i h\IeC {\d a}n}{25}{section.3.1}
 \contentsline {subsection}{\numberline {1.1.}T\IeC {\h \ocircumflex }ng quan b\IeC {\`a}i to\IeC {\'a}n}{25}{subsection.3.1.1}
 \contentsline {subsection}{\numberline {1.2.}M\IeC {\^o} h\IeC {\`\i }nh lan truy\IeC {\`\ecircumflex }n th\IeC {\^o}ng tin Ng\IeC {\uhorn }\IeC {\~\ohorn }ng tuy\IeC {\'\ecircumflex }n t\IeC {\'\i }nh v\IeC {\'\ohorn }i b\IeC {\uhorn }\IeC {\'\ohorn }c th\IeC {\`\ohorn }i gian r\IeC {\`\ohorn }i r\IeC {\d a}c (Time Constraint Deterministic Linear Threshold - T-DLT).}{26}{subsection.3.1.2}
@@ -42,7 +42,7 @@
 \contentsline {subsubsection}{\numberline {c)}C\IeC {\'a}c thu\IeC {\d \acircumflex }t to\IeC {\'a}n s\IeC {\h \uhorn } d\IeC {\d u}ng}{34}{subsubsection.3.1.6.3}
 \contentsline {subsubsection}{\numberline {d)}K\IeC {\'\ecircumflex }t qu\IeC {\h a} th\IeC {\d \uhorn }c nghi\IeC {\d \ecircumflex }m}{35}{subsubsection.3.1.6.4}
 \contentsline {section}{\numberline {\bfseries 2.}B\IeC {\`a}i to\IeC {\'a}n 2: T\IeC {\`\i }m chi ph\IeC {\'\i } nh\IeC {\h o} nh\IeC {\'\acircumflex }t \IeC {\dj }\IeC {\h \ecircumflex } ng\IeC {\u a}n ch\IeC {\d \abreve }n th\IeC {\^o}ng tin sai l\IeC {\d \ecircumflex }ch}{38}{section.3.2}
-\contentsline {subsection}{\numberline {2.1.}T\IeC {\h \ocircumflex }ng quan b\IeC {\`a}i t\IeC {\'o}an}{38}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {2.1.}T\IeC {\h \ocircumflex }ng quan b\IeC {\`a}i to\IeC {\'a}n}{38}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {2.2.}M\IeC {\^o} h\IeC {\`\i }nh lan truy\IeC {\`\ecircumflex }n th\IeC {\^o}ng tin Ng\IeC {\uhorn }\IeC {\~\ohorn }ng tuy\IeC {\'\ecircumflex }n t\IeC {\'\i }nh Linear Threshold}{39}{subsection.3.2.2}
 \contentsline {subsection}{\numberline {2.3.}\IeC {\DJ }\IeC {\d i}nh ngh\IeC {\~\i }a b\IeC {\`a}i to\IeC {\'a}n}{39}{subsection.3.2.3}
 \contentsline {subsection}{\numberline {2.4.}\IeC {\DJ }\IeC {\d \ocircumflex } ph\IeC {\'\uhorn }c t\IeC {\d a}p c\IeC {\h u}a b\IeC {\`a}i to\IeC {\'a}n}{41}{subsection.3.2.4}
@@ -54,7 +54,7 @@
 \contentsline {subsubsection}{\numberline {b)}Thi\IeC {\'\ecircumflex }t l\IeC {\d \acircumflex }p tham s\IeC {\'\ocircumflex }}{48}{subsubsection.3.2.6.2}
 \contentsline {subsubsection}{\numberline {c)}C\IeC {\'a}c thu\IeC {\d \acircumflex }t to\IeC {\'a}n s\IeC {\h \uhorn } d\IeC {\d u}ng}{49}{subsubsection.3.2.6.3}
 \contentsline {subsubsection}{\numberline {d)}K\IeC {\'\ecircumflex }t qu\IeC {\h a} th\IeC {\d \uhorn }c nghi\IeC {\d \ecircumflex }m}{49}{subsubsection.3.2.6.4}
-\contentsline {chapter}{\bf Ch\IeC {\uhorn }\IeC {\ohorn }ng \numberline {4. } \IeC {\'A}P D\IeC {\d U}NG C\IeC {\'A}C GI\IeC {\h A}I PH\IeC {\'A}P \IeC {\DJ }\IeC {\`\ECIRCUMFLEX } XU\IeC {\'\ACIRCUMFLEX }T TR\IeC {\^E}N D\IeC {\~\UHORN } LI\IeC {\d \ECIRCUMFLEX }U TH\IeC {\d \UHORN }C}{51}{chapter.4}
+\contentsline {chapter}{\bf Chương \numberline {4. } \IeC {\'A}P D\IeC {\d U}NG C\IeC {\'A}C GI\IeC {\h A}I PH\IeC {\'A}P \IeC {\DJ }\IeC {\`\ECIRCUMFLEX } XU\IeC {\'\ACIRCUMFLEX }T TR\IeC {\^E}N D\IeC {\~\UHORN } LI\IeC {\d \ECIRCUMFLEX }U TH\IeC {\d \UHORN }C}{51}{chapter.4}
 \contentsline {section}{\numberline {\bfseries 1.}Thu th\IeC {\d \acircumflex }p d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u}{52}{section.4.1}
 \contentsline {subsection}{\numberline {1.1.}X\IeC {\'a}c \IeC {\dj }\IeC {\d i}nh ngu\IeC {\`\ocircumflex }n ph\IeC {\'a}t t\IeC {\'a}n th\IeC {\^o}ng tin sai l\IeC {\d \ecircumflex }ch}{52}{subsection.4.1.1}
 \contentsline {subsection}{\numberline {1.2.}X\IeC {\^a}y d\IeC {\d \uhorn }ng c\IeC {\^o}ng c\IeC {\d u} thu th\IeC {\d \acircumflex }p d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u tr\IeC {\^e}n m\IeC {\d a}ng x\IeC {\~a} h\IeC {\d \ocircumflex }i Facebook}{53}{subsection.4.1.2}
