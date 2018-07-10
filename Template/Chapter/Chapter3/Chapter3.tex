@@ -344,7 +344,7 @@ Chúng tôi cũng xem xét ảnh hưởng của tham số $\theta$ đối với 
 Với cách tiếp cận như cách Twitter đã làm năm 2016 là loại bỏ 125.000 tài khoản được nghi ngờ có liên quan đến các hoạt động khủng bố, hay cách tiếp cận như Facebook đã xóa 30.000 tài khoản giả mạo lan truyền các tin đồn trước cuộc bầu cử tổng thống Pháp năm 2017, bài toán Targeted Misinformation Blocking được đưa ra nghiên cứu nhằm mục đích tìm giải pháp xác định được những tài khoản cần loại bỏ khỏi mạng để hạn chế sự phát tán thông tin sai lệch một cách tối ưu nhất.
 
 \subsection{Tổng quan bài toán}
-Nguồn phát tán thông tin sai lệch có thể được phát hiện qua các phương pháp khảo sát, khai phá dữ liệu \cite{qazvin, kwon} và được biểu diễn dưới dạng là tập hợp các đỉnh. Theo các nghiên cứu mới đây \cite{khali, tong, pra}, chiến thuật hiệu quả trong việc ngăn chặn phát tán thông tin sai lệch là xóa bỏ đỉnh hoặc cạnh có vai trò quan trọng trong việc lan truyền thông tin sai lệch. Song tính khả thi của các nghiên cứu trước đây lại bị hạn chế bởi một số khía cạnh sau. Thứ nhất họ tập trung vào việc ngăn ngừa thông tin sai lệch bằng nguồn ngân sách hạn chế. Điều này rõ ràng là không thực tế bởi chúng ta khó có thể xác định được bao nhiêu ngân sách cho đủ để ngăn chặn sự lây lan sao cho hiệu quả. Thứ hai, để đảm bảo độ tin cậy của mạng xã hội, chúng ta cần có một biện pháp "khử nhiễm" thông tin sai lệch với một ngưỡng cho trước, như tỉ lệ giữa người dùng bị nhiễm và người dùng được khử nhiễm. Do đó bài toán này được đưa ra với tính thực tế cao hơn đó là: dùng ít ngân sách nhất sao cho số lượng người dùng được khử nhiễm lớn hơn một ngưỡng cho trước. Giải pháp đưa ra nhằm tìm một tập đỉnh có ít phần tử nhất để loại bỏ khỏi đồ thị để sao cho nguồn phát tán thông tin sai lêch không thể lan truyền tới được ít nhất ngưỡng $\gamma$ đỉnh yêu cầu. Tổng quan về giải pháp của chúng tôi được tóm lược như sau:
+Nguồn phát tán thông tin sai lệch có thể được phát hiện qua các phương pháp khảo sát, khai phá dữ liệu \cite{qazvin, kwon} và được biểu diễn dưới dạng là tập hợp các đỉnh. Theo các nghiên cứu mới đây \cite{khali, tong, pra}, chiến thuật hiệu quả trong việc ngăn chặn phát tán thông tin sai lệch là xóa bỏ đỉnh hoặc cạnh có vai trò quan trọng trong việc lan truyền thông tin sai lệch. Song tính khả thi của các nghiên cứu trước đây lại bị hạn chế bởi một số khía cạnh sau. Thứ nhất họ tập trung vào việc ngăn ngừa thông tin sai lệch bằng nguồn ngân sách hạn chế. Điều này rõ ràng là không thực tế bởi chúng ta khó có thể xác định được bao nhiêu ngân sách cho đủ để ngăn chặn sự lây lan sao cho hiệu quả. Thứ hai, để đảm bảo độ tin cậy của mạng xã hội, chúng ta cần có một biện pháp "khử nhiễm" thông tin sai lệch với một ngưỡng cho trước, như tỉ lệ giữa người dùng bị nhiễm và người dùng được khử nhiễm. Do đó bài toán này được đưa ra với tính thực tế cao hơn đó là: dùng ít ngân sách nhất sao cho số lượng người dùng được khử nhiễm lớn hơn một ngưỡng cho trước. Giải pháp đưa ra nhằm tìm một tập đỉnh có ít phần tử nhất để loại bỏ khỏi đồ thị để sao cho nguồn phát tán thông tin sai lệch không thể lan truyền tới được ít nhất ngưỡng $\gamma$ đỉnh yêu cầu. Tổng quan về giải pháp của chúng tôi được tóm lược như sau:
 \begin{itemize}
 	\item Đầu tiên chúng tôi định nghĩa bài toán Xác định và ngăn chặn thông tin sai lệch (Targeted Misinformation Blocking - TMB). Và sau đó chứng minh bài toán TMB thuộc lớp bài toán $\#P-\text{khó}$.
 	\item Với hàm mục tiêu chúng tôi chứng minh nó là hàm submodular và monotone. Trên cơ sở đó, đề xuất một thuật toán tham lam với với tỉ lệ $1+ln(\gamma/\epsilon)$. Song do những hạn chế của thuật toán tham lam, chúng tôi xây dựng thuật toán Scalable $\mathsf{TMB}$ for LT model Algorithm ($\mathsf{STMB}$) để giải quyết cho bài toán TMB với những dữ liệu lớn hơn. 
@@ -370,12 +370,12 @@ Kí hiệu $G = (V, E, w)$ là một đồ thị có hướng biểu diễn cho 
 
 Kí hiệu $\sigma_{S}(G)$ là ảnh hưởng lan truyền của tập S trên đồ thị G dưới mô hình LT hay là số lượng đỉnh được active bởi nguồn S. Theo nghiên cứu của Kempe và các cộng sự \cite{kemple1} đã chỉ ra rằng mô hình LT là tương đương với khả năng tiếp cận trong một đồ thị ngẫu nhiên g, thường được gọi là đồ thị live-edge hoặc đồ thị mẫu. Trên mô hình LT, đồ thị live-edge được xây dựng như sau:
 \begin {itemize}
-\item Với mỗi v $\in$ V, chọn tối đa một cạnh đi vào nó một cách ngẫu nhiên, xác suất cạnh (u, v) được chọn là w(u, v).
+\item Với mỗi $v$ $\in$ $V$, chọn tối đa một cạnh đi vào nó một cách ngẫu nhiên, xác suất cạnh $(u, v)$ được chọn là $w(u, v)$.
 
 \item Xác suất không có cạnh nào được chọn là 1 - $\sum_{u \in N_{in}(v)} w(u,v)$.
 \end {itemize}
 
-Cạnh được chọn gọi là cạnh sống (live-edge) và tất cả các cạnh khác gọi là cạnh bị chặn (blocked-edge). Chúng ta có xác suất tạo ra một đồ thị live-egde g từ G là:
+Cạnh được chọn gọi là cạnh sống (live-edge) và tất cả các cạnh khác gọi là cạnh bị chặn (blocked-edge). Chúng ta có xác suất tạo ra một đồ thị live-egde $g$ từ $G$ là:
 \begin{align}
 \Pr[g|G]=\prod_{v \in V}{p(v,g,G)}
 \end{align}
@@ -387,25 +387,25 @@ w(u, v), & \mbox{Nếu $\exists u: (u, v) \in E_g$}\\
 \end{array} \right.
 \end{equation}
 
-Ảnh hưởng lan truyền của nguồn S khi xóa bỏ các đỉnh trong tập A trên đồ thị G[V$\backslash$A] kí hiệu là $\sigma_{S}(G \backslash A)$. Với A = $\emptyset$, trong \cite{kemple1} đã chỉ ra ảnh hưởng lan truyền của tập nguồn S trên G được tính bởi công thức:
+Ảnh hưởng lan truyền của nguồn $S$ khi xóa bỏ các đỉnh trong tập $A$ trên đồ thị $G[V \backslash A]$ kí hiệu là $\sigma_{S}(G \backslash A)$. Với A = $\emptyset$, trong \cite{kemple1} đã chỉ ra ảnh hưởng lan truyền của tập nguồn $S$ trên $G$ được tính bởi công thức:
 \begin{align}
 \sigma_S(G)=\sum_{g \in X_G}{\Pr[g|G]|R(g, S)|}
 \label{inf_cal}
 \end{align}
-trong đó $R(g, S)$ là tập các đỉnh đến được từ S trên g và $X_G$ là tập tất cả các đồ thị live-edge được tạo ra từ G. Đặc biệt, ảnh hưởng lan truyền của tập $S$ có thể được tính bằng đường đi đơn bắt đầu từ $u \in S$ theo công thức: 
+trong đó $R(g, S)$ là tập các đỉnh đến được từ $S$ trên $g$ và $X_G$ là tập tất cả các đồ thị live-edge được tạo ra từ $G$. Đặc biệt, ảnh hưởng lan truyền của tập $S$ có thể được tính bằng đường đi đơn bắt đầu từ $u \in S$ theo công thức: 
 \begin{align}
 \sigma_{S}(G)=\sum_{x \in \mathsf{P}(G, S)} \prod_{e \in x}w(e)
 \label{inf_path}
 \end{align} 				
 với $\mathsf{P}(G, S)$ là tập tất cả các đường đi đơn từ $s \in S$ tới bất kỳ đỉnh $v \in G \setminus \{S \cup \{s\} \} $ trên đồ thị $G$.		
 
-\textbf{Phát biểu bài toán (Bài toán TMB):} Gọi $G(V,E,w)$ là một đồ thị có hướng biểu diễn một mạng xã hội. Đưa ra một tập nguồn $S = {s_{1}, s_{2}, ... , s_{k}}, S \in V$ là tập tiềm năng phát tán thông tin sai lệch và một số nguyên $\gamma \leq | V |$ thể hiện cho số lượng người dùng tối thiểu chúng ta muốn đảm bảo thông tin sai lệch không lan truyền đến được họ.
+\textbf{Phát biểu bài toán (Bài toán TMB):} Gọi $G(V,E,w)$ là một đồ thị có hướng biểu diễn một mạng xã hội. Đưa ra một tập nguồn $S = {s_{1}, s_{2}, ... , s_{k}}, S \in V$ là tập tiềm năng phát tán thông tin sai lệch và một số nguyên $\gamma < | V |$ thể hiện cho số lượng người dùng tối thiểu chúng ta muốn đảm bảo thông tin sai lệch không lan truyền đến được họ.
 
-\textbf{Yêu cầu:} Tìm tập đỉnh A $\in V \backslash S$ có ít đỉnh nhất sao cho khi xóa các đỉnh trong tập A khỏi đồ thị $G$ thì đảm bảo h(A) = $\sigma_{S}(G) - \sigma_{S}(G \backslash A) \geq \gamma$, tức là đảm bảo ít nhất $\gamma$ người dùng không tiếp xúc với thông tin sai lệch.
+\textbf{Yêu cầu:} Tìm tập đỉnh $A \in V \backslash S$ có ít đỉnh nhất sao cho khi xóa các đỉnh trong tập $A$ khỏi đồ thị $G$ thì đảm bảo $h(A) = \sigma_{S}(G) - \sigma_{S}(G \backslash A) \geq \gamma$, tức là đảm bảo ít nhất $\gamma$ người dùng không tiếp xúc với thông tin sai lệch.
 \subsection{Độ phức tạp của bài toán}		
 Trong mục này chúng tôi chỉ ra một số kết quả về độ khó của bài toán TMB trên mô hình LT.
 \begin{theo}
-	Cho nguồn tiềm năng phát tán thông tin sai lệch S dưới mô hình LT, bài toán TMB là $\#P-\text{khó}$ nếu S chỉ chứa 1 đỉnh.
+	Cho nguồn tiềm năng phát tán thông tin sai lệch S dưới mô hình LT, bài toán TMB là $\#P-\text{khó}$ nếu nguồn S chỉ chứa 1 đỉnh.
 \end{theo}
 \begin{proof}
 	Để chứng minh TMB là $\#P-\text{khó}$ chúng tôi sẽ chỉ ra độ khó của bài toán TMB là lớn hơn hoặc bằng với độ khó của bài toán $s$-$t$ paths mà đã được chứng minh trong \cite{vali} là có độ khó $\#P-\text{khó}$. 
@@ -419,7 +419,7 @@ Trong mục này chúng tôi chỉ ra một số kết quả về độ khó c�
 			\label{reduce}   
 		\end{center}
 	\end{figure}			
-	Xem xét thể hiện $\mathcal{I}_1$ của bài toán $s$-$t$ paths, với $G = (V, E), s, t$ cho trước. Như minh họa trong hình \ref{reduce}, từ $G$, chúng ta xây dựng $G'$ như sau: Thêm đỉnh u và hai cạnh (s, u), (t, u) với trọng số $w(s, u) = w(t,u) = 1/2$, tiếp đó thêm tập $Q$ gồm 2n đỉnh và kết nối u với chúng với trọng số là 1. Với các cạnh khác, thiết lập trọng số $w = 1/\Delta$, trong đó $\Delta$ là bậc vào lớn nhất của đồ thị $G$. Chúng ta chia tất cả các đường đi bắt đầu từ $s$ thành 2 nhóm: Nhóm thứ nhất là tập tất cả các đường đi có đỉnh kết thúc thuộc tập $Q$ và nhóm thứ hai là tập còn lại. Từ công thức \eqref{inf_path}, chúng ta có: 
+	Xem xét thể hiện $\mathcal{I}_1$ của bài toán $s$-$t$ paths, với $G = (V, E), s, t$ cho trước. Như minh họa trong hình \ref{reduce}, từ $G$, chúng ta xây dựng $G'$ như sau: Thêm đỉnh $u$ và hai cạnh $(s, u)$, $(t, u)$ với trọng số $w(s, u) = w(t,u) = 1/2$, tiếp đó thêm tập $Q$ gồm 2n đỉnh và kết nối $u$ với chúng với trọng số là $1$. Với các cạnh khác, thiết lập trọng số $w = 1/\Delta$, trong đó $\Delta$ là bậc vào lớn nhất của đồ thị $G$. Chúng ta chia tất cả các đường đi bắt đầu từ $s$ thành 2 nhóm: Nhóm thứ nhất là tập tất cả các đường đi có đỉnh kết thúc thuộc tập $Q$ và nhóm thứ hai là tập còn lại. Từ công thức \eqref{inf_path}, chúng ta có: 
 	\begin{align}
 	\sigma_{S}(G')&=\sum_{x \in \mathsf{P}(G', s)} \prod_{e \in x}w(e)= \sum_{v \in  G' \setminus Q} \left(  \sum_{x \in \mathsf{P}(G', s, v)} \prod_{e \in x}w(e) \right) + \sum_{v \in Q} \left(  \sum_{x \in \mathsf{P}(G', s, v)} \prod_{e \in x}w(e) \right)  \nonumber
 	\\
@@ -449,7 +449,7 @@ Trong mục này chúng tôi chỉ ra một số kết quả về độ khó c�
 	\\
 	& = \frac{2n+1}{2} \left(  \sum_{i=0}^{n-1} \alpha_i w^i +1 \right) 
 	\end{align}   		
-	với $\alpha_i=|\mathsf{P}_i(G, s, t)|$. Đặt $f(w)=\sum_{i=0}^{n-1}\alpha_i w^i$. Từ cấu trúc liên kết của G', chúng ta thấy rằng $h(u)=\max_{v \in G'}h(v)$ và $0 \leq  f(w) < 1$. Nếu có thể xác định $f(u) \geq \beta$ với $\forall \beta \in [0, 1]$ trong thời gian đa thức thì chúng ta sẽ giải được bài toán $s$-$t$ paths trong thời gian đa thức. Sử dụng tìm kiếm nhị phân trên đoạn [1, $\Delta^{n-1}$] chúng ta có thể xác định được giá trị của $f(w)$. Yêu cầu này được thực hiện trong $\mathcal{O}(\log(\Delta^{n-1}))=\mathcal{O}((n-1)\log\Delta) =\mathcal{O}(n\log n)$. Do đó việc tính toán $f(u)$ có thể thực hiện trong thời gian đa thức. Tiếp đến thay đổi trọng số w thành n giá trị phân biệt $\frac{1}{\Delta}, \frac{1}{\Delta+1}, \ldots, \frac{1}{\Delta+n-1}$, với mỗi giá trị w áp dụng phương pháp trên chúng ta thu được giá trị $f(w)$ tương ứng. Từ đó có được n phương trình $\sum_{i=0}^{n-1}\alpha_i w^i =f(w), w \in \{\frac{1}{\Delta}, \frac{1}{\Delta+1}, \ldots, \frac{1}{\Delta+n-1} \}$ với $\{\alpha_0, \alpha_2, \ldots, \alpha_{n-1}\}$ là các biến số. Ma trận tương ứng với hệ n phương trình trên là $M_{n \times n}=\{m_{ij}\}$ and $m_{ij}=w^{i} , i,j=0,..,n-1$, dễ thấy đây là ma trận Vandermonde do đó có thể dễ dàng tìm được lời giải $\{\alpha_0, \alpha_2, \ldots, \alpha_{n-1}\}$. Tổng số $s$-$t$ paths trên đồ thị G là $\sum_{i=0}^{n-1} \alpha_i$. Vì thế, nếu chúng ta xác định được $f(u) \geq \beta$ với bất kì $\beta \in [0, 1]$ trong thời gian đa thức thì sẽ giải được bài toán $s$-$t$ paths trong thời gian đa thức. 
+	với $\alpha_i=|\mathsf{P}_i(G, s, t)|$. Đặt $f(w)=\sum_{i=0}^{n-1}\alpha_i w^i$. Từ cấu trúc liên kết của $G'$, chúng ta thấy rằng $h(u)=\max_{v \in G'}h(v)$ và $0 \leq  f(w) < 1$. Nếu có thể xác định $f(u) \geq \beta$ với $\forall \beta \in [0, 1]$ trong thời gian đa thức thì chúng ta sẽ giải được bài toán $s$-$t$ paths trong thời gian đa thức. Sử dụng tìm kiếm nhị phân trên đoạn [1, $\Delta^{n-1}$] chúng ta có thể xác định được giá trị của $f(w)$. Yêu cầu này được thực hiện trong $\mathcal{O}(\log(\Delta^{n-1}))=\mathcal{O}((n-1)\log\Delta) =\mathcal{O}(n\log n)$. Do đó việc tính toán $f(u)$ có thể thực hiện trong thời gian đa thức. Tiếp đến thay đổi trọng số w thành n giá trị phân biệt $\frac{1}{\Delta}, \frac{1}{\Delta+1}, \ldots, \frac{1}{\Delta+n-1}$, với mỗi giá trị w áp dụng phương pháp trên chúng ta thu được giá trị $f(w)$ tương ứng. Từ đó có được n phương trình $\sum_{i=0}^{n-1}\alpha_i w^i =f(w), w \in \{\frac{1}{\Delta}, \frac{1}{\Delta+1}, \ldots, \frac{1}{\Delta+n-1} \}$ với $\{\alpha_0, \alpha_2, \ldots, \alpha_{n-1}\}$ là các biến số. Ma trận tương ứng với hệ n phương trình trên là $M_{n \times n}=\{m_{ij}\}$ and $m_{ij}=w^{i} , i,j=0,..,n-1$, dễ thấy đây là ma trận Vandermonde do đó có thể dễ dàng tìm được lời giải $\{\alpha_0, \alpha_2, \ldots, \alpha_{n-1}\}$. Tổng số $s$-$t$ paths trên đồ thị G là $\sum_{i=0}^{n-1} \alpha_i$. Vì thế, nếu chúng ta xác định được $f(u) \geq \beta$ với bất kì $\beta \in [0, 1]$ trong thời gian đa thức thì sẽ giải được bài toán $s$-$t$ paths trong thời gian đa thức. 
 	
 	Bây giờ, xét thể hiện $\mathcal{I}_2$ của bài toán TMB trong đó $S=\{s\}$, $\gamma = \frac{2n+1}{2}(\beta+ 1) , \beta \in [0, 1]$.  Giả sử rằng $\mathcal{A}$ là một thuật toán giải quyết bài toán TMB trong thời gian đa thức. Xem xét 2 trường hợp: (1) Nếu $\mathcal{A}$ trả ra kết quả là tập $A$ có $|A|=1$, thì chúng ta chỉ cần chọn $A={u}$. Kết luận $f(w) \geq \beta$; (2) Nếu $\mathcal{A}$ trả ra kết quả tập $A$ có $|A| \ge 1$ thì ngoài $u$ sẽ cần chọn thêm một số đỉnh khác. Kết luận $f(w) < \beta$. Vì vậy $\mathcal{A}$ có thể được sử dụng để so sánh $f(w)$ với $\beta$ và có thể giải quyết bài toán $s$-$t$ paths. Điều này chỉ ra rằng bài toán TMB là khó hơn hoặc bằng bài toán $s$-$t$ paths.
 \end{proof}
@@ -481,7 +481,7 @@ Trong phần này chúng tôi giới thiệu một thuật toán xấp xỉ đ�
 \begin{proof}	
 	Theo định lý 5 trong \cite{khali}, cho $A \subseteq T$ chúng ta có $h(T)-h(A)=\sigma_S(G) - \sigma_S(G \setminus T) -(\sigma_S(G) - \sigma_S(G \setminus A))  =\sigma_{S}(G \setminus A)- \sigma_{S}(G \setminus T) \geq 0$. Do đó $h(\cdot)$ là một hàm monotone. 
 	
-	Tiếp đến chúng ta chỉ ra rằng $\sigma_S(G \setminus A)$ là một hàm submodular với $A$ là biến số. Kí hiệu $N_E(A)$ là tập tất cả các cạnh (u, v) $\in$ E với u, v $\in$ $A$. Đặt $E_{T, v}=N_E(T+\{v\})\setminus N_E(T), E_{A, v}= N_E(A+\{v\}) \setminus N_E(A)$ dễ thấy $E_{T, v} \subseteq E_{A, v}$  nếu $A \subseteq T$ $\Rightarrow$ $N_E(A)\cup E_{T, v} \subseteq N_E(A+ \{v\})$. Lấy $\sigma_S(G \setminus N_E(X))$ là ảnh hưởng lan truyền của tập $S$ trên đồ thị $G$ sau khi loại bỏ tập cạnh $N_E(X) \subset E$, chúng ta nhận thấy $\sigma_{S}(G \setminus X)=\sigma_{S}(G \setminus N_E(X)$. Theo định lý 6 trong \cite{khali}, $\forall N_E(X) \subseteq N_E(Y), e \in N_E(Y)\setminus N_E(X)$, chúng ta có: 
+	Tiếp đến chúng ta chỉ ra rằng $\sigma_S(G \setminus A)$ là một hàm submodular với $A$ là biến số. Kí hiệu $N_E(A)$ là tập tất cả các cạnh $(u, v) \in E$ với $u$, $v$ $\in$ $A$. Đặt $E_{T, v}=N_E(T+\{v\})\setminus N_E(T), E_{A, v}= N_E(A+\{v\}) \setminus N_E(A)$ dễ thấy $E_{T, v} \subseteq E_{A, v}$  nếu $A \subseteq T$ $\Rightarrow$ $N_E(A)\cup E_{T, v} \subseteq N_E(A+ \{v\})$. Lấy $\sigma_S(G \setminus N_E(X))$ là ảnh hưởng lan truyền của tập $S$ trên đồ thị $G$ sau khi loại bỏ tập cạnh $N_E(X) \subset E$, chúng ta nhận thấy $\sigma_{S}(G \setminus X)=\sigma_{S}(G \setminus N_E(X)$. Theo định lý 6 trong \cite{khali}, $\forall N_E(X) \subseteq N_E(Y), e \in N_E(Y)\setminus N_E(X)$, chúng ta có: 
 	\begin{align}
 	\sigma_{S}(G \setminus (N_E(X) \cup \{e\}) - \sigma_{S}(G \setminus X) 
 	\leq \sigma_{S}(G \setminus (N_E(Y) \cup \{e\})) - \sigma_{S}(G \setminus Y)
@@ -511,42 +511,42 @@ Thuật toán tham lam có cách tiếp cận khá đơn giản là mỗi bướ
 \subsubsection{Thuật toán STMB (STMB algorithm)}
 Thuật toán tham lam đưa ra một lời giải tốt xong lại không đảm bảo yêu cầu về thời gian với dữ liệu lớn do đó trong phần này chúng tôi đưa ra một giải pháp đảm bảo yêu cầu cả về chất lượng lời giải cũng như thời gian tính toán. Dưới đây là các bước chính trong thuật toán chúng tôi đề xuất:
 \begin {itemize}
-\item Đầu tiên sáp nhập các đỉnh trong tập nguồn S thành một nút I bằng cách áp dụng thuật toán \ref{MERGE} được đề xuất bởi Zhang \cite{yao16}. Chúng ta thu được một đồ thị mới và nguồn phát tán thông tin sai lệch bây giờ chỉ còn là một đỉnh I duy nhất.
+\item Đầu tiên sáp nhập các đỉnh trong tập nguồn $S$ thành một nút $I$ bằng cách áp dụng thuật toán \ref{MERGE} được đề xuất bởi Zhang \cite{yao16}. Chúng ta thu được một đồ thị mới và nguồn phát tán thông tin sai lệch bây giờ chỉ còn là một đỉnh $I$ duy nhất.
 \end{itemize}
 \begin{algorithm}[H]			
 \KwData{Graph $G=(V,E, w)$,  $S=\{s_1, s_2, .., s_k\}$} 
-\KwResult{Graph $G'=(V', E', w')$, I}
+\KwResult{Graph $G'=(V', E', w')$, $I$}
 $G' \leftarrow G$;
 \\
-Add node I to G'			
+Add node $I$ to $G'$			
 \\
 \ForEach{s $\in$ S}
 {
-	\If{$\exists$ (s, v) }
+	\If{$\exists$ ($s$, $v$) }
 	{
-		\eIf{(I, v) $\notin$ G'}
+		\eIf{($I$, $v$) $\notin$ $G'$}
 		{
-			Add edge (I, v) to G'
+			Add edge ($I$, $v$) to $G'$
 			\\
-			w'(I, v) = w(s, v)
+			w'($I$, $v$) = w($s$, $v$)
 		}
 		{
-			w'(I, v) = w'(I, v) + w(s, v)
+			w'($I$, $v$) = w'($I$, $v$) + w($s$, $v$)
 		}
-		Remove (s,v) from G'
+		Remove $(s,v)$ from $G'$
 	}
 }
-Remove all node in S from G'
+Remove all node in $S$ from $G'$
 \\
-\Return G', I;
+\Return $G'$, $I$;
 \caption{MERGE Algorithm(MERGE)}
 \label{MERGE}
 \end{algorithm}	
 \begin {itemize}			
-\item Tiếp đến chúng tôi tạo ra $\mu(\mu \in N*)$ đồ thị mẫu g từ G' bằng cách: mỗi đỉnh v $\in$ V chọn nhiều nhất một đỉnh kề đi đến nó một cách ngẫu nhiên sao cho xác suất chọn cạnh (u, v) là w(u, v) và xác suất không chọn cạnh nào là 1 - $\sum_{u} w(u, v)$. Những cạnh được chọn được gọi là cạnh sống  (live - edge) và tất cả các cạnh còn lại được gọi là cạnh bị chặn (blocked-edge). Chi tiết cách lấy đồ thị mẫu được mô tả trong thuật toán \ref{GSGLT} và trong hình \ref{example}: 
+\item Tiếp đến chúng tôi tạo ra $\mu(\mu \in N*)$ đồ thị mẫu $g$ từ $G'$ bằng cách: mỗi đỉnh $v$ $\in$ $V$ chọn nhiều nhất một đỉnh kề đi đến nó một cách ngẫu nhiên sao cho xác suất chọn cạnh $(u, v)$ là w$(u, v)$ và xác suất không chọn cạnh nào là 1 - $\sum_{u} w(u, v)$. Những cạnh được chọn được gọi là cạnh sống  (live - edge) và tất cả các cạnh còn lại được gọi là cạnh bị chặn (blocked-edge). Chi tiết cách lấy đồ thị mẫu được mô tả trong thuật toán \ref{GSGLT} và trong hình \ref{example}: 
 \end {itemize}
 \begin{figure}[H]
-\subfloat[Đồ thị $G'$ sau khi hợp nhất các đỉnh trong nguồn S\label{fig:test1}]
+\subfloat[Đồ thị $G'$ sau khi hợp nhất các đỉnh trong nguồn $S$\label{fig:test1}]
 {\includegraphics[width=.3\linewidth]{picture/1}}\hfill
 \subfloat[Đồ thị mẫu $g$\label{fig:test2}]
 {\includegraphics[width=.3\linewidth]{picture/2}}\hfill
@@ -556,9 +556,9 @@ Remove all node in S from G'
 \label{example}
 \end{figure}	
 \begin{algorithm}[H]
-\KwData{Graph G=(V,E, w), I} 
-\KwResult{Tree g root at I}			
-g $\Leftarrow \emptyset$
+\KwData{Graph $G=(V,E, w), I$} 
+\KwResult{Tree $g$ root at $I$}			
+$g$ $\Leftarrow \emptyset$
 \\
 \For{$v \in V_G$}
 {	
@@ -566,26 +566,26 @@ g $\Leftarrow \emptyset$
 	\\
 	sum\_weight $\leftarrow$ 0
 	\\
-	\For{u $\in$ in\_neighbors(v)}
+	\For{$u$ $\in$ $N_{in}(v)$}
 	{
-		sum\_weight += w(u, v)
+		sum\_weight += w$(u, v)$
 		\\
 		\If{sum\_weight $\geq \gamma_{active}$}
 		{
-			Add edge (u, v) to g
+			Add edge $(u, v)$ to $g$
 			\\
 			Break
 		}
 	}
 }		
-g $\leftarrow$ DFS$_{tree}$(I,g)
+$g$ $\leftarrow$ DFS$_{tree}$$(I,g)$
 \\
-\Return g
+\Return $g$
 \caption{Get Sample Graph LT Algorithm (GSG\_{LT})}
 \label{GSGLT}
 \end{algorithm}	
 \begin {itemize}
-\item Trên cây T$_{I}^i$, ảnh hưởng địa phương của nút v là số nút con của cây gốc v kể cả v trên cây T$_{I}^i$. Áp dụng thuật toán DFS dễ dàng tìm được số nút con của v. Ảnh hưởng giảm của nguồn S khi loại đỉnh u khỏi G bằng lượng ảnh hưởng giảm trung bình khi loại u trên tất cả các cây T$_{I}^i$. Kí hiệu h(u, $T_I^i$) là lượng ảnh hưởng giảm trên cây $T_I^i$ sau khi loại bỏ đỉnh u khỏi $T_I^i$. Áp dụng phương pháp Lazy forward của Leskovec \cite{lazy} để tìm kiếm lời giải. 
+\item Trên cây T$_{I}^i$, ảnh hưởng địa phương của nút $v$ là số nút con của cây gốc $v$ kể cả $v$ trên cây T$_{I}^i$. Áp dụng thuật toán DFS dễ dàng tìm được số nút con của $v$. Ảnh hưởng giảm của nguồn $S$ khi loại đỉnh $u$ khỏi $G$ bằng lượng ảnh hưởng giảm trung bình khi loại $u$ trên tất cả các cây T$_{I}^i$. Kí hiệu h($u$, $T_I^i$) là lượng ảnh hưởng giảm trên cây $T_I^i$ sau khi loại bỏ đỉnh $u$ khỏi $T_I^i$. Áp dụng phương pháp Lazy forward của Leskovec \cite{lazy} để tìm kiếm lời giải. 
 \end {itemize}
 \begin{algorithm}[H]
 %\SetAlgoNlRelativeSize{0}
@@ -638,7 +638,7 @@ $ h_{max} \leftarrow 0$; $iteration \leftarrow 1$
 
 \item Quá trình tạo ra $\mu$ đồ thị mẫu dòng 3 có độ phức tạp O($\mu(m + n)$).
 
-\item Do T$_{I}^i$ là một cây nên việc tính toán h(u, T$_{I}^i$) $\forall u \in \text{T}_{I}^i$ mất O$(\mu n)$ 
+\item Do T$_{I}^i$ là một cây nên việc tính toán h($u$, T$_{I}^i$) $\forall u \in \text{T}_{I}^i$ mất O$(\mu n)$ 
 
 \item Phần Lazy Forward có độ phức tạp là O(qmn) với q là số vòng lặp từ dòng 10 đến 23.
 \end {itemize}
